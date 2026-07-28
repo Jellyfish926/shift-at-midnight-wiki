@@ -173,7 +173,7 @@ PAGES = [
  "path": "monsters/norbert",
  "title": "Shift At Midnight Norbert — Who He Is and What to Do",
  "og_short": "Shift At Midnight Norbert",
- "desc": "Norbert is a gnome who arrives on Night 2 with a fake ID. He is not a doppelganger and he will not kill you. Killing him because the scanner flagged him is the mistake.",
+ "desc": "Norbert is a gnome who arrives on Night 2 with a fake ID. He is not a doppelganger and will not kill you — killing him is the mistake the game wants.",
  "trail": M + [(None, "Norbert")],
  "h1": "Norbert",
  "lede": "A small gnome who shows up on <strong>Night 2</strong>, steps around the counter with his items, and scans as a fake ID. He is <strong>not</strong> a doppelganger, he will not turn into a monster, and he will not try to kill you. He is pure chaos, and he is the game teaching you a lesson.",
@@ -320,6 +320,7 @@ PAGES = [
 
   <h2>The data</h2>
 
+  <div class="tablewrap">
   <table class="data">
     <thead><tr><th>Achievement</th><th>Description</th><th>Global unlock</th></tr></thead>
     <tbody>
@@ -328,6 +329,7 @@ PAGES = [
       <tr><td><strong>Empty Home</strong></td><td>Hidden</td><td class="num">7.0%</td></tr>
     </tbody>
   </table>
+  </div>
 
   <p class="updated">Rarity read from public Steam global stats on 28 July 2026</p>
 

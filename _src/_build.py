@@ -116,6 +116,11 @@ def render(page: dict) -> str:
   <div class="bar">
     <nav>
 {nav_html('')}
+      <a href="/platforms/">Platforms</a>
+      <a href="/release-date/">Release date</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact us</a>
+      <a href="/privacy/">Privacy policy</a>
     </nav>
     <p class="fine">{FOOTER_FINE}</p>
   </div>

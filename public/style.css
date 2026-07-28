@@ -245,3 +245,27 @@ footer.site .fine { line-height: 1.65; max-width: 74ch; }
   text-transform: uppercase; letter-spacing: .14em;
 }
 .ad-banner { text-align: center; }
+
+/* ---------- 宽表滚动容器 ---------- */
+/* 表格在自己的盒子里横向滚动,页面 body 永不横向滚动 */
+.tablewrap {
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  margin: 0 0 24px; border-radius: var(--radius);
+}
+.tablewrap .data { margin-bottom: 0; }
+.tablewrap::-webkit-scrollbar { height: 6px; }
+.tablewrap::-webkit-scrollbar-thumb { background: var(--line-hot); border-radius: 3px; }
+
+@media (max-width: 640px) {
+  .data { font-size: 13.5px; }
+  .data th, .data td { padding: 8px 9px; }
+  /* 可滚动提示:右缘渐隐,告诉用户还有内容 */
+  .tablewrap { position: relative; }
+  .facts th, .facts td { padding: 9px 8px; font-size: 14.5px; }
+  .metrics, .grid.three { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+  h1 { letter-spacing: -0.018em; }
+  .lede { font-size: 17.5px; }
+  header.site .bar { padding: 10px 16px; gap: 12px; }
+  nav.site { gap: 12px; }
+  .wrap { padding: 0 16px; }
+}

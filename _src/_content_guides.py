@@ -24,6 +24,14 @@ FAQ_LD = """<script type="application/ld+json">
       "acceptedAnswer": { "@type": "Answer", "text": "No official mod support or Steam Workshop integration has been announced as of 28 July 2026." } },
     { "@type": "Question", "name": "How many achievements does Shift At Midnight have?",
       "acceptedAnswer": { "@type": "Answer", "text": "Ten. Three of them are hidden: Grave Decision, True Ending and Empty Home." } },
+    { "@type": "Question", "name": "Is Shift At Midnight on PS5?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. There is no PlayStation 5 or PS4 version of Shift At Midnight and none has been announced. It is available on PC via Steam and the Microsoft Store, and on Xbox Series X|S." } },
+    { "@type": "Question", "name": "Is Shift At Midnight available on mobile or the App Store?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. There is no iOS or Android version of Shift At Midnight. It is a PC and Xbox title only." } },
+    { "@type": "Question", "name": "When did Shift At Midnight come out?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Shift At Midnight released on 22 July 2026, after being delayed twice from its original 28 May 2026 date." } },
+    { "@type": "Question", "name": "Is Shift At Midnight free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The game costs 9.99 USD to buy, but it is included at no extra cost with Xbox Game Pass on both console and PC." } },
     { "@type": "Question", "name": "Who developed Shift At Midnight?",
       "acceptedAnswer": { "@type": "Answer", "text": "It was built by solo developer Bun Muen and published by Kwalee. It released on 22 July 2026." } }
   ]
@@ -65,7 +73,16 @@ PAGES = [
     <a class="card" href="/guide/story-mode/"><b>Story Mode</b><span>The shift structure and where the endings sit.</span></a>
     <a class="card" href="/guide/endless-mode/"><b>Endless Mode &amp; roadmap</b><span>The free Q4 2026 update.</span></a>
     <a class="card" href="/endings/"><b>All endings</b><span>What the three hidden achievements imply.</span></a>
-    <a class="card" href="/guide/release/"><b>Release &amp; platforms</b><span>Dates, price, Game Pass, where to buy.</span></a>
+    <a class="card" href="/release-date/"><b>Release date</b><span>Out now &mdash; 22 July 2026, after two delays.</span></a>
+  </div>
+
+  <h2>Platform &amp; availability</h2>
+
+  <div class="grid two">
+    <a class="card" href="/platforms/"><b>All platforms</b><span>PS5, mobile, App Store, Switch &mdash; the honest answers.</span></a>
+    <a class="card" href="/demo/"><b>The demo</b><span>What it contained, and whether it still matters.</span></a>
+    <a class="card" href="/nights-and-levels/"><b>Nights &amp; levels</b><span>Is night three the last one? No.</span></a>
+    <a class="card" href="/employee-package/"><b>Employee Package</b><span>The merch bundle, and why you cannot buy it.</span></a>
   </div>
 
   <h2>Before you buy</h2>
@@ -74,6 +91,7 @@ PAGES = [
     <a class="card" href="/multiplayer/"><b>Multiplayer</b><span>Player count, hosting, getting a session going.</span></a>
     <a class="card" href="/price/"><b>Price</b><span>What it costs and whether Game Pass makes that moot.</span></a>
     <a class="card" href="/review/"><b>Is it worth it?</b><span>What the reception and the achievement data suggest.</span></a>
+    <a class="card" href="/similar-games/"><b>Games like it</b><span>Where to go next, split by what you actually liked.</span></a>
   </div>
 """},
 {
@@ -693,6 +711,30 @@ PAGES = [
     <details>
       <summary>How much does it cost?</summary>
       <div class="a"><p>$9.99 USD with a 10% introductory discount at launch, and free with Game Pass. One edition, no paid DLC announced. <a href="/price/">More</a>.</p></div>
+    </details>
+    <details>
+      <summary>Is Shift At Midnight on PS5?</summary>
+      <div class="a"><p><strong>No.</strong> There is no PlayStation 5 or PS4 version and none has been announced. See <a href="/platforms/">platforms</a>.</p></div>
+    </details>
+    <details>
+      <summary>Is Shift At Midnight on mobile or the App Store?</summary>
+      <div class="a"><p><strong>No.</strong> No iOS or Android version exists. Anything using this name in a mobile app store is not this game. See <a href="/platforms/">platforms</a>.</p></div>
+    </details>
+    <details>
+      <summary>Is Shift At Midnight free?</summary>
+      <div class="a"><p>Not to buy &mdash; it is $9.99. But it is included with Xbox Game Pass at no extra cost.</p></div>
+    </details>
+    <details>
+      <summary>When did Shift At Midnight come out?</summary>
+      <div class="a"><p><strong>22 July 2026</strong>, after being delayed twice from an original 28 May date. See <a href="/release-date/">release date</a>.</p></div>
+    </details>
+    <details>
+      <summary>Is night three the last level?</summary>
+      <div class="a"><p>No &mdash; Story Mode continues past it. Shifts are procedurally generated rather than fixed levels. See <a href="/nights-and-levels/">nights &amp; levels</a>.</p></div>
+    </details>
+    <details>
+      <summary>What is the Employee Package?</summary>
+      <div class="a"><p>A physical merch bundle Kwalee ran as a giveaway &mdash; not DLC and not for sale. See <a href="/employee-package/">Employee Package</a>.</p></div>
     </details>
     <details>
       <summary>Which platform should I buy it on?</summary>
