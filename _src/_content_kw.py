@@ -310,23 +310,27 @@ PAGES = [
   </div>
 """},
 
-# --- 站点法务/信任页:教程「检查」清单要求 + AdSense 硬门槛 ---
+# --- 站点法务/信任页:教程检查清单要求 + AdSense 硬门槛 ---
+# 结构沿用 beastofreincarnation.online 已验证的版本(联系表 / 不做什么 / 编辑标准)
 {
  "path": "about", "active": "",
- "title": "About Shift At Midnight Wiki — Our Sourcing Policy",
+ "title": "About Shift At Midnight Wiki — Who We Are &amp; How We Source",
  "og_short": "About This Wiki",
- "desc": "Who runs this Shift At Midnight wiki, where the facts come from, and the rule we follow: label inference as inference and never invent a requirement.",
+ "desc": "Who runs this Shift At Midnight wiki, our editorial standards, and the rule we follow: label inference as inference and never invent a requirement.",
  "trail": [(None, "About")],
- "h1": "About this wiki",
- "lede": "Shift At Midnight Wiki is an independent, unofficial fan resource for the 2026 co-op horror game by Bun Muen, published by Kwalee. This page explains where our information comes from and what we will not do.",
+ "h1": "About this site",
+ "lede": "shiftatmidnightwiki.site is an independent, fan-made guide hub for <strong>Shift At Midnight</strong> &mdash; the co-op survival horror game by solo developer Bun Muen, published by Kwalee, released 22 July 2026 on Steam, Xbox Series X|S and Xbox Game Pass.",
  "body": """
-  <h2>Our sourcing rules</h2>
+  <h2>Who runs this site</h2>
+  <p>This site is curated and edited by <strong>Jellyfish</strong>, an independent games-content creator, with the goal of building the most useful English-language resource for Shift At Midnight players. We are a small independent project &mdash; not a content farm, and not affiliated with any publisher.</p>
+
+  <h2>Our editorial standards</h2>
   <ol>
     <li><strong>Facts come from primary sources.</strong> Release dates, pricing, platforms and feature lists come from the official Steam store listing and the publisher's own material. Achievement names and global unlock percentages are read from public Steam global stats.</li>
     <li><strong>Inference is labelled as inference.</strong> Where we reason from evidence rather than quote a source &mdash; for example, what the rarity ordering of the hidden achievements suggests &mdash; we say so in the text. You should always be able to tell which is which.</li>
-    <li><strong>We do not invent requirements.</strong> Three of this game's achievements have hidden descriptions and no published trigger. Rather than write a confident-sounding guess, our <a href="/endings/">endings page</a> says plainly that it is unconfirmed.</li>
+    <li><strong>No fabrication.</strong> Three of this game's achievements have hidden descriptions and no published trigger. Rather than write a confident-sounding guess, our <a href="/endings/">endings page</a> says plainly that it is unconfirmed.</li>
     <li><strong>Everything is dated.</strong> Each page carries a verification date. Achievement percentages drift as the player base grows; a number without a date is not useful.</li>
-    <li><strong>We correct ourselves.</strong> When a claim turns out to be wrong, it gets fixed and the page gets a new verification date.</li>
+    <li><strong>Corrections are applied fast.</strong> If you spot an error, <a href="/contact/">contact us</a> &mdash; verified corrections are applied within 48 hours and the page is re-dated.</li>
   </ol>
 
   <div class="term tip">
@@ -335,78 +339,110 @@ PAGES = [
   </div>
 
   <h2>What this site is not</h2>
-  <p>We are not affiliated with, endorsed by, or connected to Kwalee or Bun Muen. We do not host game files, distribute cracks or link to pirated copies. We do not publish Discord invite links, because invites expire and get replaced &mdash; verify community links from the publisher's own channels.</p>
+  <ul>
+    <li>We are <strong>not affiliated with, endorsed by, or connected to</strong> Kwalee or Bun Muen.</li>
+    <li>We do not host game files, distribute cracks or link to pirated copies.</li>
+    <li>We do not accept payment for coverage, scores or placement in our guides.</li>
+    <li>We do not publish Discord invite links &mdash; invites expire and get replaced. Verify community links from the publisher's own channels.</li>
+  </ul>
 
-  <h2>Corrections</h2>
-  <p>If something here is wrong, or if you have reproducible notes on one of the hidden achievements, we want to hear about it. See <a href="/contact/">contact</a>.</p>
+  <h2>How this site is funded</h2>
+  <p>Running costs are covered by advertising. Ads never affect what we write, which pages we build, or what verdict we reach &mdash; see <a href="/privacy/">how advertising and analytics operate here</a>.</p>
+
+  <div class="grid two">
+    <a class="card" href="/contact/"><b>Contact us</b><span>Corrections, findings and business enquiries.</span></a>
+    <a class="card" href="/privacy/"><b>Privacy policy</b><span>What data is collected and by whom.</span></a>
+  </div>
 """},
 {
  "path": "contact", "active": "",
  "title": "Contact Us — Shift At Midnight Wiki",
  "og_short": "Contact Us",
- "desc": "Get in touch with Shift At Midnight Wiki: corrections, verified findings on the hidden achievements, or takedown and rights enquiries.",
+ "desc": "Found an error, have a tip or a business enquiry about Shift At Midnight Wiki? Here is how to reach us, what helps, and what we cannot help with.",
  "trail": [(None, "Contact")],
  "h1": "Contact us",
- "lede": "Corrections and verified findings are genuinely welcome &mdash; particularly on the three hidden achievements, which the community has not yet solved.",
+ "lede": "Found an error? Have a tip, a question, or a business enquiry? We read everything &mdash; here is how to reach us and what to expect.",
  "body": """
-  <h2>How to reach us</h2>
-  <p>Email: <strong>contact [at] shiftatmidnightwiki [dot] site</strong></p>
-  <p class="updated">Written out rather than linked, to reduce scraping. Replace the bracketed words with the symbols.</p>
+  <h2>Email</h2>
+  <p>Write to us at: <strong>zsn2740784715@gmail.com</strong></p>
+  <p>We usually reply within <strong>48 hours</strong>.</p>
 
-  <h2>What is most useful to send</h2>
-  <ul>
-    <li><strong>A correction with a source.</strong> If we have a fact wrong, tell us what it should be and where you saw it. We will fix it and re-date the page.</li>
-    <li><strong>Reproducible achievement findings.</strong> For <em>Grave Decision</em>, <em>True Ending</em> or <em>Empty Home</em>: what you did across the run, and which achievement fired. One run proves nothing, but several logged runs from different players is how these get solved. See <a href="/endings/">endings</a>.</li>
-    <li><strong>Things we said we could not verify.</strong> The <a href="/joes-diner-newsletter/">Joe's Diner newsletter</a> author, exact demo content, weapon performance data &mdash; all still open.</li>
-  </ul>
-
-  <div class="term warn">
-    <div class="term-h">What we cannot help with</div>
-    <p>We are not the developer or publisher. We cannot issue refunds, recover accounts, fix bugs, or answer support questions about your copy of the game. For those, contact <strong>Kwalee</strong> through the official Steam store page or their own support channels.</p>
+  <h2>What to contact us about</h2>
+  <div class="tablewrap">
+  <table class="data">
+    <thead><tr><th>Topic</th><th>What helps us help you</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Corrections</strong></td><td>Link the exact page and quote the passage you believe is wrong, ideally with an official source. Verified corrections are applied within 48 hours and the page is re-dated.</td></tr>
+      <tr><td><strong>Hidden achievements</strong></td><td>The big one. For <em>Grave Decision</em>, <em>True Ending</em> or <em>Empty Home</em>: tell us what you did across the run and which achievement fired. One run proves nothing; several logged runs from different players is how these get solved.</td></tr>
+      <tr><td><strong>Guide requests</strong></td><td>Tell us what you searched for and could not find. Reader requests directly shape what we build next.</td></tr>
+      <tr><td><strong>Tips &amp; discoveries</strong></td><td>Found a strategy, secret or interaction our guides miss? We would love to test and credit it.</td></tr>
+      <tr><td><strong>Still-open questions</strong></td><td>The <a href="/joes-diner-newsletter/">Joe's Diner newsletter</a> author, exact demo content, and per-weapon performance data are all unresolved on this site.</td></tr>
+      <tr><td><strong>Business &amp; press</strong></td><td>Partnership or advertising questions &mdash; please include your organisation and a link.</td></tr>
+    </tbody>
+  </table>
   </div>
+
+  <h2>What we do not do</h2>
+  <ul>
+    <li>We cannot provide <strong>technical support for the game itself</strong>. For crashes, refunds or account issues, contact Kwalee or your storefront (Steam, Microsoft Store, Xbox). The developer's public contact is <strong>bun.muen.work@gmail.com</strong>.</li>
+    <li>We do not accept payment for coverage, scores or placement in our guides.</li>
+    <li>We cannot recover accounts, issue keys, or run giveaways. If a page claims to give away an <a href="/employee-package/">Employee Package</a> in exchange for your game login, it is not legitimate.</li>
+  </ul>
 
   <h2>Rights holders</h2>
   <p>This is an unofficial fan resource. If you represent Kwalee or Bun Muen and want something changed or removed, email the address above and we will respond promptly.</p>
+
+  <div class="grid two">
+    <a class="card" href="/about/"><b>About this site</b><span>Who we are and how we source.</span></a>
+    <a class="card" href="/privacy/"><b>Privacy policy</b><span>What data is collected and by whom.</span></a>
+  </div>
 """},
 {
  "path": "privacy", "active": "",
  "title": "Privacy Policy — Shift At Midnight Wiki",
  "og_short": "Privacy Policy",
- "desc": "How Shift At Midnight Wiki handles data: what analytics we use, what advertising partners may collect, and your choices.",
+ "desc": "Plain-language privacy policy for Shift At Midnight Wiki: what data is collected, which third parties are involved in analytics and advertising, and your choices.",
  "trail": [(None, "Privacy Policy")],
  "h1": "Privacy policy",
- "lede": "This page explains what data is collected when you visit Shift At Midnight Wiki, who collects it, and what you can do about it.",
- "updated": "Last updated 28 July 2026",
+ "lede": "This page explains, in plain language, what data is collected when you visit shiftatmidnightwiki.site, which third-party services we use for analytics and advertising, what your choices are, and how to contact us.",
+ "updated": "Effective 28 July 2026 &middot; Site operator contact: zsn2740784715@gmail.com",
  "body": """
-  <h2>What we collect directly</h2>
-  <p>We do not ask you to create an account, and we do not run forms, comments or logins. We do not collect names, email addresses or payment details, because there is nothing on this site that would require them.</p>
+  <h2>1. Who we are</h2>
+  <p>shiftatmidnightwiki.site ("this site", "we") is an independent, fan-operated guide website about the video game Shift At Midnight. It is curated by an independent games-content creator &mdash; see <a href="/about/">About</a>. We do not require accounts, do not offer purchases, and do not knowingly collect personal information beyond what is described below.</p>
 
-  <h2>Analytics</h2>
-  <p>We may use privacy-respecting analytics to understand which pages are read and where readers come from. This records aggregate information such as page URL, referring site, approximate region, device type and browser. It is used to decide what to write next &mdash; not to build a profile of you, and not to identify you personally.</p>
-
-  <h2>Advertising</h2>
-  <p>This site may display advertising supplied by third-party advertising partners. Those partners may use cookies, device identifiers or similar technologies to serve and measure ads, and their collection is governed by their own privacy policies rather than by this one.</p>
-  <p>You can limit this through your browser: block or clear third-party cookies, enable tracking protection, or use an ad blocker. Nothing on this site is gated behind allowing ads.</p>
-
-  <h2>Cookies</h2>
-  <p>We do not set cookies for our own purposes. Any cookies you receive here come from the third parties described above.</p>
-
-  <h2>External links</h2>
-  <p>We link to Steam, the Microsoft Store and other sites. Once you follow a link, you are on that site and subject to its privacy policy. We do not control what those sites collect.</p>
-
-  <h2>Children</h2>
-  <p>This site covers a horror game that Steam labels as containing "plenty of gore and blood". It is not directed at children, and we do not knowingly collect information from them.</p>
-
-  <h2>Your choices</h2>
+  <h2>2. Data we collect directly</h2>
   <ul>
-    <li>Block third-party cookies in your browser settings.</li>
-    <li>Use tracking protection or an ad blocker.</li>
-    <li>Use your device's advertising-identifier reset or opt-out controls.</li>
-    <li>Email us with a privacy question &mdash; see <a href="/contact/">contact</a>.</li>
+    <li><strong>Nothing you must provide.</strong> The site has no registration, login, comment or newsletter forms.</li>
+    <li><strong>Email.</strong> If you choose to email us, we receive your address and message content, used solely to reply. We do not add you to any list or share your address.</li>
+    <li><strong>Server logs.</strong> Our hosting and CDN provider may process standard technical logs (IP address, user agent, requested URL, timestamp) to deliver the site securely.</li>
   </ul>
 
-  <h2>Changes</h2>
-  <p>If this policy changes, the date at the top of this page changes with it.</p>
+  <h2>3. Analytics</h2>
+  <p>We may use analytics to understand which guides help players, in aggregate. These services set cookies or use similar technologies and record page URL, referring site, approximate region, device type and browser. It is used to decide what to write next &mdash; not to build a profile of you, and not to identify you personally.</p>
+
+  <h2>4. Advertising</h2>
+  <p>This site may display advertising supplied by third-party advertising partners. Those partners may use cookies, device identifiers or similar technologies to serve and measure ads. Their collection is governed by <strong>their own privacy policies</strong>, not by this one.</p>
+  <p>Advertising never affects what we write, which pages we build, or what verdict we reach. Nothing on this site is gated behind allowing ads.</p>
+
+  <h2>5. Cookies</h2>
+  <p>We do not set cookies for our own purposes. Any cookies you receive here come from the third parties described in sections 3 and 4.</p>
+
+  <h2>6. External links</h2>
+  <p>We link to Steam, the Microsoft Store and other sites. Once you follow a link you are on that site and subject to its privacy policy. We do not control what those sites collect.</p>
+
+  <h2>7. Children</h2>
+  <p>This site covers a horror game that Steam labels as containing "plenty of gore and blood". It is not directed at children, and we do not knowingly collect information from them.</p>
+
+  <h2>8. Your choices</h2>
+  <ul>
+    <li>Block or clear third-party cookies in your browser settings.</li>
+    <li>Enable tracking protection, or use an ad blocker.</li>
+    <li>Use your device's advertising-identifier reset or opt-out controls.</li>
+    <li>Email us with any privacy question &mdash; see <a href="/contact/">contact</a>.</li>
+  </ul>
+
+  <h2>9. Changes</h2>
+  <p>If this policy changes, the effective date at the top of this page changes with it.</p>
 """},
 ]
 

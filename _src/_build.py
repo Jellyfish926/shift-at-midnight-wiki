@@ -77,6 +77,9 @@ def render(page: dict) -> str:
 <meta name="twitter:image" content="{BASE}/og-image.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate icon" href="/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Jost:wght@300;400;500&amp;display=swap">
 <link rel="stylesheet" href="/style.css">
 {breadcrumb_ld(page['trail'], page['title'], url)}{extra_ld}
 <!-- ANALYTICS_SLOT: GA4 / Microsoft Clarity 代码由用户在上线后自行粘贴 -->

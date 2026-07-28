@@ -1,7 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="5" fill="#0a0b0d"/>
-  <path d="M6 13h20l-3-5H9z" fill="#ffa62b"/>
-  <circle cx="16" cy="21" r="5" fill="#e0454a"/>
-  <path d="M16 16a5 5 0 0 0 0 10z" fill="#0a0b0d" opacity=".55"/>
-  <rect x="6" y="26" width="20" height="1.6" fill="#262a30"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#000000"/>
+  <rect x="6" y="6" width="52" height="52" rx="14" fill="#fffbee"/>
+  <text x="32" y="45" font-family="Anton, Impact, sans-serif" font-size="34"
+        text-anchor="middle" fill="#000000">SM</text>
 </svg>
