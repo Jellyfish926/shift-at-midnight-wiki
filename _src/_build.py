@@ -82,7 +82,15 @@ def render(page: dict) -> str:
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Jost:wght@300;400;500&amp;display=swap">
 <link rel="stylesheet" href="/style.css">
 {breadcrumb_ld(page['trail'], page['title'], url)}{extra_ld}
-<!-- ANALYTICS_SLOT: GA4 / Microsoft Clarity 代码由用户在上线后自行粘贴 -->
+<!-- Google tag (gtag.js) — GA4 G-RFHPX1SQ5N -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RFHPX1SQ5N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RFHPX1SQ5N');
+</script>
+<!-- CLARITY_SLOT: Microsoft Clarity 代码待补 -->
 </head>
 <body>
 
