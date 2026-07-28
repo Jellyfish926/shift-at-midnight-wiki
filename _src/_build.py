@@ -5,7 +5,7 @@
 """
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent   # 脚本在 _src/,产物写到站点根
+ROOT = Path(__file__).resolve().parent.parent / "public"   # 只往发布目录写;memory.md 与 _src 不进发布树
 BASE = "https://shiftatmidnightwiki.site"
 
 NAV = [("/monsters/", "Monsters"), ("/achievements/", "Achievements"),
@@ -106,6 +106,9 @@ def render(page: dict) -> str:
 
 {page['body']}
 
+  <aside class="ad-native" hidden aria-label="Sponsored"></aside>
+  <aside class="ad-banner" hidden aria-label="Sponsored"></aside>
+
 </div>
 </main>
 
@@ -118,7 +121,8 @@ def render(page: dict) -> str:
   </div>
 </footer>
 
-<!-- ADSTERRA_SLOT: 过审后由 distributor/用户替换为真实代码 -->
+<!-- 广告位:真实 Adsterra 代码集中填在 /ads.js,不硬编码进页面 -->
+<script src="/ads.js" defer></script>
 </body>
 </html>
 """
