@@ -70,11 +70,11 @@ def render(page: dict) -> str:
 <meta property="og:title" content="{page['title']}">
 <meta property="og:description" content="{page['desc']}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{BASE}/og-image.png">
+<meta property="og:image" content="{BASE}/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{page['og_short']}">
 <meta name="twitter:description" content="{page['desc']}">
-<meta name="twitter:image" content="{BASE}/og-image.png">
+<meta name="twitter:image" content="{BASE}/og-image.jpg">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate icon" href="/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
