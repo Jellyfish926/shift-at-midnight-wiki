@@ -1,0 +1,235 @@
+/* Shift At Midnight Wiki — 夜班加油站 / 1990s CRT 监控终端
+   配色取自钠灯站台(琥珀)、CRT 荧光屏(毒绿)、血月(暗红)。刻意避开通用 AI 紫渐变。 */
+
+:root {
+  --bg:        #0a0b0d;
+  --bg-panel:  #121417;
+  --bg-inset:  #17191d;
+  --line:      #262a30;
+  --line-hot:  #3a3f47;
+
+  --ink:       #d8dce2;
+  --ink-dim:   #8b929c;
+  --ink-faint: #5c636d;
+
+  --amber:     #ffa62b;   /* 钠灯 — 主强调 */
+  --crt:       #4ade80;   /* CRT 绿 — 安全/确认 */
+  --blood:     #e0454a;   /* 血月 — 危险/怪物 */
+  --ice:       #6fb3d2;   /* 冷蓝 — 链接 */
+
+  --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  --sans: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+
+  --wrap: 76ch;
+  --radius: 3px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 17px/1.72 var(--sans);
+  letter-spacing: 0.01em;
+  /* 极淡的扫描线,给一点 CRT 质感但不影响可读性 */
+  background-image: repeating-linear-gradient(
+    180deg, rgba(255,255,255,.014) 0 1px, transparent 1px 3px);
+}
+
+/* ---------- 骨架 ---------- */
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 20px; }
+.wide { max-width: 104ch; }
+
+header.site {
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, #101216, #0a0b0d);
+  position: sticky; top: 0; z-index: 20;
+  backdrop-filter: blur(6px);
+}
+header.site .bar {
+  max-width: 104ch; margin: 0 auto; padding: 11px 20px;
+  display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+}
+.brand {
+  font: 700 15px/1 var(--mono);
+  color: var(--amber); text-decoration: none;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  white-space: nowrap;
+}
+.brand::before { content: "▚ "; color: var(--blood); }
+nav.site { display: flex; gap: 15px; flex-wrap: wrap; }
+nav.site a {
+  font: 500 13px/1 var(--mono);
+  color: var(--ink-dim); text-decoration: none;
+  text-transform: uppercase; letter-spacing: 0.05em;
+  padding: 5px 0; border-bottom: 1px solid transparent;
+}
+nav.site a:hover, nav.site a[aria-current="page"] {
+  color: var(--amber); border-bottom-color: var(--amber);
+}
+
+main { padding: 30px 0 64px; }
+
+/* ---------- 面包屑 ---------- */
+.crumbs {
+  font: 400 12px/1.5 var(--mono);
+  color: var(--ink-faint); margin: 0 0 22px;
+  letter-spacing: 0.04em;
+}
+.crumbs a { color: var(--ink-dim); text-decoration: none; }
+.crumbs a:hover { color: var(--amber); }
+.crumbs span { margin: 0 7px; color: var(--line-hot); }
+
+/* ---------- 文字 ---------- */
+h1 {
+  font: 700 clamp(28px, 5vw, 40px)/1.14 var(--sans);
+  letter-spacing: -0.022em;
+  margin: 0 0 14px; color: #fff;
+}
+h2 {
+  font: 700 25px/1.25 var(--sans);
+  letter-spacing: -0.014em;
+  margin: 46px 0 14px; color: #fff;
+  padding-top: 20px; border-top: 1px solid var(--line);
+}
+h3 {
+  font: 600 19px/1.35 var(--sans);
+  margin: 30px 0 9px; color: var(--amber);
+}
+p { margin: 0 0 17px; }
+a { color: var(--ice); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { color: var(--amber); }
+strong { color: #fff; font-weight: 650; }
+ul, ol { margin: 0 0 17px; padding-left: 22px; }
+li { margin: 0 0 8px; }
+li::marker { color: var(--ink-faint); }
+code {
+  font: 400 0.88em/1.5 var(--mono);
+  background: var(--bg-inset); color: var(--crt);
+  padding: 2px 6px; border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+
+.lede {
+  font-size: 19px; color: var(--ink-dim);
+  margin: 0 0 30px; line-height: 1.62;
+}
+
+/* ---------- 终端卡片 ---------- */
+.term {
+  background: var(--bg-panel); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 17px 19px; margin: 0 0 24px;
+}
+.term-h {
+  font: 600 11px/1 var(--mono); color: var(--ink-faint);
+  text-transform: uppercase; letter-spacing: 0.13em;
+  margin: 0 0 11px; display: flex; align-items: center; gap: 8px;
+}
+.term-h::before {
+  content: ""; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--crt); box-shadow: 0 0 7px var(--crt); flex: none;
+}
+.term.warn { border-color: rgba(224,69,74,.4); }
+.term.warn .term-h::before { background: var(--blood); box-shadow: 0 0 7px var(--blood); }
+.term.tip  { border-color: rgba(255,166,43,.36); }
+.term.tip  .term-h::before { background: var(--amber); box-shadow: 0 0 7px var(--amber); }
+.term :last-child { margin-bottom: 0; }
+
+/* ---------- 事实表 ---------- */
+.facts { width: 100%; border-collapse: collapse; margin: 0 0 24px; font-size: 15.5px; }
+.facts th, .facts td {
+  text-align: left; padding: 10px 12px;
+  border-bottom: 1px solid var(--line); vertical-align: top;
+}
+.facts th {
+  font: 600 12px/1.4 var(--mono); color: var(--ink-faint);
+  text-transform: uppercase; letter-spacing: 0.07em;
+  width: 34%; white-space: nowrap;
+}
+.facts tr:last-child th, .facts tr:last-child td { border-bottom: 0; }
+
+/* 数据表(成就等) */
+.data { width: 100%; border-collapse: collapse; margin: 0 0 24px; font-size: 15px; }
+.data th {
+  font: 600 11px/1.4 var(--mono); color: var(--ink-faint);
+  text-transform: uppercase; letter-spacing: 0.07em;
+  text-align: left; padding: 9px 11px; border-bottom: 1px solid var(--line-hot);
+}
+.data td { padding: 10px 11px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.data tbody tr:hover { background: var(--bg-panel); }
+.data .num { font-family: var(--mono); white-space: nowrap; color: var(--amber); }
+
+/* ---------- 卡片网格 ---------- */
+.grid { display: grid; gap: 13px; margin: 0 0 26px; }
+.grid.two   { grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); }
+.grid.three { grid-template-columns: repeat(auto-fit, minmax(205px, 1fr)); }
+
+.card {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--bg-panel); border: 1px solid var(--line);
+  border-left: 2px solid var(--line-hot);
+  border-radius: var(--radius); padding: 15px 17px;
+  transition: border-color .13s, background .13s;
+}
+.card:hover { border-color: var(--line-hot); border-left-color: var(--amber); background: var(--bg-inset); }
+.card b { display: block; font-size: 16px; color: #fff; margin: 0 0 5px; font-weight: 650; }
+.card span { display: block; font-size: 14px; color: var(--ink-dim); line-height: 1.55; }
+.card.danger { border-left-color: var(--blood); }
+.card.danger:hover { border-left-color: var(--blood); }
+
+/* ---------- 威胁徽标 ---------- */
+.tags { display: flex; gap: 7px; flex-wrap: wrap; margin: 0 0 20px; }
+.tag {
+  font: 600 11px/1 var(--mono); text-transform: uppercase; letter-spacing: 0.07em;
+  padding: 5px 9px; border-radius: 999px;
+  border: 1px solid var(--line-hot); color: var(--ink-dim); background: var(--bg-inset);
+}
+.tag.red   { color: var(--blood); border-color: rgba(224,69,74,.45); }
+.tag.green { color: var(--crt);   border-color: rgba(74,222,128,.4); }
+.tag.amber { color: var(--amber); border-color: rgba(255,166,43,.42); }
+
+/* ---------- FAQ ---------- */
+.faq { border-top: 1px solid var(--line); margin: 0 0 26px; }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary {
+  cursor: pointer; padding: 15px 0; font-weight: 600; color: #fff;
+  list-style: none; display: flex; gap: 11px; align-items: flex-start;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::before {
+  content: "+"; color: var(--amber); font: 700 17px/1.35 var(--mono); flex: none;
+}
+.faq details[open] summary::before { content: "\2212"; }
+.faq details[open] summary { padding-bottom: 6px; }
+.faq .a { padding: 0 0 15px 26px; color: var(--ink-dim); }
+.faq .a :last-child { margin-bottom: 0; }
+
+/* ---------- 页脚 ---------- */
+footer.site {
+  border-top: 1px solid var(--line); margin-top: 56px;
+  padding: 26px 0 40px; font-size: 14px; color: var(--ink-faint);
+}
+footer.site .bar { max-width: 104ch; margin: 0 auto; padding: 0 20px; }
+footer.site a { color: var(--ink-dim); }
+footer.site nav { display: flex; gap: 16px; flex-wrap: wrap; margin: 0 0 15px; font-family: var(--mono); font-size: 12.5px; }
+footer.site .fine { line-height: 1.65; max-width: 74ch; }
+
+.updated {
+  font: 400 12px/1 var(--mono); color: var(--ink-faint);
+  letter-spacing: 0.04em; margin: 0 0 26px;
+}
+
+/* ---------- 无障碍 / 动效 ---------- */
+:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+  body { background-image: none; }
+}
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .facts th { width: auto; white-space: normal; }
+  h2 { margin-top: 36px; }
+}
