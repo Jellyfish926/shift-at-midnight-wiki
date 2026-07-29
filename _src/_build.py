@@ -23,6 +23,16 @@ def css_ver() -> str:
 
 CSS_VER = css_ver()
 
+
+def ico_ver() -> str:
+    """favicon 内容哈希 —— 浏览器对 favicon 的缓存比 CSS 更顽固,
+    换了图标不带版本号,老用户标签页里可能几周还是旧图标。"""
+    p = ROOT / "favicon.ico"
+    return hashlib.md5(p.read_bytes()).hexdigest()[:8] if p.exists() else "0"
+
+
+ICO_VER = ico_ver()
+
 NAV = [("/monsters/", "Monsters"), ("/achievements/", "Achievements"),
        ("/endings/", "Endings"), ("/crossplay/", "Crossplay"),
        ("/guides/", "Guides"), ("/tools/", "Tools"), ("/faq/", "FAQ")]
@@ -153,10 +163,10 @@ def render(page: dict) -> str:
 <meta name="twitter:title" content="{page['og_short']}">
 <meta name="twitter:description" content="{page['desc']}">
 <meta name="twitter:image" content="{BASE}/og-image.jpg">
-<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
-<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
-<link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico?v={ICO_VER}" sizes="16x16 32x32 48x48">
+<link rel="icon" href="/favicon-32.png?v={ICO_VER}" type="image/png" sizes="32x32">
+<link rel="icon" href="/favicon-192.png?v={ICO_VER}" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v={ICO_VER}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>

@@ -124,6 +124,10 @@ def patch(rel: str, active: str) -> str:
     # 3d) style.css 缓存击穿版本号(每次跑都刷新成当前哈希)
     s = re.sub(r'href="/style\.css(\?v=[0-9a-f]+)?"', f'href="/style.css?v={B.CSS_VER}"', s)
 
+    # 3e) favicon 版本号(每次跑刷新成当前哈希)
+    s = re.sub(r'href="/(favicon\.ico|favicon-32\.png|favicon-192\.png|apple-touch-icon\.png)(\?v=[0-9a-f]+)?"',
+               lambda m: f'href="/{m.group(1)}?v={B.ICO_VER}"', s)
+
     # 4) 商店区块:插在 ad-banner 之前(404 跳过)
     if not is404 and 'class="store"' not in s:
         if '<aside class="ad-banner"' in s:
