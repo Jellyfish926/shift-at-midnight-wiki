@@ -2,6 +2,13 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "outputDirectory": "public",
   "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/guide/release",
+      "destination": "/release-date/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

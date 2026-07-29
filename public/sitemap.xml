@@ -34,31 +34,7 @@
     <loc>https://shiftatmidnightwiki.site/game-pass/</loc>
   </url>
   <url>
-    <loc>https://shiftatmidnightwiki.site/guide/beginners/</loc>
-  </url>
-  <url>
-    <loc>https://shiftatmidnightwiki.site/guide/co-op/</loc>
-  </url>
-  <url>
-    <loc>https://shiftatmidnightwiki.site/guide/doppelgangers/</loc>
-  </url>
-  <url>
-    <loc>https://shiftatmidnightwiki.site/guide/endless-mode/</loc>
-  </url>
-  <url>
-    <loc>https://shiftatmidnightwiki.site/guide/release/</loc>
-  </url>
-  <url>
-    <loc>https://shiftatmidnightwiki.site/guide/store-management/</loc>
-  </url>
-  <url>
-    <loc>https://shiftatmidnightwiki.site/guide/story-mode/</loc>
-  </url>
-  <url>
-    <loc>https://shiftatmidnightwiki.site/guide/survival/</loc>
-  </url>
-  <url>
-    <loc>https://shiftatmidnightwiki.site/guide/weapons/</loc>
+    <loc>https://shiftatmidnightwiki.site/guide/</loc>
   </url>
   <url>
     <loc>https://shiftatmidnightwiki.site/guides/</loc>
@@ -71,24 +47,6 @@
   </url>
   <url>
     <loc>https://shiftatmidnightwiki.site/monsters/</loc>
-  </url>
-  <url>
-    <loc>https://shiftatmidnightwiki.site/monsters/demented/</loc>
-  </url>
-  <url>
-    <loc>https://shiftatmidnightwiki.site/monsters/jack-in-the-box/</loc>
-  </url>
-  <url>
-    <loc>https://shiftatmidnightwiki.site/monsters/marionette/</loc>
-  </url>
-  <url>
-    <loc>https://shiftatmidnightwiki.site/monsters/norbert/</loc>
-  </url>
-  <url>
-    <loc>https://shiftatmidnightwiki.site/monsters/shrieking-doll/</loc>
-  </url>
-  <url>
-    <loc>https://shiftatmidnightwiki.site/monsters/the-dentist/</loc>
   </url>
   <url>
     <loc>https://shiftatmidnightwiki.site/multiplayer/</loc>
@@ -113,5 +71,59 @@
   </url>
   <url>
     <loc>https://shiftatmidnightwiki.site/similar-games/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/tools/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/guide/beginners/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/guide/co-op/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/guide/doppelgangers/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/guide/endless-mode/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/guide/store-management/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/guide/story-mode/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/guide/survival/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/guide/weapons/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/monsters/demented/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/monsters/jack-in-the-box/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/monsters/marionette/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/monsters/norbert/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/monsters/shrieking-doll/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/monsters/the-dentist/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/tools/achievement-tracker/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/tools/crossplay-checker/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/tools/threat-lookup/</loc>
   </url>
 </urlset>

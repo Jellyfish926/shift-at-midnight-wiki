@@ -277,3 +277,149 @@ footer.site .fine a { color: var(--dim); }
   nav.site { gap: 14px; }
   footer.site nav { gap: 14px; }
 }
+
+/* ─── 二级导航 / 商店外链 / 工具页控件 ─────────────────────────
+   来源:对照飞书教程审计。教程阶段五「导航结构:清晰的层级」、
+   潜规则④外链(竞品的 "Play on Steam" 按钮)、阶段五「页面类型含工具页」。 */
+
+nav.site.second {
+  max-width: 100ch; margin: 0 auto; padding: 0 22px 11px;
+  gap: 16px; border-top: 1px solid var(--line); padding-top: 11px;
+}
+nav.site.second a { font-size: 11.5px; color: var(--faint); letter-spacing: 0.08em; }
+
+.steam-cta {
+  margin-left: auto;
+  font: 400 12px/1 var(--impact);
+  text-transform: uppercase; letter-spacing: 0.07em;
+  color: var(--bg); background: var(--cream);
+  text-decoration: none; white-space: nowrap;
+  padding: 10px 17px; border-radius: var(--pill);
+  transition: background .15s, transform .15s;
+}
+.steam-cta:hover { background: #fff; transform: translateY(-1px); }
+
+.store {
+  margin: 56px 0 0; padding: 26px 24px;
+  background: var(--bg-panel); border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.store h2 { margin: 0 0 8px; font-size: 20px; }
+.store-note { margin: 0 0 18px; font-size: 14.5px; color: var(--faint); line-height: 1.6; }
+.store-row { display: flex; gap: 11px; flex-wrap: wrap; }
+.store-btn {
+  font: 400 12.5px/1 var(--impact);
+  text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--cream); text-decoration: none;
+  padding: 13px 19px; border-radius: var(--pill);
+  border: 1px solid var(--line-hot); background: var(--bg-inset);
+  transition: border-color .15s, color .15s;
+}
+.store-btn:hover { border-color: rgba(255,251,238,.5); color: #fff; }
+.store-btn.primary { background: var(--cream); color: var(--bg); border-color: var(--cream); }
+.store-btn.primary:hover { background: #fff; color: var(--bg); }
+
+/* ── 工具页控件 ── */
+.tool {
+  margin: 28px 0; padding: 24px;
+  background: var(--bg-panel); border: 1px solid var(--line-hot); border-radius: 14px;
+}
+.tool .row { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 16px; }
+/* 只作用于表单字段的小标题;绝不能命中 .tool-check(它本身也是 <label>) */
+.tool .field label {
+  display: block; font: 400 11.5px/1.4 var(--impact);
+  text-transform: uppercase; letter-spacing: 0.07em;
+  color: var(--faint); margin-bottom: 7px;
+}
+.tool select, .tool input[type="text"], .tool input[type="search"] {
+  font: 400 16px/1.2 var(--display);
+  color: var(--cream); background: var(--bg-inset);
+  border: 1px solid var(--line-hot); border-radius: 9px;
+  padding: 12px 13px; min-height: 46px; width: 100%;
+  appearance: none; -webkit-appearance: none;
+}
+.tool select:focus-visible, .tool input:focus-visible,
+.tool button:focus-visible, .tool-check:focus-within {
+  outline: 2px solid var(--cream); outline-offset: 2px;
+}
+.tool select { background-image: none; cursor: pointer; }
+.tool .field { flex: 1 1 190px; }
+.tool button {
+  font: 400 12.5px/1 var(--impact);
+  text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--bg); background: var(--cream);
+  border: 0; border-radius: var(--pill);
+  padding: 13px 20px; min-height: 46px; cursor: pointer;
+}
+.tool button.ghost { background: transparent; color: var(--dim); border: 1px solid var(--line-hot); }
+.tool button.ghost:hover { color: var(--cream); border-color: var(--cream); }
+
+.tool-out {
+  margin-top: 18px; padding: 18px 20px;
+  background: var(--bg-inset); border-left: 3px solid var(--line-hot); border-radius: 0 9px 9px 0;
+}
+.tool-out.ok   { border-left-color: #5f9e63; }
+.tool-out.warn { border-left-color: #c9a227; }
+.tool-out.bad  { border-left-color: var(--danger); }
+.tool-out b { display: block; font-size: 17px; color: var(--cream); margin-bottom: 6px; }
+.tool-out p { margin: 0; font-size: 15px; color: var(--dim); line-height: 1.6; }
+.tool-out p + p { margin-top: 9px; }
+
+.tool-check {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 13px 12px; min-height: 46px;
+  border-bottom: 1px solid var(--line); cursor: pointer;
+}
+.tool-check:last-of-type { border-bottom: 0; }
+.tool-check:hover { background: var(--bg-inset); }
+.tool-check input[type="checkbox"] {
+  width: 21px; height: 21px; margin: 2px 0 0; flex: none;
+  accent-color: var(--cream); cursor: pointer;
+}
+.tool-check .t { font: 400 16px/1.4 var(--display); text-transform: none; letter-spacing: 0; color: var(--cream); }
+.tool-check .d { display: block; font: 400 14px/1.55 var(--display); text-transform: none; letter-spacing: 0; color: var(--faint); margin-top: 3px; }
+.tool-check input:checked ~ .lbl .t { color: var(--faint); text-decoration: line-through; }
+
+.bar-track { height: 9px; background: var(--bg-inset); border-radius: var(--pill); overflow: hidden; margin: 12px 0 6px; }
+.bar-fill  { height: 100%; background: var(--cream); width: 0; transition: width .3s; }
+
+.noscript-note {
+  margin: 18px 0; padding: 14px 16px; font-size: 15px; line-height: 1.6;
+  color: var(--dim); background: var(--bg-inset); border-left: 3px solid var(--line-hot);
+}
+
+@media (max-width: 640px) {
+  nav.site.second { padding-left: 18px; padding-right: 18px; gap: 13px; }
+  .steam-cta { margin-left: 0; padding: 16px 18px; }
+  header.site .bar { gap: 12px; }
+  .store { padding: 22px 18px; }
+  .store-btn { flex: 1 1 100%; text-align: center; padding: 15px 19px; }
+  .tool { padding: 18px 15px; }
+  /* 触控目标:审计发现 375px 下 28/56 个可点元素不足 44px。
+     13px 行高 1 + 上下 15.5px 内边距 + 1px 下边框 = 44px */
+  nav.site a { padding: 15.5px 0; }
+  nav.site.second a { padding: 15.5px 0; }
+  footer.site nav a { padding: 14px 0; display: inline-block; }
+  .brand { padding: 12px 0; display: inline-block; }
+}
+
+/* Hero 大图 —— 教程阶段五「Hero区域」+ 竞品 hero 背景大图。
+   显式宽高比 + contain-intrinsic 防 CLS;圆角与站内面板一致。 */
+.hero-img {
+  display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630;
+  margin: 0 0 26px; border-radius: 14px;
+  border: 1px solid var(--line); background: var(--bg-panel);
+  object-fit: cover;
+}
+@media (max-width: 640px) { .hero-img { margin-bottom: 20px; border-radius: 10px; } }
+
+/* 威胁速查结果卡 */
+.threat {
+  padding: 18px 0; border-bottom: 1px solid var(--line);
+}
+.threat:last-child { border-bottom: 0; }
+.threat h3 { margin: 0 0 5px; font-size: 19px; }
+.threat h3 a { color: var(--cream); text-decoration: none; border-bottom: 1px solid rgba(255,251,238,.28); }
+.threat h3 a:hover { border-bottom-color: var(--cream); }
+.threat .meta { margin: 0 0 8px; font-size: 13px; color: var(--faint); }
+.threat p:last-child { margin: 0; font-size: 15.5px; color: var(--dim); line-height: 1.62; }

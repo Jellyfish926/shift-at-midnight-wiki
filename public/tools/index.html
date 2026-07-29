@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shift At Midnight Mods — Is There Mod Support?</title>
-<meta name="description" content="No official mod support or Steam Workshop integration has been announced for Shift At Midnight as of 28 July 2026. What that means and what the risks are.">
-<link rel="canonical" href="https://shiftatmidnightwiki.site/mods/">
+<title>Shift At Midnight Tools — Crossplay, Achievements, Threats</title>
+<meta name="description" content="Three free tools for Shift At Midnight: check whether your group can play together, track all 10 achievements, and look up any threat by what you saw.">
+<link rel="canonical" href="https://shiftatmidnightwiki.site/tools/">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Shift At Midnight Wiki">
-<meta property="og:title" content="Shift At Midnight Mods — Is There Mod Support?">
-<meta property="og:description" content="No official mod support or Steam Workshop integration has been announced for Shift At Midnight as of 28 July 2026. What that means and what the risks are.">
-<meta property="og:url" content="https://shiftatmidnightwiki.site/mods/">
+<meta property="og:title" content="Shift At Midnight Tools — Crossplay, Achievements, Threats">
+<meta property="og:description" content="Three free tools for Shift At Midnight: check whether your group can play together, track all 10 achievements, and look up any threat by what you saw.">
+<meta property="og:url" content="https://shiftatmidnightwiki.site/tools/">
 <meta property="og:image" content="https://shiftatmidnightwiki.site/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Shift At Midnight Mods">
-<meta name="twitter:description" content="No official mod support or Steam Workshop integration has been announced for Shift At Midnight as of 28 July 2026. What that means and what the risks are.">
+<meta name="twitter:title" content="Shift At Midnight Tools">
+<meta name="twitter:description" content="Three free tools for Shift At Midnight: check whether your group can play together, track all 10 achievements, and look up any threat by what you saw.">
 <meta name="twitter:image" content="https://shiftatmidnightwiki.site/og-image.jpg">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate icon" href="/favicon.ico">
@@ -34,7 +34,19 @@
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://shiftatmidnightwiki.site/" },
-    { "@type": "ListItem", "position": 2, "name": "Mods", "item": "https://shiftatmidnightwiki.site/mods/" }
+    { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://shiftatmidnightwiki.site/tools/" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Shift At Midnight tools",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Crossplay compatibility checker", "url": "https://shiftatmidnightwiki.site/tools/crossplay-checker/" },
+    { "@type": "ListItem", "position": 2, "name": "Achievement tracker", "url": "https://shiftatmidnightwiki.site/tools/achievement-tracker/" },
+    { "@type": "ListItem", "position": 3, "name": "Threat lookup", "url": "https://shiftatmidnightwiki.site/tools/threat-lookup/" }
   ]
 }
 </script>
@@ -65,8 +77,8 @@
       <a href="/achievements/">Achievements</a>
       <a href="/endings/">Endings</a>
       <a href="/crossplay/">Crossplay</a>
-      <a href="/guides/" aria-current="page">Guides</a>
-      <a href="/tools/">Tools</a>
+      <a href="/guides/">Guides</a>
+      <a href="/tools/" aria-current="page">Tools</a>
       <a href="/faq/">FAQ</a>
     </nav>
     <a class="steam-cta" href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Play on Steam</a>
@@ -89,37 +101,36 @@
 <div class="wrap">
 
   <nav class="crumbs" aria-label="Breadcrumb">
-    <a href="/">Home</a><span>/</span>Mods
+    <a href="/">Home</a><span>/</span>Tools
   </nav>
 
-  <h1>Mods</h1>
-  <p class="lede"><strong>There is no official mod support.</strong> No Steam Workshop integration and no modding tools have been announced as of 28 July 2026. That is the honest answer, and it is worth knowing before you go looking.</p>
+  <h1>Shift At Midnight tools</h1>
+  <p class="lede">Three things this wiki can answer faster than a text page can. <strong>All of them run in your browser</strong> &mdash; nothing is uploaded, nothing needs an account.</p>
 
   <p class="updated">Last verified 28 July 2026 &middot; game version: launch build (22 July 2026)</p>
 
 
-  <h2>What is confirmed</h2>
-  <table class="facts">
-    <tr><th>Steam Workshop</th><td>Not listed</td></tr>
-    <tr><th>Official mod tools</th><td>None announced</td></tr>
-    <tr><th>Roadmap mention</th><td>None &mdash; roadmap lists only Endless Mode (Q4 2026)</td></tr>
-  </table>
-
-  <div class="term warn">
-    <div class="term-h">Risks of unofficial mods</div>
-    <p>Without official support, anything you find is third-party and unsupported. Three specific problems: it may break with any patch; it may interfere with <strong>achievement tracking</strong>, which matters given three achievements are hidden and rare; and in an online co-op game, modified clients can fail to connect to unmodified ones. If you are chasing <a href="/endings/">True Ending</a> or <a href="/achievements/">Empty Home</a>, an unofficial mod is a bad bet.</p>
+  <div class="term tip">
+    <div class="term-h">What these are built from</div>
+    <p>Every tool here is driven by the same verified data as the written pages &mdash; the compatibility
+      matrix from <a href="/crossplay/">crossplay</a>, the global unlock rates from
+      <a href="/achievements/">achievements</a>, and the counterplay table from
+      <a href="/monsters/">monsters</a>. <strong>No tool here invents data.</strong> Where a requirement
+      is unverified &mdash; notably the three hidden achievements &mdash; the tool says so instead of guessing.</p>
   </div>
 
-  <h2>Why a solo developer might not prioritise it</h2>
-  <p>Shift At Midnight is built by one person, Bun Muen, published by Kwalee. Mod support is a substantial ongoing commitment &mdash; documented interfaces, stability guarantees across patches, and a support burden when mods break. The announced roadmap points at content (Endless Mode) rather than platform work. That is a reasonable set of priorities and we would not read anything into it.</p>
-
-  <h2>If it changes</h2>
-  <p>This page gets updated with the announcement and date. We will not list third-party mods or link to them while there is no official framework &mdash; recommending unsupported binaries for a game whose rare achievements are still unsolved would be irresponsible.</p>
-
+  <h2>The tools</h2>
   <div class="grid two">
-    <a class="card" href="/guide/endless-mode/"><b>Roadmap</b><span>What is actually coming.</span></a>
-    <a class="card" href="/achievements/"><b>Achievements</b><span>What mods could put at risk.</span></a>
+    <a class="card" href="/tools/crossplay-checker/"><b>Crossplay checker</b><span>Pick where each of you bought the game. Get a yes/no and the cheapest fix if the answer is no.</span></a>
+    <a class="card" href="/tools/achievement-tracker/"><b>Achievement tracker</b><span>Tick off all 10. Saves in your browser, and tells you which one is statistically your easiest next.</span></a>
+    <a class="card" href="/tools/threat-lookup/"><b>Threat lookup</b><span>Search by what you actually saw &mdash; &ldquo;music box&rdquo;, &ldquo;screaming&rdquo;, &ldquo;fake ID&rdquo; &mdash; not by a name you do not know yet.</span></a>
   </div>
+
+  <h2>Why not a tier list or a server status page</h2>
+  <p>Other wikis for this game run tier lists, live player counts and Steam Deck verdicts. We do not,
+    because none of those can be produced honestly right now: the game has one difficulty curve and no
+    competitive mode, so a &ldquo;tier list&rdquo; would be invented; and a live status widget would be
+    reporting a number we cannot verify. When there is something real to measure, we will build it.</p>
 
 
   <aside class="ad-native" hidden aria-label="Sponsored"></aside>
