@@ -50,8 +50,9 @@ header.site {
   position: sticky; top: 0; z-index: 20;
 }
 header.site .bar {
-  max-width: 100ch; margin: 0 auto; padding: 14px 22px;
-  display: flex; align-items: center; gap: 22px; flex-wrap: wrap;
+  max-width: 112ch; margin: 0 auto; padding: 13px 22px;
+  display: flex; align-items: center; gap: 20px;
+  flex-wrap: nowrap;              /* 单行:二级项已收进 More 下拉 */
 }
 .brand {
   font: 400 19px/1 var(--impact);
@@ -59,7 +60,11 @@ header.site .bar {
   letter-spacing: 0.02em; text-transform: uppercase;
   white-space: nowrap;
 }
-nav.site { display: flex; gap: 18px; flex-wrap: wrap; }
+nav.site {
+  display: flex; align-items: center; gap: 17px;
+  flex: 1 1 auto; min-width: 0;   /* min-width:0 是关键:否则 flex 子项不肯收缩,整条撑出视口 */
+  flex-wrap: nowrap; overflow: visible;
+}
 nav.site a {
   font: 400 13px/1 var(--impact);
   color: var(--dim); text-decoration: none;
@@ -282,12 +287,6 @@ footer.site .fine a { color: var(--dim); }
    来源:对照飞书教程审计。教程阶段五「导航结构:清晰的层级」、
    潜规则④外链(竞品的 "Play on Steam" 按钮)、阶段五「页面类型含工具页」。 */
 
-nav.site.second {
-  max-width: 100ch; margin: 0 auto; padding: 0 22px 11px;
-  gap: 16px; border-top: 1px solid var(--line); padding-top: 11px;
-}
-nav.site.second a { font-size: 11.5px; color: var(--faint); letter-spacing: 0.08em; }
-
 .steam-cta {
   margin-left: auto;
   font: 400 12px/1 var(--impact);
@@ -389,7 +388,6 @@ nav.site.second a { font-size: 11.5px; color: var(--faint); letter-spacing: 0.08
 }
 
 @media (max-width: 640px) {
-  nav.site.second { padding-left: 18px; padding-right: 18px; gap: 13px; }
   .steam-cta { margin-left: 0; padding: 16px 18px; }
   header.site .bar { gap: 12px; }
   .store { padding: 22px 18px; }
@@ -398,7 +396,6 @@ nav.site.second a { font-size: 11.5px; color: var(--faint); letter-spacing: 0.08
   /* 触控目标:审计发现 375px 下 28/56 个可点元素不足 44px。
      13px 行高 1 + 上下 15.5px 内边距 + 1px 下边框 = 44px */
   nav.site a { padding: 15.5px 0; }
-  nav.site.second a { padding: 15.5px 0; }
   footer.site nav a { padding: 14px 0; display: inline-block; }
   .brand { padding: 12px 0; display: inline-block; }
 }
@@ -406,7 +403,7 @@ nav.site.second a { font-size: 11.5px; color: var(--faint); letter-spacing: 0.08
 /* Hero 大图 —— 教程阶段五「Hero区域」+ 竞品 hero 背景大图。
    显式宽高比 + contain-intrinsic 防 CLS;圆角与站内面板一致。 */
 .hero-img {
-  display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630;
+  display: block; width: 100%; height: auto; aspect-ratio: 1176 / 560;
   margin: 0 0 26px; border-radius: 14px;
   border: 1px solid var(--line); background: var(--bg-panel);
   object-fit: cover;
@@ -423,3 +420,64 @@ nav.site.second a { font-size: 11.5px; color: var(--faint); letter-spacing: 0.08
 .threat h3 a:hover { border-bottom-color: var(--cream); }
 .threat .meta { margin: 0 0 8px; font-size: 13px; color: var(--faint); }
 .threat p:last-child { margin: 0; font-size: 15.5px; color: var(--dim); line-height: 1.62; }
+
+/* ─── 导航「More」下拉 ────────────────────────────────────────
+   单行导航:一级 7 项常驻,其余 10 项收进 <details>。
+   用原生 <details> 而非 JS 菜单 —— 无脚本可用、键盘可达、移动端点击即开。 */
+
+header.site .bar > nav.site { scrollbar-width: none; }
+header.site .bar > nav.site::-webkit-scrollbar { display: none; }
+
+details.more { position: relative; flex: none; }
+details.more > summary {
+  list-style: none; cursor: pointer; user-select: none;
+  font: 400 13px/1 var(--impact);
+  color: var(--dim); text-transform: uppercase; letter-spacing: 0.06em;
+  padding: 4px 0; border-bottom: 1px solid transparent;
+  display: inline-flex; align-items: center; gap: 5px;
+  white-space: nowrap; transition: color .15s, border-color .15s;
+}
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::after {
+  content: ""; width: 0; height: 0;
+  border-left: 4px solid transparent; border-right: 4px solid transparent;
+  border-top: 4.5px solid currentColor; transition: transform .18s;
+}
+details.more[open] > summary::after { transform: rotate(180deg); }
+details.more > summary:hover,
+details.more[open] > summary { color: var(--cream); border-bottom-color: var(--cream); }
+details.more > summary:focus-visible { outline: 2px solid var(--cream); outline-offset: 3px; }
+
+.more-menu {
+  position: absolute; top: calc(100% + 12px); right: 0; z-index: 40;
+  min-width: 208px; padding: 8px;
+  background: var(--bg-panel); border: 1px solid var(--line-hot);
+  border-radius: 12px; box-shadow: 0 18px 44px rgba(0,0,0,.72);
+  display: grid; gap: 1px;
+}
+.more-menu a {
+  display: block; padding: 11px 13px; border-radius: 7px;
+  font: 400 12.5px/1.15 var(--impact);
+  color: var(--dim); text-decoration: none;
+  text-transform: uppercase; letter-spacing: 0.055em;
+  border-bottom: 0; white-space: nowrap;
+  transition: background .13s, color .13s;
+}
+.more-menu a:hover, .more-menu a:focus-visible {
+  background: var(--bg-inset); color: var(--cream); border-bottom: 0;
+}
+.more-menu a[aria-current="page"] { color: var(--cream); background: var(--bg-inset); }
+
+@media (max-width: 900px) {
+  header.site .bar { flex-wrap: wrap; gap: 12px 16px; }
+  .brand { flex: 1 1 auto; }
+  .steam-cta { order: 2; margin-left: 0; }
+  header.site .bar > nav.site {
+    order: 3; flex: 1 1 100%;
+    flex-wrap: wrap; row-gap: 2px;   /* 换行而非横滑:横滑会把 More 入口藏到屏幕外 */
+  }
+  /* 换行后头部约 170px 高,吸顶会永久吃掉五分之一屏 —— 窄屏改为随页滚动 */
+  header.site { position: static; }
+  details.more { position: static; }        /* 面板改为贴齐整条导航,避免被 overflow 裁掉 */
+  .more-menu { left: 18px; right: 18px; min-width: 0; }
+}

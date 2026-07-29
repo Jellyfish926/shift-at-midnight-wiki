@@ -34,7 +34,7 @@
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }]
     },
     {
-      "source": "/(og-image.jpg|favicon.ico|favicon.svg)",
+      "source": "/(og-image.jpg|hero.jpg|hero-800.jpg|favicon.ico|favicon-32.png|favicon-192.png|apple-touch-icon.png)",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }]
     }
   ]

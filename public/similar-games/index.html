@@ -17,8 +17,10 @@
 <meta name="twitter:title" content="Games Like Shift At Midnight">
 <meta name="twitter:description" content="If you liked Shift At Midnight: co-op horror and suspicious-customer games worth playing next, and what each one actually shares with it.">
 <meta name="twitter:image" content="https://shiftatmidnightwiki.site/og-image.jpg">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="/favicon.ico">
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
@@ -68,21 +70,24 @@
       <a href="/guides/" aria-current="page">Guides</a>
       <a href="/tools/">Tools</a>
       <a href="/faq/">FAQ</a>
+      <details class="more">
+        <summary aria-label="More topics">More</summary>
+        <div class="more-menu">
+        <a href="/release-date/">Release date</a>
+        <a href="/platforms/">Platforms</a>
+        <a href="/game-pass/">Game Pass</a>
+        <a href="/price/">Price</a>
+        <a href="/multiplayer/">Multiplayer</a>
+        <a href="/nights-and-levels/">Nights</a>
+        <a href="/demo/">Demo</a>
+        <a href="/mods/">Mods</a>
+        <a href="/review/">Review</a>
+        <a href="/similar-games/">Similar games</a>
+        </div>
+      </details>
     </nav>
     <a class="steam-cta" href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Play on Steam</a>
   </div>
-  <nav class="site second" aria-label="More topics">
-      <a href="/release-date/">Release date</a>
-      <a href="/platforms/">Platforms</a>
-      <a href="/game-pass/">Game Pass</a>
-      <a href="/price/">Price</a>
-      <a href="/multiplayer/">Multiplayer</a>
-      <a href="/nights-and-levels/">Nights</a>
-      <a href="/demo/">Demo</a>
-      <a href="/mods/">Mods</a>
-      <a href="/review/">Review</a>
-      <a href="/similar-games/">Similar games</a>
-  </nav>
 </header>
 
 <main>
@@ -187,6 +192,20 @@
   </div>
 </footer>
 
+<script>
+/* 导航「More」下拉:<details> 本身已可用(无脚本也能开合、键盘可达),
+   这几行只补两个体验细节 —— 点击外部关闭、Esc 关闭。 */
+(function () {
+  var d = document.querySelector('header.site details.more');
+  if (!d) return;
+  document.addEventListener('click', function (e) {
+    if (d.open && !d.contains(e.target)) d.open = false;
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && d.open) { d.open = false; d.querySelector('summary').focus(); }
+  });
+})();
+</script>
 <!-- 广告位:真实 Adsterra 代码集中填在 /ads.js,不硬编码进页面 -->
 <script src="/ads.js" defer></script>
 </body>

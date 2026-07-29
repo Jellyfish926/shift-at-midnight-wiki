@@ -46,11 +46,24 @@ def nav_html(active: str) -> str:
 
 
 def nav2_html(active: str) -> str:
-    out = []
+    """二级项收进 <details> 下拉 —— 单行导航,不再另起一行占位。
+    用 <details>/<summary> 而非 JS 菜单:无脚本可用、键盘可达、移动端点击即开。"""
+    rows = []
     for href, label in NAV2:
         cur = ' aria-current="page"' if href == active else ""
-        out.append(f'      <a href="{href}"{cur}>{label}</a>')
-    return "\n".join(out)
+        rows.append(f'        <a href="{href}"{cur}>{label}</a>')
+    items = "\n".join(rows)
+    open_attr = " open" if any(href == active for href, _ in NAV2) else ""
+    return (f'      <details class="more"{open_attr}>\n'
+            f'        <summary aria-label="More topics">More</summary>\n'
+            f'        <div class="more-menu">\n{items}\n'
+            f"        </div>\n"
+            f"      </details>")
+
+
+def nav2_flat_html() -> str:
+    """页脚用平铺版 —— 页脚不该出现下拉,所有链接直接可见可爬。"""
+    return "\n".join(f'      <a href="{href}">{label}</a>' for href, label in NAV2)
 
 
 def store_block() -> str:
@@ -118,8 +131,10 @@ def render(page: dict) -> str:
 <meta name="twitter:title" content="{page['og_short']}">
 <meta name="twitter:description" content="{page['desc']}">
 <meta name="twitter:image" content="{BASE}/og-image.jpg">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="/favicon.ico">
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
@@ -154,12 +169,10 @@ def render(page: dict) -> str:
     <a class="brand" href="/">Shift At Midnight Wiki</a>
     <nav class="site">
 {nav_html(active)}
+{nav2_html(active)}
     </nav>
     <a class="steam-cta" href="{STEAM_APP}" target="_blank" rel="noopener">Play on Steam</a>
   </div>
-  <nav class="site second" aria-label="More topics">
-{nav2_html(active)}
-  </nav>
 </header>
 
 <main>
@@ -189,7 +202,7 @@ def render(page: dict) -> str:
   <div class="bar">
     <nav>
 {nav_html('')}
-{nav2_html('')}
+{nav2_flat_html()}
       <a href="/about/">About</a>
       <a href="/contact/">Contact us</a>
       <a href="/privacy/">Privacy policy</a>
@@ -203,6 +216,20 @@ def render(page: dict) -> str:
   </div>
 </footer>
 
+<script>
+/* 导航「More」下拉:<details> 本身已可用(无脚本也能开合、键盘可达),
+   这几行只补两个体验细节 —— 点击外部关闭、Esc 关闭。 */
+(function () {{
+  var d = document.querySelector('header.site details.more');
+  if (!d) return;
+  document.addEventListener('click', function (e) {{
+    if (d.open && !d.contains(e.target)) d.open = false;
+  }});
+  document.addEventListener('keydown', function (e) {{
+    if (e.key === 'Escape' && d.open) {{ d.open = false; d.querySelector('summary').focus(); }}
+  }});
+}})();
+</script>
 <!-- 广告位:真实 Adsterra 代码集中填在 /ads.js,不硬编码进页面 -->
 <script src="/ads.js" defer></script>{page_js}
 </body>
