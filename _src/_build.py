@@ -3,10 +3,25 @@
 
 只负责把重复结构生成一致,不生成内容。跑完用 audit_pages 全站校验。
 """
+import hashlib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent / "public"   # 只往发布目录写;memory.md 与 _src 不进发布树
 BASE = "https://shiftatmidnightwiki.site"
+
+
+def css_ver() -> str:
+    """style.css 的内容哈希 —— 缓存击穿。
+
+    vercel.json 给 style.css 设了 max-age=86400。没有版本号的话,改完 CSS 回访用户
+    最多要等 24 小时才看到新样式(线上实测踩过:导航改完线上仍是旧样式)。
+    带上内容哈希后,改一次样式 URL 就变一次,长缓存才既安全又有效。
+    """
+    p = ROOT / "style.css"
+    return hashlib.md5(p.read_bytes()).hexdigest()[:8] if p.exists() else "0"
+
+
+CSS_VER = css_ver()
 
 NAV = [("/monsters/", "Monsters"), ("/achievements/", "Achievements"),
        ("/endings/", "Endings"), ("/crossplay/", "Crossplay"),
@@ -141,7 +156,7 @@ def render(page: dict) -> str:
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="https://www.clarity.ms">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Jost:wght@300;400;500&amp;display=swap">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css?v={CSS_VER}">
 <!-- Google AdSense ca-pub-6575082962774479 — 站点验证 + 过审后自动投放 -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479" crossorigin="anonymous"></script>
 {breadcrumb_ld(page['trail'], page['title'], url)}{extra_ld}

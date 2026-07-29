@@ -121,6 +121,9 @@ def patch(rel: str, active: str) -> str:
         if MORE_JS not in s:                      # 404 没有广告位注释块
             s = s.replace("</body>", MORE_JS + "\n</body>", 1)
 
+    # 3d) style.css 缓存击穿版本号(每次跑都刷新成当前哈希)
+    s = re.sub(r'href="/style\.css(\?v=[0-9a-f]+)?"', f'href="/style.css?v={B.CSS_VER}"', s)
+
     # 4) 商店区块:插在 ad-banner 之前(404 跳过)
     if not is404 and 'class="store"' not in s:
         if '<aside class="ad-banner"' in s:
