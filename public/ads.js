@@ -1,52 +1,47 @@
-/* Adsterra 广告装载器 — 全站唯一改动点
+/* Adsterra 广告装载器
  * ============================================================
- * 拿到 Adsterra 后台的代码后,只改这个文件,30 个页面全部生效。
- * 每页已经通过 <script src="/ads.js" defer> 引入,并预置了容器 div。
+ * 真实代码已填好。是否投放由下面一个开关控制。
  *
- * 前置:先在 Adsterra 后台 Websites → Add Website 添加
- *       shiftatmidnightwiki.site 并等待审核通过,才能创建版位。
+ * ⚠️ 当前 ENABLED = false,原因:
+ *    AdSense 站点审核于 2026-07-29 提交,审核员会访问线上页面。
+ *    站点当前日流量为 0,此刻投放 Adsterra 收益为 $0,
+ *    却可能让 AdSense 审核出问题——而 AdSense 的 RPM 高一个量级,
+ *    且 playbook 记着「首站过审 = 全站群加速器」。
  *
- * 用法:把下面 SLOTS 里的 null 换成后台给你的对应值,保存,重新部署。
- * 没填的版位会自动跳过,不会报错、不会留空白框。
+ * ✅ 何时打开:AdSense 审核出结果之后。
+ *    - 通过 → 用 AdSense,Adsterra 保持关闭(或仅在 AdSense 未填充的位置补)
+ *    - 拒审 → 把下面 ENABLED 改成 true,提交部署,Adsterra 立即接管
  * ============================================================ */
 
+var ENABLED = false;   // ← 只改这一行
+
 var ADSTERRA = {
-  // ① Social Bar —— 全站浮层,不占版面,移动端 CTR 最高。
-  //    后台 Native/Social Bar 版位会给你一行 <script src="//xxxxx.com/xx/yy/zz/....js">
-  //    把那个 src 的值(引号里的整串)填到这里。
-  socialBarSrc: null,     // 例:"//pl12345678.example.com/aa/bb/cc/invoke.js"
+  // Native Banner —— 单元 30483620,站点 5943265,状态 Active
+  // 呈现为「相关阅读」,是攻略站最自然、对 AdSense 审核最友好的格式
+  nativeBannerSrc: "https://pl30584119.effectivecpmnetwork.com/f7bf84b6fd5f9bcf83b18332a482d287/invoke.js",
+  nativeBannerId:  "container-f7bf84b6fd5f9bcf83b18332a482d287",
 
-  // ② Native Banner —— 跟在正文后面,伪装成"相关阅读",对攻略站最自然。
-  //    后台会给 <script async data-cfasync="false" src="//xxx/invoke.js"></script>
-  //    加一个 <div id="container-XXXXXXXX"></div>。把 src 和那个 container id 填进来。
-  nativeBannerSrc: null,  // 例:"//pl87654321.example.com/dd/ee/ff/invoke.js"
-  nativeBannerId:  null,  // 例:"container-a1b2c3d4e5f6"
-
-  // ③ 横幅 —— 侵入性最强,建议**排名稳定后**再开。先留空。
-  //    后台给的是带 atOptions 的内联脚本,把其中 key 的值填这里。
-  bannerKey:    null,     // 例:"a1b2c3d4e5f67890abcdef1234567890"
+  // 以下两种未创建。Popunder 几乎必然导致 AdSense 拒审;
+  // Social Bar 是常驻浮层,同样有风险。需要时去 Adsterra 后台建单元再填。
+  socialBarSrc: null,
+  bannerKey:    null,
   bannerWidth:  728,
   bannerHeight: 90
 };
 
 (function () {
   "use strict";
+  if (!ENABLED) return;
 
-  function inject(src, attrs) {
+  function inject(src) {
     var s = document.createElement("script");
-    s.src = src;
-    s.async = true;
+    s.src = src; s.async = true;
     s.setAttribute("data-cfasync", "false");
-    if (attrs) { Object.keys(attrs).forEach(function (k) { s.setAttribute(k, attrs[k]); }); }
     document.body.appendChild(s);
   }
 
-  // ① Social Bar
-  if (ADSTERRA.socialBarSrc) {
-    inject(ADSTERRA.socialBarSrc);
-  }
+  if (ADSTERRA.socialBarSrc) inject(ADSTERRA.socialBarSrc);
 
-  // ② Native Banner —— 注入到页面预置的 .ad-native 容器里
   if (ADSTERRA.nativeBannerSrc && ADSTERRA.nativeBannerId) {
     var host = document.querySelector(".ad-native");
     if (host) {
@@ -58,16 +53,12 @@ var ADSTERRA = {
     }
   }
 
-  // ③ 横幅
   if (ADSTERRA.bannerKey) {
     var slot = document.querySelector(".ad-banner");
     if (slot) {
       window.atOptions = {
-        key: ADSTERRA.bannerKey,
-        format: "iframe",
-        height: ADSTERRA.bannerHeight,
-        width: ADSTERRA.bannerWidth,
-        params: {}
+        key: ADSTERRA.bannerKey, format: "iframe",
+        height: ADSTERRA.bannerHeight, width: ADSTERRA.bannerWidth, params: {}
       };
       slot.hidden = false;
       inject("//www.highperformanceformat.com/" + ADSTERRA.bannerKey + "/invoke.js");
