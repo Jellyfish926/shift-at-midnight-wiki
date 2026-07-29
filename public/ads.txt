@@ -1,2 +1,1 @@
-# AdSense 过审后由用户填入真实 publisher id,格式:
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-6575082962774479, DIRECT, f08c47fec0942fa0

@@ -81,6 +81,8 @@ def render(page: dict) -> str:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Jost:wght@300;400;500&amp;display=swap">
 <link rel="stylesheet" href="/style.css">
+<!-- Google AdSense ca-pub-6575082962774479 — 站点验证 + 过审后自动投放 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479" crossorigin="anonymous"></script>
 {breadcrumb_ld(page['trail'], page['title'], url)}{extra_ld}
 <!-- Google tag (gtag.js) — GA4 G-RFHPX1SQ5N -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFHPX1SQ5N"></script>
