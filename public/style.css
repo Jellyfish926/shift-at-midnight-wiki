@@ -392,12 +392,14 @@ footer.site .fine a { color: var(--dim); }
   header.site .bar { gap: 12px; }
   .store { padding: 22px 18px; }
   .store-btn { flex: 1 1 100%; text-align: center; padding: 15px 19px; }
+  footer.site .fine a { padding: 6px 0; display: inline-block; }
   .tool { padding: 18px 15px; }
   /* 触控目标:审计发现 375px 下 28/56 个可点元素不足 44px。
      13px 行高 1 + 上下 15.5px 内边距 + 1px 下边框 = 44px */
-  nav.site a { padding: 15.5px 0; }
-  footer.site nav a { padding: 14px 0; display: inline-block; }
+  nav.site a { padding: 17px 0; }
+  footer.site nav a { padding: 16px 0; display: inline-block; }
   .brand { padding: 12px 0; display: inline-block; }
+  details.more > summary { padding: 15px 0; }
 }
 
 /* Hero 大图 —— 教程阶段五「Hero区域」+ 竞品 hero 背景大图。
@@ -431,6 +433,7 @@ header.site .bar > nav.site::-webkit-scrollbar { display: none; }
 details.more { position: relative; flex: none; }
 details.more > summary {
   list-style: none; cursor: pointer; user-select: none;
+  -webkit-tap-highlight-color: transparent;
   font: 400 13px/1 var(--impact);
   color: var(--dim); text-transform: uppercase; letter-spacing: 0.06em;
   padding: 4px 0; border-bottom: 1px solid transparent;
@@ -438,6 +441,9 @@ details.more > summary {
   white-space: nowrap; transition: color .15s, border-color .15s;
 }
 details.more > summary::-webkit-details-marker { display: none; }
+.lbl-m { display: none; }            /* 桌面显示 More,窄屏显示 Menu */
+.more-menu .m-only { display: none; } /* 一级项只在窄屏抽屉里出现 */
+.menu-sep { display: none; }
 details.more > summary::after {
   content: ""; width: 0; height: 0;
   border-left: 4px solid transparent; border-right: 4px solid transparent;
@@ -472,12 +478,35 @@ details.more > summary:focus-visible { outline: 2px solid var(--cream); outline-
   header.site .bar { flex-wrap: wrap; gap: 12px 16px; }
   .brand { flex: 1 1 auto; }
   .steam-cta { order: 2; margin-left: 0; }
-  header.site .bar > nav.site {
-    order: 3; flex: 1 1 100%;
-    flex-wrap: wrap; row-gap: 2px;   /* 换行而非横滑:横滑会把 More 入口藏到屏幕外 */
+  header.site .bar > nav.site { order: 3; flex: 1 1 100%; flex-wrap: wrap; row-gap: 2px; }
+  details.more { position: static; }        /* 面板贴齐整条导航,避免被 overflow 裁掉 */
+  .more-menu { left: 18px; right: 18px; min-width: 0; max-height: 74vh; overflow-y: auto; }
+}
+
+/* ≤720px:一级项收进抽屉,头部只剩 站名 + Play on Steam + Menu。
+   此前一级项平铺换行让头部高达 173px(占 812 高屏幕的 21%),
+   用户从 Google 落到内页,先看到的应该是内容而不是导航。 */
+@media (max-width: 720px) {
+  /* 不吸顶(让内容尽快进入首屏),但必须保持 positioned —— 
+     改成 static 会让 .more-menu 的 top:100% 相对整页高度计算,面板被推到屏幕外。 */
+  header.site { position: relative; }
+  header.site .bar { flex-wrap: nowrap; gap: 10px; padding: 10px 18px; }
+  .brand { flex: 1 1 auto; min-width: 0; font-size: 16px; padding: 14px 0;
+           overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .steam-cta { order: 0; flex: none; }
+  header.site .bar > nav.site { order: 0; flex: none; width: auto; }
+  header.site .bar > nav.site > a { display: none; }   /* 一级项转入抽屉 */
+  .more-menu .m-only { display: block; }
+  .lbl-d { display: none; }
+  .lbl-m { display: inline; }
+  .menu-sep {
+    display: block; height: 1px; margin: 6px 4px;
+    background: var(--line-hot);
   }
-  /* 换行后头部约 170px 高,吸顶会永久吃掉五分之一屏 —— 窄屏改为随页滚动 */
-  header.site { position: static; }
-  details.more { position: static; }        /* 面板改为贴齐整条导航,避免被 overflow 裁掉 */
-  .more-menu { left: 18px; right: 18px; min-width: 0; }
+  details.more > summary {
+    padding: 14.5px 15px; border: 1px solid var(--line-hot); border-radius: var(--pill);
+    color: var(--cream); border-bottom-color: var(--line-hot);
+  }
+  details.more[open] > summary { background: var(--bg-inset); border-color: var(--cream); }
+  .more-menu { top: calc(100% + 8px); }
 }

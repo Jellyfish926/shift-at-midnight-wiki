@@ -64,13 +64,20 @@ def nav2_html(active: str) -> str:
     """二级项收进 <details> 下拉 —— 单行导航,不再另起一行占位。
     用 <details>/<summary> 而非 JS 菜单:无脚本可用、键盘可达、移动端点击即开。"""
     rows = []
+    # 一级项也放进抽屉,但只在窄屏显示(.m-only)。
+    # 窄屏下一级项不再平铺,头部从 173px 压到约 60px —— 用户从 Google 落到内页,
+    # 先看到的应该是内容不是导航。桌面端这 7 条被 CSS 隐藏,不重复渲染。
+    for href, label in NAV:
+        cur = ' aria-current="page"' if href == active else ""
+        rows.append(f'        <a class="m-only" href="{href}"{cur}>{label}</a>')
+    rows.append('        <span class="menu-sep" aria-hidden="true"></span>')
     for href, label in NAV2:
         cur = ' aria-current="page"' if href == active else ""
         rows.append(f'        <a href="{href}"{cur}>{label}</a>')
     items = "\n".join(rows)
-    open_attr = " open" if any(href == active for href, _ in NAV2) else ""
-    return (f'      <details class="more"{open_attr}>\n'
-            f'        <summary aria-label="More topics">More</summary>\n'
+    return (f'      <details class="more">\n'
+            f'        <summary><span class="lbl-d">More</span>'
+            f'<span class="lbl-m">Menu</span></summary>\n'
             f'        <div class="more-menu">\n{items}\n'
             f"        </div>\n"
             f"      </details>")
