@@ -7,6 +7,16 @@
       "source": "/guide/release",
       "destination": "/release-date/",
       "permanent": true
+    },
+    {
+      "source": "/guide/release/",
+      "destination": "/release-date/",
+      "permanent": true
+    },
+    {
+      "source": "/guide/release/index.html",
+      "destination": "/release-date/",
+      "permanent": true
     }
   ],
   "headers": [

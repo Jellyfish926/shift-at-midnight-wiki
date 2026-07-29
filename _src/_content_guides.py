@@ -19,7 +19,7 @@ FAQ_LD = """<script type="application/ld+json">
     { "@type": "Question", "name": "How many players can play Shift At Midnight?",
       "acceptedAnswer": { "@type": "Answer", "text": "Up to three players in online co-op with proximity chat. A full single-player mode is also available." } },
     { "@type": "Question", "name": "How much does Shift At Midnight cost?",
-      "acceptedAnswer": { "@type": "Answer", "text": "9.99 USD at launch with a 10% introductory discount. It is also included with Xbox Game Pass." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "9.99 USD. The 10% launch discount ended on 29 July 2026. It is also included with Xbox Game Pass." } },
     { "@type": "Question", "name": "Does Shift At Midnight have mods?",
       "acceptedAnswer": { "@type": "Answer", "text": "No official mod support or Steam Workshop integration has been announced as of 28 July 2026." } },
     { "@type": "Question", "name": "How many achievements does Shift At Midnight have?",
@@ -413,7 +413,7 @@ PAGES = [
     <tr><th>Platforms</th><td>Steam (Windows 10/11 64-bit), Xbox Series X|S, Microsoft Store</td></tr>
     <tr><th>Game Pass</th><td>Day one &mdash; console and PC</td></tr>
     <tr><th>Play Anywhere</th><td>Yes</td></tr>
-    <tr><th>Price</th><td>$9.99 USD, 10% introductory discount</td></tr>
+    <tr><th>Price</th><td>$9.99 USD (10% launch discount ended 29 July 2026)</td></tr>
     <tr><th>Players</th><td>1&ndash;3, online co-op with proximity chat</td></tr>
     <tr><th>Steam languages</th><td>English, French, German, Spanish (Spain), Japanese, Russian, Simplified Chinese, Traditional Chinese, Portuguese (Brazil)</td></tr>
     <tr><th>Achievements</th><td>10</td></tr>
@@ -515,11 +515,11 @@ PAGES = [
  "desc": "Shift At Midnight is $9.99 USD with a 10% launch discount, and free on Game Pass. Which platform you buy on matters more than the price does.",
  "trail": [(None, "Price")],
  "h1": "Price &amp; editions",
- "lede": "<strong>$9.99 USD</strong>, with a 10% introductory discount at launch, and <strong>free with Xbox Game Pass</strong>. There is one edition. The decision that actually costs people money is not the price &mdash; it is the store.",
+ "lede": "<strong>$9.99 USD</strong> &mdash; the 10% launch discount ended on 29 July 2026 &mdash; and <strong>free with Xbox Game Pass</strong>. There is one edition. The decision that actually costs people money is not the price &mdash; it is the store.",
  "body": """
   <table class="facts">
     <tr><th>Price</th><td>$9.99 USD (regional pricing varies)</td></tr>
-    <tr><th>Launch discount</th><td>10% introductory offer</td></tr>
+    <tr><th>Launch discount</th><td>10% introductory offer &mdash; ended 29 July 2026</td></tr>
     <tr><th>Editions</th><td>One &mdash; no deluxe or season pass</td></tr>
     <tr><th>Game Pass</th><td>Included, day one</td></tr>
     <tr><th>Future content</th><td>Endless Mode, Q4 2026 &mdash; free</td></tr>
@@ -710,7 +710,7 @@ PAGES = [
     </details>
     <details>
       <summary>How much does it cost?</summary>
-      <div class="a"><p>$9.99 USD with a 10% introductory discount at launch, and free with Game Pass. One edition, no paid DLC announced. <a href="/price/">More</a>.</p></div>
+      <div class="a"><p>$9.99 USD. The 10% launch discount ended on 29 July 2026. Free with Game Pass. One edition, no paid DLC announced. <a href="/price/">More</a>.</p></div>
     </details>
     <details>
       <summary>Is Shift At Midnight on PS5?</summary>
