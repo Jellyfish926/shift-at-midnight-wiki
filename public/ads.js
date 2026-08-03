@@ -1,31 +1,41 @@
-/* Adsterra 广告装载器
+/* Adsterra 广告装载器 —— 按格式分开的开关
  * ============================================================
- * ✅ 已投放(2026-07-31 按用户指令开启)
+ * 每种格式一个独立开关。出问题时能精确定位是哪一种,
+ * 而不是"全部关掉"再靠猜。
  *
- * 背景:AdSense 站点审核 2026-07-29 提交,截至开启时仍是「正在准备」。
- * 明知审核期挂第三方广告有风险仍然开,是因为 ROI 核算改变了性质——
- * 本站可及点击池仅 17,518/月,6 个月中性预期 1,139 次访问,
- * 而 AdSense 起付线 $100 需要约 71,400 次访问,差 63 倍,
- * 也就是说走 AdSense 这条路这个站一分钱也拿不到。
- * Adsterra 起付线低得多,是唯一可能真正到账的路径。
+ * 【2026-07-31 事故记录 —— 不要重蹈】
+ * 曾只启用 Native Banner(内容区最温和的格式;Popunder 和 Social Bar 连单元都没建;
+ * 站点级与单元级 Adult ads 均已关闭;全站仅 1 个广告单元),
+ * 结果用户用手机打开本站**被强制跳转到其他网站,页面无法浏览**。
+ * 排查:页面本身干净(外部脚本只有 adsbygoogle 验证码 + gtag,
+ * location.href/replace/window.open/document.write/eval/atob 全站 0 命中),
+ * 跳转来自 Adsterra invoke.js 投放出来的广告内容;
+ * 后台站点级、单元级、账户级 Settings **都没有任何控制广告质量的选项**。
+ * 结论:不是配置错误,是「零流量新站 + Other 分类」的库存质量问题——
+ * 需求侧只有跳转/popunder 类广告主愿意填,且出价最高。
+ * → USE_NATIVE_BANNER 永久置 false,不要再打开。
  *
- * 只投 Native Banner:Popunder 几乎必然导致 AdSense 拒审,
- * Social Bar 是常驻浮层同样有风险。要加格式去后台建单元再填下面的字段。
- *
- * 要关掉:把 ENABLED 改回 false,提交部署即可。
+ * ⚠️ 上线任何格式后,必须用**真实手机 + 移动网络(不挂代理)**实测一遍再收工。
+ *    机房 IP 会被广告网络拒绝投放(返回 403),在服务器上 curl 或用代理浏览器
+ *    **测不出真实行为**——上次就是栽在这一步。
  * ============================================================ */
 
-var ENABLED = false;   // ← 只改这一行
+/* ── 开关:只改这一段 ─────────────────────────────────────── */
+var USE_SOCIAL_BAR    = true;   // 浮层气泡/通知条,可关闭,不抢走页面控制权
+var USE_NATIVE_BANNER = false;  // ⛔ 曾导致强制跳转,不要打开
+var USE_BANNER        = false;  // 固定尺寸 iframe 横幅,静态
+/* ────────────────────────────────────────────────────────── */
 
 var ADSTERRA = {
-  // Native Banner —— 单元 30483620,站点 5943265,状态 Active
-  // 呈现为「相关阅读」,是攻略站最自然、对 AdSense 审核最友好的格式
+  // Social Bar —— 单元 30557489(SocialBar_1),2026-07-31 新建,状态 Active。
+  // 浮层形态,可关闭,不接管页面导航。src 取自后台 GET CODE,已逐字节核对。
+  socialBarSrc: "https://pl30657988.effectivecpmnetwork.com/e8/d2/20/e8d220430d38a9f7a87d671e7a9b44ac.js",
+
+  // Native Banner —— 单元 30483620。保留仅为存档,USE_NATIVE_BANNER 已永久关闭。
   nativeBannerSrc: "https://pl30584119.effectivecpmnetwork.com/f7bf84b6fd5f9bcf83b18332a482d287/invoke.js",
   nativeBannerId:  "container-f7bf84b6fd5f9bcf83b18332a482d287",
 
-  // 以下两种未创建。Popunder 几乎必然导致 AdSense 拒审;
-  // Social Bar 是常驻浮层,同样有风险。需要时去 Adsterra 后台建单元再填。
-  socialBarSrc: null,
+  // Banner —— 未创建单元
   bannerKey:    null,
   bannerWidth:  728,
   bannerHeight: 90
@@ -33,18 +43,20 @@ var ADSTERRA = {
 
 (function () {
   "use strict";
-  if (!ENABLED) return;
 
   function inject(src) {
     var s = document.createElement("script");
-    s.src = src; s.async = true;
+    s.src = src;
+    s.async = true;
     s.setAttribute("data-cfasync", "false");
     document.body.appendChild(s);
   }
 
-  if (ADSTERRA.socialBarSrc) inject(ADSTERRA.socialBarSrc);
+  if (USE_SOCIAL_BAR && ADSTERRA.socialBarSrc) {
+    inject(ADSTERRA.socialBarSrc);
+  }
 
-  if (ADSTERRA.nativeBannerSrc && ADSTERRA.nativeBannerId) {
+  if (USE_NATIVE_BANNER && ADSTERRA.nativeBannerSrc && ADSTERRA.nativeBannerId) {
     var host = document.querySelector(".ad-native");
     if (host) {
       var box = document.createElement("div");
@@ -55,12 +67,15 @@ var ADSTERRA = {
     }
   }
 
-  if (ADSTERRA.bannerKey) {
+  if (USE_BANNER && ADSTERRA.bannerKey) {
     var slot = document.querySelector(".ad-banner");
     if (slot) {
       window.atOptions = {
-        key: ADSTERRA.bannerKey, format: "iframe",
-        height: ADSTERRA.bannerHeight, width: ADSTERRA.bannerWidth, params: {}
+        key: ADSTERRA.bannerKey,
+        format: "iframe",
+        height: ADSTERRA.bannerHeight,
+        width: ADSTERRA.bannerWidth,
+        params: {}
       };
       slot.hidden = false;
       inject("//www.highperformanceformat.com/" + ADSTERRA.bannerKey + "/invoke.js");
