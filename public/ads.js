@@ -15,7 +15,7 @@
  * 要关掉:把 ENABLED 改回 false,提交部署即可。
  * ============================================================ */
 
-var ENABLED = true;    // ← 只改这一行
+var ENABLED = false;   // ← 只改这一行
 
 var ADSTERRA = {
   // Native Banner —— 单元 30483620,站点 5943265,状态 Active
