@@ -23,7 +23,7 @@
 /* ── 开关:只改这一段 ─────────────────────────────────────── */
 var USE_SOCIAL_BAR    = true;   // 浮层气泡/通知条,可关闭,不抢走页面控制权
 var USE_NATIVE_BANNER = false;  // ⛔ 曾导致强制跳转,不要打开
-var USE_BANNER        = false;  // 固定尺寸 iframe 横幅,静态
+var USE_BANNER        = true;   // 300x250 静态 iframe 横幅,结构上无法劫持导航
 /* ────────────────────────────────────────────────────────── */
 
 var ADSTERRA = {
@@ -35,10 +35,12 @@ var ADSTERRA = {
   nativeBannerSrc: "https://pl30584119.effectivecpmnetwork.com/f7bf84b6fd5f9bcf83b18332a482d287/invoke.js",
   nativeBannerId:  "container-f7bf84b6fd5f9bcf83b18332a482d287",
 
-  // Banner —— 未创建单元
-  bannerKey:    null,
-  bannerWidth:  728,
-  bannerHeight: 90
+  // Banner —— 单元 30557643(300x250_1),2026-07-31 新建,状态 Active。
+  // 选 300x250:标准尺寸里收益最好,且 300px 在 375 手机上不溢出(内容区窄屏 339px)。
+  // 728x90 会撑破手机,未选。
+  bannerKey:    "a4139a1920b5914fb2de99a2efe30a76",
+  bannerWidth:  300,
+  bannerHeight: 250
 };
 
 (function () {
@@ -78,7 +80,7 @@ var ADSTERRA = {
         params: {}
       };
       slot.hidden = false;
-      inject("//www.highperformanceformat.com/" + ADSTERRA.bannerKey + "/invoke.js");
+      inject("https://www.highperformanceformat.com/" + ADSTERRA.bannerKey + "/invoke.js");
     }
   }
 })();

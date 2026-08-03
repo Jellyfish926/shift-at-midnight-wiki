@@ -510,3 +510,10 @@ details.more > summary:focus-visible { outline: 2px solid var(--cream); outline-
   details.more[open] > summary { background: var(--bg-inset); border-color: var(--cream); }
   .more-menu { top: calc(100% + 8px); }
 }
+
+/* 广告位溢出约束 —— 2026-07-31 补。
+   原有 .ad-* 规则只设了 display/margin/标签,没有任何宽度约束;
+   广告 iframe 若宽于容器会撑破页面(手机端内容区仅 339px)。 */
+.ad-native, .ad-banner { max-width: 100%; overflow: hidden; }
+.ad-native iframe, .ad-banner iframe,
+.ad-native img, .ad-banner img { max-width: 100% !important; height: auto; }
