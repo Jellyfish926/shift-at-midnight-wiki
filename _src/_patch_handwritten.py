@@ -116,10 +116,8 @@ def patch(rel: str, active: str) -> str:
         s = s.replace(FAVICON_OLD, FAVICON_NEW, 1)
 
     # 3c) 下拉菜单脚本(幂等)
-    if "details.more" not in s.split("</body>")[0].split("<footer")[-1] and "header.site details.more" not in s:
-        s = s.replace("<!-- 广告位:", MORE_JS + "\n<!-- 广告位:", 1)
-        if MORE_JS not in s:                      # 404 没有广告位注释块
-            s = s.replace("</body>", MORE_JS + "\n</body>", 1)
+    if "header.site details.more" not in s:
+        s = s.replace("</body>", MORE_JS + "\n</body>", 1)
 
     # 3d) style.css 缓存击穿版本号(每次跑都刷新成当前哈希)
     s = re.sub(r'href="/style\.css(\?v=[0-9a-f]+)?"', f'href="/style.css?v={B.CSS_VER}"', s)
@@ -128,12 +126,17 @@ def patch(rel: str, active: str) -> str:
     s = re.sub(r'href="/(favicon\.ico|favicon-32\.png|favicon-192\.png|apple-touch-icon\.png)(\?v=[0-9a-f]+)?"',
                lambda m: f'href="/{m.group(1)}?v={B.ICO_VER}"', s)
 
+    # 3f) 撤掉 Adsterra 装载器与广告位占位(幂等)。
+    #     审核期第三方广告网络零容忍;过审后 AdSense Auto ads 自行注入,不需要手工位。
+    s = re.sub(r'\n?<!-- 广告位:[^\n]*\n<script src="/ads\.js" defer></script>', "", s)
+    s = re.sub(r'<!-- 审核期不加载任何第三方广告网络。[^>]*?-->',
+               '<!-- No third-party ad loaders. Ads, once approved, are served by Google AdSense. -->',
+               s, flags=re.S)
+    s = re.sub(r'\n?\s*<aside class="ad-(?:native|banner)"[^>]*></aside>\n?', "\n", s)
+
     # 4) 商店区块:插在 ad-banner 之前(404 跳过)
     if not is404 and 'class="store"' not in s:
-        if '<aside class="ad-banner"' in s:
-            s = s.replace('  <aside class="ad-banner"', B.store_block() + '\n\n  <aside class="ad-banner"', 1)
-        else:  # 没有广告位的手写页,插在 </div>\n</main> 之前
-            s = re.sub(r"(\n</div>\n</main>)", "\n" + B.store_block() + r"\1", s, count=1)
+        s = re.sub(r"(\n</div>\n</main>)", "\n" + B.store_block() + r"\1", s, count=1)
 
     if s != before:
         p.write_text(s, encoding="utf-8")

@@ -13,44 +13,64 @@ from _build import build
 
 # ── 数据(与站内已发布事实一字对应) ──────────────────────────────
 ACH = [
+    # 全局解锁率:2026-08-05 读自 Steam 官方成就统计页
+    # https://steamcommunity.com/stats/3722330/achievements/ —— 这些数字会漂,别抄旧的
     ("First Blood", "Kill your first customer", 96.6, False),
-    ("Still Breathing", "Survive your first hunt", 92.8, False),
-    ("Silenced", "Kill a Shrieking Doll", 87.8, False),
-    ("Freed", "Kill a Demented", 75.3, False),
-    ("Relentless", "Finish a hunt within 30 seconds", 40.1, False),
-    ("Last Performance", "Kill a Marionette", 35.1, False),
-    ("Grave Decision", "Hidden &mdash; no description shown", 26.0, True),
-    ("Locked And Loaded", "Purchase all melee weapons &amp; fill out the weapons area", 20.6, False),
-    ("True Ending", "Hidden &mdash; no description shown", 13.4, True),
-    ("Empty Home", "Hidden &mdash; no description shown", 7.0, True),
+    ("Still Breathing", "Survive your first hunt", 93.4, False),
+    ("Silenced", "Kill a Shrieking Doll", 89.2, False),
+    ("Freed", "Kill a Demented", 78.8, False),
+    ("Relentless", "Finish a hunt within 30 seconds", 44.3, False),
+    ("Last Performance", "Kill a Marionette", 40.0, False),
+    ("Grave Decision", "Hidden &mdash; no description shown", 31.4, True),
+    ("Locked And Loaded", "Purchase all melee weapons &amp; fill out the weapons arsenal", 23.0, False),
+    ("True Ending", "Hidden &mdash; no description shown", 15.4, True),
+    ("Empty Home", "Hidden &mdash; no description shown", 9.4, True),
 ]
 
 THREATS = [
-    ("Marionette", "boss", "Yes &mdash; boss",
-     "The music box decides the fight before it starts. Let the melody finish three times and there is no counter left.",
-     "Last Performance (35.1%)", "/monsters/marionette/",
-     "music box, melody, puppet, strings, boss, song, tune, dancing"),
+    # 六个真实威胁 + 两个「常被当成怪物」的条目 + doppelganger 这个类别。
+    # 2026-08-05 按官方补丁与交叉验证过的攻略校正:Jack-in-the-Box 是道具不是敌人;
+    # Demented 打不死只能引进陷阱;Norbert 是顾客型 doppelganger 且杀他有后果。
+    ("Entities", "killable", "Yes",
+     "The baseline threat, and the one you summon yourself &mdash; letting a doppelganger check out "
+     "brings it back that night in its real form. Barricades, traps and weapons all work.",
+     "Still Breathing (93.4%)", "/guide/survival/",
+     "entity, entities, spider, hunt, hunter, creature, basic, common"),
+    ("Marionette", "boss", "Yes",
+     "Killable, and tougher than an Entity. The music box decides it: hold E to rewind before the "
+     "melody plays three times, or it summons the Marionette. The 23 July patch cut its health.",
+     "Last Performance (40.0%)", "/monsters/marionette/",
+     "music box, melody, puppet, strings, boss, song, tune, dancing, shift 9"),
     ("The Dentist", "unkillable", "Yes",
-     "Run. Nothing else works. This is the one enemy in the game you cannot fight &mdash; attacking it kills you.",
+     "Run. Nothing else works &mdash; it is immune to weapons and traps alike. Head for Sheriff Clyde "
+     "and do not stop. Shift 13 only.",
      "&mdash;", "/monsters/the-dentist/",
-     "dentist, drill, teeth, mask, cannot kill, unkillable, chase, tall"),
-    ("Jack-in-the-Box", "manageable", "Yes",
-     "Keep winding it. The threat is the moment it stops, not the box itself.",
-     "&mdash;", "/monsters/jack-in-the-box/",
-     "jack in the box, crank, wind, toy, clown, spring, music"),
+     "dentist, drill, teeth, mask, cannot kill, unkillable, chase, final, shift 13"),
     ("Shrieking Doll", "killable", "Yes",
-     "Killable &mdash; it comes to you. You do not need to hunt it down.",
-     "Silenced (87.8%)", "/monsters/shrieking-doll/",
-     "doll, scream, shriek, screaming, porcelain, loud, noise"),
-    ("Demented", "killable", "Yes",
-     "Killable. Straightforward fight compared to everything else on this list.",
-     "Freed (75.3%)", "/monsters/demented/",
-     "demented, deformed, twisted, patient, hospital"),
-    ("Norbert", "harmless", "No",
-     "Leave him alone. Norbert scans as a fake ID on Night 2 and is completely harmless &mdash; "
-     "killing him is one of the most common avoidable mistakes.",
+     "Fragile &mdash; a few shots do it. The real cost is the noise, which is what pulls everything "
+     "else onto you. Turns up during hunts, usually alongside Entities.",
+     "Silenced (89.2%)", "/monsters/shrieking-doll/",
+     "doll, scream, shriek, screaming, porcelain, loud, noise, crawler, small"),
+    ("Demented", "trap", "Yes",
+     "It freezes while you look at it &mdash; and it cannot be damaged while you look at it either. "
+     "The confirmed solution is to break line of sight in a direction that walks it into a trap.",
+     "Freed (78.8%)", "/monsters/demented/",
+     "demented, stare, look, freeze, weeping angel, trap, deformed, twisted"),
+    ("Rakes", "killable", "Yes",
+     "Endless and post-story modes only, added on 29 July 2026. They come out of the forest and go "
+     "for your customers rather than for you. Intercept before one reaches the store.",
+     "&mdash;", "/monsters/",
+     "rake, rakes, forest, endless, red glow, customer, scream, new enemy, post story"),
+    ("Jack-in-the-Box", "object", "No",
+     "Not an enemy &mdash; an object. It is the music box that decides the Marionette encounter. "
+     "Hold E to rewind it before the melody plays three times. The 23 July patch made it louder.",
+     "&mdash;", "/monsters/jack-in-the-box/",
+     "jack in the box, crank, wind, toy, clown, spring, music, box, rewind"),
+    ("Norbert", "customer", "No",
+     "A customer, not a monster &mdash; a gnome whose ID genuinely scans as fake. Let him finish and "
+     "he leaves for the shift. Shoot him and he keeps coming back in disguises.",
      "&mdash;", "/monsters/norbert/",
-     "norbert, fake id, night 2, harmless, friendly, scanner, false positive"),
+     "norbert, fake id, gnome, harmless, friendly, scanner, false positive, spare"),
     ("Doppelgangers", "identify", "Yes",
      "Identification, not combat. They copy a real customer's appearance, voice and story &mdash; "
      "the scanner tells you a document is fake, not that the person is hostile.",
@@ -139,9 +159,9 @@ PAGES = [
 
   <h2>The tools</h2>
   <div class="grid two">
-    <a class="card" href="/tools/crossplay-checker/"><b>Crossplay checker</b><span>Pick where each of you bought the game. Get a yes/no and the cheapest fix if the answer is no.</span></a>
-    <a class="card" href="/tools/achievement-tracker/"><b>Achievement tracker</b><span>Tick off all 10. Saves in your browser, and tells you which one is statistically your easiest next.</span></a>
-    <a class="card" href="/tools/threat-lookup/"><b>Threat lookup</b><span>Search by what you actually saw &mdash; &ldquo;music box&rdquo;, &ldquo;screaming&rdquo;, &ldquo;fake ID&rdquo; &mdash; not by a name you do not know yet.</span></a>
+    <a class="card" href="/tools/#crossplay-checker"><b>Crossplay checker</b><span>Pick where each of you bought the game. Get a yes/no and the cheapest fix if the answer is no.</span></a>
+    <a class="card" href="/tools/#achievement-tracker"><b>Achievement tracker</b><span>Tick off all 10. Saves in your browser, and tells you which one is statistically your easiest next.</span></a>
+    <a class="card" href="/tools/#threat-lookup"><b>Threat lookup</b><span>Search by what you actually saw &mdash; &ldquo;music box&rdquo;, &ldquo;screaming&rdquo;, &ldquo;fake ID&rdquo; &mdash; not by a name you do not know yet.</span></a>
   </div>
 
   <h2>Why not a tier list or a server status page</h2>
@@ -215,7 +235,7 @@ PAGES = [
   <h2>If the answer is no</h2>
   <p>The cheapest fix is almost always <strong>PC Game Pass</strong> rather than buying a second copy:
     it puts a Steam-side player into the Xbox pool for the price of a month's subscription instead of
-    another $9.99. See <a href="/game-pass/">Game Pass</a> and <a href="/price/">price</a>.</p>
+    another $9.99. See <a href="/platforms/#game-pass">Game Pass</a> and <a href="/review/#price">price</a>.</p>
 """ % {"opts": plat_options()},
  "script": """
 (function () {
@@ -300,8 +320,8 @@ PAGES = [
   <p>These are Steam global unlock rates &mdash; the share of everyone who owns the game that has the
     achievement. They are a difficulty proxy, not a guide: <strong>First Blood sits at 96.6%%</strong>
     because it unlocks for killing your first customer, which nearly everyone does by accident.</p>
-  <p>The three hidden achievements &mdash; Grave Decision (26.0%%), True Ending (13.4%%) and
-    Empty Home (7.0%%) &mdash; <strong>do not show their requirements in-game, and we have not verified
+  <p>The three hidden achievements &mdash; Grave Decision (31.4%%), True Ending (15.4%%) and
+    Empty Home (9.4%%) &mdash; <strong>do not show their requirements in-game, and we have not verified
     them.</strong> We list what the rates imply on the <a href="/endings/">endings page</a> rather than
     publishing a guess as fact.</p>
 """ % {"rows": ach_rows()},
@@ -340,7 +360,7 @@ PAGES = [
     if (!left.length) {
       next.className = "tool-out ok";
       next.innerHTML = "<b>All 10 \\u2014 done</b><p>Including the three hidden ones. " +
-        "That puts you past the 7.0% of players who have Empty Home.</p>";
+        "That puts you past the 9.4% of players who have Empty Home.</p>";
       return;
     }
     left.sort(function (a, b) {
@@ -456,18 +476,18 @@ PAGES = [
     <a class="card" href="/guide/beginners/"><b>Beginners</b><span>Your first shift, and the three things nobody tells you.</span></a>
     <a class="card" href="/guide/doppelgangers/"><b>Doppelgangers</b><span>Identification, not combat &mdash; the actual game.</span></a>
     <a class="card" href="/guide/survival/"><b>Survival</b><span>Boarding up, traps, and hiding when it goes wrong.</span></a>
-    <a class="card" href="/guide/co-op/"><b>Co-op</b><span>Playing with 2&ndash;3 people and proximity chat.</span></a>
-    <a class="card" href="/guide/weapons/"><b>Weapons</b><span>What you can buy and what it is actually for.</span></a>
-    <a class="card" href="/guide/store-management/"><b>Store management</b><span>Running the counter while something is in the building.</span></a>
-    <a class="card" href="/guide/story-mode/"><b>Story mode</b><span>The scripted run and how it differs from endless.</span></a>
-    <a class="card" href="/guide/endless-mode/"><b>Endless mode</b><span>The free Q4 2026 addition.</span></a>
+    <a class="card" href="/multiplayer/#co-op"><b>Co-op</b><span>Playing with 2&ndash;3 people and proximity chat.</span></a>
+    <a class="card" href="/guide/survival/#weapons"><b>Weapons</b><span>What you can buy and what it is actually for.</span></a>
+    <a class="card" href="/guide/beginners/#store-management"><b>Store management</b><span>Running the counter while something is in the building.</span></a>
+    <a class="card" href="/nights-and-levels/#story-mode"><b>Story mode</b><span>The scripted run and how it differs from endless.</span></a>
+    <a class="card" href="/nights-and-levels/#endless-mode"><b>Endless mode</b><span>The free Q4 2026 addition.</span></a>
   </div>
 
   <h2>Tools</h2>
   <div class="grid two">
-    <a class="card" href="/tools/crossplay-checker/"><b>Crossplay checker</b><span>Can your group play together?</span></a>
-    <a class="card" href="/tools/achievement-tracker/"><b>Achievement tracker</b><span>All 10, saved in your browser.</span></a>
-    <a class="card" href="/tools/threat-lookup/"><b>Threat lookup</b><span>Search by what you saw.</span></a>
+    <a class="card" href="/tools/#crossplay-checker"><b>Crossplay checker</b><span>Can your group play together?</span></a>
+    <a class="card" href="/tools/#achievement-tracker"><b>Achievement tracker</b><span>All 10, saved in your browser.</span></a>
+    <a class="card" href="/tools/#threat-lookup"><b>Threat lookup</b><span>Search by what you saw.</span></a>
   </div>
 """},
 ]

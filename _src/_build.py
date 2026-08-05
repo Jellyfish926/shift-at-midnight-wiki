@@ -40,10 +40,9 @@ NAV = [("/monsters/", "Monsters"), ("/achievements/", "Achievements"),
 # 二级导航:教程阶段五「导航结构:清晰的层级」+ 竞品两行导航。
 # 覆盖此前 27 个进不了任何导航、只能靠正文链接触达的页面。
 NAV2 = [("/release-date/", "Release date"), ("/platforms/", "Platforms"),
-        ("/game-pass/", "Game Pass"), ("/price/", "Price"),
-        ("/multiplayer/", "Multiplayer"), ("/nights-and-levels/", "Nights"),
-        ("/demo/", "Demo"), ("/mods/", "Mods"), ("/review/", "Review"),
-        ("/similar-games/", "Similar games")]
+        ("/multiplayer/", "Multiplayer"), ("/nights-and-levels/", "Nights &amp; Endless"),
+        ("/updates/", "Updates"), ("/review/", "Is it worth it?"),
+        ("/mods/", "Mods"), ("/similar-games/", "Similar games")]
 
 # 出站链接 —— 全部一手核实,不使用未经核实的 URL。
 # STEAM_APP: 经 SteamDB app/3722330 核实(Developer Bun Muen / Publisher Kwalee /
@@ -59,7 +58,7 @@ FOOTER_FINE = ("Shift At Midnight Wiki is an unofficial fan resource. Shift At M
                "belong to their respective owners. This site is not affiliated with or endorsed "
                "by Kwalee or Bun Muen.")
 
-VERIFIED = "Last verified 28 July 2026 &middot; game version: launch build (22 July 2026)"
+VERIFIED = "Last verified 5 August 2026 &middot; game version: 29 July 2026 patch"
 
 
 def nav_html(active: str) -> str:
@@ -221,11 +220,7 @@ def render(page: dict) -> str:
 
 {page['body']}
 
-  <aside class="ad-native" hidden aria-label="Sponsored"></aside>
-
 {store_block()}
-
-  <aside class="ad-banner" hidden aria-label="Sponsored"></aside>
 
 </div>
 </main>
@@ -262,8 +257,7 @@ def render(page: dict) -> str:
   }});
 }})();
 </script>
-<!-- 广告位:真实 Adsterra 代码集中填在 /ads.js,不硬编码进页面 -->
-<script src="/ads.js" defer></script>{page_js}
+<!-- No third-party ad loaders. Ads, once approved, are served by Google AdSense. -->{page_js}
 </body>
 </html>
 """
