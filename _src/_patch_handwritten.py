@@ -126,13 +126,23 @@ def patch(rel: str, active: str) -> str:
     s = re.sub(r'href="/(favicon\.ico|favicon-32\.png|favicon-192\.png|apple-touch-icon\.png)(\?v=[0-9a-f]+)?"',
                lambda m: f'href="/{m.group(1)}?v={B.ICO_VER}"', s)
 
-    # 3f) 撤掉 Adsterra 装载器与广告位占位(幂等)。
-    #     审核期第三方广告网络零容忍;过审后 AdSense Auto ads 自行注入,不需要手工位。
-    s = re.sub(r'\n?<!-- 广告位:[^\n]*\n<script src="/ads\.js" defer></script>', "", s)
-    s = re.sub(r'<!-- 审核期不加载任何第三方广告网络。[^>]*?-->',
-               '<!-- No third-party ad loaders. Ads, once approved, are served by Google AdSense. -->',
-               s, flags=re.S)
-    s = re.sub(r'\n?\s*<aside class="ad-(?:native|banner)"[^>]*></aside>\n?', "\n", s)
+    # 3f) 装回 Adsterra 装载器与 Banner 广告位(幂等)。**404 跳过** —— 错误页禁投是明文红线。
+    #     只有 Banner:Popunder/Native Banner/Social Bar 在 ads.js 里保持关闭。
+    s = re.sub(r'\n?\s*<aside class="ad-native"[^>]*></aside>\n?', "\n", s)   # 旧的 native 位永久清掉
+    if is404:
+        s = re.sub(r'\n?<!-- 广告位:[^\n]*\n<script src="/ads\.js" defer></script>', "", s)
+        s = re.sub(r'\n?\s*<aside class="ad-banner"[^>]*></aside>\n?', "\n", s)
+    else:
+        if 'class="ad-banner"' not in s:
+            # 插在 </main> 之前 = 商店区之后(商店区在第 4 步已经先插好了),
+            # 与商店区那三个大按钮拉开距离,见 style.css 的 .ad-banner margin
+            s = re.sub(r"(\n</div>\n</main>)",
+                       '\n  <aside class="ad-banner" hidden aria-label="Advertisement"></aside>' + r"\1",
+                       s, count=1)
+        if "/ads.js" not in s:
+            s = s.replace("</body>",
+                          '<!-- 广告位:Adsterra Banner 300x250,只在 ads.js 开关打开时注入 -->\n'
+                          '<script src="/ads.js" defer></script>\n</body>', 1)
 
     # 4) 商店区块:插在 ad-banner 之前(404 跳过)
     if not is404 and 'class="store"' not in s:

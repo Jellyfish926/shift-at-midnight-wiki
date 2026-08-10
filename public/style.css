@@ -239,7 +239,8 @@ code {
 .metric b { font-size: 15px; color: var(--cream); font-weight: 400; }
 
 /* ---------- 广告位 ---------- */
-.ad-native, .ad-banner { display: block; margin: 48px 0 0; }
+/* 与上方的商店区按钮至少隔 160px —— seo-ads 要求 ≥150px,防误触 */
+.ad-native, .ad-banner { display: block; margin: 160px 0 0; }
 .ad-native[hidden], .ad-banner[hidden] { display: none; }
 .ad-native::before, .ad-banner::before {
   content: "Sponsored"; display: block; margin: 0 0 10px;

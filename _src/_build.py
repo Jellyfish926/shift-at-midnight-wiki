@@ -222,6 +222,8 @@ def render(page: dict) -> str:
 
 {store_block()}
 
+  <aside class="ad-banner" hidden aria-label="Advertisement"></aside>
+
 </div>
 </main>
 
@@ -257,7 +259,8 @@ def render(page: dict) -> str:
   }});
 }})();
 </script>
-<!-- No third-party ad loaders. Ads, once approved, are served by Google AdSense. -->{page_js}
+<!-- 广告位:Adsterra Banner 300x250,只在 ads.js 开关打开时注入 -->
+<script src="/ads.js" defer></script>{page_js}
 </body>
 </html>
 """
