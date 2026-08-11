@@ -85,6 +85,13 @@ var SANDBOX = "allow-scripts allow-popups allow-popups-to-escape-sandbox";
   "use strict";
 
   if (KILL_ALL) { return; }
+
+  /* 信任页不挂广告 —— about / contact / privacy 是审核员必读页,保持干净。
+   * 和 beast 的 SKIP 名单同一条规矩(那边是构建期跳过,这里是运行时跳过:
+   * shift 的页面模板一直无差别地发 <script src="/ads.js">,改模板不如在这里拦)。
+   * 404 页模板本来就不发这个 script,不用在这里判 —— JS 里也判不可靠。 */
+  if (/^\/(about|contact|privacy|privacy-policy|terms|terms-of-service|disclaimer)\/?$/i
+        .test(location.pathname)) { return; }
   if (!NATIVE_SRC || !NATIVE_ID) { return; }
   if (!/^https:\/\//.test(NATIVE_SRC)) { return; }   // 会被拼进 iframe 文档,先校验
 
