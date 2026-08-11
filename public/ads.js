@@ -22,7 +22,8 @@
 
 /* ══ 总闸 ══════════════════════════════════════════════════
  * 2026-08-10:用户实测重开 Banner 后【仍然出现强制跳转】。
- * 本站作为对照实验,Adsterra 全部关闭 —— 目的是确认跳转是否来自 Adsterra。
+ * 全部关闭后实测【不再跳转】—— 对照组成立,跳转确认来自 Adsterra。
+ * 当前阶段:逐格式复测,只开 Native Banner。
  *
  * KILL_ALL = true 时,下面三个格式开关全部失效,一行 Adsterra 代码都不会执行,
  * 也不会向 highperformanceformat / effectivecpmnetwork 发出任何请求。
@@ -30,14 +31,14 @@
  * 恢复投放:把 KILL_ALL 改回 false,再单独打开想要的格式开关。
  * 但在查清跳转来源之前不要恢复。
  * ═════════════════════════════════════════════════════════ */
-var KILL_ALL = true;
+var KILL_ALL = false;
 
 /* ── 开关:只改这一段(KILL_ALL=true 时以下全部无效)───────────
  * 2026-08-10:按用户决定重新开启变现。只开 Banner;
  * Native Banner 与 Social Bar 维持关闭(见上方事故记录),Popunder 从未建过单元。
  * ───────────────────────────────────────────────────────── */
 var USE_SOCIAL_BAR    = false;   // 浮层气泡/通知条,可关闭,不抢走页面控制权
-var USE_NATIVE_BANNER = false;  // ⛔ 曾导致强制跳转,不要打开
+var USE_NATIVE_BANNER = true;  // ⛔ 曾导致强制跳转,不要打开
 var USE_BANNER        = false;   // 300x250 静态 iframe 横幅,结构上无法劫持导航
 /* ────────────────────────────────────────────────────────── */
 
@@ -76,7 +77,19 @@ var ADSTERRA = {
   }
 
   if (USE_NATIVE_BANNER && ADSTERRA.nativeBannerSrc && ADSTERRA.nativeBannerId) {
+    // 页面模板里只有 .ad-banner,没有 .ad-native。
+    // 原来这里 querySelector 拿到 null 就静默跳过 —— 开关打开也不会加载任何东西,
+    // 实测时会得出「不跳转」的【假阴性】。所以找不到就地建一个宿主。
     var host = document.querySelector(".ad-native");
+    if (!host) {
+      var anchor = document.querySelector(".ad-banner");
+      if (anchor) {
+        host = document.createElement("aside");
+        host.className = "ad-native";
+        host.setAttribute("aria-label", "Advertisement");
+        anchor.parentNode.insertBefore(host, anchor);
+      }
+    }
     if (host) {
       var box = document.createElement("div");
       box.id = ADSTERRA.nativeBannerId;
