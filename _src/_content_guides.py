@@ -111,6 +111,10 @@ PAGES = [
     <a class="card" href="/tools/"><b>Tools</b><span>Crossplay checker, achievement tracker and threat lookup &mdash; all running in your browser.</span></a>
     <a class="card" href="/employee-package/"><b>Secrets &amp; lore</b><span>What the Employee Package actually is, and who writes the Joe&rsquo;s Diner newsletter.</span></a>
     <a class="card" href="/faq/"><b>FAQ</b><span>Short answers to the most-searched questions, each linking to the long one.</span></a>
+    <a class="card" href="/system-requirements/"><b>System requirements</b><span>Both Steam spec tiers field for field, the Steam Deck rating and where it comes from, and what the Xbox listing adds.</span></a>
+    <a class="card" href="/demo/"><b>The free demo</b><span>Three pre-scripted shifts against 13 generated ones &mdash; and the free itch.io build this game grew out of.</span></a>
+    <a class="card" href="/troubleshooting/"><b>Troubleshooting</b><span>Lobby errors, crashes, black screens and no audio: which have official fixes, and which honestly do not.</span></a>
+    <a class="card" href="/player-count/"><b>Player count</b><span>Is anyone still playing? The Steam numbers, why the trackers disagree, and the figure we will not repeat.</span></a>
   </div>
 
   <h2>How this wiki handles sources</h2>
@@ -443,23 +447,30 @@ PAGES = [
  "body": """
   <h2>What is confirmed</h2>
   <table class="facts">
-    <tr><th>Update</th><td>Endless Mode</td></tr>
-    <tr><th>Cost</th><td>Free</td></tr>
-    <tr><th>Timing</th><td>Q4 2026</td></tr>
-    <tr><th>Source</th><td>Official store listing</td></tr>
+    <tr><th>Beta</th><td>In the game since launch day, 22 July 2026 &mdash; unlocks after Story Mode</td></tr>
+    <tr><th>Full version</th><td>Free update planned for Q4 2026</td></tr>
+    <tr><th>Cost</th><td>Free &mdash; both the beta and the update</td></tr>
+    <tr><th>Source</th><td>Official store listing and the developer&rsquo;s site</td></tr>
   </table>
+
+  <p><strong>The beta is already in the game</strong>, and this is the thing most pages get wrong. It shipped
+    on launch day and unlocks once the 13-shift story is finished &mdash; the developer&rsquo;s own site
+    describes it as &ldquo;infinite nights, only unlockable after completing story mode&rdquo; and calls it
+    &ldquo;an unfinished gamemode, hence the beta&rdquo;, with continuous updates promised over time. What is
+    scheduled for Q4 2026 is the <em>finished</em> version of that mode, not its first appearance. It is also
+    the only mode where Rakes appear &mdash; see the section above.</p>
 
   <div class="term warn">
     <div class="term-h">What is not confirmed</div>
-    <p>Steam crossplay is <strong>not</strong> on any roadmap we can verify. Neither is official mod support, additional platforms, or new named monsters. If you have read otherwise, check whether the claim has a source attached &mdash; a lot of it does not. See <a href="/crossplay/">crossplay</a> and <a href="/mods/">mods</a>.</p>
+    <p>Steam crossplay is <strong>not</strong> on any roadmap we can verify, and neither is official mod support or an additional platform. If you have read otherwise, check whether the claim has a source attached &mdash; a lot of it does not. See <a href="/crossplay/">crossplay</a> and <a href="/mods/">mods</a>.</p>
   </div>
 
   <h2>Why an endless mode makes sense here</h2>
   <p>The core loop &mdash; a shift, a quota, customers who may not be customers &mdash; is naturally repeatable, and <a href="/nights-and-levels/#story-mode">shifts are already procedurally generated</a>. An endless variant is a small step from what exists: remove the narrative frame and let shifts continue until you fail.</p>
   <p>It also addresses the achievement curve. The bottom four achievements need deliberate attempts, and an endless mode gives you a place to farm attempts without restarting a story run.</p>
 
-  <h2>What we will do when it ships</h2>
-  <p>Update this page with the actual patch notes and date, and revise the <a href="/achievements/">achievements page</a> if the update adds any. We will not pre-write speculative content for an update that does not exist yet.</p>
+  <h2>What we will do when the full version ships</h2>
+  <p>Update this page with the actual patch notes and date, and revise the <a href="/achievements/">achievements page</a> if the update adds any. What is in the game today is the beta; we are not going to pre-write speculative content for the parts of the finished mode that have not shipped.</p>
 
   <div class="grid two">
     <a class="card" href="/nights-and-levels/#story-mode"><b>Story Mode</b><span>The structure Endless Mode is derived from.</span></a>
@@ -515,7 +526,7 @@ PAGES = [
  "lede": "<strong>Up to three players</strong>, online co-op, with <strong>proximity chat</strong>. There is also a full single-player mode. The thing that most often stops a group playing together is not the player cap &mdash; it is which store they bought it from.",
  "body": """
   <table class="facts">
-    <tr><th>Max players</th><td>3</td></tr>
+    <tr><th>Max players</th><td>3 by design &mdash; 6 selectable since the 23 July 2026 patch</td></tr>
     <tr><th>Mode</th><td>Online co-op</td></tr>
     <tr><th>Voice</th><td>Proximity chat</td></tr>
     <tr><th>Single-player</th><td>Yes, full mode</td></tr>
@@ -523,12 +534,13 @@ PAGES = [
   </table>
 
   <div class="term warn">
-    <div class="term-h">The three-player cap is a hard limit</div>
-    <p>If your group is four people, one is sitting out. The game is built around three roles in a small building, and the design does not stretch. Plan accordingly before you organise a night.</p>
+    <div class="term-h">Six is possible. Three is what the game was built for.</div>
+    <p>The <a href="https://steamdb.info/patchnotes/24354120/" target="_blank" rel="noopener">23 July 2026 patch</a> made the lobby cap selectable up to six, so a group of four is not shut out. The developer was unusually direct about what that option is, though: the game &ldquo;is designed and has always been marketed around a maximum of 3 players&rdquo;, larger lobbies &ldquo;may become chaotic&rdquo;, and six is not recommended for a first playthrough. Treat six as a party mode and three as the game.</p>
   </div>
 
   <h2>Getting everyone into a session</h2>
   <p>Everyone must be on the same side of the platform line. Steam players connect only to Steam players; Xbox console and PC Game Pass players share one pool via Play Anywhere. Mixed groups cannot play together, and this is the single most common reason a planned session does not happen. Sort it <em>before</em> anyone buys.</p>
+  <p>If everyone is on the same store and you still cannot see each other, the next two suspects are a mismatched Steam beta branch and a stalled update &mdash; both are covered on <a href="/troubleshooting/">troubleshooting</a>.</p>
 
   <h2>Proximity chat is a mechanic</h2>
   <p>Voices fade with distance, so every noise your teammates make carries positional information. Running Discord over the top removes that and makes co-ordination worse, not better. Use the in-game chat &mdash; see the <a href="/multiplayer/#co-op">co-op guide</a> for role splitting.</p>
@@ -731,6 +743,12 @@ PAGES = [
   </ul>
   <p>For a $9.99 indie release, a 40% figure on a mid-tier skill achievement is a healthy retention signal. It is not a game most people refund after an hour.</p>
 
+  <h2>What the Steam review score actually says</h2>
+  <p>Read from the Steam store page on <strong>12 August 2026</strong>: overall <strong>Very Positive</strong>, from <strong>7,114</strong> reviews. By language, English sits at <strong>94% of 3,363</strong> reviews, Simplified Chinese at Mostly Positive from 2,014, and Russian at Very Positive from 672.</p>
+  <p>The shape over time is the more useful half. GameRant counted more than 800 reviews at 90% positive on 23 July, the day after launch. Going from there to over seven thousand in three weeks describes a game that kept selling after the launch-week coverage moved on.</p>
+  <p>The aggregators do not agree on the number, though. One tracker reported 8.2K reviews at 88% positive on 11 August 2026 &mdash; a day earlier than our reading, and higher. We quote the store page because it is the primary source; why the trackers diverge, and which figures are safe to repeat, is on <a href="/player-count/">player count</a>.</p>
+  <p>What no review score tells you is whether the parts <em>you</em> care about work, which is what the rest of this page is for. And if you would rather not take a number's word for any of it, there is a <a href="/demo/">free demo</a>.</p>
+
   <h2>What it does well</h2>
   <p>The central idea is genuinely good: a horror game where the scary decision is <em>administrative</em>. You are checking ID at a counter, and the tension comes from having authority you are not qualified to exercise. The <a href="/monsters/norbert/">Norbert</a>/<a href="/monsters/the-dentist/">Dentist</a> pairing &mdash; harmless thing that trips your alarm, lethal thing that does not register at all &mdash; is a genuinely elegant piece of design teaching.</p>
   <p><a href="/multiplayer/#co-op">Proximity chat</a> is used as a mechanic rather than a feature. Voices fading with distance is load-bearing.</p>
@@ -834,7 +852,7 @@ PAGES = [
     </details>
     <details>
       <summary>Is Shift At Midnight free?</summary>
-      <div class="a"><p>Not to buy &mdash; it is $9.99. It is included with Game Pass at no extra cost, and there is a free multiplayer demo on Steam. <a href="/review/#demo">About the demo</a>.</p></div>
+      <div class="a"><p>Not to buy &mdash; it is $9.99. It is included with Game Pass at no extra cost, and there is a free multiplayer demo on Steam. <a href="/demo/">About the demo</a>.</p></div>
     </details>
     <details>
       <summary>When did Shift At Midnight come out?</summary>

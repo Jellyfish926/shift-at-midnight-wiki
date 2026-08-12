@@ -58,7 +58,10 @@ PAGES = [
       by ear &mdash; which is the entire counterplay to the Marionette.</li>
     <li>Fixed Russian-region players being unable to create joinable lobbies.</li>
     <li>The profanity filter was removed.</li>
-    <li>Known issue left open: a crash related to mouse cursor interaction.</li>
+    <li><strong>Previewed for the next patch:</strong> the announcement closed by saying the following
+      patch would fix &ldquo;cursor interaction issues after crashes&rdquo;. The 29 July notes list
+      &ldquo;various bug fixes and crash fixes&rdquo; without saying whether that was among them, and no
+      later announcement clarifies it &mdash; see <a href="/troubleshooting/">troubleshooting</a>.</li>
   </ul>
   <p class="src">Source: <a href="https://steamdb.info/patchnotes/24354120/" target="_blank"
     rel="noopener">SteamDB patch notes, build 24354120</a>.</p>
@@ -66,8 +69,8 @@ PAGES = [
   <h2>22 July 2026 &mdash; the lobby connection beta branch</h2>
   <p>Launch day did not go smoothly. Enough players could not create or join lobbies that the developer
     shipped a temporary opt-in branch the same evening, before the proper fix landed the next day.</p>
-  <p>The branch is no longer needed &mdash; the fix is in the main build &mdash; but if you or a friend
-    opted in at launch and never switched back, that is worth checking. In your Steam library, right-click
+  <p>No announcement has ever been published retiring that branch, so we cannot date it as fixed. If you
+    or a friend opted in at launch and never switched back, that is worth checking. In your Steam library, right-click
     the game &rarr; Properties &rarr; <em>Game Versions &amp; Betas</em>, and make sure you are on
     the default branch rather than <code>network-issues-patch</code>.
     <strong>Everyone in a party has to be on the same branch to play together</strong>, which is the
@@ -98,7 +101,8 @@ PAGES = [
     <li><strong>Is there a second gun in the shop?</strong> Only on 29 July or later.</li>
   </ul>
   <p>If any of those are wrong, let Steam re-verify the files rather than reinstalling &mdash; the game
-    is small and a verify usually resolves it.</p>
+    is small and a verify usually resolves it. Problems a verify does not resolve are on
+    <a href="/troubleshooting/">troubleshooting</a>.</p>
 
   <h2>What the patch pattern tells you</h2>
   <p>Three data points is not a trend, but the shape so far is worth knowing if you are deciding when to

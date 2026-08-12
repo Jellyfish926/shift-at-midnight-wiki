@@ -74,14 +74,13 @@ MERGES = [
         "into": "review",
         "sources": [
             ("price", "price", "Price: is $9.99 fair for this?"),
-            ("demo", "demo", "The free multiplayer demo"),
         ],
         "meta": {
             "title": "Is Shift At Midnight Worth It? Price, Demo and the Data",
             "og_short": "Is it worth it?",
-            "desc": "Shift At Midnight is $9.99 with a free multiplayer demo. Steam review data, how long it lasts, and who this game is and is not for.",
+            "desc": "Shift At Midnight is $9.99, with a free demo. What 7,114 Steam reviews and the achievement completion curve actually say, and who this game is and is not for.",
             "h1": "Is Shift At Midnight worth it?",
-            "lede": "Short version: <strong>there is a free multiplayer demo</strong>, so you do not have to take anyone's word for it &mdash; including ours. Here is the price, the review data, and the honest case against buying it.",
+            "lede": "Short version: <strong>there is a <a href=\"/demo/\">free multiplayer demo</a></strong>, so you do not have to take anyone's word for it &mdash; including ours. Here is the price, what the Steam review data actually says, and the honest case against buying it.",
         },
     },
     {

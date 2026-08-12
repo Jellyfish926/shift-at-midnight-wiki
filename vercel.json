@@ -212,21 +212,6 @@
       "source": "/price/index.html",
       "destination": "/review/#price",
       "permanent": true
-    },
-    {
-      "source": "/demo",
-      "destination": "/review/#demo",
-      "permanent": true
-    },
-    {
-      "source": "/demo/",
-      "destination": "/review/#demo",
-      "permanent": true
-    },
-    {
-      "source": "/demo/index.html",
-      "destination": "/review/#demo",
-      "permanent": true
     }
   ],
   "headers": [

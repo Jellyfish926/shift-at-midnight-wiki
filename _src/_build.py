@@ -40,8 +40,11 @@ NAV = [("/monsters/", "Monsters"), ("/achievements/", "Achievements"),
 # 二级导航:教程阶段五「导航结构:清晰的层级」+ 竞品两行导航。
 # 覆盖此前 27 个进不了任何导航、只能靠正文链接触达的页面。
 NAV2 = [("/release-date/", "Release date"), ("/platforms/", "Platforms"),
+        ("/system-requirements/", "System requirements"),
         ("/multiplayer/", "Multiplayer"), ("/nights-and-levels/", "Nights &amp; Endless"),
-        ("/updates/", "Updates"), ("/review/", "Is it worth it?"),
+        ("/updates/", "Updates"), ("/troubleshooting/", "Troubleshooting"),
+        ("/review/", "Is it worth it?"), ("/demo/", "Demo"),
+        ("/player-count/", "Player count"),
         ("/mods/", "Mods"), ("/similar-games/", "Similar games")]
 
 # 出站链接 —— 全部一手核实,不使用未经核实的 URL。
