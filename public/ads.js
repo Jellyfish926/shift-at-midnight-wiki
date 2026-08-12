@@ -71,7 +71,7 @@
 /* ══ 总闸 ══
  * 出现强制跳转、或者要提交 AdSense 审核之前,把它改成 true 就够了。
  * 一行 Adsterra 代码都不会执行,也不会发出任何请求。 */
-var KILL_ALL = true;   /* 2026-08-12 关停:AdSense 整改期,重提审前不得开启 */
+var KILL_ALL = false;  /* 2026-08-12 站主决策:提审 AdSense 不关闭任何广告,保持 Adsterra 在投 */
 
 /* Native Banner —— 单元 30483620(NativeBanner_1)。
  * 整段取自后台 GET CODE,逐字节核对。 */
