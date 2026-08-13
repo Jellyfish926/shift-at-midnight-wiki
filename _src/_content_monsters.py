@@ -13,16 +13,16 @@ PAGES = [
  "path": "monsters/marionette",
  "title": "Shift At Midnight Marionette — Shift 9 Music Box &amp; How to Kill It",
  "og_short": "Shift At Midnight Marionette Guide",
- "desc": "The Marionette arrives from Shift 9. Find the music box, hold E to rewind it before the melody plays three times — or fight what it summons. Only 40.0% of players have killed one.",
+ "desc": "The Marionette arrives from Shift 9. Find the music box, hold E to rewind it before the melody plays three times — or fight what it summons. Only 41.6% of players have killed one.",
  "trail": M + [(None, "Marionette")],
  "h1": "Marionette",
- "lede": "The <strong>Shift 9</strong> threat, and the one most players never beat &mdash; only <strong>40.0%</strong> of players have killed a Marionette. The encounter is governed by a wind-up <a href=\"/monsters/jack-in-the-box/\">music box</a> hidden somewhere in the store, and the clock on it is exactly three melodies long.",
+ "lede": "The <strong>Shift 9</strong> threat, and the one most players never beat &mdash; only <strong>41.6%</strong> of players have killed a Marionette. The encounter is governed by a wind-up <a href=\"/monsters/jack-in-the-box/\">music box</a> hidden somewhere in the store, and the clock on it is exactly three melodies long.",
  "body": """
   <div class="tags">
     <span class="tag red">Hostile</span>
     <span class="tag amber">From Shift 9</span>
     <span class="tag green">Can be killed</span>
-    <span class="tag">40.0% have Last Performance</span>
+    <span class="tag">41.6% have Last Performance</span>
   </div>
 
   <table class="facts">
@@ -36,7 +36,7 @@ PAGES = [
   <p class="src">Sources:
     <a href="https://gamerant.com/shift-at-midnight-all-monsters/" target="_blank" rel="noopener">Game Rant monster list</a>,
     <a href="https://gamerant.com/shift-at-midnight-jack-in-the-box-music-box-marionette-location/" target="_blank" rel="noopener">Game Rant music box guide</a>,
-    <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a> (read 5 August 2026).</p>
+    <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a> (read 13 August 2026).</p>
 
   <h2>How to tell it is coming</h2>
 
@@ -83,7 +83,7 @@ PAGES = [
 
   <h2>Which achievement this is tied to</h2>
 
-  <p><em>Last Performance</em> &mdash; Kill a Marionette &mdash; sits at <strong>40.0%</strong>. Put that next to the other two straightforward monster kills: <em>Silenced</em> (Shrieking Doll) at <strong>89.2%</strong> and <em>Freed</em> (Demented) at <strong>78.8%</strong>.</p>
+  <p><em>Last Performance</em> &mdash; Kill a Marionette &mdash; sits at <strong>41.6%</strong>. Put that next to the other two straightforward monster kills: <em>Silenced</em> (Shrieking Doll) at <strong>89.8%</strong> and <em>Freed</em> (Demented) at <strong>79.8%</strong>.</p>
 
   <p>The gap is not about how often it appears &mdash; it announces itself by email and by sound. Two things separate it. The correct defensive play, rewinding the box, is also the play that denies you the kill, so cautious players never earn it. And it starts at Shift 9 of 13, so reaching it means getting most of the way through Story Mode, while the <a href="/achievements/">achievement curve</a> shows a heavy drop-off well before that. That second reading is ours, drawn from the published rates rather than any developer statement.</p>
 
@@ -165,12 +165,12 @@ PAGES = [
 
   <h2>Which achievement this is tied to</h2>
 
-  <p>The Dentist has <strong>no achievement of his own</strong> &mdash; there is no "kill the Dentist", because you cannot. What he is tied to is the <em>True Ending</em>, held by <strong>15.4%</strong> of players.</p>
+  <p>The Dentist has <strong>no achievement of his own</strong> &mdash; there is no "kill the Dentist", because you cannot. What he is tied to is the <em>True Ending</em>, held by <strong>16.0%</strong> of players.</p>
 
-  <p>The two variables are decided elsewhere. After Shift 12 you choose whether to call Sheriff Clyde, and at the end of Shift 13 the game checks whether your personal savings are <strong>$250 or more</strong>. Not calling Clyde and finishing with at least $250 produces the True Ending, in which the Dentist appears and Clyde helps destroy him, and both Clyde and your pet survive. Calling him instead gives <em>Grave Decision</em> (<strong>31.4%</strong>), where Clyde dies. Not calling him with under $250 gives <em>Empty Home</em> (<strong>9.4%</strong>).</p>
+  <p>The two variables are decided elsewhere. After Shift 12 you choose whether to call Sheriff Clyde, and at the end of Shift 13 the game checks whether your personal savings are <strong>$250 or more</strong>. Not calling Clyde and finishing with at least $250 produces the True Ending, in which the Dentist appears and Clyde helps destroy him, and both Clyde and your pet survive. Calling him instead gives <em>Grave Decision</em> (<strong>33.1%</strong>), where Clyde dies. Not calling him with under $250 gives <em>Empty Home</em> (<strong>10.1%</strong>).</p>
 
   <p>So the practical takeaway for this page is blunt: <strong>how you handle the chase does not change your ending &mdash; the choice after Shift 12 and your bank balance do.</strong> Full breakdown on the <a href="/endings/">endings page</a>.</p>
-  <p class="src">Ending conditions: <a href="https://www.keengamer.com/articles/guides/shift-at-midnight-how-to-get-all-endings/" target="_blank" rel="noopener">KeenGamer</a>. Unlock rates: <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global stats</a>, read 5 August 2026.</p>
+  <p class="src">Ending conditions: <a href="https://www.keengamer.com/articles/guides/shift-at-midnight-how-to-get-all-endings/" target="_blank" rel="noopener">KeenGamer</a>. Unlock rates: <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global stats</a>, read 13 August 2026.</p>
 
   <h2>What changed in the patches</h2>
 
@@ -234,7 +234,7 @@ PAGES = [
 
   <ul>
     <li><strong>Rewind it</strong> if you want to finish the shift. This is the safe play, and it costs you nothing except the walk.</li>
-    <li><strong>Let it ring three times</strong> if you are chasing <em>Last Performance</em> (Kill a Marionette, <strong>40.0%</strong> of players). You cannot get that achievement while doing the safe thing, which is a large part of why it is the rarest non-hidden achievement in the game.</li>
+    <li><strong>Let it ring three times</strong> if you are chasing <em>Last Performance</em> (Kill a Marionette, <strong>41.6%</strong> of players). You cannot get that achievement while doing the safe thing, which is a large part of why it is the rarest non-hidden achievement in the game.</li>
   </ul>
 
   <p>If you do go for it, do it deliberately: on a shift that is otherwise calm, with ammunition already purchased, and ideally with teammates. Deciding halfway through the third melody is the worst of both options.</p>
@@ -312,7 +312,7 @@ PAGES = [
   <h2>Common mistakes</h2>
 
   <ul>
-    <li><strong>Killing on suspicion.</strong> <em>First Blood</em> &mdash; kill your first customer &mdash; is the most common achievement in the game at <strong>96.6%</strong>. Almost everybody does this, and Norbert is where a lot of players spend it.</li>
+    <li><strong>Killing on suspicion.</strong> <em>First Blood</em> &mdash; kill your first customer &mdash; is the most common achievement in the game at <strong>96.9%</strong>. Almost everybody does this, and Norbert is where a lot of players spend it.</li>
     <li><strong>Trusting the flag as a threat readout.</strong> The scanner reports on documents. It does not report on danger. <a href="/monsters/the-dentist/">The Dentist</a> is the same lesson inverted &mdash; genuinely lethal and not a counter problem at all.</li>
     <li><strong>Rushing the check.</strong> Since the <a href="/updates/">29 July patch</a> removed the patience mechanic, customers no longer run down a timer while you verify them. The main reason players used to shoot first is gone.</li>
     <li><strong>Spending ammunition on him.</strong> Ammunition is for the <a href="/monsters/marionette/">Marionette</a> and the <a href="/monsters/shrieking-doll/">Shrieking Doll</a>. Norbert costs you rounds and gives you nothing.</li>
@@ -324,7 +324,7 @@ PAGES = [
 
   <h2>Does he affect your ending?</h2>
 
-  <p>No. This is worth stating plainly because the speculation is everywhere. The three endings are decided by two things: <strong>whether you call Sheriff Clyde after Shift 12</strong>, and whether your personal savings are <strong>$250 or more</strong> at the end of Shift 13. <em>True Ending</em> sits at <strong>15.4%</strong>, <em>Grave Decision</em> at <strong>31.4%</strong> and <em>Empty Home</em> at <strong>9.4%</strong>, and none of them is gated on who you shot at the counter. See the <a href="/endings/">endings page</a>.</p>
+  <p>No. This is worth stating plainly because the speculation is everywhere. The three endings are decided by two things: <strong>whether you call Sheriff Clyde after Shift 12</strong>, and whether your personal savings are <strong>$250 or more</strong> at the end of Shift 13. <em>True Ending</em> sits at <strong>16.0%</strong>, <em>Grave Decision</em> at <strong>33.1%</strong> and <em>Empty Home</em> at <strong>10.1%</strong>, and none of them is gated on who you shot at the counter. See the <a href="/endings/">endings page</a>.</p>
 
   <div class="grid two">
     <a class="card" href="/guide/doppelgangers/"><b>Doppelganger identification</b><span>The seven tells, the database, and the Anomaly Lens.</span></a>
@@ -338,13 +338,13 @@ PAGES = [
  "desc": "The Shrieking Doll shows up during hunts alongside the Entities. It is fragile — a few shots end it — but every shot you fire tells everything else in the store where you are.",
  "trail": M + [(None, "Shrieking Doll")],
  "h1": "Shrieking Doll",
- "lede": "The most fragile threat in the game, and the easiest monster achievement in it &mdash; <strong>89.2%</strong> of players have <em>Silenced</em>. It is best understood as a <strong>distraction rather than a main threat</strong>. The danger is not the doll; it is what killing the doll costs you.",
+ "lede": "The most fragile threat in the game, and the easiest monster achievement in it &mdash; <strong>89.8%</strong> of players have <em>Silenced</em>. It is best understood as a <strong>distraction rather than a main threat</strong>. The danger is not the doll; it is what killing the doll costs you.",
  "body": """
   <div class="tags">
     <span class="tag red">Hostile</span>
     <span class="tag green">Fragile &mdash; a few shots</span>
     <span class="tag amber">Achievement: Silenced</span>
-    <span class="tag">89.2% of players</span>
+    <span class="tag">89.8% of players</span>
   </div>
 
   <h2>It does not arrive on its own</h2>
@@ -389,9 +389,9 @@ PAGES = [
 
   <h2>Which achievements this is tied to</h2>
 
-  <p><em>Silenced</em> (Kill a Shrieking Doll) sits at <strong>89.2%</strong>, third behind <em>First Blood</em> at 96.6% and <em>Still Breathing</em> at 93.4%. If you have played more than a couple of shifts you almost certainly have it.</p>
+  <p><em>Silenced</em> (Kill a Shrieking Doll) sits at <strong>89.8%</strong>, third behind <em>First Blood</em> at 96.9% and <em>Still Breathing</em> at 93.8%. If you have played more than a couple of shifts you almost certainly have it.</p>
 
-  <p>The more interesting target is <em>Relentless</em> &mdash; finish a hunt within 30 seconds &mdash; at <strong>44.3%</strong>. The doll is the sensible monster to build that attempt around, because it is the one threat you can reliably delete in a couple of shots rather than one you have to find first. Compare with <em>Last Performance</em> at 40.0% for the <a href="/monsters/marionette/">Marionette</a>, where the fight itself is the obstacle. Full list on <a href="/achievements/">achievements</a>.</p>
+  <p>The more interesting target is <em>Relentless</em> &mdash; finish a hunt within 30 seconds &mdash; at <strong>45.4%</strong>. The doll is the sensible monster to build that attempt around, because it is the one threat you can reliably delete in a couple of shots rather than one you have to find first. Compare with <em>Last Performance</em> at 41.6% for the <a href="/monsters/marionette/">Marionette</a>, where the fight itself is the obstacle. Full list on <a href="/achievements/">achievements</a>.</p>
 
   <h2>What changed in the patches</h2>
 
@@ -411,13 +411,13 @@ PAGES = [
  "desc": "The Demented stops moving while you look straight at it, and you cannot simply shoot it down. The confirmed answer is to break your gaze and lead it into a trap.",
  "trail": M + [(None, "Demented")],
  "h1": "Demented",
- "lede": "The one threat that plays by Weeping Angel rules: <strong>as long as you look straight at it, it does not move</strong>. It is also the one you cannot simply shoot down &mdash; the confirmed solution is to break your gaze and lead it into a trap. <strong>78.8%</strong> of players have <em>Freed</em>.",
+ "lede": "The one threat that plays by Weeping Angel rules: <strong>as long as you look straight at it, it does not move</strong>. It is also the one you cannot simply shoot down &mdash; the confirmed solution is to break your gaze and lead it into a trap. <strong>79.8%</strong> of players have <em>Freed</em>.",
  "body": """
   <div class="tags">
     <span class="tag red">Hostile</span>
     <span class="tag amber">Freezes while observed</span>
     <span class="tag red">Not killable by gunfire</span>
-    <span class="tag">78.8% have Freed</span>
+    <span class="tag">79.8% have Freed</span>
   </div>
 
   <div class="term warn">
@@ -458,8 +458,8 @@ PAGES = [
 
   <h2>It is not rare</h2>
 
-  <p>You will find this one described as an uncommon encounter. The achievement data does not support that. <em>Freed</em> &mdash; Kill a Demented &mdash; is held by <strong>78.8%</strong> of players, which is more than the share who have killed a <a href="/monsters/marionette/">Marionette</a> (40.0%) and roughly four players in five overall. Something four in five players have done is not rare, and planning your shift on the assumption you probably will not meet one is a bad plan.</p>
-  <p class="src">Unlock rates from <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a>, read 5 August 2026.</p>
+  <p>You will find this one described as an uncommon encounter. The achievement data does not support that. <em>Freed</em> &mdash; Kill a Demented &mdash; is held by <strong>79.8%</strong> of players, which is more than the share who have killed a <a href="/monsters/marionette/">Marionette</a> (41.6%) and roughly four players in five overall. Something four in five players have done is not rare, and planning your shift on the assumption you probably will not meet one is a bad plan.</p>
+  <p class="src">Unlock rates from <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a>, read 13 August 2026.</p>
 
   <h2>Common mistakes</h2>
 
@@ -480,14 +480,103 @@ PAGES = [
   </div>
 """},
 {
+ "path": "monsters/entity",
+ "title": "Shift At Midnight Entity — Hunts, Blood Moons &amp; Survival",
+ "og_short": "Shift At Midnight Entity Guide",
+ "desc": "The Entity is the monster you summon yourself: wave a doppelganger through and it returns that shift to hunt you. It is blind, it follows sound — including your voice chat — and blood rain means it comes no matter what.",
+ "trail": M + [(None, "Entity")],
+ "h1": "The Entity",
+ "lede": "Every other threat in the game arrives on a schedule. This one arrives because of you. Wave a <a href=\"/guide/doppelgangers/\">doppelganger</a> through the counter and it comes back <strong>that same shift, in its real form, to hunt you</strong> &mdash; and on blood-rain nights it comes whether you made a mistake or not.",
+ "body": """
+  <div class="tags">
+    <span class="tag red">Hostile &mdash; the Hunt</span>
+    <span class="tag amber">Self-inflicted</span>
+    <span class="tag green">Can be killed</span>
+    <span class="tag">93.8% survive their first hunt</span>
+  </div>
+
+  <table class="facts">
+    <tr><th>What it is</th><td>The true form of a doppelganger you let finish its purchase and leave</td></tr>
+    <tr><th>When it comes</th><td>The end of the same shift &mdash; the Hunt</td></tr>
+    <tr><th>Guaranteed nights</th><td>Blood Moon shifts: blood rain falls, and the Hunt happens regardless of your counter work</td></tr>
+    <tr><th>Key weakness</th><td>It is <strong>blind</strong> &mdash; it tracks sound, including proximity voice chat</td></tr>
+    <tr><th>What slows it</th><td>Wooden-board barricades on doors and windows</td></tr>
+    <tr><th>Can it be killed?</th><td>Yes &mdash; weapons, traps and barricades all contribute</td></tr>
+    <tr><th>Achievements</th><td><em>Still Breathing</em> (survive a hunt, 93.8%) and <em>Relentless</em> (end one inside 30 seconds, 45.4%)</td></tr>
+  </table>
+  <p class="src">Sources:
+    <a href="https://gamerant.com/shift-at-midnight-all-monsters/" target="_blank" rel="noopener">Game Rant monster overview</a>,
+    <a href="https://www.thexboxhub.com/shift-at-midnight-review/" target="_blank" rel="noopener">TheXboxHub review</a> (blood rain),
+    <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a> (read 13 August 2026).</p>
+
+  <h2>The loop this page sits inside</h2>
+
+  <p>The Entity is the second half of a mistake whose first half happened at the counter. Something walked in wearing a stolen face, its paperwork held up, you rang the purchase through &mdash; and the moment it cleared the door, tonight stopped being a quiet shift. That is the whole design: <a href="/guide/doppelgangers/">identification</a> is the test, the Hunt is the grade.</p>
+
+  <p>Which means the best Entity strategy is not on this page at all. It is the database search you did not run an hour earlier. Everything below is damage control.</p>
+
+  <h2>How a Hunt actually plays</h2>
+
+  <p>The Hunt comes at the end of the shift, not the moment the doppelganger escapes &mdash; you will usually know it is coming and have time to spend money on it. That window is the difference between the two achievement numbers up top: nearly everyone survives a hunt they prepared for, fewer than half have ever <em>ended</em> one quickly.</p>
+
+  <ul>
+    <li><strong>Spend the warning.</strong> Ammunition, a second weapon, board placement &mdash; the shop is open and the threat is scheduled. Walking into a Hunt with shift earnings unspent is the classic error.</li>
+    <li><strong>Barricade before it arrives, not during.</strong> Wooden boards on doors and windows slow it down; hammering them while something blind is navigating by sound is self-defeating.</li>
+    <li><strong>Decide in advance who shoots.</strong> In co-op, one armed player holding a chokepoint beats three people firing at noises &mdash; every shot is also a signal flare. See <a href="/guide/survival/">the survival guide</a> for trap placement.</li>
+  </ul>
+
+  <h2>It is blind. Behave accordingly</h2>
+
+  <p>The Entity does not see you. It hears you &mdash; footsteps, doors, gunfire, and <strong>proximity voice chat</strong>. The game routes your actual microphone through the world, so a teammate narrating the monster&rsquo;s position is, mechanically, bait.</p>
+
+  <p>This inverts normal horror-game instincts. Line of sight does not matter; a lit room is not more dangerous than a dark one; standing still and silent in the open can be safer than rustling behind cover. The discipline is auditory: stop moving when it is near, mute the panic, and let it walk past.</p>
+
+  <div class="term warn">
+    <div class="term-h">The &ldquo;five types&rdquo; claim</div>
+    <p>One outlet describes five distinct Entity forms with different behaviours. No second source confirms a count, the developer has not published one, and the patch notes never mention types. We are treating the number as unverified and not building a taxonomy on it &mdash; if the developer documents the forms, this page will.</p>
+  </div>
+
+  <h2>Blood Moon nights &mdash; the blood rain</h2>
+
+  <p>Every few shifts the game hangs a red sky over the station: <strong>blood rain falls, and the Hunt at the end of that shift is guaranteed</strong> &mdash; no counter mistake required. The reviewer phrasing is exact: you load in with &ldquo;the ominous warning that the entity is guaranteed to strike at the end of the shift.&rdquo;</p>
+
+  <p>That changes the night&rsquo;s budget, not just its mood. On a normal shift, perfect ID work buys you a quiet close; on a Blood Moon it buys you nothing at the door and everything before it &mdash; the shift is a countdown to a fight you already know is booked, so board placement and ammunition stop being contingency spending and become the plan.</p>
+
+  <p>Community shift-tables place the first Blood Moon around <strong>Shift 5</strong> and a second around <strong>Shift 10</strong>, with the later one making weapons harder to reach mid-fight. Both placements come from player documentation rather than the developer, so treat the exact numbers as reported, not promised &mdash; the procedural generation this game runs on has broken schedules before.</p>
+  <p class="src">Blood rain: <a href="https://www.thexboxhub.com/shift-at-midnight-review/" target="_blank" rel="noopener">TheXboxHub</a>. Shift placement: community shift tables, unconfirmed by the developer.</p>
+
+  <h2>Killing it versus outlasting it</h2>
+
+  <p>Both are legitimate. The Entity dies to concentrated fire, and <em>Relentless</em> &mdash; finish a hunt within 30 seconds &mdash; sits at <strong>45.4%</strong>, so nearly half the player base has managed an efficient kill at least once. But the achievement for merely surviving sits at <strong>93.8%</strong>, and that gap is honest information: the monster is beatable, and it is also entirely optional to beat. A barricaded, silent crew that lets the clock run has lost nothing.</p>
+
+  <p>Pick based on the night, not on pride. Ammunition already bought, group together, doors held &mdash; shoot. Scattered, broke, or down a player &mdash; go quiet and give it nothing to hear.</p>
+
+  <h2>What it is not</h2>
+
+  <ul>
+    <li><strong>It is not the <a href="/monsters/the-dentist/">Dentist</a>.</strong> The final shift&rsquo;s pursuer cannot be fought at all. The Entity always can.</li>
+    <li><strong>It is not the <a href="/monsters/shrieking-doll/">Shrieking Doll</a></strong>, though the two arrive in the same breath &mdash; the Doll is the fragile escort, and shooting it at the wrong moment is a sound decision in the worst sense. One bullet, chosen carefully.</li>
+    <li><strong>It is not a Rake</strong> &mdash; Rakes are the endless-mode predators added on 29 July, and they hunt your customers, not you. See the <a href="/monsters/">bestiary</a> for that distinction.</li>
+  </ul>
+
+  <h2>What we are not publishing</h2>
+
+  <p>Health values, damage numbers, movement speed, hearing radius, or a type-by-type behaviour table. None of that has a source we can stand behind &mdash; the developer publishes none of it, and the one outlet counting five forms is alone in doing so. What is on this page is the shape of the encounter, which is the part that decides whether you live.</p>
+
+  <div class="grid two">
+    <a class="card" href="/guide/doppelgangers/"><b>Identifying doppelgangers</b><span>The skill that makes this page unnecessary.</span></a>
+    <a class="card" href="/guide/survival/"><b>Survival &amp; weapons</b><span>Barricades, traps and hunt discipline in detail.</span></a>
+  </div>
+"""},
+{
  "path": "endings",
  "active": "/endings/",
  "title": "Shift At Midnight Endings — All 3 Endings and How to Get Them",
  "og_short": "Shift At Midnight Endings",
- "desc": "All three Shift At Midnight endings hinge on two things: whether you call Sheriff Clyde after Shift 12, and whether you finish Shift 13 with $250. True Ending sits at 15.4%.",
+ "desc": "All three Shift At Midnight endings hinge on two things: whether you call Sheriff Clyde after Shift 12, and whether you finish Shift 13 with $250. True Ending sits at 16.0%.",
  "trail": [(None, "Endings")],
  "h1": "Shift At Midnight endings",
- "lede": "Three endings, decided by exactly two variables: <strong>whether you call Sheriff Clyde after Shift 12</strong>, and <strong>whether your savings are $250 or more when Shift 13 ends</strong>. <em>Grave Decision</em> sits at 31.4%, <em>True Ending</em> at 15.4%, <em>Empty Home</em> at 9.4%.",
+ "lede": "Three endings, decided by exactly two variables: <strong>whether you call Sheriff Clyde after Shift 12</strong>, and <strong>whether your savings are $250 or more when Shift 13 ends</strong>. <em>Grave Decision</em> sits at 33.1%, <em>True Ending</em> at 16.0%, <em>Empty Home</em> at 10.1%.",
  "body": """
   <div class="term tip">
     <div class="term-h">If you only read one paragraph</div>
@@ -508,25 +597,25 @@ PAGES = [
   <table class="data">
     <thead><tr><th>Ending</th><th>Condition</th><th>What happens</th><th>Steam unlock</th><th>Xbox</th></tr></thead>
     <tbody>
-      <tr><td><strong>Grave Decision</strong></td><td>Call Clyde after Shift 12 (money irrelevant)</td><td>Your pet gets the surgery and survives. <strong>Clyde dies.</strong></td><td class="num">31.4%</td><td class="num">100G</td></tr>
-      <tr><td><strong>True Ending</strong></td><td>Do <em>not</em> call Clyde <strong>and</strong> finish with $250 or more</td><td>Pet and Clyde both survive. The Dentist appears and Clyde helps destroy him.</td><td class="num">15.4%</td><td class="num">200G</td></tr>
-      <tr><td><strong>Empty Home</strong></td><td>Do <em>not</em> call Clyde <strong>and</strong> finish under $250</td><td>Clyde survives, but you cannot pay for the surgery. <strong>Your pet dies.</strong></td><td class="num">9.4%</td><td class="num">100G</td></tr>
+      <tr><td><strong>Grave Decision</strong></td><td>Call Clyde after Shift 12 (money irrelevant)</td><td>Your pet gets the surgery and survives. <strong>Clyde dies.</strong></td><td class="num">33.1%</td><td class="num">100G</td></tr>
+      <tr><td><strong>True Ending</strong></td><td>Do <em>not</em> call Clyde <strong>and</strong> finish with $250 or more</td><td>Pet and Clyde both survive. The Dentist appears and Clyde helps destroy him.</td><td class="num">16.0%</td><td class="num">200G</td></tr>
+      <tr><td><strong>Empty Home</strong></td><td>Do <em>not</em> call Clyde <strong>and</strong> finish under $250</td><td>Clyde survives, but you cannot pay for the surgery. <strong>Your pet dies.</strong></td><td class="num">10.1%</td><td class="num">100G</td></tr>
     </tbody>
   </table>
   </div>
-  <p class="src">Conditions and outcomes: <a href="https://www.keengamer.com/articles/guides/shift-at-midnight-how-to-get-all-endings/" target="_blank" rel="noopener">KeenGamer endings guide</a>. Unlock rates: <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a>, read 5 August 2026. All three achievements are hidden on Steam.</p>
+  <p class="src">Conditions and outcomes: <a href="https://www.keengamer.com/articles/guides/shift-at-midnight-how-to-get-all-endings/" target="_blank" rel="noopener">KeenGamer endings guide</a>. Unlock rates: <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a>, read 13 August 2026. All three achievements are hidden on Steam.</p>
 
-  <p class="updated">Corrected 5 August 2026 &mdash; this page previously listed 26.0% / 13.4% / 7.0%</p>
+  <p class="updated">Corrected 5 August 2026 (previously 26.0% / 13.4% / 7.0%); rates re-read 13 August 2026</p>
 
   <h2>The shape of the choice</h2>
 
   <p>What makes this good design is that calling Clyde is not obviously wrong. It saves your pet with no financial requirement attached, which means it is the reliable option for a run that went badly. The price is Clyde&rsquo;s life, and you pay it after the choice is locked.</p>
 
-  <p>Not calling him is the greedy line. You keep Clyde alive and you keep the possibility of the best outcome, but you have staked it on a number you may not hit &mdash; and <em>Empty Home</em>, at 9.4%, is what a failed attempt at the True Ending looks like. The two rarest achievements in the game are the two halves of the same gamble.</p>
+  <p>Not calling him is the greedy line. You keep Clyde alive and you keep the possibility of the best outcome, but you have staked it on a number you may not hit &mdash; and <em>Empty Home</em>, at 10.1%, is what a failed attempt at the True Ending looks like. The two rarest achievements in the game are the two halves of the same gamble.</p>
 
   <h2>What the unlock rates actually say</h2>
 
-  <p>Add the three together and you get 56.2%, but that is not a completion rate: a player who replays can hold more than one, so the real share of players who have finished the story at all is lower. Set against <em>Still Breathing</em> (survive your first hunt) at <strong>93.4%</strong>, the picture is clear enough &mdash; most people who buy this game never reach Shift 12.</p>
+  <p>Add the three together and you get 56.2%, but that is not a completion rate: a player who replays can hold more than one, so the real share of players who have finished the story at all is lower. Set against <em>Still Breathing</em> (survive your first hunt) at <strong>93.8%</strong>, the picture is clear enough &mdash; most people who buy this game never reach Shift 12.</p>
 
   <p><em>Grave Decision</em> being twice as common as <em>True Ending</em> is the more interesting number. It suggests the safe branch is the default choice for players reaching the end for the first time, which is what you would expect when one option guarantees a survivable outcome and the other depends on how well the last thirteen shifts went financially.</p>
 

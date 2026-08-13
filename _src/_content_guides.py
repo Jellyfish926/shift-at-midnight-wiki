@@ -23,15 +23,15 @@ FAQ_LD = """<script type="application/ld+json">
     { "@type": "Question", "name": "Does Shift At Midnight have mods?",
       "acceptedAnswer": { "@type": "Answer", "text": "There is no Steam Workshop and there are no official modding tools, and the developer has not commented on modding either way. A community scene built on BepInEx does exist: 12 mods were listed on Thunderstore as of 5 August 2026, plus a separate section on Nexus Mods. The best known of them, ShiftMorePlayers, raises the lobby cap well past six and only needs to be installed by the host." } },
     { "@type": "Question", "name": "How many achievements does Shift At Midnight have?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ten. Three of them are hidden: Grave Decision at 31.4 percent, True Ending at 15.4 percent and Empty Home at 9.4 percent." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "Ten. Three of them are hidden: Grave Decision at 33.1 percent, True Ending at 16.0 percent and Empty Home at 10.1 percent." } },
     { "@type": "Question", "name": "How do you get the true ending in Shift At Midnight?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Two conditions. Do not call Sheriff Clyde when the choice appears after Shift 12, and finish Shift 13 with at least 250 dollars in personal savings. Calling Clyde gives the Grave Decision ending instead, and declining with less than 250 dollars gives Empty Home. 15.4 percent of players have the True Ending achievement." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "Two conditions. Do not call Sheriff Clyde when the choice appears after Shift 12, and finish Shift 13 with at least 250 dollars in personal savings. Calling Clyde gives the Grave Decision ending instead, and declining with less than 250 dollars gives Empty Home. 16.0 percent of players have the True Ending achievement." } },
     { "@type": "Question", "name": "How do you unlock Endless Mode in Shift At Midnight?",
       "acceptedAnswer": { "@type": "Answer", "text": "Finish Story Mode. Endless Mode shipped as a beta on launch day, 22 July 2026, but unlocks only once the 13-shift story is complete. It is the only mode where Rake enemies appear. A full version is planned for a free update in Q4 2026." } },
     { "@type": "Question", "name": "How many nights are in Shift At Midnight?",
       "acceptedAnswer": { "@type": "Answer", "text": "Story Mode is 13 shifts. Customers and events are procedurally generated, so runs differ. The fixed points are Shift 9, when the Marionette becomes possible, the choice offered after Shift 12, and Shift 13." } },
     { "@type": "Question", "name": "What did the latest Shift At Midnight patch change?",
-      "acceptedAnswer": { "@type": "Answer", "text": "The 29 July 2026 patch added Rake enemies to endless and post-story modes, added a second purchasable firearm, and removed the customer patience mechanic, so verifying IDs is no longer timed. As of 5 August 2026 it is still the newest update." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "The 29 July 2026 patch added Rake enemies to endless and post-story modes, added a second purchasable firearm, and removed the customer patience mechanic, so verifying IDs is no longer timed. As of 13 August 2026 it is still the newest update." } },
     { "@type": "Question", "name": "Is Shift At Midnight on PS5?",
       "acceptedAnswer": { "@type": "Answer", "text": "No. There is no PlayStation 5 or PS4 version of Shift At Midnight and none has been announced. It is available on PC via Steam and the Microsoft Store, and on Xbox Series X|S." } },
     { "@type": "Question", "name": "Is Shift At Midnight available on mobile or the App Store?",
@@ -73,9 +73,9 @@ PAGES = [
   </div>
 
   <h2>3. Surviving what you let in</h2>
-  <p>Six kinds of threat, and they do not want the same thing. One cannot be fought at all. One is not a monster &mdash; it is a wind-up box. One is a customer.</p>
+  <p>Seven kinds of threat, and they do not want the same thing. One you summon yourself. One cannot be fought at all. One is not a monster &mdash; it is a wind-up box. One is a customer.</p>
   <div class="grid two">
-    <a class="card danger" href="/monsters/"><b>Bestiary</b><span>All six threats side by side, including the Entities and the Rakes, which do not have pages of their own.</span></a>
+    <a class="card danger" href="/monsters/"><b>Bestiary</b><span>All seven threats side by side, from the <a href="/monsters/entity/">Entity</a> you summon yourself to the Rakes of Endless Mode.</span></a>
     <a class="card" href="/guide/survival/"><b>Survival &amp; weapons</b><span>Sound discipline, barricades, traps, and what each weapon is for. Read it before the hunt rather than during one.</span></a>
   </div>
   <ul>
@@ -124,10 +124,10 @@ PAGES = [
  "path": "guide/beginners", "active": "/guides/",
  "title": "Shift At Midnight Beginner's Guide — Surviving Your First Shifts",
  "og_short": "Shift At Midnight Beginner's Guide",
- "desc": "A beginner's guide to Shift At Midnight that starts with the mistake 96.6% of players make: treating the ID scanner as a threat detector.",
+ "desc": "A beginner's guide to Shift At Midnight that starts with the mistake 96.9% of players make: treating the ID scanner as a threat detector.",
  "trail": G + [(None, "Beginner's guide")],
  "h1": "Beginner's guide",
- "lede": "The fastest way to understand this game is to understand one number: <strong>96.6% of all players have killed a customer</strong>. That is the most common achievement in the game. It is not a badge of skill &mdash; it is the game documenting a mistake almost everyone makes.",
+ "lede": "The fastest way to understand this game is to understand one number: <strong>96.9% of all players have killed a customer</strong>. That is the most common achievement in the game. It is not a badge of skill &mdash; it is the game documenting a mistake almost everyone makes.",
  "body": """
   <h2>The game got easier on 29 July, and it matters most for you</h2>
   <p>The <a href="/updates/">29 July 2026 patch removed the patience mechanic</a>. Before it, a customer
@@ -163,10 +163,10 @@ PAGES = [
 
   <h2>What the achievement curve tells you to expect</h2>
   <p>The first four achievements are held by 75&ndash;97% of players, and they arrive on their own if you keep playing: killing a customer, surviving a hunt, killing a <a href="/monsters/shrieking-doll/">Shrieking Doll</a>, killing a <a href="/monsters/demented/">Demented</a>. Do not chase them.</p>
-  <p>The cliff is at <em>Relentless</em> (44.3%) and <a href="/monsters/marionette/">Last Performance</a> (40.0%). Those need you to know something in advance. Everything below them needs deliberate effort. See <a href="/achievements/">the full list</a>.</p>
+  <p>The cliff is at <em>Relentless</em> (45.4%) and <a href="/monsters/marionette/">Last Performance</a> (41.6%). Those need you to know something in advance. Everything below them needs deliberate effort. See <a href="/achievements/">the full list</a>.</p>
 
   <h2>Money</h2>
-  <p>You will want to spend everything on restocking, because the quota is immediate and the arsenal is not. Resist a little. <em>Locked And Loaded</em> &mdash; purchasing every melee weapon &mdash; sits at 23.0%, and the reason it is that low is that people spend their earnings shift-to-shift and never bank. See the <a href="/guide/survival/#weapons">weapons guide</a>.</p>
+  <p>You will want to spend everything on restocking, because the quota is immediate and the arsenal is not. Resist a little. <em>Locked And Loaded</em> &mdash; purchasing every melee weapon &mdash; sits at 23.5%, and the reason it is that low is that people spend their earnings shift-to-shift and never bank. See the <a href="/guide/survival/#weapons">weapons guide</a>.</p>
 
   <h2>If you are playing with friends</h2>
   <p>Check <a href="/crossplay/">the crossplay page before anyone buys</a>. Steam players cannot play with Game Pass players. This catches groups out constantly.</p>
@@ -190,7 +190,7 @@ PAGES = [
     <p>Let a doppelganger finish its purchase and walk out and <strong>it comes back that same night in monster form to hunt you</strong> (<a href="https://gamerant.com/shift-at-midnight-all-monsters/" target="_blank" rel="noopener">Game Rant</a>). Most hunts on the <a href="/guide/survival/">survival page</a> were created here, at the counter, minutes earlier.</p>
   </div>
 
-  <p>The opposite error is cheaper but not free: killing a real customer unlocks <em>First Blood</em>, held by <strong>96.6% of players</strong>. It is the most common achievement in the game, which tells you how hard this call is and how little the game expects perfection.</p>
+  <p>The opposite error is cheaper but not free: killing a real customer unlocks <em>First Blood</em>, held by <strong>96.9% of players</strong>. It is the most common achievement in the game, which tells you how hard this call is and how little the game expects perfection.</p>
 
   <h2>What you have to work with</h2>
   <ul>
@@ -273,7 +273,7 @@ PAGES = [
   </div>
 
   <h2>Hunts are something you caused</h2>
-  <p>They are not weather. Let a doppelganger complete its purchase and walk out and <strong>it returns that same night as a monster</strong> (<a href="https://gamerant.com/shift-at-midnight-all-monsters/" target="_blank" rel="noopener">Game Rant</a>), so everything below is the bill for a decision made at the counter &mdash; see <a href="/guide/doppelgangers/">identifying doppelgangers</a>. <em>Still Breathing</em>, for surviving your first hunt, sits at <strong>93.4%</strong>; <em>Relentless</em>, for finishing one inside 30 seconds, sits at <strong>44.3%</strong>. That gap is this page&rsquo;s subject: surviving is normal, ending it fast is a plan.</p>
+  <p>They are not weather. Let a doppelganger complete its purchase and walk out and <strong>it returns that same night as a monster</strong> (<a href="https://gamerant.com/shift-at-midnight-all-monsters/" target="_blank" rel="noopener">Game Rant</a>), so everything below is the bill for a decision made at the counter &mdash; see <a href="/guide/doppelgangers/">identifying doppelgangers</a>. <em>Still Breathing</em>, for surviving your first hunt, sits at <strong>93.8%</strong>; <em>Relentless</em>, for finishing one inside 30 seconds, sits at <strong>45.4%</strong>. That gap is this page&rsquo;s subject: surviving is normal, ending it fast is a plan.</p>
 
   <h2>Sound is the first thing to control</h2>
   <p>Noise gives away your position, so silence is a defensive tool before any barricade is &mdash; and a gun is the loudest thing you own, which is why a <a href="/monsters/shrieking-doll/">Shrieking Doll</a> shot at the wrong moment can cost more than it saves. <em>Both points are single-sourced and not independently confirmed.</em> Sound works for you too: since the <a href="https://steamdb.info/patchnotes/24354120/" target="_blank" rel="noopener">23 July patch</a> the <a href="/monsters/jack-in-the-box/">Jack-in-the-Box</a> is much louder, turning the search for it into a listening problem, and in Endless Mode a screaming customer means a Rake has spawned.</p>
@@ -287,7 +287,7 @@ PAGES = [
   <ul>
     <li><strong>Entities</strong> &mdash; the default hunters, and what you get for letting a doppelganger leave. Barricades, traps and weapons all work; they get harder as the run goes on.</li>
     <li><strong><a href="/monsters/shrieking-doll/">Shrieking Doll</a></strong> &mdash; small, crawls low, finds you by line of sight, dies to a few shots. An interruption rather than a threat, but a noisy one to remove. <em>Single source.</em></li>
-    <li><strong><a href="/monsters/demented/">Demented</a></strong> &mdash; cannot move while you look straight at it. Hold the stare, back it toward a trap, then break eye contact. Not rare, whatever you have read: <strong>78.8%</strong> of players have killed one.</li>
+    <li><strong><a href="/monsters/demented/">Demented</a></strong> &mdash; cannot move while you look straight at it. Hold the stare, back it toward a trap, then break eye contact. Not rare, whatever you have read: <strong>79.8%</strong> of players have killed one.</li>
     <li><strong><a href="/monsters/marionette/">Marionette</a></strong> &mdash; from <strong>Shift 9</strong> onward, flagged in advance by a N.E.T. email. When the music box starts, find it and <strong>hold E to rewind before the melody plays three times</strong>; it appears in the break room, a storage room, the bathroom or a shelf aisle. It can be killed, and the 23 July HP cut makes that a real option with a stocked arsenal and a second player.</li>
     <li><strong>Rakes</strong> &mdash; Endless and post-story only. They come out of the forest and go for your customers rather than you: follow the screaming, look for red light at the treeline, kill it before it reaches the building. <em>Beyond &ldquo;they exist and emerge from the forests&rdquo;, single-sourced.</em> See <a href="/nights-and-levels/#endless-mode">Endless Mode</a>.</li>
     <li><strong><a href="/monsters/the-dentist/">The Dentist</a></strong> &mdash; see the top of this page.</li>
@@ -328,7 +328,7 @@ PAGES = [
 
   <div class="term tip">
     <div class="term-h">The music box is a co-op problem</div>
-    <p>On a <a href="/monsters/marionette/">Marionette</a> night, one player owns the <a href="/monsters/jack-in-the-box/">music box</a> for the whole encounter and calls the melody count aloud. Three people half-watching a box that has to be wound is how groups end up facing the Marionette with no counterplay &mdash; which is why only 40.0% have ever killed one.</p>
+    <p>On a <a href="/monsters/marionette/">Marionette</a> night, one player owns the <a href="/monsters/jack-in-the-box/">music box</a> for the whole encounter and calls the melody count aloud. Three people half-watching a box that has to be wound is how groups end up facing the Marionette with no counterplay &mdash; which is why only 41.6% have ever killed one.</p>
   </div>
 
   <h2>Solo is a real option</h2>
@@ -343,27 +343,27 @@ PAGES = [
  "path": "guide/weapons", "active": "/guides/",
  "title": "Shift At Midnight Weapons — Arsenal &amp; Locked And Loaded",
  "og_short": "Shift At Midnight Weapons Guide",
- "desc": "Buying every melee weapon unlocks Locked And Loaded, held by only 23.0% of players. Why it is low, how to bank for it, and what weapons cannot solve.",
+ "desc": "Buying every melee weapon unlocks Locked And Loaded, held by only 23.5% of players. Why it is low, how to bank for it, and what weapons cannot solve.",
  "trail": G + [(None, "Weapons")],
  "h1": "Weapons arsenal",
- "lede": "Purchasing every melee weapon and filling out the arsenal unlocks <strong>Locked And Loaded</strong> &mdash; held by only <strong>23.0%</strong> of players. It is not a difficulty problem. It is a budgeting problem.",
+ "lede": "Purchasing every melee weapon and filling out the arsenal unlocks <strong>Locked And Loaded</strong> &mdash; held by only <strong>23.5%</strong> of players. It is not a difficulty problem. It is a budgeting problem.",
  "body": """
   <div class="tags">
     <span class="tag amber">Achievement: Locked And Loaded</span>
-    <span class="tag">23.0% of players</span>
+    <span class="tag">23.5% of players</span>
   </div>
 
   <h2>Melee is the achievement; the guns are insurance</h2>
-  <p><em>Locked And Loaded</em> is specific: <strong>purchase all melee weapons and fill out the weapons arsenal</strong>. At <strong>23.0%</strong> it is a budgeting problem, not a difficulty one: restocking pays tonight, the arsenal pays on a night that may never come, and under pressure people buy the immediate thing. Decide early that a fixed slice of each shift&rsquo;s takings is untouchable.</p>
+  <p><em>Locked And Loaded</em> is specific: <strong>purchase all melee weapons and fill out the weapons arsenal</strong>. At <strong>23.5%</strong> it is a budgeting problem, not a difficulty one: restocking pays tonight, the arsenal pays on a night that may never come, and under pressure people buy the immediate thing. Decide early that a fixed slice of each shift&rsquo;s takings is untouchable.</p>
   <p>Firearms sit outside that achievement, and there are now two of them: the <a href="https://store.steampowered.com/news/app/3722330/view/695394018676179340" target="_blank" rel="noopener">29 July patch</a> added a second purchasable gun alongside the one the game shipped with. They are also the loudest tools you own, which is the argument for melee on a night you would rather not be found &mdash; see sound discipline above. Full change list: <a href="/updates/">patch notes</a>.</p>
 
   <h2>Have it equipped before the hunt</h2>
-  <p>Buy and equip before a hunt starts, not during one: <em>Relentless</em> &mdash; finish a hunt within 30 seconds, <strong>44.3%</strong> &mdash; is close to impossible if the first ten seconds go on shopping. The target to attempt it on is a <a href="/monsters/shrieking-doll/">Shrieking Doll</a>, which comes to you rather than hiding. Never on a <a href="/monsters/the-dentist/">Dentist</a> night, which cannot be won at all.</p>
+  <p>Buy and equip before a hunt starts, not during one: <em>Relentless</em> &mdash; finish a hunt within 30 seconds, <strong>45.4%</strong> &mdash; is close to impossible if the first ten seconds go on shopping. The target to attempt it on is a <a href="/monsters/shrieking-doll/">Shrieking Doll</a>, which comes to you rather than hiding. Never on a <a href="/monsters/the-dentist/">Dentist</a> night, which cannot be won at all.</p>
 
   <h2>What a weapon does not solve</h2>
   <ul>
     <li><strong>The Dentist.</strong> No weapon works. Running is the entire answer.</li>
-    <li><strong>Doppelgangers.</strong> The problem is identification, not damage &mdash; a weapon applied to the wrong customer is the 96.6% achievement. See <a href="/guide/doppelgangers/">identifying doppelgangers</a>.</li>
+    <li><strong>Doppelgangers.</strong> The problem is identification, not damage &mdash; a weapon applied to the wrong customer is the 96.9% achievement. See <a href="/guide/doppelgangers/">identifying doppelgangers</a>.</li>
     <li><strong>An unwound music box.</strong> Whether you fight a <a href="/monsters/marionette/">Marionette</a> at all is settled by the <a href="/monsters/jack-in-the-box/">box</a>, not your loadout. A weapon helps once the fight starts &mdash; the 23 July patch cut its HP &mdash; but arriving armed does not substitute for winding.</li>
   </ul>
 
@@ -396,10 +396,10 @@ PAGES = [
   </div>
 
   <h2>Queue pressure is the design</h2>
-  <p>A queue creates time pressure on the one decision the game cares about: is this person human? Rushing produces the 96.6% outcome &mdash; killing a customer &mdash; or the opposite error of waving through something you should have caught. The queue is not an obstacle to the horror; it is the mechanism that generates it.</p>
+  <p>A queue creates time pressure on the one decision the game cares about: is this person human? Rushing produces the 96.9% outcome &mdash; killing a customer &mdash; or the opposite error of waving through something you should have caught. The queue is not an obstacle to the horror; it is the mechanism that generates it.</p>
 
   <h2>Budgeting</h2>
-  <p>Money splits between restocking (immediate, keeps quota healthy) and the <a href="/guide/survival/#weapons">weapons arsenal</a> (deferred, and its own 23.0% achievement). Bank a fixed slice every shift rather than deciding to chase the arsenal later.</p>
+  <p>Money splits between restocking (immediate, keeps quota healthy) and the <a href="/guide/survival/#weapons">weapons arsenal</a> (deferred, and its own 23.5% achievement). Bank a fixed slice every shift rather than deciding to chase the arsenal later.</p>
 
   <div class="grid two">
     <a class="card" href="/guide/survival/#weapons"><b>Weapons arsenal</b><span>The other half of the budget.</span></a>
@@ -425,7 +425,7 @@ PAGES = [
   </div>
 
   <h2>Where the endings sit</h2>
-  <p>Three achievements are hidden and rare: <em>Grave Decision</em> (31.4%), <em>True Ending</em> (15.4%) and <em>Empty Home</em> (9.4%). They are three separate endings, not milestones on one path. Full discussion on <a href="/endings/">the endings page</a>, with fact and inference clearly separated.</p>
+  <p>Three achievements are hidden and rare: <em>Grave Decision</em> (33.1%), <em>True Ending</em> (16.0%) and <em>Empty Home</em> (10.1%). They are three separate endings, not milestones on one path. Full discussion on <a href="/endings/">the endings page</a>, with fact and inference clearly separated.</p>
   <p>Because shifts are procedural but endings are rare, the likely lever is <em>how you played</em> rather than <em>which nights you got</em> &mdash; the run-level decisions, not the seed.</p>
 
   <h2>Solo or co-op</h2>
@@ -615,7 +615,7 @@ PAGES = [
   <p>The only content on the roadmap is Endless Mode in Q4 2026, and it is <strong>free</strong>. No season pass, no deluxe edition, no paid cosmetics have been announced. For a $9.99 game from a solo developer, what you buy is what there is.</p>
 
   <h2>Is it worth $9.99?</h2>
-  <p>The honest framing: this is a three-player co-op horror game with ten achievements and a procedural shift structure. The achievement curve suggests most players get several hours in &mdash; 44.3% reach <em>Relentless</em>, which is not a first-session achievement &mdash; and a meaningful minority push into the rare hidden endings at 9&ndash;15%. See <a href="/review/">is it worth it</a>.</p>
+  <p>The honest framing: this is a three-player co-op horror game with ten achievements and a procedural shift structure. The achievement curve suggests most players get several hours in &mdash; 45.4% reach <em>Relentless</em>, which is not a first-session achievement &mdash; and a meaningful minority push into the rare hidden endings at 10&ndash;16%. See <a href="/review/">is it worth it</a>.</p>
   <p>If you have Game Pass the question does not arise. If you do not, and you have two friends who will play it with you, $9.99 for a co-op night is not a hard sell. If you are buying it to play alone, it is a smaller game than the store page implies.</p>
 
   <div class="grid two">
@@ -679,7 +679,7 @@ PAGES = [
 
   <ul>
     <li><strong>Patches break plugins.</strong> Two shipped in fourteen days and the second added an enemy and rebalanced the game. A scene this size will not always have a fix out the same day.</li>
-    <li><strong>Achievements: unknown, and we will not pretend otherwise.</strong> No source states whether BepInEx plugins affect Steam achievement unlocks in this game &mdash; the developer has not commented and the mod pages do not address it. If you are going for <a href="/endings/">True Ending</a> (15.4%) or <em>Empty Home</em> (9.4%), do that run on a clean install and keep modded lobbies as a separate hobby. See <a href="/achievements/">all 10 achievements</a>.</li>
+    <li><strong>Achievements: unknown, and we will not pretend otherwise.</strong> No source states whether BepInEx plugins affect Steam achievement unlocks in this game &mdash; the developer has not commented and the mod pages do not address it. If you are going for <a href="/endings/">True Ending</a> (16.0%) or <em>Empty Home</em> (10.1%), do that run on a clean install and keep modded lobbies as a separate hobby. See <a href="/achievements/">all 10 achievements</a>.</li>
     <li><strong>Client compatibility is per-mod.</strong> ShiftMorePlayers explicitly supports vanilla clients; do not assume the next mod does. The host&rsquo;s mod list defines the session, so read each page.</li>
     <li><strong>Nothing is vetted.</strong> No Workshop means no platform-level review of what you are running. Use the game&rsquo;s own Thunderstore and Nexus pages rather than reuploads.</li>
     <li><strong>PC only.</strong> There is no equivalent for the Xbox or Microsoft Store builds, so a modded lobby cannot include a console <a href="/platforms/#game-pass">Game Pass</a> player &mdash; which is already true unmodded, because <a href="/crossplay/">Steam and Game Pass do not share a player pool</a>.</li>
@@ -709,7 +709,7 @@ PAGES = [
   </div>
 
   <h2>Why the community matters more than usual here</h2>
-  <p>Steam still hides the descriptions for <em>Grave Decision</em> (31.4%), <em>True Ending</em> (15.4%) and <em>Empty Home</em> (9.4%), and there is no official requirement text for any of them &mdash; the conditions now on <a href="/endings/">the endings page</a> were worked out by players and written up by outlets, not published by the developer. That is what a community is for, and it is why logged runs beat confident guesses.</p>
+  <p>Steam still hides the descriptions for <em>Grave Decision</em> (33.1%), <em>True Ending</em> (16.0%) and <em>Empty Home</em> (10.1%), and there is no official requirement text for any of them &mdash; the conditions now on <a href="/endings/">the endings page</a> were worked out by players and written up by outlets, not published by the developer. That is what a community is for, and it is why logged runs beat confident guesses.</p>
 
   <div class="term tip">
     <div class="term-h">How to contribute something useful</div>
@@ -736,10 +736,10 @@ PAGES = [
   <h2>What the achievement curve says about engagement</h2>
   <p>Completion rates are one of the few honest public signals about whether people stick with a game.</p>
   <ul>
-    <li><strong>93.4%</strong> survive their first hunt &mdash; almost nobody bounces off immediately.</li>
-    <li><strong>78.8%</strong> kill a <a href="/monsters/demented/">Demented</a> &mdash; three quarters get past the opening.</li>
-    <li><strong>44.3%</strong> reach <em>Relentless</em> &mdash; not a first-session achievement. Four in ten players are still engaged well past the tutorial phase.</li>
-    <li><strong>15.4% / 9.4%</strong> reach the rare hidden endings &mdash; a real minority is digging.</li>
+    <li><strong>93.8%</strong> survive their first hunt &mdash; almost nobody bounces off immediately.</li>
+    <li><strong>79.8%</strong> kill a <a href="/monsters/demented/">Demented</a> &mdash; three quarters get past the opening.</li>
+    <li><strong>45.4%</strong> reach <em>Relentless</em> &mdash; not a first-session achievement. Four in ten players are still engaged well past the tutorial phase.</li>
+    <li><strong>16.0% / 10.1%</strong> reach the rare hidden endings &mdash; a real minority is digging.</li>
   </ul>
   <p>For a $9.99 indie release, a 40% figure on a mid-tier skill achievement is a healthy retention signal. It is not a game most people refund after an hour.</p>
 
@@ -792,7 +792,7 @@ PAGES = [
   <h2>What we can say</h2>
   <ul>
     <li>The game is built around <strong>reading things carefully</strong> &mdash; IDs, behaviour, readings that disagree with each other. In-world text rewards attention by design.</li>
-    <li>Three achievements are hidden: <em>Grave Decision</em> (31.4%), <em>True Ending</em> (15.4%), <em>Empty Home</em> (9.4%). None has an official requirement text, though the conditions are now documented. See <a href="/endings/">endings</a>.</li>
+    <li>Three achievements are hidden: <em>Grave Decision</em> (33.1%), <em>True Ending</em> (16.0%), <em>Empty Home</em> (10.1%). None has an official requirement text, though the conditions are now documented. See <a href="/endings/">endings</a>.</li>
     <li>Nothing publicly documented connects the newsletter to those achievements. That is an <strong>absence of evidence</strong>, not evidence of absence.</li>
   </ul>
 
@@ -868,7 +868,7 @@ PAGES = [
     </details>
     <details>
       <summary>How do I beat the Marionette?</summary>
-      <div class="a"><p>Find the <a href="/monsters/jack-in-the-box/">music box</a> and <strong>hold E to rewind it before the melody plays three times</strong>. It spawns in the break room, a storage room, the bathroom or a shelf aisle, and the 23 July patch made it much louder to find by ear. It can also be killed outright &mdash; the same patch cut its HP &mdash; though only 40.0% of players have. <a href="/monsters/marionette/">Full guide</a>.</p></div>
+      <div class="a"><p>Find the <a href="/monsters/jack-in-the-box/">music box</a> and <strong>hold E to rewind it before the melody plays three times</strong>. It spawns in the break room, a storage room, the bathroom or a shelf aisle, and the 23 July patch made it much louder to find by ear. It can also be killed outright &mdash; the same patch cut its HP &mdash; though only 41.6% of players have. <a href="/monsters/marionette/">Full guide</a>.</p></div>
     </details>
     <details>
       <summary>How do I kill the Dentist?</summary>
@@ -896,7 +896,7 @@ PAGES = [
   <div class="faq">
     <details>
       <summary>How many achievements are there?</summary>
-      <div class="a"><p>Ten. Three are hidden: <em>Grave Decision</em> (31.4%), <em>True Ending</em> (15.4%) and <em>Empty Home</em> (9.4%). <a href="/achievements/">Full list with rarity</a>.</p></div>
+      <div class="a"><p>Ten. Three are hidden: <em>Grave Decision</em> (33.1%), <em>True Ending</em> (16.0%) and <em>Empty Home</em> (10.1%). <a href="/achievements/">Full list with rarity</a>.</p></div>
     </details>
     <details>
       <summary>How do I get the true ending?</summary>
@@ -904,7 +904,7 @@ PAGES = [
     </details>
     <details>
       <summary>What is the hardest achievement?</summary>
-      <div class="a"><p><em>Empty Home</em> at 9.4%, then <em>True Ending</em> at 15.4%. Of the non-hidden ones, <em>Locked And Loaded</em> &mdash; buy every melee weapon &mdash; is rarest at 23.0%.</p></div>
+      <div class="a"><p><em>Empty Home</em> at 10.1%, then <em>True Ending</em> at 16.0%. Of the non-hidden ones, <em>Locked And Loaded</em> &mdash; buy every melee weapon &mdash; is rarest at 23.5%.</p></div>
     </details>
   </div>
 
@@ -920,7 +920,7 @@ PAGES = [
     </details>
     <details>
       <summary>What did the latest patch change?</summary>
-      <div class="a"><p>The 29 July 2026 patch added Rake enemies to endless and post-story modes, added a second purchasable firearm, and removed the patience mechanic. As of 5 August 2026 that is still the newest update. <a href="/updates/">All patch notes</a>.</p></div>
+      <div class="a"><p>The 29 July 2026 patch added Rake enemies to endless and post-story modes, added a second purchasable firearm, and removed the patience mechanic. As of 13 August 2026 that is still the newest update. <a href="/updates/">All patch notes</a>.</p></div>
     </details>
     <details>
       <summary>What is coming next?</summary>

@@ -15,16 +15,16 @@ from _build import build
 ACH = [
     # 全局解锁率:2026-08-05 读自 Steam 官方成就统计页
     # https://steamcommunity.com/stats/3722330/achievements/ —— 这些数字会漂,别抄旧的
-    ("First Blood", "Kill your first customer", 96.6, False),
-    ("Still Breathing", "Survive your first hunt", 93.4, False),
-    ("Silenced", "Kill a Shrieking Doll", 89.2, False),
-    ("Freed", "Kill a Demented", 78.8, False),
-    ("Relentless", "Finish a hunt within 30 seconds", 44.3, False),
-    ("Last Performance", "Kill a Marionette", 40.0, False),
-    ("Grave Decision", "Hidden &mdash; no description shown", 31.4, True),
-    ("Locked And Loaded", "Purchase all melee weapons &amp; fill out the weapons arsenal", 23.0, False),
-    ("True Ending", "Hidden &mdash; no description shown", 15.4, True),
-    ("Empty Home", "Hidden &mdash; no description shown", 9.4, True),
+    ("First Blood", "Kill your first customer", 96.9, False),
+    ("Still Breathing", "Survive your first hunt", 93.8, False),
+    ("Silenced", "Kill a Shrieking Doll", 89.8, False),
+    ("Freed", "Kill a Demented", 79.8, False),
+    ("Relentless", "Finish a hunt within 30 seconds", 45.4, False),
+    ("Last Performance", "Kill a Marionette", 41.6, False),
+    ("Grave Decision", "Hidden &mdash; no description shown", 33.1, True),
+    ("Locked And Loaded", "Purchase all melee weapons &amp; fill out the weapons arsenal", 23.5, False),
+    ("True Ending", "Hidden &mdash; no description shown", 16.0, True),
+    ("Empty Home", "Hidden &mdash; no description shown", 10.1, True),
 ]
 
 THREATS = [
@@ -34,12 +34,12 @@ THREATS = [
     ("Entities", "killable", "Yes",
      "The baseline threat, and the one you summon yourself &mdash; letting a doppelganger check out "
      "brings it back that night in its real form. Barricades, traps and weapons all work.",
-     "Still Breathing (93.4%)", "/guide/survival/",
+     "Still Breathing (93.8%)", "/guide/survival/",
      "entity, entities, spider, hunt, hunter, creature, basic, common"),
     ("Marionette", "boss", "Yes",
      "Killable, and tougher than an Entity. The music box decides it: hold E to rewind before the "
      "melody plays three times, or it summons the Marionette. The 23 July patch cut its health.",
-     "Last Performance (40.0%)", "/monsters/marionette/",
+     "Last Performance (41.6%)", "/monsters/marionette/",
      "music box, melody, puppet, strings, boss, song, tune, dancing, shift 9"),
     ("The Dentist", "unkillable", "Yes",
      "Run. Nothing else works &mdash; it is immune to weapons and traps alike. Head for Sheriff Clyde "
@@ -49,12 +49,12 @@ THREATS = [
     ("Shrieking Doll", "killable", "Yes",
      "Fragile &mdash; a few shots do it. The real cost is the noise, which is what pulls everything "
      "else onto you. Turns up during hunts, usually alongside Entities.",
-     "Silenced (89.2%)", "/monsters/shrieking-doll/",
+     "Silenced (89.8%)", "/monsters/shrieking-doll/",
      "doll, scream, shriek, screaming, porcelain, loud, noise, crawler, small"),
     ("Demented", "trap", "Yes",
      "It freezes while you look at it &mdash; and it cannot be damaged while you look at it either. "
      "The confirmed solution is to break line of sight in a direction that walks it into a trap.",
-     "Freed (78.8%)", "/monsters/demented/",
+     "Freed (79.8%)", "/monsters/demented/",
      "demented, stare, look, freeze, weeping angel, trap, deformed, twisted"),
     ("Rakes", "killable", "Yes",
      "Endless and post-story modes only, added on 29 July 2026. They come out of the forest and go "
@@ -74,7 +74,7 @@ THREATS = [
     ("Doppelgangers", "identify", "Yes",
      "Identification, not combat. They copy a real customer's appearance, voice and story &mdash; "
      "the scanner tells you a document is fake, not that the person is hostile.",
-     "First Blood (96.6%)", "/guide/doppelgangers/",
+     "First Blood (96.9%)", "/guide/doppelgangers/",
      "doppelganger, copy, imposter, twin, duplicate, same customer, id, scanner, lookalike"),
 ]
 
@@ -318,10 +318,10 @@ PAGES = [
 
   <h2>What the percentages mean</h2>
   <p>These are Steam global unlock rates &mdash; the share of everyone who owns the game that has the
-    achievement. They are a difficulty proxy, not a guide: <strong>First Blood sits at 96.6%%</strong>
+    achievement. They are a difficulty proxy, not a guide: <strong>First Blood sits at 96.9%%</strong>
     because it unlocks for killing your first customer, which nearly everyone does by accident.</p>
-  <p>The three hidden achievements &mdash; Grave Decision (31.4%%), True Ending (15.4%%) and
-    Empty Home (9.4%%) &mdash; <strong>do not show their requirements in-game, and we have not verified
+  <p>The three hidden achievements &mdash; Grave Decision (33.1%%), True Ending (16.0%%) and
+    Empty Home (10.1%%) &mdash; <strong>do not show their requirements in-game, and we have not verified
     them.</strong> We list what the rates imply on the <a href="/endings/">endings page</a> rather than
     publishing a guess as fact.</p>
 """ % {"rows": ach_rows()},
@@ -360,7 +360,7 @@ PAGES = [
     if (!left.length) {
       next.className = "tool-out ok";
       next.innerHTML = "<b>All 10 \\u2014 done</b><p>Including the three hidden ones. " +
-        "That puts you past the 9.4% of players who have Empty Home.</p>";
+        "That puts you past the 10.1% of players who have Empty Home.</p>";
       return;
     }
     left.sort(function (a, b) {

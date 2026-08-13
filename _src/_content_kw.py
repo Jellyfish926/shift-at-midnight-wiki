@@ -303,7 +303,7 @@ PAGES = [
 
   <h2>What none of the eight replaces</h2>
 
-  <p>Very few games make the <em>moral</em> decision the mechanical one. Here the frightening action is administrative: you decide whether to serve someone or kill them, on incomplete information, while a queue builds behind them. <strong>96.6% of players have killed a customer</strong> (<a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam achievement stats</a>, checked 5 August 2026) &mdash; that is the design working as intended, not a community of monsters. Nothing on this list reproduces it, which is why every honest recommendation here shares one half of the game rather than replacing it.</p>
+  <p>Very few games make the <em>moral</em> decision the mechanical one. Here the frightening action is administrative: you decide whether to serve someone or kill them, on incomplete information, while a queue builds behind them. <strong>96.9% of players have killed a customer</strong> (<a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam achievement stats</a>, checked 13 August 2026) &mdash; that is the design working as intended, not a community of monsters. Nothing on this list reproduces it, which is why every honest recommendation here shares one half of the game rather than replacing it.</p>
 
   <div class="grid two">
     <a class="card" href="/review/"><b>Is it worth it?</b><span>Price, the free demo, and what the review data says.</span></a>
@@ -351,7 +351,7 @@ PAGES = [
 
   <h2>How long is a run?</h2>
 
-  <p>Story Mode runs a sequence of shifts to a conclusion, with multiple possible outcomes &mdash; the three hidden achievements (<em>Grave Decision</em> 31.4%, <em>True Ending</em> 15.4%, <em>Empty Home</em> 9.4%) sit at the end of it. See <a href="/endings/">endings</a> for what those do and do not tell us.</p>
+  <p>Story Mode runs a sequence of shifts to a conclusion, with multiple possible outcomes &mdash; the three hidden achievements (<em>Grave Decision</em> 33.1%, <em>True Ending</em> 16.0%, <em>Empty Home</em> 10.1%) sit at the end of it. See <a href="/endings/">endings</a> for what those do and do not tell us.</p>
 
   <p>Endless Mode is the mode for people who want shifts without an ending, and it is worth being precise about its status because it is easy to read wrong: <strong>the Endless beta has been in the game since launch day</strong>, unlocked once the 13-shift story is finished. The free <strong>Q4 2026</strong> update is the <em>finished</em> version of that mode, not its arrival. See <a href="/nights-and-levels/#endless-mode">Endless Mode</a> below.</p>
 
@@ -771,7 +771,7 @@ PAGES = [
 
   <ul>
     <li><strong>Xbox and Game Pass players.</strong> Microsoft does not publish per-title figures, and neither the developer nor the publisher has released any. Every &ldquo;total players&rdquo; number you see for this game is a Steam number wearing a bigger hat.</li>
-    <li><strong>Unique players, or how many finished it.</strong> The closest public proxy is achievement rarity &mdash; 93.4% survive a first hunt, 15.4% reach the True Ending &mdash; and those are percentages of Steam owners, not counts. See <a href="/achievements/">achievements</a>.</li>
+    <li><strong>Unique players, or how many finished it.</strong> The closest public proxy is achievement rarity &mdash; 93.8% survive a first hunt, 16.0% reach the True Ending &mdash; and those are percentages of Steam owners, not counts. See <a href="/achievements/">achievements</a>.</li>
     <li><strong>Whether the game is growing or shrinking this month.</strong> We have one all-time peak with a date and two live readings a day apart. That is not a trend, and the one source that offered a month-over-month figure contradicted itself, as above.</li>
     <li><strong>How many are in the demo.</strong> The <a href="/demo/">free demo</a> is a separate app with its own, unpublished numbers.</li>
   </ul>
