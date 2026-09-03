@@ -47,3 +47,9 @@ en/editions 与 ja/editions 是对的 —— 建站期部分页查了店铺、�
 **结论**：DLC/特典物品名属「必须逐字复制自店铺页」的事实类；多语言站里一个编造名会被忠实翻译放大 N 倍。
 
 **并入**：`seo-jianzhan` 内页写作纪律 + `seo-yunying` 加厚红线。
+
+- 2026-09-03 | 五站门禁整改轮 | `adsense_check.py` 对 cleanUrls 平铺 HTML 站(Beast:`/en/faq` ↔ `en/faq.html`,信任页在根目录叫 privacy-policy.html)误报 DEAD_LINK 7191 / NAV_DEPTH 143 / TRUST_PAGES ×3 —— 它只认 `/x/index.html` 目录式产物;对这类站以 `check_content` + `link_check --out` 为准 → 建议给 adsense_check 加 `--clean-urls` 解析(x → x.html),并入 seo-jianzhan ⑥。
+- 2026-09-03 | Beast 五语种 | 主语种发售后重写、小语种只做「句级」占位语清扫(本轮 98 句)挡得住门禁,挡不住审核员读整页:按「≥3 个发售前标记/页」粗算 de 15/22、es 8/22、fr 13/25、it 10/22、ja 12/25 页整页仍是发售前视角,另有 70 处「详情见英文版」兜底句。教训:小语种同步的最小单位是**页**不是句,评估用「发售前标记数/页」这类页级指标 → 并入 seo-jianzhan 原则三「主语种改版,小语种当轮同步」。
+- 2026-09-03 | shift | `check_content` 的 PLACEHOLDER 把说明句里引用的 `"coming soon"`(「别的站还写着 coming soon」)也算命中;属可接受的保守误报,改措辞即可,不改门禁 → 记入 ⑥「测试挂了改内容不改门禁」的例证。
+- 2026-09-03 | 三个 Next 站 | 30 篇正文内链 0-2 条(孤岛页)是共性缺陷,新脚本 `add_links.py <repo> <map.json>`(语境词→目标页映射,跳过标题/图片/表格优先段落,每目标一链)一次补齐,人工只需复核动词误链(patched / burning / upgrades 各一处)→ 建议进 seo-jianzhan `scripts/` 并写进 ⑥ 门禁「FEW_LINKS 的修法」。
+- 2026-09-03 | Beast | 发售一个月后 6 语种 release-time 仍是倒计时页:这种「事件页」过期后要有下线预案(308 到常青页 + 出 sitemap + 清页脚),建站期就该在页面矩阵里给事件页标「到期动作」→ 并入 seo-jianzhan ①.8 表 2(页面矩阵加「到期动作」列)。

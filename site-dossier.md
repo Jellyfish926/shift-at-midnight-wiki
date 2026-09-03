@@ -1,7 +1,7 @@
 # 站点档案 — shiftatmidnightwiki.site
 
 > 每轮复盘开工先读这份档案，收尾更新它。审核结果只发邮件，不主动核对就会一直停在「审核中」。
-> 最后更新：2026-08-13
+> 最后更新：2026-09-03
 
 | 项 | 值 |
 |---|---|
@@ -73,3 +73,10 @@
 ## 追记 2026-08-12(第 2 轮收尾)
 - **8/12 已在 AdSense 后台重提审核**(勾选「已解决相关问题」→ 申请审核,状态变「正在准备/已请求审核」)。提交时站点快照:33 页 / 平均正文约 1000 词 / 站内查重 max ~6% / 死链 0 / **Adsterra Native Banner 在投(sandbox iframe)**。
 - 站主政策(8/12 拍板,skill 已同步改):①提审 AdSense 不关闭任何广告;②被拒整改完成即重提,不设等待期。上表「等待期」相关旧口径作废。
+
+
+## 2026-09-03 门禁整改轮
+
+- 详见 `reviews/2026-09-03.md`。Actions `gates` 绿;IndexNow 已推。
+- 门禁脚本真相源在 seo-jianzhan `scripts/`,本仓 `.gates/` 是副本;本地复现:对产物跑 `.gates/check_content.py` 等同一组命令。
+- IndexNow key:`public/c8ee8bae9e38c268a2e5c84fddfe8aca.txt`。
