@@ -409,6 +409,7 @@ PAGES = [
     <p class="meta" id="hits" role="status" aria-live="polite">Showing all 7 threats</p>
   </div>
 
+  <h2>All seven threats</h2>
   <div id="results">
 %(rows)s
   </div>
