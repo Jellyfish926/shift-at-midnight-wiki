@@ -80,3 +80,7 @@
 - 详见 `reviews/2026-09-03.md`。Actions `gates` 绿;IndexNow 已推。
 - 门禁脚本真相源在 seo-jianzhan `scripts/`,本仓 `.gates/` 是副本;本地复现:对产物跑 `.gates/check_content.py` 等同一组命令。
 - IndexNow key:`public/c8ee8bae9e38c268a2e5c84fddfe8aca.txt`。
+
+## 2026-09-07 备注
+
+- 本站已有成就追踪器(/tools/#achievement-tracker,10 项,手写数据);四个 Steam 站改用 fetch_achievements.py + 周更 workflow 的通用方案,本站下轮可切过去(数据自动刷新)。
