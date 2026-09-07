@@ -1,0 +1,68 @@
+{
+ "appid": "3722330",
+ "source": "https://steamcommunity.com/stats/3722330/achievements/",
+ "captured": "2026-09-07",
+ "total": 10,
+ "achievements": [
+  {
+   "name": "First Blood",
+   "desc": "Kill Your First Customer",
+   "pct": 96.7,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/2ea4cbf49baba558b5ea9e6d9bbaba5543725c1d.jpg"
+  },
+  {
+   "name": "Still Breathing",
+   "desc": "Survive Your First Hunt",
+   "pct": 93.5,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/bcd09ba0a829c9e4e070327d97599c8137bacd46.jpg"
+  },
+  {
+   "name": "Silenced",
+   "desc": "Kill a Shrieking Doll",
+   "pct": 89.6,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/fa90b1ac6503c90a90f6733a2c30ccd4d9f71285.jpg"
+  },
+  {
+   "name": "Freed",
+   "desc": "Kill a Demented",
+   "pct": 79.8,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/31c05138b5ba2c71b7412e3c66e3efa0a50065a1.jpg"
+  },
+  {
+   "name": "Relentless",
+   "desc": "Finish a Hunt within 30 seconds",
+   "pct": 45.3,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/322e25fb0bdba133fb0df24af82c71fba4cb7955.jpg"
+  },
+  {
+   "name": "Last Performance",
+   "desc": "Kill a Marionette",
+   "pct": 43.4,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/66a5caf5e81313e778899611339b17f48769675d.jpg"
+  },
+  {
+   "name": "Grave Decision",
+   "desc": "",
+   "pct": 34.6,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/91ba0bb969e34afdf15eb1d707546bdcdcade0d2.jpg"
+  },
+  {
+   "name": "Locked And Loaded",
+   "desc": "Purchase all Melee Weapons & Fill out the Weapons Arsenal",
+   "pct": 22.7,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/fe994794d607abea0816815f3cee3dc33d983c78.jpg"
+  },
+  {
+   "name": "True Ending",
+   "desc": "",
+   "pct": 16.1,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/2e9dc71498e42d8896bd5853474d2fd95911727d.jpg"
+  },
+  {
+   "name": "Empty Home",
+   "desc": "",
+   "pct": 10.7,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/f57c06b54fc943dff0d554f6510481f8ceef0769.jpg"
+  }
+ ]
+}

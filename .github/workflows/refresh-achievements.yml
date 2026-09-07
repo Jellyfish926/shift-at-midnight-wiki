@@ -1,0 +1,29 @@
+name: refresh-achievements
+# 每周一 08:30 北京从 Steam 公开成就页刷新 achievements.json,重建站点(成就追踪器数据)。有变化才提交。
+on:
+  schedule:
+    - cron: "30 0 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python3 scripts/fetch_achievements.py 3722330 achievements.json
+      - run: cd _src && python3 build_all.py
+      - name: 门禁
+        run: |
+          python3 .gates/check_content.py public --default en
+          python3 .gates/link_check.py --out public
+      - name: 有变化才提交
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add achievements.json public
+          if git diff --cached --quiet; then echo "无变化"; exit 0; fi
+          git commit -m "data: 刷新 Steam 成就解锁率并重建($(TZ=Asia/Shanghai date +%F))"
+          git push

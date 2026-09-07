@@ -84,3 +84,7 @@
 ## 2026-09-07 备注
 
 - 本站已有成就追踪器(/tools/#achievement-tracker,10 项,手写数据);四个 Steam 站改用 fetch_achievements.py + 周更 workflow 的通用方案,本站下轮可切过去(数据自动刷新)。
+
+## 2026-09-07 成就追踪器接入自动数据
+
+- `/tools/#achievement-tracker` 的 10 项解锁率改为从 `achievements.json` 读(scripts/fetch_achievements.py,周一 refresh-achievements.yml 自动刷新 + 重建);_content_tools.py 保留手抄快照作为兜底。

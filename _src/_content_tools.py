@@ -12,20 +12,29 @@ steam deck 实测)一个都没做 —— 那些必须编造数据。
 from _build import build
 
 # ── 数据(与站内已发布事实一字对应) ──────────────────────────────
-ACH = [
-    # 全局解锁率:2026-08-05 读自 Steam 官方成就统计页
-    # https://steamcommunity.com/stats/3722330/achievements/ —— 这些数字会漂,别抄旧的
-    ("First Blood", "Kill your first customer", 96.9, False),
-    ("Still Breathing", "Survive your first hunt", 93.8, False),
-    ("Silenced", "Kill a Shrieking Doll", 89.8, False),
-    ("Freed", "Kill a Demented", 79.8, False),
-    ("Relentless", "Finish a hunt within 30 seconds", 45.4, False),
-    ("Last Performance", "Kill a Marionette", 41.6, False),
-    ("Grave Decision", "Hidden &mdash; no description shown", 33.1, True),
-    ("Locked And Loaded", "Purchase all melee weapons &amp; fill out the weapons arsenal", 23.5, False),
-    ("True Ending", "Hidden &mdash; no description shown", 16.0, True),
-    ("Empty Home", "Hidden &mdash; no description shown", 10.1, True),
-]
+# 成就数据从仓库根 achievements.json 读(scripts/fetch_achievements.py 抓 Steam 公开成就页,周一 workflow 自动刷新)。
+# 文件缺失时退回这份 2026-08-05 的手抄快照,免得构建断掉。
+import json as _json, html as _html, pathlib as _pathlib
+_ACH_FILE = _pathlib.Path(__file__).resolve().parent.parent / "achievements.json"
+ACH_CAPTURED = "2026-08-05"
+if _ACH_FILE.exists():
+    _d = _json.loads(_ACH_FILE.read_text())
+    ACH_CAPTURED = _d.get("captured", ACH_CAPTURED)
+    ACH = [(_html.escape(a["name"]), _html.escape(a["desc"]) if a["desc"] else "Hidden &mdash; no description shown",
+            a["pct"], not a["desc"]) for a in _d["achievements"]]
+else:
+    ACH = [
+        ("First Blood", "Kill your first customer", 96.9, False),
+        ("Still Breathing", "Survive your first hunt", 93.8, False),
+        ("Silenced", "Kill a Shrieking Doll", 89.8, False),
+        ("Freed", "Kill a Demented", 79.8, False),
+        ("Relentless", "Finish a hunt within 30 seconds", 45.4, False),
+        ("Last Performance", "Kill a Marionette", 41.6, False),
+        ("Grave Decision", "Hidden &mdash; no description shown", 33.1, True),
+        ("Locked And Loaded", "Purchase all melee weapons &amp; fill out the weapons arsenal", 23.5, False),
+        ("True Ending", "Hidden &mdash; no description shown", 16.0, True),
+        ("Empty Home", "Hidden &mdash; no description shown", 10.1, True),
+    ]
 
 THREATS = [
     # 六个真实威胁 + 两个「常被当成怪物」的条目 + doppelganger 这个类别。
@@ -318,13 +327,14 @@ PAGES = [
 
   <h2>What the percentages mean</h2>
   <p>These are Steam global unlock rates &mdash; the share of everyone who owns the game that has the
-    achievement. They are a difficulty proxy, not a guide: <strong>First Blood sits at 96.9%%</strong>
+    achievement, read from Steam on <strong>%(captured)s</strong> and refreshed weekly by this site's build.
+    They are a difficulty proxy, not a guide: <strong>First Blood sits at %(first)s%%</strong>
     because it unlocks for killing your first customer, which nearly everyone does by accident.</p>
   <p>The three hidden achievements &mdash; Grave Decision (33.1%%), True Ending (16.0%%) and
     Empty Home (10.1%%) &mdash; <strong>do not show their requirements in-game, and we have not verified
     them.</strong> We list what the rates imply on the <a href="/endings/">endings page</a> rather than
     publishing a guess as fact.</p>
-""" % {"rows": ach_rows()},
+""" % {"rows": ach_rows(), "captured": ACH_CAPTURED, "first": ACH[0][2]},
  "script": """
 (function () {
   "use strict";
