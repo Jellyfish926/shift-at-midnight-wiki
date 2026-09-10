@@ -18,6 +18,7 @@ PAGES = [
  "trail": U,
  "h1": "Shift At Midnight updates and patch notes",
  "lede": "Two real patches and one emergency beta branch since launch. <strong>The 29 July patch added a new enemy</strong> &mdash; if you finished the story before then, you have not met it.",
+ "updated": "Last updated 2026-09-10 &middot; last verified 10 September 2026 &middot; game version: 29 July 2026 patch",
  "body": """
   <div class="term tip">
     <div class="term-h">Where these come from</div>
