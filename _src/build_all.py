@@ -18,6 +18,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import _build as B
 import _merge as M
 import _content_guides, _content_kw, _content_monsters, _content_tools, _content_updates
+import _content_new
 
 # 不由 build() 生成、正文手写的页(由 _patch_handwritten.py 拉齐样板)
 HANDWRITTEN = ["achievements", "crossplay", "monsters"]
@@ -25,7 +26,8 @@ HANDWRITTEN = ["achievements", "crossplay", "monsters"]
 
 def main() -> int:
     pages = (_content_kw.PAGES + _content_monsters.PAGES + _content_guides.PAGES
-             + _content_tools.PAGES + _content_updates.PAGES)
+             + _content_tools.PAGES + _content_updates.PAGES
+             + _content_new.PAGES)
     before = len(pages)
 
     kept = M.apply_merges(pages)

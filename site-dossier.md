@@ -9,7 +9,7 @@
 | 仓库 | `Jellyfish926/shift-at-midnight-wiki` |
 | 架构 | Python 生成器 `_src/` → 静态 HTML 到 `public/`。**唯一构建入口 `_src/build_all.py`**，不要单独跑 `_content_*.py`（合并要跨文件）。手写页由 `_patch_handwritten.py` 拉齐。 |
 | 首次提交 | 2026-07-28 |
-| 当前页数 | 34（2026-08-13 加 /monsters/entity/） |
+| 当前页数 | 39（2026-09-10 加 /controls/ /languages/ /credits/ /cheats/ /monsters/rake/） |
 | 内页中位字数 | 约 950 词 |
 
 ## 审核状态表
@@ -88,3 +88,15 @@
 ## 2026-09-07 成就追踪器接入自动数据
 
 - `/tools/#achievement-tracker` 的 10 项解锁率改为从 `achievements.json` 读(scripts/fetch_achievements.py,周一 refresh-achievements.yml 自动刷新 + 重建);_content_tools.py 保留手抄快照作为兜底。
+
+## 2026-09-10 补页轮（AdSense 审核期，只加不改）
+
+- 新增 5 页，正文源 `_src/_content_new.py`，已接入 `build_all.py`：
+  `/controls/`（1071w）、`/languages/`（977w）、`/credits/`（991w）、`/cheats/`（997w）、`/monsters/rake/`（1024w）。
+- 五页都带自己的 `updated` 字段（10 Sept 2026 / 1 Sept 2026 patch），不动 `_build.VERIFIED`，
+  所以既有 34 页的版本戳一个字都没变。
+- `_build.NAV2` 加了 Controls / Languages / Cheats / Credits 四项 —— 既有页的 diff 只有导航块。
+- `/monsters/` 手写页做了三处：表格 Rakes 行加链接、卡片区加 Rake 卡、H2 从
+  「the one without its own page」改成「the forest threat」（有了页以后原标题变成假话，只此一处动了正文）。
+- 门禁本地全绿：check_content 36 页 0 阻塞 0 警告 / check_sitemap 39 loc 0 阻塞 / link_check 44 链接 0 死链。
+- 仍未核实项按各页 `.term warn` 原样保留（Rake 的生命值/伤害/刷新率、完整键位表、是否有游戏内语言开关）。

@@ -41,11 +41,13 @@ NAV = [("/monsters/", "Monsters"), ("/achievements/", "Achievements"),
 # 覆盖此前 27 个进不了任何导航、只能靠正文链接触达的页面。
 NAV2 = [("/release-date/", "Release date"), ("/platforms/", "Platforms"),
         ("/system-requirements/", "System requirements"),
+        ("/controls/", "Controls"), ("/languages/", "Languages"),
         ("/multiplayer/", "Multiplayer"), ("/nights-and-levels/", "Nights &amp; Endless"),
         ("/updates/", "Updates"), ("/troubleshooting/", "Troubleshooting"),
         ("/review/", "Is it worth it?"), ("/demo/", "Demo"),
         ("/player-count/", "Player count"),
-        ("/mods/", "Mods"), ("/similar-games/", "Similar games")]
+        ("/mods/", "Mods"), ("/cheats/", "Cheats"),
+        ("/similar-games/", "Similar games"), ("/credits/", "Credits")]
 
 # 出站链接 —— 全部一手核实,不使用未经核实的 URL。
 # STEAM_APP: 经 SteamDB app/3722330 核实(Developer Bun Muen / Publisher Kwalee /
