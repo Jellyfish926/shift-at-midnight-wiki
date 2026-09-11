@@ -9,7 +9,7 @@
 | 仓库 | `Jellyfish926/shift-at-midnight-wiki` |
 | 架构 | Python 生成器 `_src/` → 静态 HTML 到 `public/`。**唯一构建入口 `_src/build_all.py`**，不要单独跑 `_content_*.py`（合并要跨文件）。手写页由 `_patch_handwritten.py` 拉齐。 |
 | 首次提交 | 2026-07-28 |
-| 当前页数 | 39（2026-09-10 加 /controls/ /languages/ /credits/ /cheats/ /monsters/rake/） |
+| 当前页数 | 42（2026-09-10 加 5 页；2026-09-11 再加 /glossary/ /monsters/compare/ /start-here/） |
 | 内页中位字数 | 约 950 词 |
 
 ## 审核状态表
@@ -100,3 +100,15 @@
   「the one without its own page」改成「the forest threat」（有了页以后原标题变成假话，只此一处动了正文）。
 - 门禁本地全绿：check_content 36 页 0 阻塞 0 警告 / check_sitemap 39 loc 0 阻塞 / link_check 44 链接 0 死链。
 - 仍未核实项按各页 `.term warn` 原样保留（Rake 的生命值/伤害/刷新率、完整键位表、是否有游戏内语言开关）。
+
+## 2026-09-11 第三批：站内素材重组型（本容器出不了外网，不引入新事实）
+
+- 新增 3 页，正文源 `_src/_content_batch3.py`，已接入 `build_all.py`：
+  `/glossary/`（1135w，A-Z 32 条术语，49 条内链）、`/monsters/compare/`（1133w，七个敌人对比表，25 条内链）、
+  `/start-here/`（920w，新手到进阶阅读顺序 + 5 问 FAQ，38 条内链）。
+- 全部事实汇总自本仓已发布页（成就数字取自 `/achievements/` 渲染页而非 `achievements.json` 原始快照，
+  两者目前一致：89.8% / 79.8% / 41.6% / 93.8%）。没有新增任何外部来源。
+- 按 CONTENT-BRIEF 要求：**没有改动任何既有页正文，也没有改 `NAV`/`NAV2` 导航结构** ——
+  只新增 `_src/_content_batch3.py` 并在 `build_all.py` 里 import 接线，三页暂不进主导航，
+  互链靠正文卡片和彼此内链触达。
+- 门禁本地全绿：check_content 39 页 0 阻塞 0 警告 / check_sitemap 42 loc 0 阻塞 / link_check 47 链接 0 死链。
