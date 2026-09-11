@@ -20,6 +20,7 @@ import _merge as M
 import _content_guides, _content_kw, _content_monsters, _content_tools, _content_updates
 import _content_new
 import _content_batch3
+import _content_batch4
 import _content_completion
 
 # 不由 build() 生成、正文手写的页(由 _patch_handwritten.py 拉齐样板)
@@ -30,6 +31,7 @@ def main() -> int:
     pages = (_content_kw.PAGES + _content_monsters.PAGES + _content_guides.PAGES
              + _content_tools.PAGES + _content_updates.PAGES
              + _content_new.PAGES + _content_batch3.PAGES
+             + _content_batch4.PAGES
              + _content_completion.PAGES)
     before = len(pages)
 

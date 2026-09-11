@@ -57,13 +57,13 @@ ACHIEVEMENTS = [
 ENDINGS = [
     ("end-grave-decision", "Grave Decision ending",
      "Call Sheriff Clyde after Shift 12. Money is irrelevant on this branch: your pet lives, Clyde dies.",
-     "/endings/"),
+     "/endings/grave-decision/"),
     ("end-true-ending", "True Ending",
      "Do not call Clyde, and hold at least $250 when Shift 13 ends. Pet and Clyde both survive.",
-     "/endings/"),
+     "/endings/true-ending/"),
     ("end-empty-home", "Empty Home ending",
      "Do not call Clyde and finish Shift 13 under $250. Clyde lives; you cannot pay for the surgery.",
-     "/endings/"),
+     "/endings/empty-home/"),
 ]
 
 MILESTONES = [

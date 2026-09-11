@@ -37,7 +37,7 @@ PAGES = [
   <h2>A&ndash;Z</h2>
 
   <h3>A</h3>
-  <p><strong>Achievements.</strong> Ten Steam achievements, three hidden until unlocked, running 96.9% down to 10.1%. See <a href="/achievements/">the achievements page</a>.</p>
+  <p><strong>Achievements.</strong> Ten Steam achievements, three hidden until unlocked, running 96.9% down to 10.1%. See <a href="/achievements/">the achievements page</a>, plus the <a href="/achievements/monster-kills/">four kill achievements</a> and the <a href="/achievements/hunt-and-arsenal/">three the Hunt decides</a>.</p>
 
   <h3>B</h3>
   <p><strong>Barricade.</strong> Wooden boards over doors and windows that slow the <a href="/monsters/entity/">Entity</a> during a Hunt. See the <a href="/guide/survival/">survival guide</a>.</p>
@@ -58,13 +58,13 @@ PAGES = [
 
   <h3>E</h3>
   <p><strong>Employee Package.</strong> A physical launch giveaway item; this wiki covers giveaway-phishing risk under the same page. See <a href="/employee-package/">Employee Package</a>.</p>
-  <p><strong>Endings.</strong> Three outcomes &mdash; Grave Decision, True Ending, Empty Home &mdash; decided by two variables at Shift 13. See <a href="/endings/">endings</a>.</p>
+  <p><strong>Endings.</strong> Three outcomes &mdash; <a href="/endings/grave-decision/">Grave Decision</a>, <a href="/endings/true-ending/">True Ending</a>, <a href="/endings/empty-home/">Empty Home</a> &mdash; decided by two variables at Shift 13. See <a href="/endings/">endings</a>.</p>
   <p><strong>Endless Mode.</strong> An open-beta mode that unlocks only after finishing Story Mode's 13 shifts. See <a href="/nights-and-levels/">nights &amp; Endless Mode</a>.</p>
   <p><strong>Entity.</strong> The true form of a doppelganger that completes its purchase &mdash; blind, and tracks sound including proximity voice chat. See <a href="/monsters/entity/">the Entity</a>.</p>
   <p><strong>EULA.</strong> Kwalee's licence agreement; its anti-modification clause is why trainers are against the terms. See <a href="/cheats/">cheats</a>.</p>
 
   <h3>G</h3>
-  <p><strong>Grave Decision.</strong> The most common of the three endings, at 33.1% global unlock. See <a href="/endings/">endings</a>.</p>
+  <p><strong>Grave Decision.</strong> The most common of the three endings, at 33.1% global unlock. See <a href="/endings/grave-decision/">the Grave Decision page</a>.</p>
 
   <h3>H</h3>
   <p><strong>Hunt.</strong> Triggered by a missed doppelganger or a Blood Moon shift &mdash; survival is mostly sound and doors, weapons last. See <a href="/guide/survival/">the survival guide</a>.</p>
@@ -253,7 +253,7 @@ PAGES = [
 
   <h2>Going deeper</h2>
   <ol start="8">
-    <li><strong><a href="/achievements/">Achievements</a> and <a href="/endings/">endings</a>.</strong> Once the core loop is comfortable, these two pages cover the completion curve (96.9% down to 10.1%) and the two variables &mdash; the Sheriff Clyde call and your Shift 13 savings &mdash; that decide which of the three endings you get.</li>
+    <li><strong><a href="/achievements/">Achievements</a> and <a href="/endings/">endings</a>.</strong> Once the core loop is comfortable, these two pages cover the completion curve (96.9% down to 10.1%) and the two variables &mdash; the Sheriff Clyde call and your Shift 13 savings &mdash; that decide which of the three endings you get. Each ending now has its own page (<a href="/endings/true-ending/">True Ending</a>, <a href="/endings/grave-decision/">Grave Decision</a>, <a href="/endings/empty-home/">Empty Home</a>), and the achievements split into the <a href="/achievements/monster-kills/">four kill achievements</a> and the <a href="/achievements/hunt-and-arsenal/">three decided by a Hunt</a>.</li>
   </ol>
   <p>If you would rather work from a checklist than a reading order, the <a href="/tools/completion-tracker/">100% completion tracker</a> puts every achievement, ending, named threat and fixed story beat on this wiki into 46 tick boxes that save in your browser.</p>
   <p>After that, <a href="/nights-and-levels/">nights &amp; Endless Mode</a> explains what changes once Story Mode's 13 shifts are behind you, including the Post-Story-only <a href="/monsters/rake/">Rake</a>. If you are chasing every corner of the game rather than just finishing it, <a href="/mods/">mods</a> and <a href="/updates/">updates</a> round things out; if something breaks along the way, <a href="/troubleshooting/">troubleshooting</a> separates the fixes that are confirmed from the reports this wiki could not verify.</p>
