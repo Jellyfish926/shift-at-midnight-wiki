@@ -95,7 +95,7 @@ PAGES = [
  "active": "/guides/",
  "title": "Shift At Midnight Languages: All 9 Supported",
  "og_short": "Language support",
- "desc": "Shift At Midnight supports 9 languages on both Steam and Xbox. Whether audio is fully localized or interface/subtitles only is disputed between this wiki's own pages, and unresolved.",
+ "desc": "Shift At Midnight supports 9 languages on Steam and Xbox. Whether audio is fully localized or interface and subtitles only remains unresolved.",
  "trail": [(None, "Languages")],
  "h1": "Shift At Midnight language support",
  "lede": "Shift At Midnight ships in <strong>9 languages</strong>, confirmed identically on both the Steam store page and the Xbox listing, which both list \"9 supported languages\" independently. Whether that support extends to full voice audio in every language, or is interface-and-subtitles only, is <strong>unconfirmed</strong> &mdash; see below.",

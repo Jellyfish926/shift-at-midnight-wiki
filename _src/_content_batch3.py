@@ -144,7 +144,7 @@ PAGES = [
  "active": "/guides/",
  "title": "Shift At Midnight Monsters Compared: Which Ones Can You Kill?",
  "og_short": "All monsters compared",
- "desc": "All seven Shift At Midnight threats compared in one table — when each appears, whether it can be killed, the counter that works, and its achievement unlock rate.",
+ "desc": "All seven Shift At Midnight threats in one table: when each appears, whether it can be killed, the counter that works, and its achievement unlock rate.",
  "trail": M + [(None, "Compare all threats")],
  "h1": "Every Shift At Midnight threat, compared",
  "lede": "Seven named threats appear across this wiki's bestiary, each with its own page and its own counter. Read individually, it is easy to lose track of which ones you can actually shoot, which one you can only outsmart, and which one is off-limits until you finish Story Mode. This page puts all seven side by side, with figures pulled straight from <a href=\"/achievements/\">the achievements page</a> and each monster's own page &mdash; nothing recalculated, nothing new claimed.",

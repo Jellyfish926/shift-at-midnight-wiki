@@ -23,6 +23,22 @@ PAGES = {
     "404.html": "",
 }
 
+# 手写页也要有 Article JSON-LD(生成页由 _build.render 统一输出)。
+# 标题/描述/日期全部从该页已有的 <title>/<meta description>/<p class="updated">
+# 里读,不新增字段、不另编日期。404 不算内容页,跳过。
+ARTICLE_MARK = "<!-- article-ld -->"
+
+
+def article_block(s: str, canonical: str) -> str:
+    title = re.search(r"<title>(.*?)</title>", s, re.S)
+    desc = re.search(r'<meta name="description" content="(.*?)">', s, re.S)
+    upd = re.search(r'<p class="updated">(.*?)</p>', s, re.S)
+    return (ARTICLE_MARK + "\n"
+            + B.article_ld(title.group(1) if title else "",
+                           desc.group(1) if desc else "",
+                           canonical,
+                           B.iso_date(upd.group(1) if upd else "")))
+
 
 def new_header(active: str) -> str:
     return f"""<header class="site">
@@ -73,8 +89,11 @@ def new_footer_inner(with_official: bool) -> str:
     return (
         f"    <nav>\n{B.nav_html('')}\n{B.nav2_flat_html()}\n"
         '      <a href="/about/">About</a>\n'
+        '      <a href="/author/">Editor</a>\n'
+        '      <a href="/editorial-policy/">Editorial policy</a>\n'
         '      <a href="/contact/">Contact us</a>\n'
         '      <a href="/privacy/">Privacy policy</a>\n'
+        '      <a href="/disclaimer/">Disclaimer</a>\n'
         "    </nav>\n"
         f"{official}"
         f'    <p class="fine">{B.FOOTER_FINE}</p>'
@@ -143,6 +162,15 @@ def patch(rel: str, active: str) -> str:
             s = s.replace("</body>",
                           '<!-- 广告位:Adsterra Banner 300x250,只在 ads.js 开关打开时注入 -->\n'
                           '<script src="/ads.js" defer></script>\n</body>', 1)
+
+    # 3g) Article JSON-LD(幂等:先清掉上一轮产出的那块,再按当前文案重写)
+    if not is404:
+        s = re.sub(re.escape(ARTICLE_MARK)
+                   + r'\n<script type="application/ld\+json">.*?</script>\n?',
+                   "", s, flags=re.S)
+        canonical = re.search(r'<link rel="canonical" href="(.*?)"', s)
+        url = canonical.group(1) if canonical else B.BASE + PAGES.get(rel, "/")
+        s = s.replace("</head>", article_block(s, url) + "\n</head>", 1)
 
     # 4) 商店区块:插在 ad-banner 之前(404 跳过)
     if not is404 and 'class="store"' not in s:

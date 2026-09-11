@@ -4,6 +4,9 @@
 只负责把重复结构生成一致,不生成内容。跑完用 audit_pages 全站校验。
 """
 import hashlib
+import html as _html
+import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent / "public"   # 只往发布目录写;memory.md 与 _src 不进发布树
@@ -65,6 +68,64 @@ FOOTER_FINE = ("Shift At Midnight Wiki is an unofficial fan resource. Shift At M
                "by Kwalee or Bun Muen.")
 
 VERIFIED = "Last verified 5 August 2026 &middot; game version: 29 July 2026 patch"
+
+# 站内署名 —— 与 /about/ 正文里已有的署名一致(「curated and edited by Jellyfish」),
+# 不另起一个名字。Article JSON-LD 的 author 与 /author/ 页都指向它。
+AUTHOR_NAME = "Jellyfish"
+AUTHOR_ROLE = "Editor"
+AUTHOR_URL = f"{BASE}/author/"
+SITE_NAME = "Shift At Midnight Wiki"
+OG_IMAGE = f"{BASE}/og-image.jpg"
+
+_MONTHS = {m: i for i, m in enumerate(
+    ["January", "February", "March", "April", "May", "June", "July",
+     "August", "September", "October", "November", "December"], 1)}
+
+
+def iso_date(text: str, fallback: str = "2026-08-05") -> str:
+    """从页面已有的日期文案里取 ISO 日期 —— 不新增日期字段,也不编造日期。
+
+    取第一个出现的日期:`updated` 文案的第一处日期就是该页的核实日期
+    (后面的「game version: 29 July 2026 patch」是游戏版本日,不是页面日期,
+    所以不能取最大值)。识别 `2026-09-10` 与 `5 August 2026` 两种写法。
+    """
+    t = _html.unescape(text or "")
+    m = re.search(r"\b(\d{4})-(\d{2})-(\d{2})\b", t)
+    n = re.search(r"\b(\d{1,2})\s+([A-Z][a-z]+)\s+(\d{4})\b", t)
+    if m and (not n or m.start() <= n.start()):
+        return m.group(0)
+    if n and n.group(2) in _MONTHS:
+        return f"{n.group(3)}-{_MONTHS[n.group(2)]:02d}-{int(n.group(1)):02d}"
+    return fallback
+
+
+def _plain(s: str) -> str:
+    """HTML 文案 → JSON-LD 用的纯文本(去标签、解实体、压空白)。"""
+    s = re.sub(r"<[^>]+>", "", s or "")
+    return " ".join(_html.unescape(s).split())
+
+
+def article_ld(title: str, desc: str, url: str, date: str) -> str:
+    """Article JSON-LD —— 每个内容页一份,与 BreadcrumbList 配套。"""
+    obj = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": _plain(title),
+        "description": _plain(desc),
+        "inLanguage": "en",
+        "datePublished": date,
+        "dateModified": date,
+        "author": {"@type": "Person", "name": AUTHOR_NAME,
+                   "jobTitle": AUTHOR_ROLE, "url": AUTHOR_URL},
+        "publisher": {"@type": "Organization", "name": SITE_NAME,
+                      "url": f"{BASE}/",
+                      "logo": {"@type": "ImageObject", "url": OG_IMAGE}},
+        "image": OG_IMAGE,
+        "mainEntityOfPage": {"@type": "WebPage", "@id": url},
+    }
+    return ('<script type="application/ld+json">\n'
+            + json.dumps(obj, indent=2, ensure_ascii=False)
+            + "\n</script>")
 
 
 def nav_html(active: str) -> str:
@@ -181,7 +242,8 @@ def render(page: dict) -> str:
 <link rel="stylesheet" href="/style.css?v={CSS_VER}">
 <!-- Google AdSense ca-pub-6575082962774479 — 站点验证 + 过审后自动投放 -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479" crossorigin="anonymous"></script>
-{breadcrumb_ld(page['trail'], page['title'], url)}{extra_ld}
+{breadcrumb_ld(page['trail'], page['title'], url)}
+{article_ld(page['title'], page['desc'], url, iso_date(page.get('updated', VERIFIED)))}{extra_ld}
 <!-- Google tag (gtag.js) — GA4 G-RFHPX1SQ5N -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFHPX1SQ5N"></script>
 <script>
@@ -239,8 +301,11 @@ def render(page: dict) -> str:
 {nav_html('')}
 {nav2_flat_html()}
       <a href="/about/">About</a>
+      <a href="/author/">Editor</a>
+      <a href="/editorial-policy/">Editorial policy</a>
       <a href="/contact/">Contact us</a>
       <a href="/privacy/">Privacy policy</a>
+      <a href="/disclaimer/">Disclaimer</a>
     </nav>
     <p class="fine">Official links:
       <a href="{STEAM_APP}" target="_blank" rel="noopener">Steam store page</a> &middot;

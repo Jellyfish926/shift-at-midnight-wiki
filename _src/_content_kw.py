@@ -926,6 +926,104 @@ PAGES = [
   <h2>9. Changes</h2>
   <p>If this policy changes, the effective date at the top of this page changes with it.</p>
 """},
+
+# --- 信任页(E-E-A-T):不官方声明 / 编辑标准 / 署名 ---
+{
+ "path": "disclaimer", "active": "",
+ "title": "Disclaimer — Shift At Midnight Wiki",
+ "og_short": "Disclaimer",
+ "desc": "shiftatmidnightwiki.site is an unofficial fan wiki. Trademark ownership, accuracy limits, advertising, and what we do not claim to know.",
+ "trail": [(None, "Disclaimer")],
+ "updated": "Last reviewed 11 September 2026",
+ "h1": "Disclaimer",
+ "lede": "What this site is, what it is not, and where its limits sit &mdash; stated once, plainly.",
+ "body": """
+  <h2>Unofficial means unofficial</h2>
+  <p>shiftatmidnightwiki.site is an independent, fan-made reference for <strong>Shift At Midnight</strong>. Nobody here works with, for, or on behalf of the game&rsquo;s developer or publisher. <strong>Shift At Midnight</strong> is developed by <strong>Bun Muen</strong> and published by <strong>Kwalee</strong>; all game names, trademarks, artwork, screenshots and in-game text referenced on these pages remain the property of their respective owners. We reference them because writing usefully about a game requires naming its parts, and we claim no ownership of any of it.</p>
+  <p>Neither Kwalee nor Bun Muen has reviewed, approved, sponsored or endorsed anything published here. Where the studio actually speaks is the official channels cited on our <a href="/updates/">patch notes page</a> &mdash; the Steam store page, the developer&rsquo;s own site and its public posts. If something we write ever contradicts those, they are right and we are wrong.</p>
+
+  <h2>Accuracy is a best effort, not a guarantee</h2>
+  <p>Every page here carries a verification date and the game version it was checked against, because that is the only honest way to publish about a game that is still being patched. A build released after that date can invalidate a page before we get to it. Nothing on this site is warranted to be complete, current or fit for any particular purpose, and you use it at your own risk.</p>
+  <p>The specific limits worth knowing about:</p>
+  <ul>
+    <li><strong>Procedurally generated shifts.</strong> There is no fixed night-by-night schedule in this game, so any page &mdash; ours or anyone else&rsquo;s &mdash; promising one is describing a single run rather than a rule.</li>
+    <li><strong>Unpublished numbers stay unpublished.</strong> Things such as the Rake&rsquo;s health and spawn rate, or per-weapon damage values, have no source we trust, so they are absent here rather than estimated. Where we reason from evidence instead of quoting a source, the text says so.</li>
+    <li><strong>Drifting statistics.</strong> Achievement completion percentages and player counts are read from public stats on a stated date and move continuously afterwards.</li>
+  </ul>
+
+  <h2>No affiliate relationships</h2>
+  <p>We have <strong>no affiliate or referral relationships with anyone</strong>, and nothing on this site earns a commission. The links we publish to Steam, the Microsoft Store and the developer&rsquo;s own site are plain links; if you buy the game through one, we receive nothing. We also do not accept payment for coverage, scores or placement.</p>
+  <p>The site is funded by third-party display advertising &mdash; Google AdSense and Adsterra. Those networks choose the creatives without our involvement, no advertiser sees a page before it is published, and ad revenue buys exactly zero influence over what any page says. Cookie details are in the <a href="/privacy/">privacy policy</a>. If that ever changes &mdash; an affiliate link, a sponsored page &mdash; this paragraph changes first.</p>
+
+  <h2>Not advice, not support</h2>
+  <p>Pricing and platform availability describe the storefront listing as of the date shown next to them; check the live store before you buy. We cannot provide technical support, refunds, account recovery or keys for the game &mdash; those go to your storefront or to the publisher, as set out on the <a href="/contact/">contact page</a>.</p>
+
+  <h2>Rights holders and corrections</h2>
+  <p>If you represent Kwalee or Bun Muen and want something changed or removed, or if you have found an error anywhere on this site, the <a href="/contact/">contact page</a> reaches the person who maintains it. How corrections are handled is set out in the <a href="/editorial-policy/">editorial policy</a>.</p>
+"""},
+{
+ "path": "editorial-policy", "active": "",
+ "title": "Editorial Policy — How This Wiki Verifies Things",
+ "og_short": "Editorial Policy",
+ "desc": "The rules every page on Shift At Midnight Wiki is written under: sourcing tiers, how unconfirmed claims are labelled, dating, and how to get an error fixed.",
+ "trail": [(None, "Editorial policy")],
+ "updated": "Last reviewed 11 September 2026",
+ "h1": "Editorial policy",
+ "lede": "Every page on this wiki is written under the same standing rules. This page states them, so you can hold our pages to them.",
+ "body": """
+  <h2>Sourcing: primary first, community second, nothing third</h2>
+  <p>Release dates, pricing, platforms, patch contents and feature lists come from the <strong>official store listing and the developer&rsquo;s own material</strong>. Achievement names and global unlock percentages are read from <strong>public Steam global stats</strong>; concurrent-player figures are read from public SteamDB charts. Those are the first tier, and they are the only tier treated as settled fact.</p>
+  <p>The second tier is community work &mdash; a mod author&rsquo;s own documentation, a measured figure from someone who did the measuring. It is used, credited to whoever did it, and labelled as community work rather than presented as official. There is no third tier: a number that circulates widely with no traceable origin stays off these pages however widely it is repeated.</p>
+
+  <h2>Unconfirmed is written as unconfirmed</h2>
+  <p>This is the rule that costs us the most pages and matters the most. Where we reason from evidence rather than quote a source, the sentence says so. Where nobody has published a figure, we write that it is unpublished instead of filling the gap with a plausible-sounding number &mdash; the Rake&rsquo;s health and spawn rate, per-weapon damage, the full melee weapon list and the author of the in-game newsletter are all currently in that state, and they are listed as open questions on the <a href="/contact/">contact page</a> rather than answered.</p>
+  <p>The reason is specific to this game: it launched with three hidden achievements that nobody had publicly solved, and vacuums like that fill up with confident guesses that then spread as fact. Following an invented requirement costs you runs. We would rather tell you we do not know.</p>
+
+  <h2>Conflicts get printed, not quietly resolved</h2>
+  <p>When two credible sources disagree, both appear with their origins and the page says why neither is being treated as settled. Picking the tidier figure would read better and inform worse.</p>
+
+  <h2>Everything carries a date and a version</h2>
+  <p>Each page shows when it was last verified and which game build it was checked against. That stamp is a commitment: it means someone re-read the page against that build&rsquo;s public record, not that the page was merely touched. Statistics that drift &mdash; achievement percentages, player counts &mdash; are published with the date they were read, because a percentage without a date is not information. When a patch lands, the affected pages go through a pass and the <a href="/updates/">patch notes page</a> records what changed.</p>
+
+  <h2>Corrections are public and fast</h2>
+  <p>When we get something wrong, the fix is dated on the page rather than silently swapped in; where a claim was materially misleading, the page carries a visible note saying what it used to say. The <a href="/endings/">endings page</a> is the standing example &mdash; it still shows a note about the unlock percentages it previously displayed.</p>
+  <p>To report an error, email us via the <a href="/contact/">contact page</a>. Quote the exact passage and link the page; a report that comes with a screenshot, a patch-note line or a store link goes to the front of the queue. Verified corrections are applied within 48 hours and the page is re-dated.</p>
+
+  <h2>Money cannot reach the copy</h2>
+  <p>The site is funded by third-party display advertising, described in the <a href="/privacy/">privacy policy</a> and the <a href="/disclaimer/">disclaimer</a>. There are no affiliate links and no commissions, no advertiser previews or sponsors a page, and we do not accept payment for coverage, scores or placement. If any of that ever changes, this policy will say so before the page it affects goes live.</p>
+"""},
+{
+ "path": "author", "active": "",
+ "title": "About the Editor — Shift At Midnight Wiki",
+ "og_short": "About the Editor",
+ "desc": "Who writes Shift At Midnight Wiki: the editor behind the site, what the site is for, how claims get verified, and how to reach us with a correction.",
+ "trail": [(None, "Editor")],
+ "updated": "Last reviewed 11 September 2026",
+ "h1": "Jellyfish &mdash; editor",
+ "lede": "This wiki is written and maintained by one person. This page says who that is, what the site is trying to be, and the method behind every page on it.",
+ "body": """
+  <h2>Who writes this site</h2>
+  <p>shiftatmidnightwiki.site is curated and edited by <strong>Jellyfish</strong>, an independent games-content creator who also maintains a small group of sister guide sites for other games. This is a one-person independent project &mdash; not a content farm, and not affiliated with any publisher. That is a limitation worth stating plainly: coverage moves at the speed of one editor. It is also the reason the rules on the <a href="/editorial-policy/">editorial policy</a> page can actually be enforced on every page, because the same person applies them to all of them.</p>
+
+  <h2>What this site is for</h2>
+  <p>The goal is the most useful English-language reference for <strong>Shift At Midnight</strong> &mdash; the co-op survival horror game by solo developer Bun Muen, published by Kwalee, released 22 July 2026. In practice that means answering the questions players actually arrive with: what a threat is and how it behaves, whether a group can <a href="/crossplay/">play together across platforms</a>, what a patch changed, and whether the game is <a href="/review/">worth its price</a> to someone like them.</p>
+  <p>It is organised around <a href="/monsters/">threats</a> and systems rather than a numbered walkthrough, and that is a deliberate consequence of how the game works: shifts are procedurally generated, so recognising a Shrieking Doll by its scream is true on every run while &ldquo;on night four you will meet X&rdquo; is not.</p>
+
+  <h2>How things get verified</h2>
+  <p>Every factual claim starts from a primary source &mdash; the official store listing, the developer&rsquo;s own patch material, or public Steam global stats for achievement rates &mdash; and pages carry the date they were last checked and the game build they were checked against. Community measurements are used where they are the only thing that exists, credited to whoever made them and labelled as community work.</p>
+  <p>Where no reliable source exists, the page says so instead of guessing. Several things about this game are genuinely unknown in public &mdash; the Rake&rsquo;s health and spawn rate, per-weapon damage figures, who writes the in-game newsletter &mdash; and they are listed as open questions rather than answered with something plausible. Inference is labelled as inference wherever it appears, so you can always tell which sentences quote a source and which reason from one. The full set of rules, including how conflicts between sources are handled, is on the <a href="/editorial-policy/">editorial policy</a> page.</p>
+
+  <h2>Independence</h2>
+  <p>The site is funded by third-party display advertising and nothing else. There are no affiliate links, no commissions on anything you buy, and no paid coverage, scores or placement &mdash; the <a href="/disclaimer/">disclaimer</a> states this in full and the <a href="/privacy/">privacy policy</a> covers what the advertising and analytics vendors collect.</p>
+
+  <h2>Get in touch</h2>
+  <p>Corrections, tips, discoveries and guide requests all go to the same place: the <a href="/contact/">contact page</a>. Verified corrections are applied within 48 hours and the page is re-dated. Reader requests genuinely shape what gets built next &mdash; telling us what you searched for and could not find is the single most useful message you can send.</p>
+
+  <div class="grid two">
+    <a class="card" href="/editorial-policy/"><b>Editorial policy</b><span>The rules every page is written under.</span></a>
+    <a class="card" href="/contact/"><b>Contact us</b><span>Corrections, tips and open questions.</span></a>
+  </div>
+"""},
 ]
 
 if __name__ == "__main__":

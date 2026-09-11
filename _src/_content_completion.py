@@ -451,7 +451,7 @@ PAGES = [
  "title": "Shift At Midnight 100% Completion Tracker — 46 Checkboxes, Saved Locally",
  "og_short": "Completion Tracker",
  "desc": ("Tick off every Shift At Midnight achievement, ending, threat and run milestone this wiki has "
-          "verified. Progress saves in your browser, and an export code moves it between devices."),
+          "verified. Progress saves in your browser; an export code moves it."),
  "trail": [("/tools/", "Tools"), (None, "Completion tracker")],
  "h1": "Shift At Midnight 100% completion tracker",
  "lede": ("Every achievement, ending, named threat and fixed story beat this wiki can source, in one "
