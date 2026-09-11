@@ -47,7 +47,8 @@ NAV2 = [("/release-date/", "Release date"), ("/platforms/", "Platforms"),
         ("/review/", "Is it worth it?"), ("/demo/", "Demo"),
         ("/player-count/", "Player count"),
         ("/mods/", "Mods"), ("/cheats/", "Cheats"),
-        ("/similar-games/", "Similar games"), ("/credits/", "Credits")]
+        ("/similar-games/", "Similar games"), ("/credits/", "Credits"),
+        ("/tools/completion-tracker/", "Completion tracker")]
 
 # 出站链接 —— 全部一手核实,不使用未经核实的 URL。
 # STEAM_APP: 经 SteamDB app/3722330 核实(Developer Bun Muen / Publisher Kwalee /
