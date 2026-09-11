@@ -112,3 +112,9 @@
   只新增 `_src/_content_batch3.py` 并在 `build_all.py` 里 import 接线，三页暂不进主导航，
   互链靠正文卡片和彼此内链触达。
 - 门禁本地全绿：check_content 39 页 0 阻塞 0 警告 / check_sitemap 42 loc 0 阻塞 / link_check 47 链接 0 死链。
+
+## 2026-09-12 技术 SEO 修复轮
+
+- 详见 `reviews/2026-09-12.md`。commit `5598b0b`(事实审计)/`d75361f`(Article+Breadcrumb JSON-LD、trust 页),Actions gates 全绿。
+- 内容页补齐 Article JSON-LD(此前全站 0 篇,42 页缺);新增 disclaimer/editorial-policy/author 三个此前缺失的 trust 页。
+- 遗留:description >160 字符占比仍偏高(52%,tech-audit 修前数),未处理。
