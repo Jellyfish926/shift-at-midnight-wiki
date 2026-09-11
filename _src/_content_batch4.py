@@ -414,9 +414,9 @@ PAGES = [
 {RATE_NOTE}
 
   <p>One of those pairs moved the other way between readings: the Marionette kill sits higher in the September
-    snapshot than in the August one, where every other rate drifted down. We have not established why, and we are
-    not going to guess &mdash; both figures are printed above so you can see the discrepancy rather than inherit
-    a tidied version of it.</p>
+    snapshot than in the August one, while First Blood and Silenced both drifted down and Freed held exactly steady.
+    We have not established why, and we are not going to guess &mdash; both figures are printed above so you can see
+    the discrepancy rather than inherit a tidied version of it.</p>
 
   <h2>First Blood &mdash; the one you do not aim for</h2>
 
@@ -487,7 +487,7 @@ PAGES = [
 
   <h2>Sources on this site</h2>
   <ul>
-    <li><a href="/achievements/">All 10 achievements</a> &mdash; the full list, the curve, and the 13 August rate readings.</li>
+    <li><a href="/achievements/">All 10 achievements</a> &mdash; the full list, the curve, and an August rate reading (dated 12 August on that page, 13 August on the monster pages that repeat the same numbers).</li>
     <li><a href="/monsters/shrieking-doll/">Shrieking Doll</a>, <a href="/monsters/demented/">Demented</a> and <a href="/monsters/marionette/">Marionette</a> &mdash; the mechanics each kill depends on.</li>
     <li><a href="/monsters/entity/">The Entity</a> and <a href="/guide/survival/">the survival guide</a> &mdash; what else is in the room while you are collecting these.</li>
     <li><a href="/guide/doppelgangers/">Identifying doppelgangers</a> &mdash; the counter work that decides how often you are in a Hunt at all.</li>
@@ -608,7 +608,7 @@ PAGES = [
 
   <h2>Sources on this site</h2>
   <ul>
-    <li><a href="/achievements/">All 10 achievements</a> &mdash; the full list, the curve and the 13 August rate readings.</li>
+    <li><a href="/achievements/">All 10 achievements</a> &mdash; the full list, the curve, and an August rate reading (dated 12 August on that page, 13 August on the monster pages that repeat the same numbers).</li>
     <li><a href="/monsters/entity/">The Entity</a> &mdash; how a Hunt starts, Blood Moon shifts, and why sound is the mechanic.</li>
     <li><a href="/guide/survival/">Traps, barricades and hiding</a> &mdash; sound discipline and the weapons arsenal.</li>
     <li><a href="/updates/">Patch notes</a> &mdash; the second firearm and the removed patience meter, both from 29 July 2026.</li>
