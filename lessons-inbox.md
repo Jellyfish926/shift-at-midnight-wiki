@@ -55,3 +55,5 @@ en/editions 与 ja/editions 是对的 —— 建站期部分页查了店铺、�
 - 2026-09-03 | Beast | 发售一个月后 6 语种 release-time 仍是倒计时页:这种「事件页」过期后要有下线预案(308 到常青页 + 出 sitemap + 清页脚),建站期就该在页面矩阵里给事件页标「到期动作」→ 并入 seo-jianzhan ①.8 表 2(页面矩阵加「到期动作」列)。 **[已并入 2026-09-07]**
 - 2026-09-07 | 四站上成就追踪器(站主拍板「工具站」方向,先做通用工具)| 数据免 key:`steamcommunity.com/stats/<appid>/achievements/` 公开页含名称/描述/图标/全球解锁率,`fetch_achievements.py` 一次抓全;Next 站用框架层组件 `AchievementTracker.tsx` + frontmatter `tool: "achievements"`,静态站用 `build_achievement_tracker_static.py` 从现有页框生成;每周一 workflow 刷新数据 = 免费的「站在活着」信号。工具页照样配 400+ 词说明 + 来源框 + ≥3 内链,否则是空壳页。img alt 不能留空(check_content 记阻塞),写「<成就名> achievement icon」→ 建议并入 seo-jianzhan 新节「工具页:成就追踪器模板」,素材在 references/tools/。 **[已并入 2026-09-07]**
 - 2026-09-07 | GitHub Actions schedule 实测延迟 4–5 小时(cron 01:50Z,实跑 06:19Z/06:31Z),定时发布不能依赖准点;要准点就手动 dispatch 或把 cron 提前 → 并入 seo-jianzhan 部署节。 **[已并入 2026-09-07]**
+- 2026-09-11 | 五站夜间巡检轮 | 重组页(把多个已有页的数据合并成新对比/汇总页)容易把「未核实、存疑」的数字写成断言语气;新页上线前要逐条标出处,存疑的数字要用「未确认 / 待核」措辞,不能因为是新页就放松事实纪律 → 建议并入 seo-jianzhan 内页写作纪律。
+- 2026-09-11 | 五站夜间巡检轮 | 补链只应改「未收录 / 审核期外」的新页;已收录、正处审核期的页面即使入链数低也不要动,避免审核期内出现无关改动 → 建议并入 seo-yunying 内链修补规则。
