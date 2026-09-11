@@ -118,3 +118,4 @@
 - 详见 `reviews/2026-09-12.md`。commit `5598b0b`(事实审计)/`d75361f`(Article+Breadcrumb JSON-LD、trust 页),Actions gates 全绿。
 - 内容页补齐 Article JSON-LD(此前全站 0 篇,42 页缺);新增 disclaimer/editorial-policy/author 三个此前缺失的 trust 页。
 - 遗留:description >160 字符占比仍偏高(52%,tech-audit 修前数),未处理。
+- 同夜补记:commit `9a55a2b`/`bf0c6f7` 新增 5 篇实体页(成就分类 2 篇 + 结局 3 篇,`_src/_content_batch4.py`);独立复核修正 2 处(monster-kills 的解锁率变动描述、两处日期标注不一致)。
