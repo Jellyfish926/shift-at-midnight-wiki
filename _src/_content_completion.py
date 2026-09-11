@@ -31,7 +31,7 @@ if _ACH_FILE.exists():
 
 ACHIEVEMENTS = [
     ("ach-first-blood", "First Blood",
-     "Kill your first customer. 96.7% of players have it &mdash; usually by mistake.", "/achievements/"),
+     "Kill your first customer. The most commonly unlocked achievement in the game &mdash; usually by mistake.", "/achievements/"),
     ("ach-still-breathing", "Still Breathing",
      "Survive your first hunt, which starts when you let a doppelganger check out.", "/achievements/"),
     ("ach-silenced", "Silenced",
@@ -271,9 +271,12 @@ BODY = """
     boxes are ticked &mdash; paste it into the same box on another device, hit <em>Load this code</em>, and the
     two match. The code is a base64 bitmap of this page's fixed item order: no name, no account,
     nothing identifying.</p>
-  <p>The list is assembled from this wiki's own pages. The ten achievements come from the Steam achievement stats page, re-read on <strong>%(captured)s</strong>
-    and refreshed weekly by this site's build &mdash; the full list with unlock rates is on
-    <a href="/achievements/">achievements</a>. The three endings, and the conditions that separate them, come
+  <p>The list is assembled from this wiki's own pages. This tool's own achievement data file was last
+    re-read from the Steam achievement stats page on <strong>%(captured)s</strong> and refreshes weekly
+    by this site's build; the <a href="/achievements/">achievements page</a> carries the full list with
+    unlock rates and may reflect an earlier read than that date &mdash; check the achievements page itself
+    for its own as-of date rather than assuming the two are in lockstep. The three endings, and the
+    conditions that separate them, come
     from <a href="/endings/">endings</a>. The bestiary entries are the named threats on
     <a href="/monsters/">monsters</a>. The counter toolkit,
     the seven categories of tell and the five named doppelgangers all come from

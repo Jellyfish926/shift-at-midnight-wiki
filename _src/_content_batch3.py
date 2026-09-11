@@ -23,10 +23,10 @@ PAGES = [
  "trail": [(None, "Glossary")],
  "h1": "Shift At Midnight glossary",
  "lede": "This wiki uses a lot of terms the game itself never stops to define &mdash; the <strong>N.E.T. database</strong>, a <strong>Hunt</strong>, the difference between <strong>Story</strong> and <strong>Post-Story Endless</strong>. This page collects every one of them in a single A-Z list, each with a short definition and a link to the page that covers it in full. Nothing here is a new claim &mdash; every entry is compiled from a page this wiki has already published.",
- "updated": "Last verified 11 September 2026 &middot; game version: 1 September 2026 patch",
+ "updated": "Last verified 11 September 2026 &middot; game version: 29 July 2026 patch",
  "body": """
   <div class="tags">
-    <span class="tag">32 terms</span>
+    <span class="tag">39 terms</span>
     <span class="tag">Compiled from on-site pages</span>
     <span class="tag amber">No new facts introduced</span>
   </div>
@@ -63,9 +63,6 @@ PAGES = [
   <p><strong>Entity.</strong> The true form of a doppelganger that completes its purchase &mdash; blind, and tracks sound including proximity voice chat. See <a href="/monsters/entity/">the Entity</a>.</p>
   <p><strong>EULA.</strong> Kwalee's licence agreement; its anti-modification clause is why trainers are against the terms. See <a href="/cheats/">cheats</a>.</p>
 
-  <h3>F</h3>
-  <p><strong>Full audio localization.</strong> All nine supported languages ship with full voice audio, confirmed on both the Steam and Xbox listings. See <a href="/languages/">languages</a>.</p>
-
   <h3>G</h3>
   <p><strong>Grave Decision.</strong> The most common of the three endings, at 33.1% global unlock. See <a href="/endings/">endings</a>.</p>
 
@@ -82,7 +79,7 @@ PAGES = [
   <p><strong>Kwalee.</strong> The publisher; distribution and storefront presence, not development &mdash; Bun Muen built the game alone. See <a href="/credits/">credits</a>.</p>
 
   <h3>L</h3>
-  <p><strong>Languages.</strong> Nine, each with full interface, audio and subtitles &mdash; see the full list on <a href="/languages/">languages</a>.</p>
+  <p><strong>Languages.</strong> Nine, confirmed on both Steam and Xbox. Whether every one has full voice audio or interface/subtitles only is unresolved &mdash; sources on this wiki disagree. See <a href="/languages/">languages</a>.</p>
 
   <h3>M</h3>
   <p><strong>Marionette.</strong> From Shift 9 &mdash; hold E on the music box to rewind it before the melody finishes three times. See <a href="/monsters/marionette/">the Marionette</a>.</p>
@@ -130,7 +127,7 @@ PAGES = [
     </details>
     <details>
       <summary>Why isn't every letter of the alphabet represented?</summary>
-      <div class="a"><p>Because this is a list of terms this wiki actually uses, not a filled template &mdash; some letters (O, U, V, Y, Z) simply have no matching term on the site yet.</p></div>
+      <div class="a"><p>Because this is a list of terms this wiki actually uses, not a filled template &mdash; some letters (F, O, U, V, Y, Z) simply have no matching term on the site yet.</p></div>
     </details>
   </div>
 
@@ -151,7 +148,7 @@ PAGES = [
  "trail": M + [(None, "Compare all threats")],
  "h1": "Every Shift At Midnight threat, compared",
  "lede": "Seven named threats appear across this wiki's bestiary, each with its own page and its own counter. Read individually, it is easy to lose track of which ones you can actually shoot, which one you can only outsmart, and which one is off-limits until you finish Story Mode. This page puts all seven side by side, with figures pulled straight from <a href=\"/achievements/\">the achievements page</a> and each monster's own page &mdash; nothing recalculated, nothing new claimed.",
- "updated": "Last verified 11 September 2026 &middot; game version: 1 September 2026 patch",
+ "updated": "Last verified 11 September 2026 &middot; game version: 29 July 2026 patch",
  "body": """
   <div class="tags">
     <span class="tag">7 threats compared</span>
@@ -225,7 +222,7 @@ PAGES = [
  "trail": [(None, "Start here")],
  "h1": "Where to start on this wiki",
  "lede": "This wiki has grown to more than 35 pages, and none of them tell you in what order to read them. If you just bought the game, or you are stuck on your first Hunt, this page is a suggested path through the site &mdash; beginner first, advanced last &mdash; with one line on why each step matters before you click through.",
- "updated": "Last verified 11 September 2026 &middot; game version: 1 September 2026 patch",
+ "updated": "Last verified 11 September 2026 &middot; game version: 29 July 2026 patch",
  "body": """
   <div class="tags">
     <span class="tag">8-step reading order</span>
@@ -280,7 +277,7 @@ PAGES = [
     </details>
     <details>
       <summary>What changed most recently that this order should account for?</summary>
-      <div class="a"><p>The 1 September 2026 patch added content covered on <a href="/updates/">the updates page</a>; the 29 July 2026 patch is the bigger mechanical change referenced throughout this order, since it removed the patience meter and added the Rake.</p></div>
+      <div class="a"><p>The <a href="/updates/">updates page</a> tracks this: as of its last check, the 29 July 2026 patch was still the newest documented change, and it is the one referenced throughout this order, since it removed the patience meter and added the Rake. We have not been able to confirm the contents of anything newer.</p></div>
     </details>
     <details>
       <summary>Where do I look up a term I don't recognize?</summary>

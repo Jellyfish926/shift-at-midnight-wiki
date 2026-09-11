@@ -25,7 +25,7 @@ PAGES = [
  "trail": [(None, "Controls")],
  "h1": "Shift At Midnight controls",
  "lede": "On PC &mdash; Steam or the Microsoft Store &mdash; <strong>Shift At Midnight has no controller support at all.</strong> Not partial, not community-only: the developer's own Steam listing declares every controller category false. If you bought it on PC, you are playing with a keyboard and mouse whether or not you own a gamepad. The Xbox Series X|S version is the opposite case &mdash; that build is controller-only by definition.",
- "updated": "Last verified 10 September 2026 &middot; game version: 1 September 2026 patch",
+ "updated": "Last verified 10 September 2026 &middot; game version: 29 July 2026 patch",
  "body": """
   <div class="tags">
     <span class="tag red">PC: no controller support</span>
@@ -52,6 +52,11 @@ PAGES = [
     <p>We found no evidence of an in-game key-rebinding menu in any source we checked, official or otherwise. If remapping matters to you, the safer route on PC is a system-level or Steam-level remap (Steam's own controller/keyboard configurator, or Windows key-remapping software) rather than assuming the game exposes one itself. We have not tested this ourselves, so we're not calling it confirmed either way &mdash; just the more realistic option.</p>
   </div>
 
+  <div class="term warn">
+    <div class="term-h">A conflicting note elsewhere on this wiki</div>
+    <p>This wiki's own <a href="/system-requirements/">system requirements page</a> separately notes that SteamDB's app-info panel records a generic &ldquo;Gamepad supported&rdquo; flag for this game, distinct from the field-by-field controller-support breakdown described above, and says outright that no official note on which inputs are mapped could be found. We have not been able to reconcile that flag with the all-false declaration this page is built on, so treat the SteamDB tag as an open question rather than something this page resolves.</p>
+  </div>
+
   <h2>Steam Deck and controller-only handhelds</h2>
   <p>Because the PC build has no declared controller support, a Steam Deck run inherits that gap directly. The <a href="/system-requirements/">system requirements page</a> covers the Deck compatibility rating in detail, but the short version connects straight back to this page: Valve's own Deck compatibility notes for this game flag that the default controller configuration is not fully functional and that some interactions need the touchscreen or a community control layout &mdash; which lines up exactly with a game that was never built for a gamepad in the first place.</p>
 
@@ -59,7 +64,7 @@ PAGES = [
   <p>People do get gamepads working on PC shooters with no native support through Steam's generic gamepad-to-keyboard/mouse translation (via a Steam Input desktop configuration) or third-party tools like a community controller layout. We have not verified a working configuration for Shift At Midnight specifically, and the game's own <code>bSteamInputAPISupport: false</code> flag means the developer has not built in any awareness of Steam Input &mdash; a workaround, if one exists, is entirely a community effort layered on top, not something the game recognises. If you find one that works reliably, the most useful place to report it is the game's own Steam discussions, not a third-party trainer site.</p>
 
   <h2>What the most recent patch changed</h2>
-  <p>The 1 September 2026 update &mdash; titled "30 New Customers + More" on the game's own Steam event calendar &mdash; added 30 new customers, a chainsaw, and security cameras. A chainsaw implies a new melee option in the <a href="/guide/survival/#weapons">weapons arsenal</a>, and security cameras suggest a new way to watch the store remotely, but we have not seen a detailed patch note breaking down new key bindings for either. <strong>Unconfirmed</strong> until Kwalee publishes specifics &mdash; we will not guess at a key here. If this is the first page of the wiki you've landed on, the <a href="/start-here/">reading order guide</a> sequences everything else from here.</p>
+  <p><strong>Unconfirmed:</strong> we have not been able to source patch content newer than the <a href="/updates/">29 July 2026 update</a> against this wiki's own patch-notes page, which was still listing that as the newest public announcement as of its last check. If a later update has shipped, we have not verified its contents well enough to describe new key bindings here, so we are not guessing at one. If this is the first page of the wiki you've landed on, the <a href="/start-here/">reading order guide</a> sequences everything else from here.</p>
 
   <h2>Quick answers</h2>
   <div class="faq">
@@ -88,43 +93,44 @@ PAGES = [
 {
  "path": "languages",
  "active": "/guides/",
- "title": "Shift At Midnight Languages: All 9 Supported, Full Audio",
+ "title": "Shift At Midnight Languages: All 9 Supported",
  "og_short": "Language support",
- "desc": "Shift At Midnight supports 9 languages with full interface, audio and subtitle localization on both Steam and Xbox, confirmed from the official store listings.",
+ "desc": "Shift At Midnight supports 9 languages on both Steam and Xbox. Whether audio is fully localized or interface/subtitles only is disputed between this wiki's own pages, and unresolved.",
  "trail": [(None, "Languages")],
  "h1": "Shift At Midnight language support",
- "lede": "Shift At Midnight ships in <strong>9 languages</strong>, and every one of them gets full interface, full audio, and subtitle support &mdash; not just a text translation with English voice. That is confirmed identically on both the Steam store page and the Xbox listing, which both list \"9 supported languages\" independently.",
- "updated": "Last verified 10 September 2026 &middot; game version: 1 September 2026 patch",
+ "lede": "Shift At Midnight ships in <strong>9 languages</strong>, confirmed identically on both the Steam store page and the Xbox listing, which both list \"9 supported languages\" independently. Whether that support extends to full voice audio in every language, or is interface-and-subtitles only, is <strong>unconfirmed</strong> &mdash; see below.",
+ "updated": "Last verified 10 September 2026 &middot; game version: 29 July 2026 patch",
  "body": """
   <div class="tags">
     <span class="tag green">9 languages, confirmed on Steam and Xbox</span>
-    <span class="tag">Full audio in every language</span>
+    <span class="tag amber">Full audio vs. subtitles-only: disputed</span>
     <span class="tag amber">Mature 17+ rating (Xbox)</span>
   </div>
 
   <h2>The full list</h2>
-  <p>As read from the official Steam store listing, every language below ships with full interface text, full audio, and subtitles &mdash; Steam marks all three columns for every row, with no partial entries:</p>
+  <p>All nine languages below are confirmed as supported. What level of support each one gets &mdash; interface only, interface plus subtitles, or full voice audio &mdash; is the disputed part; see the note beneath the table before assuming every row has audio.</p>
 
   <table class="facts">
-    <tr><th>English</th><td>Interface, full audio, subtitles</td></tr>
-    <tr><th>French</th><td>Interface, full audio, subtitles</td></tr>
-    <tr><th>German</th><td>Interface, full audio, subtitles</td></tr>
-    <tr><th>Spanish (Spain)</th><td>Interface, full audio, subtitles</td></tr>
-    <tr><th>Japanese</th><td>Interface, full audio, subtitles</td></tr>
-    <tr><th>Russian</th><td>Interface, full audio, subtitles</td></tr>
-    <tr><th>Simplified Chinese</th><td>Interface, full audio, subtitles</td></tr>
-    <tr><th>Traditional Chinese</th><td>Interface, full audio, subtitles</td></tr>
-    <tr><th>Portuguese (Brazil)</th><td>Interface, full audio, subtitles</td></tr>
+    <tr><th>English</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
+    <tr><th>French</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
+    <tr><th>German</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
+    <tr><th>Spanish (Spain)</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
+    <tr><th>Japanese</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
+    <tr><th>Russian</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
+    <tr><th>Simplified Chinese</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
+    <tr><th>Traditional Chinese</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
+    <tr><th>Portuguese (Brazil)</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
   </table>
 
-  <p class="src">Source: the <a href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">official Steam store listing</a>, read 10 September 2026. The count is independently corroborated by the <a href="https://www.xbox.com/en-US/games/store/shift-at-midnight/9n0wdpmxnhwn" target="_blank" rel="noopener">Xbox store listing</a>, which also states "9 Supported languages" without listing them individually on the visible page.</p>
+  <p class="src">Source for the count and rows: the <a href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">official Steam store listing</a>. The count is independently corroborated by the <a href="https://www.xbox.com/en-US/games/store/shift-at-midnight/9n0wdpmxnhwn" target="_blank" rel="noopener">Xbox store listing</a>, which also states "9 Supported languages" without listing them individually on the visible page.</p>
 
-  <h2>Why "full audio" for every language is worth pointing out</h2>
-  <p>A lot of games this size ship English audio only, with text-only localization everywhere else &mdash; subtitles in your language, but voices in English. Shift At Midnight's Steam listing does not do that: every one of the nine rows has full audio marked, meaning there is no language on the list that is text-only. For a solo-developed indie release, shipping full audio localization across nine languages rather than the more common English-audio-plus-subtitles approach is a real production decision, not a default.</p>
-  <p>Whether that audio is a text-to-speech system, licensed voice work, or something else, we have not found a source that says, and we are not guessing. What we can confirm is the checkbox on the store page, not the method behind it.</p>
+  <div class="term warn">
+    <div class="term-h">An unresolved conflict on this wiki</div>
+    <p>This page cannot tell you with confidence whether every language has full voice audio. This wiki's own <a href="/release-date/">release date page</a> lists these same nine languages as &ldquo;interface and subtitles&rdquo; &mdash; no audio claim at all &mdash; while a separate reading of the Steam API used elsewhere on this site suggested full audio for all nine. The two have not been reconciled, and this page is not going to pick one over the other. <strong>Treat any specific claim about voice audio in a given language as unconfirmed</strong> until this is sorted out.</p>
+  </div>
 
   <h2>What this means if you're playing in a language other than English</h2>
-  <p>Because the core loop is <a href="/guide/doppelgangers/">reading a customer's ID, cross-checking the N.E.T. database, and judging their behaviour</a>, audio and text localization matter more here than in a lot of genres &mdash; a doppelganger's tell can be something said, not just something shown, and playing in a fully-localized language means you are not relying on subtitle-reading under time pressure to catch it. Since patience-meter pressure was removed in the <a href="/updates/">29 July 2026 patch</a>, there is less time cost either way, but a fully audio-localized build still means non-English players are getting the same information English players get, not a subtitled approximation of it.</p>
+  <p>Because the core loop is <a href="/guide/doppelgangers/">reading a customer's ID, cross-checking the N.E.T. database, and judging their behaviour</a>, audio and text localization would matter more here than in a lot of genres if the audio claim holds &mdash; a doppelganger's tell can be something said, not just something shown. Since patience-meter pressure was removed in the <a href="/updates/">29 July 2026 patch</a>, there is less time cost either way regardless of which localization level you actually have.</p>
 
   <h2>Content rating, and why it comes up in the same searches</h2>
   <p>The Xbox store listing carries a <strong>Mature 17+</strong> rating with the descriptors "Violence, Blood and Gore" and "Language" &mdash; separate from the language-localization question above, but people frequently search for language support and content rating together when deciding whether a game is appropriate for a household. Steam's own content description is looser but consistent: the developers describe the game as containing "plenty of gore and blood," which lines up with the Xbox descriptor rather than contradicting it.</p>
@@ -149,11 +155,11 @@ PAGES = [
     </details>
     <details>
       <summary>Does it have voice acting in every language, or just subtitles?</summary>
-      <div class="a"><p>Steam's own listing marks full audio for all nine languages, not text-only localization. We have not confirmed the production method behind that audio.</p></div>
+      <div class="a"><p><strong>Unconfirmed.</strong> Sources checked across this wiki disagree &mdash; one reading of the Steam listing suggests full audio for all nine, another page on this site lists interface and subtitles only. We have not resolved which is correct.</p></div>
     </details>
     <details>
       <summary>Is Simplified and Traditional Chinese both supported?</summary>
-      <div class="a"><p>Yes, both are listed separately on the Steam store page, each with full interface, audio, and subtitle support.</p></div>
+      <div class="a"><p>Yes, both are listed separately on the Steam store page, each with interface and subtitle support. See the note above on the unresolved audio question.</p></div>
     </details>
   </div>
 
@@ -172,7 +178,7 @@ PAGES = [
  "trail": [(None, "Credits")],
  "h1": "Who made Shift At Midnight",
  "lede": "Shift At Midnight is built by a single developer, <strong>Bun Muen</strong>, with music by <strong>Ryan Q</strong>, and published by <strong>Kwalee</strong>. The Steam and Xbox release did not start there &mdash; it started as a free single-player demo on itch.io, and the credits trail across both versions is worth untangling because a lot of the game's design choices only make sense once you know that history.",
- "updated": "Last verified 10 September 2026 &middot; game version: 1 September 2026 patch",
+ "updated": "Last verified 10 September 2026 &middot; game version: 29 July 2026 patch",
  "body": """
   <div class="tags">
     <span class="tag">Developer: Bun Muen (solo)</span>
@@ -201,10 +207,10 @@ PAGES = [
 
   <h2>It started as a free single-player demo</h2>
   <p>Before Shift At Midnight was a $9.99 Steam and Xbox release, it existed as a free, downloadable prototype on itch.io &mdash; singleplayer only, and by the developer's own description on that page, without the randomly-generated shifts the full release has. The itch.io page still exists and carries the game's original development log, including the point where it was <a href="https://bunmuen.itch.io/shiftatmidnight" target="_blank" rel="noopener">upgraded into a multiplayer co-op Steam demo</a>, ahead of the eventual full release.</p>
-  <p>That page also states two things worth knowing if you are trying to understand where the game came from: the singleplayer demo's Night 1 was carried over largely unchanged into the multiplayer demo, and Night 2 was overhauled with new content added for the multiplayer version. Neither demo used the shift-to-shift procedural generation that the full release relies on &mdash; that came later, in the Steam release proper. See <a href="/demo/">the demo page</a> for what is playable today versus what these earlier builds were.</p>
+  <p>That page also states that the step from the original singleplayer prototype to the multiplayer Steam demo expanded the game from one night to three. <strong>Unconfirmed:</strong> we have not found a source describing which specific content carried over unchanged versus what was rebuilt for the multiplayer version, so we are not going to guess at a night-by-night breakdown. Neither demo used the shift-to-shift procedural generation that the full release relies on &mdash; that came later, in the Steam release proper. See <a href="/demo/">the demo page</a> for what is playable today versus what these earlier builds were.</p>
 
   <div class="term tip">
-    <div class="term-h">Why the itch.io rating (4.7 stars, 365+ ratings) isn't the Steam review score</div>
+    <div class="term-h">Why the itch.io rating (4.7 stars, 360 ratings) isn't the Steam review score</div>
     <p>The itch.io page carries its own rating, separate from Steam's review percentages covered on <a href="/review/">the review page</a>. They measure different audiences at different points in the game's life &mdash; the itch.io number reflects reactions to the free prototype, not the paid release. Don't conflate the two when someone quotes a rating at you without saying which storefront it's from.</p>
   </div>
 
@@ -235,7 +241,7 @@ PAGES = [
  "trail": [(None, "Cheats &amp; console commands")],
  "h1": "Shift At Midnight cheats and console commands",
  "lede": "<strong>There are no official console commands or developer cheat menu in Shift At Midnight.</strong> Nothing in the game's Steam feature list, its store page, or its patch notes mentions one. What exists instead is a small ecosystem of third-party trainers that inject values into a running process from outside the game &mdash; a different thing, with different risks, and this page is about telling the two apart.",
- "updated": "Last verified 10 September 2026 &middot; game version: 1 September 2026 patch",
+ "updated": "Last verified 10 September 2026 &middot; game version: 29 July 2026 patch",
  "body": """
   <div class="tags">
     <span class="tag red">No official commands</span>
@@ -246,7 +252,7 @@ PAGES = [
 
   <div class="term warn">
     <div class="term-h">If you searched for a specific cheat code</div>
-    <p>Pages listing "item IDs" or "spawn codes" for this game are describing a feature Shift At Midnight does not have. There is no publicly documented developer console, and nothing in the official Steam feature list (Single-player, Online Co-op, Steam Achievements, Steam Cloud, Family Sharing) points to one existing. Treat any specific code you find on a random blog as unverified until you can trace it to the developer.</p>
+    <p>Pages listing "item IDs" or "spawn codes" for this game are describing a feature Shift At Midnight does not have. There is no publicly documented developer console, and nothing in the official Steam feature list (Single-player, Multi-player, Co-op, Online Co-op, Steam Achievements, Family Sharing &mdash; this wiki's own <a href="/system-requirements/">system requirements page</a> notes Steam Cloud is specifically absent from it) points to one existing. Treat any specific code you find on a random blog as unverified until you can trace it to the developer.</p>
   </div>
 
   <h2>What "no official commands" actually means</h2>
@@ -266,7 +272,7 @@ PAGES = [
 
   <h2>What Kwalee's own terms say</h2>
   <p>The <a href="https://store.steampowered.com/eula/3722330_eula_0" target="_blank" rel="noopener">Shift At Midnight EULA</a>, published by Kwalee, includes a standard clause (section 3.4) prohibiting you from decompiling, disassembling, reverse-engineering, or modifying the game. A memory-editing trainer works by reading and writing the game's runtime memory, which sits squarely in the territory that clause is written to cover &mdash; using one is against the terms you agree to when you install the game, even where it is not against any law.</p>
-  <p>That is a different question from whether it will get you banned. Shift At Midnight has Steam Achievements and Steam Cloud but no announced anti-cheat system, and we have not found reports of account action taken specifically over trainer use. The absence of anti-cheat is not the same as permission &mdash; it just means enforcement, if any, is not automated.</p>
+  <p>That is a different question from whether it will get you banned. Shift At Midnight has Steam Achievements but no announced anti-cheat system, and we have not found reports of account action taken specifically over trainer use. The absence of anti-cheat is not the same as permission &mdash; it just means enforcement, if any, is not automated.</p>
 
   <h2>Why this matters more in a co-op game</h2>
   <p>Shift At Midnight is built around <a href="/multiplayer/">online co-op for up to three players</a> (six since the 23 July 2026 patch), and the loop &mdash; serving customers, hitting a quota, surviving a hunt &mdash; is shared. A money or health edit that only benefits one player in a lobby changes the experience for everyone in it, not just the person running the trainer, in a way that single-player cheating does not. If you are set on trying one, doing it in single-player rather than a shared lobby is the version that only affects your own run.</p>
@@ -304,7 +310,7 @@ PAGES = [
  "trail": M + [(None, "Rake")],
  "h1": "The Rake",
  "lede": "The Rake is a fast, four-legged threat added on <strong>29 July 2026</strong>, and it only exists in <strong>Post-Story Endless Mode</strong> &mdash; if you have not finished Story Mode, or you have never touched Endless, you have not met one and will not. It comes from the forest around the station and goes after your customers rather than you directly.",
- "updated": "Last verified 10 September 2026 &middot; game version: 1 September 2026 patch",
+ "updated": "Last verified 10 September 2026 &middot; game version: 29 July 2026 patch",
  "body": """
   <div class="tags">
     <span class="tag amber">Endless / Post-Story only</span>
