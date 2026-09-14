@@ -1,13 +1,13 @@
 {
  "appid": "3722330",
  "source": "https://steamcommunity.com/stats/3722330/achievements/",
- "captured": "2026-09-07",
+ "captured": "2026-09-14",
  "total": 10,
  "achievements": [
   {
    "name": "First Blood",
    "desc": "Kill Your First Customer",
-   "pct": 96.7,
+   "pct": 96.6,
    "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/2ea4cbf49baba558b5ea9e6d9bbaba5543725c1d.jpg"
   },
   {
@@ -19,7 +19,7 @@
   {
    "name": "Silenced",
    "desc": "Kill a Shrieking Doll",
-   "pct": 89.6,
+   "pct": 89.5,
    "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/fa90b1ac6503c90a90f6733a2c30ccd4d9f71285.jpg"
   },
   {
@@ -37,19 +37,19 @@
   {
    "name": "Last Performance",
    "desc": "Kill a Marionette",
-   "pct": 43.4,
+   "pct": 43.7,
    "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/66a5caf5e81313e778899611339b17f48769675d.jpg"
   },
   {
    "name": "Grave Decision",
    "desc": "",
-   "pct": 34.6,
+   "pct": 34.8,
    "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/91ba0bb969e34afdf15eb1d707546bdcdcade0d2.jpg"
   },
   {
    "name": "Locked And Loaded",
    "desc": "Purchase all Melee Weapons & Fill out the Weapons Arsenal",
-   "pct": 22.7,
+   "pct": 22.2,
    "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/fe994794d607abea0816815f3cee3dc33d983c78.jpg"
   },
   {
@@ -61,7 +61,7 @@
   {
    "name": "Empty Home",
    "desc": "",
-   "pct": 10.7,
+   "pct": 10.8,
    "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/f57c06b54fc943dff0d554f6510481f8ceef0769.jpg"
   }
  ]
