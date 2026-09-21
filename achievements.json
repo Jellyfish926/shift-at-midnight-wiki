@@ -1,7 +1,7 @@
 {
  "appid": "3722330",
  "source": "https://steamcommunity.com/stats/3722330/achievements/",
- "captured": "2026-09-14",
+ "captured": "2026-09-21",
  "total": 10,
  "achievements": [
   {
@@ -37,19 +37,19 @@
   {
    "name": "Last Performance",
    "desc": "Kill a Marionette",
-   "pct": 43.7,
+   "pct": 43.9,
    "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/66a5caf5e81313e778899611339b17f48769675d.jpg"
   },
   {
    "name": "Grave Decision",
    "desc": "",
-   "pct": 34.8,
+   "pct": 35.0,
    "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/91ba0bb969e34afdf15eb1d707546bdcdcade0d2.jpg"
   },
   {
    "name": "Locked And Loaded",
    "desc": "Purchase all Melee Weapons & Fill out the Weapons Arsenal",
-   "pct": 22.2,
+   "pct": 22.0,
    "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/fe994794d607abea0816815f3cee3dc33d983c78.jpg"
   },
   {
@@ -61,7 +61,7 @@
   {
    "name": "Empty Home",
    "desc": "",
-   "pct": 10.8,
+   "pct": 10.9,
    "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/f57c06b54fc943dff0d554f6510481f8ceef0769.jpg"
   }
  ]
