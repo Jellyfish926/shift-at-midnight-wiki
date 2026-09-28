@@ -1,13 +1,13 @@
 {
  "appid": "3722330",
  "source": "https://steamcommunity.com/stats/3722330/achievements/",
- "captured": "2026-09-21",
+ "captured": "2026-09-28",
  "total": 10,
  "achievements": [
   {
    "name": "First Blood",
    "desc": "Kill Your First Customer",
-   "pct": 96.6,
+   "pct": 96.7,
    "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/2ea4cbf49baba558b5ea9e6d9bbaba5543725c1d.jpg"
   },
   {
@@ -31,25 +31,25 @@
   {
    "name": "Relentless",
    "desc": "Finish a Hunt within 30 seconds",
-   "pct": 45.3,
+   "pct": 45.4,
    "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/322e25fb0bdba133fb0df24af82c71fba4cb7955.jpg"
   },
   {
    "name": "Last Performance",
    "desc": "Kill a Marionette",
-   "pct": 43.9,
+   "pct": 44.1,
    "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/66a5caf5e81313e778899611339b17f48769675d.jpg"
   },
   {
    "name": "Grave Decision",
    "desc": "",
-   "pct": 35.0,
+   "pct": 35.1,
    "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/91ba0bb969e34afdf15eb1d707546bdcdcade0d2.jpg"
   },
   {
    "name": "Locked And Loaded",
    "desc": "Purchase all Melee Weapons & Fill out the Weapons Arsenal",
-   "pct": 22.0,
+   "pct": 21.8,
    "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3722330/fe994794d607abea0816815f3cee3dc33d983c78.jpg"
   },
   {
