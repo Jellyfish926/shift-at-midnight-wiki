@@ -17,6 +17,16 @@ from _build import build
 import json as _json, html as _html, pathlib as _pathlib
 _ACH_FILE = _pathlib.Path(__file__).resolve().parent.parent / "achievements.json"
 ACH_CAPTURED = "2026-08-05"
+_MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July",
+                "August", "September", "October", "November", "December"]
+
+
+def _long_date(iso: str) -> str:
+    """'2026-10-05' → '5 October 2026'(只换写法,日期仍取自 achievements.json 的 captured)。"""
+    y, m, d = iso.split("-")
+    return f"{int(d)} {_MONTH_NAMES[int(m) - 1]} {y}"
+
+
 if _ACH_FILE.exists():
     _d = _json.loads(_ACH_FILE.read_text())
     ACH_CAPTURED = _d.get("captured", ACH_CAPTURED)
@@ -43,12 +53,12 @@ THREATS = [
     ("Entities", "killable", "Yes",
      "The baseline threat, and the one you summon yourself &mdash; letting a doppelganger check out "
      "brings it back that night in its real form. Barricades, traps and weapons all work.",
-     "Still Breathing (93.4%)", "/guide/survival/",
+     "Still Breathing (93.5%)", "/guide/survival/",
      "entity, entities, spider, hunt, hunter, creature, basic, common"),
     ("Marionette", "boss", "Yes",
      "Killable, and tougher than an Entity. The music box decides it: hold E to rewind before the "
      "melody plays three times, or it summons the Marionette. The 23 July patch cut its health.",
-     "Last Performance (44.1%)", "/monsters/marionette/",
+     "Last Performance (44.0%)", "/monsters/marionette/",
      "music box, melody, puppet, strings, boss, song, tune, dancing, shift 9"),
     ("The Dentist", "unkillable", "Yes",
      "Run. Nothing else works &mdash; it is immune to weapons and traps alike. Head for Sheriff Clyde "
@@ -58,12 +68,12 @@ THREATS = [
     ("Shrieking Doll", "killable", "Yes",
      "Fragile &mdash; a few shots do it. The real cost is the noise, which is what pulls everything "
      "else onto you. Turns up during hunts, usually alongside Entities.",
-     "Silenced (89.4%)", "/monsters/shrieking-doll/",
+     "Silenced (89.5%)", "/monsters/shrieking-doll/",
      "doll, scream, shriek, screaming, porcelain, loud, noise, crawler, small"),
     ("Demented", "trap", "Yes",
      "It freezes while you look at it &mdash; and it cannot be damaged while you look at it either. "
      "The confirmed solution is to break line of sight in a direction that walks it into a trap.",
-     "Freed (79.6%)", "/monsters/demented/",
+     "Freed (79.7%)", "/monsters/demented/",
      "demented, stare, look, freeze, weeping angel, trap, deformed, twisted"),
     ("Rakes", "killable", "Yes",
      "Endless and post-story modes only, added on 29 July 2026. They come out of the forest and go "
@@ -83,16 +93,17 @@ THREATS = [
     ("Doppelgangers", "identify", "Yes",
      "Identification, not combat. They copy a real customer's appearance, voice and story &mdash; "
      "the scanner tells you a document is fake, not that the person is hostile.",
-     "First Blood (96.6%)", "/guide/doppelgangers/",
+     "First Blood (96.7%)", "/guide/doppelgangers/",
      "doppelganger, copy, imposter, twin, duplicate, same customer, id, scanner, lookalike"),
 ]
 
-# Steam 与 Game Pass 生态是两个隔离的匹配池 —— 出自 /crossplay/ 的兼容表
+# Steam 与 Xbox / PC Game Pass 是两个匹配池(开发者 2026-07-10 公告的说法,本站未实测);
+# Microsoft Store 买断版进哪个池没有官方说明,pool 标 unconfirmed
 PLATFORMS = [
     ("steam", "Steam (Windows)", "steam"),
     ("xbox", "Xbox Series X|S", "xbox"),
     ("gamepass", "PC Game Pass", "xbox"),
-    ("msstore", "Microsoft Store (bought)", "xbox"),
+    ("msstore", "Microsoft Store (bought)", "unconfirmed"),
 ]
 
 
@@ -149,7 +160,7 @@ PAGES = [
 # ── /tools/ 索引 ────────────────────────────────────────────────
 {
  "path": "tools", "active": "/tools/",
- "updated": "Last updated 2026-10-10 &middot; last verified 5 August 2026 &middot; game version: 1 September 2026 patch",
+ "updated": "Last updated 2026-10-10 &middot; crossplay checker wording and hand-entered achievement unlock rates re-checked 10 October 2026 against the official Steam announcements and achievement stats (the tracker list is a separate weekly snapshot, dated in its own section) &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) &middot; latest patch: 1 September 2026",
  "published": "2026-08-05",
  "title": "Shift At Midnight Tools — Crossplay, Achievements, Threats",
  "og_short": "Shift At Midnight Tools",
@@ -161,8 +172,9 @@ PAGES = [
  "body": """
   <div class="term tip">
     <div class="term-h">What these are built from</div>
-    <p>Every tool here is driven by the same verified data as the written pages &mdash; the compatibility
-      matrix from <a href="/crossplay/">crossplay</a>, the global unlock rates from
+    <p>Every tool here is driven by the same data as the written pages. The compatibility matrix from
+      <a href="/crossplay/">crossplay</a> repeats what the developer said in its 10 July 2026 announcement;
+      this site has not tested any of it. The global unlock rates come from
       <a href="/achievements/">achievements</a>, and the counterplay table from
       <a href="/monsters/">monsters</a>. <strong>No tool here invents data.</strong> Where a requirement
       is unverified &mdash; notably the three hidden achievements &mdash; the tool says so instead of guessing.</p>
@@ -170,7 +182,7 @@ PAGES = [
 
   <h2>The tools</h2>
   <div class="grid two">
-    <a class="card" href="/tools/#crossplay-checker"><b>Crossplay checker</b><span>Pick where each of you bought the game. Get a yes/no and the cheapest fix if the answer is no.</span></a>
+    <a class="card" href="/tools/#crossplay-checker"><b>Crossplay checker</b><span>Pick where each of you bought the game. Get what the developer has said about that combination.</span></a>
     <a class="card" href="/tools/#achievement-tracker"><b>Achievement tracker</b><span>Tick off all 10. Saves in your browser, and tells you which one is statistically your easiest next.</span></a>
     <a class="card" href="/tools/#threat-lookup"><b>Threat lookup</b><span>Search by what you actually saw &mdash; &ldquo;music box&rdquo;, &ldquo;screaming&rdquo;, &ldquo;fake ID&rdquo; &mdash; not by a name you do not know yet.</span></a>
   </div>
@@ -219,27 +231,33 @@ PAGES = [
       <p>The answer updates as you choose.</p>
     </div>
     <noscript>
-      <p class="noscript-note">This checker needs JavaScript. The same answer in one sentence:
-        <strong>Steam players can only play with other Steam players.</strong> The developer says Xbox and
-        PC Game Pass players will have crossplay with each other; a bought Microsoft Store copy is not
-        confirmed either way. Full table on the
+      <p class="noscript-note">This checker needs JavaScript. The same answers without it:
+        <strong>Steam players only play with other Steam players, per the developer&rsquo;s 10 July 2026
+        announcement</strong>; we have not tested. So Steam with Xbox or PC Game Pass is a no, per that same
+        announcement; we have not tested. Xbox and PC Game Pass: the developer said they will have crossplay;
+        we have not tested. Which pool a bought Microsoft Store copy joins has no official statement, so any
+        group with a Microsoft Store (bought) copy is not confirmed, and this site has not tested it. Full table on the
         <a href="/crossplay/">crossplay page</a>.</p>
     </noscript>
   </div>
 
   <h2>The rule behind the answer</h2>
   <p>The developer&rsquo;s 10 July 2026 announcement describes two groups. <strong>Steam players will only be
-    able to play with other Steam players.</strong> Xbox and PC Game Pass players will have crossplay with each
-    other. Which pool a bought Microsoft Store copy joins, and how Xbox Play Anywhere relates to matchmaking,
-    is not confirmed by any official statement, and this site has not tested it; the checker above places
-    a Microsoft Store copy on the Xbox side as an assumption.</p>
+    able to play with other Steam players</strong>; we have not tested. Xbox and PC Game Pass players will have
+    crossplay with each other; we have not tested. Which pool a bought Microsoft Store copy joins, and how
+    Xbox Play Anywhere relates to matchmaking, is not confirmed by any official statement, and this site has
+    not tested it. The checker above follows the same rule: an all-Steam group gets &ldquo;Yes, per the
+    developer&rdquo;, a group on Xbox and PC Game Pass only gets &ldquo;The developer said yes &mdash; we have not
+    tested&rdquo;, Steam mixed with Xbox or PC Game Pass gets &ldquo;No, per the developer&rdquo;, and any
+    group that includes a Microsoft Store (bought) copy gets &ldquo;Not confirmed&rdquo;, whatever the other
+    players are on.</p>
   <table class="data">
     <thead><tr><th>Your platform</th><th>Can play with</th><th>Cannot play with</th></tr></thead>
     <tbody>
-      <tr><td>Steam (Windows)</td><td>Steam only</td><td>Xbox console, PC Game Pass, Microsoft Store</td></tr>
-      <tr><td>Xbox Series X|S</td><td>Xbox + PC Game Pass</td><td>Steam</td></tr>
-      <tr><td>PC Game Pass</td><td>Xbox + PC Game Pass</td><td>Steam</td></tr>
-      <tr><td>Microsoft Store (bought)</td><td>Not confirmed (no official statement; untested)</td><td>Steam</td></tr>
+      <tr><td>Steam (Windows)</td><td>Steam only (the developer said so on 10 July 2026; we have not tested)</td><td>Xbox console and PC Game Pass (the developer said so on 10 July 2026; we have not tested). Microsoft Store (bought): not confirmed</td></tr>
+      <tr><td>Xbox Series X|S</td><td>Xbox + PC Game Pass (the developer said so on 10 July 2026; we have not tested)</td><td>Steam (the developer said so on 10 July 2026; we have not tested). Microsoft Store (bought): not confirmed</td></tr>
+      <tr><td>PC Game Pass</td><td>Xbox + PC Game Pass (the developer said so on 10 July 2026; we have not tested)</td><td>Steam (the developer said so on 10 July 2026; we have not tested). Microsoft Store (bought): not confirmed</td></tr>
+      <tr><td>Microsoft Store (bought)</td><td>Not confirmed (no official statement about a bought Microsoft Store copy; we have not tested)</td><td>Not confirmed (no official statement about a bought Microsoft Store copy; we have not tested)</td></tr>
     </tbody>
   </table>
   <p>The developer announced a Steam-only public server browser on 10 July 2026, and no later
@@ -248,9 +266,17 @@ PAGES = [
     Background and sourcing on the <a href="/crossplay/">crossplay page</a>.</p>
 
   <h2>If the answer is no</h2>
-  <p>The cheapest fix is almost always <strong>PC Game Pass</strong> rather than buying a second copy:
-    it puts a Steam-side player into the Xbox pool for the price of a month's subscription instead of
-    another $9.99. See <a href="/platforms/#game-pass">Game Pass</a> and <a href="/review/#price">price</a>.</p>
+  <p>This page does not name a cheapest fix, for a &ldquo;No&rdquo; or for a &ldquo;Not confirmed&rdquo;.
+    Which version of the game ends up in which matchmaking pool
+    is something this site has not tested, so we cannot tell you that buying or subscribing to a different
+    version will get your group together. What the developer has said:
+    <strong>Steam players only play with other Steam players, per the developer&rsquo;s 10 July 2026
+    announcement</strong>; we have not tested. So Steam with Xbox or PC Game Pass is a no, per that same
+    announcement; we have not tested. Xbox and PC Game Pass: the developer said they will have
+    crossplay; we have not tested. Which pool a bought Microsoft Store copy joins has no official statement:
+    not confirmed, and we have not tested it.
+    Version and price details are on <a href="/platforms/#game-pass">Game Pass</a> and
+    <a href="/review/#price">price</a>.</p>
 """ % {"opts": plat_options()},
  "script": """
 (function () {
@@ -273,27 +299,47 @@ PAGES = [
       return;
     }
     var pools = picked.map(poolOf);
-    var same = pools.every(function (p) { return p === pools[0]; });
-    if (same) {
-      out.className = "tool-out ok";
-      out.innerHTML = "<b>Yes \\u2014 you can play together</b><p>All " + picked.length +
-        " of you are in the same matchmaking pool, so you can join each other directly.</p>";
-      return;
-    }
+    var hasMs = picked.some(function (s) { return s.value === "msstore"; });
     var steamers = picked.filter(function (s) { return poolOf(s) === "steam"; });
     var others = picked.filter(function (s) { return poolOf(s) === "xbox"; });
+    if (hasMs) {
+      // 含 Microsoft Store 买断版:没有官方说明它进哪个池,标题一律 Not confirmed
+      out.className = "tool-out warn";
+      out.innerHTML = "<b>Not confirmed</b>" +
+        "<p>Your group includes a Microsoft Store (bought) copy. The developer's 10 July 2026 announcement " +
+        "only says that Steam players will only be able to play with other Steam players, and that Xbox and " +
+        "PC Game Pass players will have crossplay. It does not say which pool a bought Microsoft Store copy " +
+        "joins, so this combination is not confirmed, and this site has not tested it.</p>" +
+        (steamers.length && others.length
+          ? "<p>Apart from the Microsoft Store copy, your group mixes Steam with Xbox or PC Game Pass: " +
+            "Steam players only play with other Steam players, per the same announcement. " +
+            "We have not tested it.</p>"
+          : "");
+      return;
+    }
+    if (steamers.length && !others.length) {
+      out.className = "tool-out ok";
+      out.innerHTML = "<b>Yes, per the developer</b><p>All " + picked.length + " of you are on Steam. " +
+        "Steam players only play with other Steam players, per the developer's 10 July 2026 announcement. " +
+        "We have not tested it.</p>";
+      return;
+    }
+    if (!steamers.length) {
+      out.className = "tool-out ok";
+      out.innerHTML = "<b>The developer said yes \\u2014 we have not tested</b><p>Xbox and PC Game Pass: " +
+        "the developer's 10 July 2026 announcement said they will have crossplay; we have not tested.</p>";
+      return;
+    }
     var few = steamers.length <= others.length ? steamers : others;
     var fewIsSteam = few === steamers;
     var who = few.map(function (s) { return nameOf(s); }).join(" and ");
     var fix = fewIsSteam
-      ? "The cheapest fix is for the Steam side (" + who + ") to get <strong>PC Game Pass</strong> \\u2014 " +
-        "a month's subscription rather than a second $9.99 copy. That moves them into the Xbox pool."
-      : "The cheapest fix is for the Game Pass / Xbox side (" + who + ") to also own it on " +
-        "<strong>Steam</strong>, since a Game Pass copy cannot reach the Steam pool at all.";
+      ? "On Steam in your group: " + who + "."
+      : "Not on Steam in your group: " + who + ".";
     out.className = "tool-out bad";
-    out.innerHTML = "<b>No \\u2014 not in the launch build</b>" +
-      "<p>Per the developer, Steam players only play with other Steam players, and Xbox and PC Game Pass " +
-      "players have crossplay with each other. A bought Microsoft Store copy is not confirmed; this checker assumes the Xbox side.</p><p>" + fix + "</p>";
+    out.innerHTML = "<b>No, per the developer</b>" +
+      "<p>Steam players only play with other Steam players, per the developer's 10 July 2026 announcement. " +
+      "We have not tested it.</p><p>" + fix + "</p>";
   }
 
   sel.forEach(function (s) { if (s) s.addEventListener("change", render); });
@@ -314,6 +360,7 @@ PAGES = [
   <div class="tool">
     <div class="bar-track" role="img" aria-label="Completion progress"><div class="bar-fill" id="fill"></div></div>
     <p class="meta" id="count">0 of 10 &middot; 0%%</p>
+    <p class="meta">Unlock rates in this list come from this site&rsquo;s weekly snapshot of Steam&rsquo;s global achievement stats, captured %(captured_long)s.</p>
 
 %(rows)s
 
@@ -332,15 +379,17 @@ PAGES = [
   </div>
 
   <h2>What the percentages mean</h2>
-  <p>These are Steam global unlock rates &mdash; the share of everyone who owns the game that has the
-    achievement, read from Steam on <strong>%(captured)s</strong> and refreshed weekly by this site's build.
-    They are a difficulty proxy, not a guide: <strong>First Blood sits at %(first)s%%</strong>
-    because it unlocks for killing your first customer, which nearly everyone does by accident.</p>
+  <p>The percentages in the list above are Steam global unlock rates &mdash; the share of everyone who owns
+    the game that has the achievement. They are generated when this site is built, from its weekly snapshot
+    captured on <strong>%(captured_long)s</strong>, and are not edited by hand.
+    They are a difficulty proxy, not a guide: <strong>First Blood sat at %(first)s%% in that snapshot</strong>
+    because it unlocks for killing your first customer.</p>
   <p>The three hidden achievements &mdash; Grave Decision (35.1%%), True Ending (16.0%%) and
-    Empty Home (10.9%%) &mdash; <strong>do not show their requirements in-game, and we have not verified
+    Empty Home (10.9%%) in a separate reading of Steam&rsquo;s achievement API on 10 October 2026 &mdash;
+    <strong>do not show their requirements in-game, and we have not verified
     them.</strong> We list what the rates imply on the <a href="/endings/">endings page</a> rather than
     publishing a guess as fact.</p>
-""" % {"rows": ach_rows(), "captured": ACH_CAPTURED, "first": ACH[0][2]},
+""" % {"rows": ach_rows(), "captured_long": _long_date(ACH_CAPTURED), "first": ACH[0][2]},
  "script": """
 (function () {
   "use strict";
@@ -376,7 +425,7 @@ PAGES = [
     if (!left.length) {
       next.className = "tool-out ok";
       next.innerHTML = "<b>All 10 \\u2014 done</b><p>Including the three hidden ones. " +
-        "That puts you past the 10.9% of players who have Empty Home.</p>";
+        "That puts you past the 10.9% of players who had Empty Home in Steam's 10 October 2026 stats.</p>";
       return;
     }
     left.sort(function (a, b) {
@@ -389,8 +438,8 @@ PAGES = [
     var note = hidden
       ? "<p>This one is hidden \\u2014 the game does not show its requirement, and we have not verified it. " +
         "What the unlock rate implies is on the <a href='/endings/'>endings page</a>.</p>"
-      : "<p>" + pctOf + "% of all players have it, which makes it the most-unlocked achievement you are " +
-        "still missing.</p>";
+      : "<p>" + pctOf + "% of all players had it in the snapshot this list is built from, which makes it " +
+        "the most-unlocked achievement you are still missing.</p>";
     next.className = "tool-out warn";
     next.innerHTML = "<b>" + label + "</b>" + note;
   }
@@ -426,6 +475,7 @@ PAGES = [
   </div>
 
   <h2>All seven threats</h2>
+  <p class="meta">Achievement unlock rates on these cards are one reading of Steam&rsquo;s global achievement stats, taken on 10 October 2026.</p>
   <div id="results">
 %(rows)s
   </div>

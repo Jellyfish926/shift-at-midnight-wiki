@@ -14,7 +14,7 @@ PAGES = [
 # + when will it be released 490 + launch date + release delayed 460@14  → 全表性价比最高的一块
 {
  "path": "release-date", "active": "/guides/",
- "updated": "Last updated 2026-10-10 &middot; last verified 5 August 2026 &middot; game version: 1 September 2026 patch",
+ "updated": "Last updated 2026-10-10 &middot; crossplay, patch list, patience and Q4 2026 update statements re-checked 10 October 2026 against the official Steam announcements and store page &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) &middot; latest patch: 1 September 2026",
  "published": "2026-08-05",
  "title": "Shift At Midnight Release Date — Out Now (22 July 2026)",
  "og_short": "Shift At Midnight Release Date",
@@ -119,7 +119,7 @@ PAGES = [
  "body": """
   <h2>Which devices can run Shift At Midnight?</h2>
 
-  <p>The developer&rsquo;s release announcement names three ways to play: Steam, Xbox and Xbox PC Game Pass. The Steam version is Windows only, and Valve&rsquo;s store data marks macOS and Linux as unsupported. The remaining rows are platforms people search for that no official announcement mentions.</p>
+  <p>The developer&rsquo;s release announcement names three ways to play: Steam, Xbox and Xbox PC Game Pass. The Steam version is Windows only, and Valve&rsquo;s store data marks macOS and Linux as unsupported. That store data also lists nine supported languages for the game, each one marked as having full audio support. The remaining rows are platforms that no official announcement mentions.</p>
 
   <div class="tablewrap">
   <table class="data">
@@ -139,11 +139,11 @@ PAGES = [
   </table>
   </div>
 
-  <p>The Xbox store listing was last verified on 12 August 2026 against the listing itself, and not re-checked on 10 October 2026. Our <a href="/system-requirements/">system requirements page</a> recorded these labels from it that day: Optimized for Xbox Series X|S, Xbox Play Anywhere, Xbox cloud saves, cloud playable with Game Pass Ultimate, and a $9.99 price included with PC Game Pass and Xbox Game Pass Ultimate. Read the listing before you rely on any of them.</p>
+  <p>The Xbox store listing was last verified on 12 August 2026 against the listing itself, and not re-checked on 10 October 2026. Our <a href="/system-requirements/">system requirements page</a> recorded these labels from it that day: Optimized for Xbox Series X|S, Xbox Play Anywhere, Xbox cloud saves, cloud playable with Game Pass Ultimate, and a $9.99 price included with PC Game Pass and Xbox Game Pass Ultimate.</p>
 
   <h2>What PC do you need to run it?</h2>
 
-  <p>The requirements are modest for a 2026 release. The figures below are copied from the Steam store page, which lists a 64-bit processor and operating system as mandatory. Both tiers also list a broadband internet connection.</p>
+  <p>Steam publishes a minimum and a recommended tier. The figures below are copied from the Steam store page, which lists a 64-bit processor and operating system as mandatory. Both tiers also list a broadband internet connection.</p>
 
   <div class="tablewrap">
   <table class="data">
@@ -159,7 +159,7 @@ PAGES = [
   </table>
   </div>
 
-  <p>The gap between the two tiers is mostly memory and graphics. Two details in those lists are easy to miss: both tiers ask for the same 3 GB of storage, and the minimum tier accepts Windows 10 or 11 while the recommended tier names Windows 11 only. If your machine sits between them, the <a href="/system-requirements/">system requirements page</a> explains what each tier means in practice. Crashes and launch failures on supported hardware belong on <a href="/troubleshooting/">troubleshooting</a> instead.</p>
+  <p>Between the two tiers, memory goes from 8 GB to 16 GB, the graphics card from a GeForce GTX 1050 Ti to a GeForce GTX 1660 Ti (6GB), and DirectX from Version 11 to Version 12. Two more details from those lists: both tiers ask for the same 3 GB of storage, and the minimum tier accepts Windows 10 or 11 while the recommended tier names Windows 11 only. If your machine sits between them, the <a href="/system-requirements/">system requirements page</a> explains what each tier means in practice. Crashes and launch failures on supported hardware belong on <a href="/troubleshooting/">troubleshooting</a> instead.</p>
 
   <h2>Does it work on Steam Deck and with a controller?</h2>
 
@@ -185,7 +185,7 @@ PAGES = [
 
   <h2>Is Shift At Midnight on PS5, PS4 or Nintendo Switch?</h2>
 
-  <p><strong>None has been announced.</strong> We re-read all 31 official Steam announcements for the game on 10 October 2026, and none of them mentions PlayStation or Nintendo hardware. The release announcement names only Steam, Xbox and Xbox PC Game Pass. We did not check the PlayStation or Nintendo stores. If a port is ever confirmed, it will come from Bun Muen or Kwalee, and this page will quote it.</p>
+  <p><strong>None has been announced.</strong> We re-read all 31 official Steam announcements for the game on 10 October 2026, and none of them mentions PlayStation or Nintendo hardware. The release announcement names only Steam, Xbox and Xbox PC Game Pass. We did not check the PlayStation or Nintendo stores. Steam&rsquo;s store data names Bun Muen as the developer and Kwalee as the publisher.</p>
 
   <h2>Can you play it on a phone, Mac or Linux?</h2>
 

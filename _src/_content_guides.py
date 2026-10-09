@@ -309,7 +309,7 @@ PAGES = [
  "h1": "Co-op &amp; proximity chat",
  "lede": "Up to <strong>three players</strong>, online, with <strong>proximity chat</strong>. That second detail is not a convenience feature &mdash; it is a mechanic, and treating it as one is the difference between a co-ordinated crew and three people panicking in separate aisles.",
  "body": """
-  <p>The common failure in co-op is everyone running to whatever made the last noise. Fixed roles stop that, and they suit the three-player size the game was designed around. These roles are our own suggestion, not an official system.</p>
+  <p>No official post describes roles for co-op. The split below is our own suggestion, not an official system and not something we can source. It assumes the three players the developer says the game &ldquo;is designed and has always been marketed around&rdquo;.</p>
 
   <div class="tablewrap">
   <table class="data">
@@ -322,9 +322,7 @@ PAGES = [
   </table>
   </div>
 
-  <p>Proximity chat makes these roles work, because a voice that is suddenly loud is a teammate who is suddenly close. Running Discord over the top flattens that distance and removes the cue.</p>
-
-  <p>On a <a href="/monsters/marionette/">Marionette</a> night, according to our <a href="/monsters/jack-in-the-box/">Jack-in-the-Box page</a>, which cites Game Rant&rsquo;s music box guide, three complete melodies from the wind-up music box summon the Marionette, and holding E to rewind the box before that third pass stops the encounter. As that page suggests, give one player the box for the whole encounter and have them call the melody count aloud over proximity chat while the others keep serving. With two players, merge Floor and Response and keep the counter staffed.</p>
+  <p>On a <a href="/monsters/marionette/">Marionette</a> night, according to our <a href="/monsters/jack-in-the-box/">Jack-in-the-Box page</a>, which cites Game Rant&rsquo;s music box guide, three complete melodies from the wind-up music box summon the Marionette, and holding E to rewind the box before that third pass stops the encounter. That page also suggests giving one player the box for the whole encounter; in the split above, also our suggestion, that is the Response role.</p>
 """},
 {
  "path": "guide/weapons", "active": "/guides/",
@@ -537,15 +535,15 @@ PAGES = [
   </table>
   </div>
 
-  <p>Bun Muen was blunt about the six-player option in that same patch note. The game &ldquo;is designed and has always been marketed around a maximum of 3 players&rdquo;, and a bigger lobby &ldquo;will likely become too chaotic, and is not recommended for your first playthrough&rdquo;. Treat four to six as a party setting. The changelog was posted on Steam, and we could not confirm the option on the Xbox versions (checked 10 October 2026).</p>
+  <p>Bun Muen was blunt about the six-player option in that same patch note. The game &ldquo;is designed and has always been marketed around a maximum of 3 players&rdquo;, and a bigger lobby &ldquo;will likely become too chaotic, and is not recommended for your first playthrough&rdquo;. The changelog was posted on Steam, and we could not confirm the option on the Xbox versions (checked 10 October 2026).</p>
 
   <h2>How do you host a game with friends?</h2>
   <p>The host creates a lobby from the game and chooses the maximum player count at that point. That much is stated in the 23 July 2026 patch note. No official post documents the invite steps or menu names, so we do not list them here. Our <a href="/troubleshooting/">troubleshooting page</a> covers what to check when a friend cannot see or join your lobby.</p>
   <p>Two official statements matter before anyone tries to join. On stores, the developer&rsquo;s 10 July 2026 announcement says Steam players will only be able to play with other Steam players, and that Xbox and PC Game Pass players will have crossplay. We have not tested either, and the <a href="/crossplay/">crossplay page</a> sets out what is on the record. On branches, the launch-day &ldquo;network-issues-patch&rdquo; beta fix came with this instruction: &ldquo;Everyone you play with must also follow these instructions&rdquo;.</p>
-  <p>A Steam-only public server browser was announced on 10 July 2026 for launch or shortly after. No later changelog mentions it shipping, so its status is not confirmed as of 10 October 2026. Plan to play with people you can reach directly.</p>
+  <p>A Steam-only public server browser was announced on 10 July 2026 for launch or shortly after. No later changelog mentions it shipping, so its status is not confirmed as of 10 October 2026.</p>
 
   <h2>How does voice chat work?</h2>
-  <p>The game has built-in proximity chat, so voices fade as teammates walk away. The store page puts it plainly: &ldquo;proximity chat enhances the experience&rdquo;. The 20 August 2026 patch added individual volume sliders for each player. The 23 July 2026 patch also removed the profanity filter.</p>
+  <p>The game has built-in proximity chat. The store page puts it plainly: &ldquo;proximity chat enhances the experience&rdquo;, and the 22 July 2026 launch post lists &ldquo;proximity chat&rdquo; among the things to expect. The 20 August 2026 patch added individual volume sliders for each player. The 23 July 2026 patch also removed the profanity filter.</p>
 
   <h2>Can you try co-op before buying?</h2>
   <p>Yes. A free &ldquo;Shift At Midnight Multiplayer Demo&rdquo; has been on Steam since 29 September 2025, and Steam lists it as Online Co-op. It is a separate app from the full game, and Steam lists it as free. Our <a href="/demo/">demo page</a> lists what it includes.</p>
@@ -563,7 +561,7 @@ PAGES = [
  "lede": "<strong>Yes &mdash; day one, on both Xbox console and PC.</strong> It is also an Xbox Play Anywhere title, which means one Microsoft Store purchase covers the Xbox and Windows versions. That detail is also why the crossplay situation is what it is.",
  "updated": "Last verified 10 October 2026 &middot; game version: 1 September 2026 patch",
  "body": """
-  <p><strong>Yes at launch.</strong> The launch announcement on 22 July 2026 reads &ldquo;OUT NOW on Steam, Xbox &amp; Game Pass&rdquo;, and the earlier release-date post names &ldquo;Xbox PC Gamepass&rdquo; as well. The Xbox store listing showed the game as included with PC Game Pass and Xbox Game Pass Ultimate when it was last verified on 12 August 2026 against that listing. That listing was not re-checked on 10 October 2026, so check the Xbox app before you subscribe for this game alone.</p>
+  <p><strong>Yes at launch.</strong> The launch announcement on 22 July 2026 reads &ldquo;OUT NOW on Steam, Xbox &amp; Game Pass&rdquo;, and the earlier release-date post names &ldquo;Xbox PC Gamepass&rdquo; as well. The Xbox store listing showed the game as included with PC Game Pass and Xbox Game Pass Ultimate when it was last verified on 12 August 2026 against that listing. That listing was not re-checked on 10 October 2026.</p>
 
   <table class="facts">
     <tr><th>On Game Pass at launch</th><td>Yes &mdash; 22 July 2026</td></tr>
@@ -574,7 +572,7 @@ PAGES = [
     <tr><th>Crossplay, per the developer</th><td>&ldquo;Xbox and PC Gamepass players will have crossplay&rdquo; (10 July 2026); not tested by us</td></tr>
   </table>
 
-  <p>The last row is the one that costs people money. The same announcement says &ldquo;Steam players will only be able to play with other Steam players.&rdquo; The <a href="/crossplay/">crossplay page</a> has the full matrix, and <a href="/multiplayer/">multiplayer</a> explains how lobbies work once you are on the same side.</p>
+  <p>The last row quotes the 10 July 2026 release-date announcement. The same announcement says &ldquo;Steam players will only be able to play with other Steam players.&rdquo; The <a href="/crossplay/">crossplay page</a> has the full matrix, and <a href="/multiplayer/">multiplayer</a> explains how lobbies work once you are on the same side.</p>
 """},
 {
  "path": "price", "active": "/guides/",
@@ -690,9 +688,9 @@ PAGES = [
  "h1": "Community &amp; Discord",
  "lede": "A three-player co-op game where <strong>three of ten achievements are still hidden</strong> generates a lot of community activity &mdash; people looking for a third player, and people trying to work out what <em>True Ending</em> actually needs.",
  "body": """
-  <p>The official Discord server is the developer&rsquo;s own suggestion. Bun Muen&rsquo;s recent patch notes on Steam end by asking players to join it, and each of those notes carries the invite link. We do not copy invite links here, because they expire and get impersonated. Open the newest announcement on the <a href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Steam store page</a> instead.</p>
+  <p>The official Discord server is the developer&rsquo;s own suggestion. Bun Muen&rsquo;s recent patch notes on Steam end by asking players to join it, and each of those notes carries the invite link. We do not copy invite links here; the 1 September 2026 patch note on the <a href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Steam store page</a> carries one.</p>
 
-  <p>When you post looking for a group, state your store version and your preferred lobby size first. The developer has said Steam players will only be able to play with other Steam players, so settle the store question before the evening starts. New players should start with the <a href="/guide/beginners/">beginner&rsquo;s guide</a> so the first shared shift is not a tutorial.</p>
+  <p>Two official statements apply to any group you find. The developer has said Steam players will only be able to play with other Steam players, and the 23 July 2026 patch note says the host selects the maximum player count when creating a lobby. Our <a href="/guide/beginners/">beginner&rsquo;s guide</a> covers the first shifts.</p>
 
   <div class="grid two">
     <a class="card" href="/crossplay/"><b>Crossplay</b><span>Exactly who can play with whom.</span></a>
@@ -787,7 +785,7 @@ PAGES = [
 """},
 {
  "path": "faq", "active": "/faq/",
- "updated": "Last updated 2026-10-10 &middot; last verified 5 August 2026 &middot; game version: 1 September 2026 patch",
+ "updated": "Last updated 2026-10-10 &middot; crossplay, patch, patience, Q4 2026 update and achievement unlock-rate statements re-checked 10 October 2026 against the official Steam announcements, store page and achievement stats &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) &middot; latest patch: 1 September 2026",
  "published": "2026-08-05",
  "title": "Shift At Midnight FAQ — Crossplay, Players, Endings &amp; Mods",
  "og_short": "Shift At Midnight FAQ",
