@@ -103,7 +103,6 @@ def new_footer_inner(with_official: bool) -> str:
 PRECONNECT_OLD = '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
 PRECONNECT_NEW = (
     '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-    '<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>\n'
     '<link rel="preconnect" href="https://www.googletagmanager.com">\n'
     '<link rel="dns-prefetch" href="https://www.clarity.ms">'
 )
@@ -126,9 +125,8 @@ def patch(rel: str, active: str) -> str:
     )
 
     # 3) preconnect(幂等)
-    if "pagead2.googlesyndication.com" not in s.split("</head>")[0] or "rel=\"preconnect\" href=\"https://pagead2" not in s:
-        if PRECONNECT_OLD in s and 'rel="preconnect" href="https://pagead2' not in s:
-            s = s.replace(PRECONNECT_OLD, PRECONNECT_NEW, 1)
+    if PRECONNECT_OLD in s and 'rel="preconnect" href="https://www.googletagmanager.com"' not in s:
+        s = s.replace(PRECONNECT_OLD, PRECONNECT_NEW, 1)
 
     # 3b) favicon 换成位图套件(幂等)
     if FAVICON_OLD in s:

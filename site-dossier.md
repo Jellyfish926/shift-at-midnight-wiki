@@ -133,3 +133,10 @@
 | d90 | 2026-10-26 | 待做（终判，只能继续或换词） |
 
 下次复盘：2026-10-26（d90 终判）；下次周检 2026-10-05。站群周检与月复盘见 lootlore 仓 `reviews/fleet-2026-09-29.md`、`reviews/monthly-2026-09.md`。
+
+## 2026-10-09 修复轮（三项机械改动）
+
+- 撤残留 AdSense：`_src/_build.py` 模板的 pagead2 preconnect 与 adsbygoogle 脚本、4 个手写页（index / achievements / crossplay / monsters）各自的 preconnect 与脚本、`public/404.html` 的 preconnect 全部删除；`_src/_patch_handwritten.py` 不再补回 pagead2 preconnect（并改成按 googletagmanager 判幂等）。`public/ads.txt` 改为一行注释，原文备份在 `reviews/backups/2026-10-09/public/ads.txt`。Adsterra 仍只在 `public/ads.js` 动态加载，引用页数 51，前后不变。回滚：`git revert` 本轮提交，ads.txt 原文从备份目录取回。
+- 笔名 `Jellyfish` 统一为 `Jellyfi`（Person JSON-LD、作者页、关于页、站内署名，`AUTHOR_NAME` 与 `_content_kw.py`；GitHub 用户名 Jellyfish926 不动）。回滚：`git revert`。
+- 广告排除名单：`public/ads.js` 信任页路径正则补上 `author`、`editorial-policy`。回滚：`git revert`。
+- 构建：`cd _src && python3 build_all.py`，二次运行无 diff。

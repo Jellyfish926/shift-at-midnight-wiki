@@ -69,9 +69,9 @@ FOOTER_FINE = ("Shift At Midnight Wiki is an unofficial fan resource. Shift At M
 
 VERIFIED = "Last verified 5 August 2026 &middot; game version: 29 July 2026 patch"
 
-# 站内署名 —— 与 /about/ 正文里已有的署名一致(「curated and edited by Jellyfish」),
+# 站内署名 —— 与 /about/ 正文里已有的署名一致(「curated and edited by Jellyfi」),
 # 不另起一个名字。Article JSON-LD 的 author 与 /author/ 页都指向它。
-AUTHOR_NAME = "Jellyfish"
+AUTHOR_NAME = "Jellyfi"
 AUTHOR_ROLE = "Editor"
 AUTHOR_URL = f"{BASE}/author/"
 SITE_NAME = "Shift At Midnight Wiki"
@@ -235,13 +235,10 @@ def render(page: dict) -> str:
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v={ICO_VER}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="https://www.clarity.ms">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Jost:wght@300;400;500&amp;display=swap">
 <link rel="stylesheet" href="/style.css?v={CSS_VER}">
-<!-- Google AdSense ca-pub-6575082962774479 — 站点验证 + 过审后自动投放 -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479" crossorigin="anonymous"></script>
 {breadcrumb_ld(page['trail'], page['title'], url)}
 {article_ld(page['title'], page['desc'], url, iso_date(page.get('updated', VERIFIED)))}{extra_ld}
 <!-- Google tag (gtag.js) — GA4 G-RFHPX1SQ5N -->

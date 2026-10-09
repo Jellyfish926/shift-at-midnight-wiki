@@ -796,7 +796,7 @@ PAGES = [
  "lede": "shiftatmidnightwiki.site is an independent, fan-made guide hub for <strong>Shift At Midnight</strong> &mdash; the co-op survival horror game by solo developer Bun Muen, published by Kwalee, released 22 July 2026 on Steam, Xbox Series X|S and Xbox Game Pass.",
  "body": """
   <h2>Who runs this site</h2>
-  <p>This site is curated and edited by <strong>Jellyfish</strong>, an independent games-content creator, with the goal of building the most useful English-language resource for Shift At Midnight players. We are a small independent project &mdash; not a content farm, and not affiliated with any publisher.</p>
+  <p>This site is curated and edited by <strong>Jellyfi</strong>, an independent games-content creator, with the goal of building the most useful English-language resource for Shift At Midnight players. We are a small independent project &mdash; not a content farm, and not affiliated with any publisher.</p>
 
   <h2>Our editorial standards</h2>
   <ol>
@@ -999,11 +999,11 @@ PAGES = [
  "desc": "Who writes Shift At Midnight Wiki: the editor behind the site, what the site is for, how claims get verified, and how to reach us with a correction.",
  "trail": [(None, "Editor")],
  "updated": "Last reviewed 11 September 2026",
- "h1": "Jellyfish &mdash; editor",
+ "h1": "Jellyfi &mdash; editor",
  "lede": "This wiki is written and maintained by one person. This page says who that is, what the site is trying to be, and the method behind every page on it.",
  "body": """
   <h2>Who writes this site</h2>
-  <p>shiftatmidnightwiki.site is curated and edited by <strong>Jellyfish</strong>, an independent games-content creator who also maintains a small group of sister guide sites for other games. This is a one-person independent project &mdash; not a content farm, and not affiliated with any publisher. That is a limitation worth stating plainly: coverage moves at the speed of one editor. It is also the reason the rules on the <a href="/editorial-policy/">editorial policy</a> page can actually be enforced on every page, because the same person applies them to all of them.</p>
+  <p>shiftatmidnightwiki.site is curated and edited by <strong>Jellyfi</strong>, an independent games-content creator who also maintains a small group of sister guide sites for other games. This is a one-person independent project &mdash; not a content farm, and not affiliated with any publisher. That is a limitation worth stating plainly: coverage moves at the speed of one editor. It is also the reason the rules on the <a href="/editorial-policy/">editorial policy</a> page can actually be enforced on every page, because the same person applies them to all of them.</p>
 
   <h2>What this site is for</h2>
   <p>The goal is the most useful English-language reference for <strong>Shift At Midnight</strong> &mdash; the co-op survival horror game by solo developer Bun Muen, published by Kwalee, released 22 July 2026. In practice that means answering the questions players actually arrive with: what a threat is and how it behaves, whether a group can <a href="/crossplay/">play together across platforms</a>, what a patch changed, and whether the game is <a href="/review/">worth its price</a> to someone like them.</p>
