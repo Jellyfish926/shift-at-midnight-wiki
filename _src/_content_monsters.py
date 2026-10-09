@@ -571,12 +571,12 @@ PAGES = [
 {
  "path": "endings",
  "active": "/endings/",
- "title": "Shift At Midnight Endings — All 3 Endings and How to Get Them",
+ "title": "Shift At Midnight Endings: All 3 and How to Unlock Each",
  "og_short": "Shift At Midnight Endings",
- "desc": "All three Shift At Midnight endings hinge on two things: whether you call Sheriff Clyde after Shift 12, and whether you finish Shift 13 with $250. True Ending sits at 16.0%.",
+ "desc": "Grave Decision: call Sheriff Clyde after Shift 12. If you do not call him, True Ending needs $250 or more at the end of Shift 13; under $250 is Empty Home.",
  "trail": [(None, "Endings")],
  "h1": "Shift At Midnight endings",
- "lede": "Three endings, decided by exactly two variables: <strong>whether you call Sheriff Clyde after Shift 12</strong>, and <strong>whether your savings are $250 or more when Shift 13 ends</strong>. <em>Grave Decision</em> sits at 33.1%, <em>True Ending</em> at 16.0%, <em>Empty Home</em> at 10.1%.",
+ "lede": "Three endings, decided by exactly two variables: <strong>whether you call Sheriff Clyde after Shift 12</strong>, and <strong>whether your savings are $250 or more when Shift 13 ends</strong>. <em>Grave Decision</em> sits at 35.1%, <em>True Ending</em> at 16.0%, <em>Empty Home</em> at 10.9%, as of 10 October 2026.",
  "body": """
   <div class="term tip">
     <div class="term-h">If you only read one paragraph</div>
@@ -595,27 +595,27 @@ PAGES = [
 
   <div class="tablewrap">
   <table class="data">
-    <thead><tr><th>Ending</th><th>Condition</th><th>What happens</th><th>Steam unlock</th><th>Xbox</th></tr></thead>
+    <thead><tr><th>Ending</th><th>Condition</th><th>What happens</th><th>Steam unlock, as of 10 October 2026</th><th>Xbox</th></tr></thead>
     <tbody>
-      <tr><td><strong>Grave Decision</strong></td><td>Call Clyde after Shift 12 (money irrelevant)</td><td>Your pet gets the surgery and survives. <strong>Clyde dies.</strong></td><td class="num">33.1%</td><td class="num">100G</td></tr>
+      <tr><td><strong>Grave Decision</strong></td><td>Call Clyde after Shift 12 (money irrelevant)</td><td>Your pet gets the surgery and survives. <strong>Clyde dies.</strong></td><td class="num">35.1%</td><td class="num">100G</td></tr>
       <tr><td><strong>True Ending</strong></td><td>Do <em>not</em> call Clyde <strong>and</strong> finish with $250 or more</td><td>Pet and Clyde both survive. The Dentist appears and Clyde helps destroy him.</td><td class="num">16.0%</td><td class="num">200G</td></tr>
-      <tr><td><strong>Empty Home</strong></td><td>Do <em>not</em> call Clyde <strong>and</strong> finish under $250</td><td>Clyde survives, but you cannot pay for the surgery. <strong>Your pet dies.</strong></td><td class="num">10.1%</td><td class="num">100G</td></tr>
+      <tr><td><strong>Empty Home</strong></td><td>Do <em>not</em> call Clyde <strong>and</strong> finish under $250</td><td>Clyde survives, but you cannot pay for the surgery. <strong>Your pet dies.</strong></td><td class="num">10.9%</td><td class="num">100G</td></tr>
     </tbody>
   </table>
   </div>
-  <p class="src">Conditions and outcomes: <a href="https://www.keengamer.com/articles/guides/shift-at-midnight-how-to-get-all-endings/" target="_blank" rel="noopener">KeenGamer endings guide</a>. Unlock rates: <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a>, read 13 August 2026. All three achievements are hidden on Steam.</p>
+  <p class="src">Conditions and outcomes: <a href="https://www.keengamer.com/articles/guides/shift-at-midnight-how-to-get-all-endings/" target="_blank" rel="noopener">KeenGamer endings guide</a>. Unlock rates: <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a>, read 10 October 2026. All three achievements are hidden on Steam.</p>
 
-  <p class="updated">Corrected 5 August 2026 (previously 26.0% / 13.4% / 7.0%); rates re-read 13 August 2026</p>
+  <p class="updated">Corrected 5 August 2026 (previously 26.0% / 13.4% / 7.0%); rates re-read 10 October 2026</p>
 
   <h2>The shape of the choice</h2>
 
   <p>What makes this good design is that calling Clyde is not obviously wrong. It saves your pet with no financial requirement attached, which means it is the reliable option for a run that went badly. The price is Clyde&rsquo;s life, and you pay it after the choice is locked.</p>
 
-  <p>Not calling him is the greedy line. You keep Clyde alive and you keep the possibility of the best outcome, but you have staked it on a number you may not hit &mdash; and <em>Empty Home</em>, at 10.1%, is what a failed attempt at the True Ending looks like. The two rarest achievements in the game are the two halves of the same gamble.</p>
+  <p>Not calling him is the greedy line. You keep Clyde alive and you keep the possibility of the best outcome, but you have staked it on a number you may not hit &mdash; and <em>Empty Home</em>, at 10.9% as of 10 October 2026, is what a failed attempt at the True Ending looks like. The two rarest achievements in the game are the two halves of the same gamble.</p>
 
   <h2>What the unlock rates actually say</h2>
 
-  <p>Add the three together and you get 56.2%, but that is not a completion rate: a player who replays can hold more than one, so the real share of players who have finished the story at all is lower. Set against <em>Still Breathing</em> (survive your first hunt) at <strong>93.8%</strong>, the picture is clear enough &mdash; most people who buy this game never reach Shift 12.</p>
+  <p>Add the three together and you get 62.0%, but that is not a completion rate: a player who replays can hold more than one, so the real share of players who have finished the story at all is lower. Set against <em>Still Breathing</em> (survive your first hunt) at <strong>93.5%</strong> in the same 10 October 2026 reading, the most common ending achievement, <em>Grave Decision</em>, is at 35.1%.</p>
 
   <p><em>Grave Decision</em> being twice as common as <em>True Ending</em> is the more interesting number. It suggests the safe branch is the default choice for players reaching the end for the first time, which is what you would expect when one option guarantees a survivable outcome and the other depends on how well the last thirteen shifts went financially.</p>
 
