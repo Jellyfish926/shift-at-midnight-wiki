@@ -149,6 +149,8 @@ PAGES = [
 # ── /tools/ 索引 ────────────────────────────────────────────────
 {
  "path": "tools", "active": "/tools/",
+ "updated": "Last updated 2026-10-10 &middot; last verified 5 August 2026 &middot; game version: 29 July 2026 patch",
+ "published": "2026-08-05",
  "title": "Shift At Midnight Tools — Crossplay, Achievements, Threats",
  "og_short": "Shift At Midnight Tools",
  "desc": "Three free tools for Shift At Midnight: check whether your group can play together, track all 10 achievements, and look up any threat by what you saw.",
@@ -218,27 +220,31 @@ PAGES = [
     </div>
     <noscript>
       <p class="noscript-note">This checker needs JavaScript. The same answer in one sentence:
-        <strong>Steam players can only play with other Steam players.</strong> Xbox console, PC Game Pass
-        and Microsoft Store copies all share one pool and can play with each other. Full table on the
+        <strong>Steam players can only play with other Steam players.</strong> The developer says Xbox and
+        PC Game Pass players will have crossplay with each other; a bought Microsoft Store copy is not
+        confirmed either way. Full table on the
         <a href="/crossplay/">crossplay page</a>.</p>
     </noscript>
   </div>
 
   <h2>The rule behind the answer</h2>
-  <p>There are two matchmaking pools, not four. <strong>Steam is one pool by itself.</strong> Xbox Series X|S,
-    PC Game Pass and a bought Microsoft Store copy are the second pool &mdash; they interoperate because of
-    Xbox Play Anywhere. Nothing crosses between the two.</p>
+  <p>The developer&rsquo;s 10 July 2026 announcement describes two groups. <strong>Steam players will only be
+    able to play with other Steam players.</strong> Xbox and PC Game Pass players will have crossplay with each
+    other. Which pool a bought Microsoft Store copy joins, and how Xbox Play Anywhere relates to matchmaking,
+    is not confirmed by any official statement, and this site has not tested it; the checker above places
+    a Microsoft Store copy on the Xbox side as an assumption.</p>
   <table class="data">
     <thead><tr><th>Your platform</th><th>Can play with</th><th>Cannot play with</th></tr></thead>
     <tbody>
       <tr><td>Steam (Windows)</td><td>Steam only</td><td>Xbox console, PC Game Pass, Microsoft Store</td></tr>
       <tr><td>Xbox Series X|S</td><td>Xbox + PC Game Pass</td><td>Steam</td></tr>
       <tr><td>PC Game Pass</td><td>Xbox + PC Game Pass</td><td>Steam</td></tr>
-      <tr><td>Microsoft Store (bought)</td><td>Xbox + PC Game Pass</td><td>Steam</td></tr>
+      <tr><td>Microsoft Store (bought)</td><td>Not confirmed (no official statement; untested)</td><td>Steam</td></tr>
     </tbody>
   </table>
-  <p>The developer has said full crossplay and a server browser are planned, but they are
-    <strong>not in the launch build</strong>. Until that ships, the table above is the whole story.
+  <p>The developer announced a Steam-only public server browser on 10 July 2026, and no later
+    changelog mentions it shipping. <strong>No official announcement promises crossplay between Steam
+    and Xbox</strong> (all 31 official Steam announcements checked on 10 October 2026).
     Background and sourcing on the <a href="/crossplay/">crossplay page</a>.</p>
 
   <h2>If the answer is no</h2>
@@ -286,8 +292,8 @@ PAGES = [
         "<strong>Steam</strong>, since a Game Pass copy cannot reach the Steam pool at all.";
     out.className = "tool-out bad";
     out.innerHTML = "<b>No \\u2014 not in the launch build</b>" +
-      "<p>Steam is its own matchmaking pool. Xbox console, PC Game Pass and Microsoft Store copies share " +
-      "a second pool. Nothing crosses between them.</p><p>" + fix + "</p>";
+      "<p>Per the developer, Steam players only play with other Steam players, and Xbox and PC Game Pass " +
+      "players have crossplay with each other. A bought Microsoft Store copy is not confirmed; this checker assumes the Xbox side.</p><p>" + fix + "</p>";
   }
 
   sel.forEach(function (s) { if (s) s.addEventListener("change", render); });

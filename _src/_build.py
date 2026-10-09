@@ -105,7 +105,7 @@ def _plain(s: str) -> str:
     return " ".join(_html.unescape(s).split())
 
 
-def article_ld(title: str, desc: str, url: str, date: str) -> str:
+def article_ld(title: str, desc: str, url: str, date: str, published: str = None) -> str:
     """Article JSON-LD —— 每个内容页一份,与 BreadcrumbList 配套。"""
     obj = {
         "@context": "https://schema.org",
@@ -113,7 +113,7 @@ def article_ld(title: str, desc: str, url: str, date: str) -> str:
         "headline": _plain(title),
         "description": _plain(desc),
         "inLanguage": "en",
-        "datePublished": date,
+        "datePublished": published or date,   # 可选「首次发布日期」;没有该字段的页行为不变
         "dateModified": date,
         "author": {"@type": "Person", "name": AUTHOR_NAME,
                    "jobTitle": AUTHOR_ROLE, "url": AUTHOR_URL},
@@ -240,7 +240,7 @@ def render(page: dict) -> str:
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Jost:wght@300;400;500&amp;display=swap">
 <link rel="stylesheet" href="/style.css?v={CSS_VER}">
 {breadcrumb_ld(page['trail'], page['title'], url)}
-{article_ld(page['title'], page['desc'], url, iso_date(page.get('updated', VERIFIED)))}{extra_ld}
+{article_ld(page['title'], page['desc'], url, iso_date(page.get('updated', VERIFIED)), page.get('published'))}{extra_ld}
 <!-- Google tag (gtag.js) — GA4 G-RFHPX1SQ5N -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFHPX1SQ5N"></script>
 <script>

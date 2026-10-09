@@ -17,8 +17,9 @@ PAGES = [
  "desc": "Every Shift At Midnight patch since the 22 July 2026 launch: 6-player lobbies, the Rake enemy, the second firearm, and what the developer has confirmed is still coming.",
  "trail": U,
  "h1": "Shift At Midnight updates and patch notes",
- "lede": "Two real patches and one emergency beta branch since launch. <strong>The 29 July patch added a new enemy</strong> &mdash; if you finished the story before then, you have not met it.",
- "updated": "Last updated 2026-09-10 &middot; last verified 10 September 2026 &middot; game version: 29 July 2026 patch",
+ "lede": "Four patches and one emergency beta branch since launch, the newest on 1 September 2026. <strong>The 29 July patch added a new enemy</strong> &mdash; if you finished the story before then, you have not met it.",
+ "updated": "Last verified 10 October 2026 against the official Steam announcement feed &middot; game version: 1 September 2026 patch",
+ "published": "2026-09-10",
  "body": """
   <div class="term tip">
     <div class="term-h">Where these come from</div>
@@ -27,8 +28,46 @@ PAGES = [
       not in an official announcement, it is not on this page.</p>
   </div>
 
+  <h2>1 September 2026 &mdash; &ldquo;30 new customers + more&rdquo;</h2>
+  <p>The newest patch as of 10 October 2026. The changelog lists:</p>
+  <ul>
+    <li><strong>30 new customers</strong> added to Story Mode and Endless Mode.</li>
+    <li><strong>Chainsaw</strong> added as a purchasable melee weapon &mdash; in the changelog&rsquo;s words,
+      &ldquo;now required for the LOCKED AND LOADED achievement&rdquo;. See <a href="/achievements/">achievements</a>.</li>
+    <li><strong>Security cameras</strong> added in Endless Mode. They &ldquo;can be viewed on the computer and
+      let you keep an eye on anything that might emerge from the forest&rdquo;.</li>
+    <li>You can now purchase your <strong>pet</strong> for the store in Endless Mode.</li>
+    <li><strong>Patience re-enabled</strong> for Endless Mode.</li>
+    <li>Two bear traps and two planks added in the storage room for the first shift of Endless Mode, and
+      you can now purchase three additional bear traps instead of two.</li>
+    <li>Quota, personal funds and pet info removed from the End Of Day Report in Endless Mode, and emails
+      disabled in Endless Mode.</li>
+    <li>&ldquo;Lots of various bug fixes and crash fixes&rdquo;.</li>
+    <li><strong>Previewed for the next update:</strong> &ldquo;Next update will have some more spooky stuff
+      for endless mode&rdquo;.</li>
+  </ul>
+  <p class="src">Source: <a href="https://steamcommunity.com/ogg/3722330/announcements/detail/710033254358451283"
+    target="_blank" rel="noopener">Steam announcement, 1 September 2026</a>.</p>
+
+  <h2>20 August 2026 &mdash; &ldquo;15 customers + bug fixes&rdquo;</h2>
+  <p>The third post-launch patch. The changelog lists:</p>
+  <ul>
+    <li><strong>15 new customers</strong> added to Story Mode and Endless Mode.</li>
+    <li><strong>Individual volume sliders</strong> added for each player.</li>
+    <li><strong>Cloud saves</strong> added for Steam.</li>
+    <li>Product prices equalized &ldquo;so getting true ending is less RNG&rdquo; &mdash; see
+      <a href="/endings/">endings</a>.</li>
+    <li>Fixed an issue with some start-of-shift notes not being randomized, and certain UI and world
+      issues in other languages.</li>
+    <li>&ldquo;Lots of various bug fixes and crash fixes&rdquo;.</li>
+    <li><strong>Previewed for the next update:</strong> &ldquo;The next content update will be bigger and
+      (probably) sooner than this one&rdquo;.</li>
+  </ul>
+  <p class="src">Source: <a href="https://steamcommunity.com/ogg/3722330/announcements/detail/672877388439226838"
+    target="_blank" rel="noopener">Steam announcement, 20 August 2026</a>.</p>
+
   <h2>29 July 2026 &mdash; &ldquo;Balancing + bug fixes&rdquo;</h2>
-  <p>The most consequential patch so far, because it added content rather than fixing plumbing.</p>
+  <p>The second post-launch patch, and the first to add an enemy and a weapon.</p>
   <ul>
     <li><strong>New enemy: the Rake.</strong> Rakes appear in <em>endless and post-story modes only</em>
       and emerge from the forests around the station. If you played story mode start to finish
@@ -36,10 +75,11 @@ PAGES = [
       spawn them.</li>
     <li><strong>A second purchasable firearm.</strong> Until this patch there was exactly one gun to buy.
       This matters most for the <a href="/achievements/">Locked And Loaded</a> achievement, which is
-      about filling out the arsenal.</li>
-    <li><strong>The patience mechanic was removed.</strong> Customers no longer run down a patience
-      meter while you verify them. In practice this makes careful ID checking much less punishing &mdash;
-      the main reason players used to rush a scan and let a doppelganger through.</li>
+      about filling out the arsenal. Since the 1 September 2026 patch the Chainsaw is also
+      &ldquo;now required for the LOCKED AND LOADED achievement&rdquo;, per that changelog.</li>
+    <li><strong>Patience was removed in Endless Mode / post-story mode.</strong> The changelog line is
+      &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo;; it does not mention Story Mode.
+      The 1 September 2026 patch re-enabled patience for Endless Mode (see above).</li>
     <li>Assorted bug and crash fixes.</li>
   </ul>
   <p class="src">Source: <a href="https://store.steampowered.com/news/app/3722330/view/695394018676179340"
@@ -50,8 +90,8 @@ PAGES = [
   <ul>
     <li><strong>Lobby size is now selectable up to six players.</strong> The developer was blunt about
       what this is: the game &ldquo;is designed and has always been marketed around a maximum of
-      3 players&rdquo;, larger lobbies &ldquo;may become chaotic&rdquo;, and they do not recommend six
-      for a first playthrough. Treat it as a party mode, not the intended experience.
+      3 players&rdquo;, and above that it &ldquo;will likely become too chaotic, and is not recommended
+      for your first playthrough&rdquo;. Treat it as a party mode, not the intended experience.
       See <a href="/multiplayer/">multiplayer</a> for how this plays out.</li>
     <li><strong>Marionette HP reduced.</strong> The Shift 9 music-box encounter got noticeably more
       survivable. See <a href="/monsters/marionette/">Marionette</a>.</li>
@@ -60,7 +100,8 @@ PAGES = [
     <li>Fixed Russian-region players being unable to create joinable lobbies.</li>
     <li>The profanity filter was removed.</li>
     <li><strong>Previewed for the next patch:</strong> the announcement closed by saying the following
-      patch would fix &ldquo;cursor interaction issues after crashes&rdquo;. The 29 July notes list
+      patch &ldquo;will aim to address the issue of people who crash, and are then unable to interact
+      with the cursor or any buttons in the game&rdquo;. The 29 July notes list
       &ldquo;various bug fixes and crash fixes&rdquo; without saying whether that was among them, and no
       later announcement clarifies it &mdash; see <a href="/troubleshooting/">troubleshooting</a>.</li>
   </ul>
@@ -77,27 +118,40 @@ PAGES = [
     <strong>Everyone in a party has to be on the same branch to play together</strong>, which is the
     usual cause of &ldquo;we are all online but cannot see each other&rdquo;.</p>
 
-  <h2>Confirmed, but not out yet</h2>
+  <h2>Announced, not confirmed as shipped</h2>
   <table>
     <tr><th>What</th><th>Status</th></tr>
-    <tr><td>Full crossplay including Steam</td>
-        <td>Confirmed as a post-release update, <strong>no date</strong>. Today crossplay works only
-          between Xbox and PC Game Pass &mdash; see <a href="/crossplay/">crossplay</a>.</td></tr>
     <tr><td>Public server browser</td>
-        <td>Announced before launch as a post-release addition. Not shipped as of 5 August 2026.</td></tr>
-    <tr><td>Endless Mode full release</td>
-        <td>Free update planned for <strong>Q4 2026</strong>, alongside more customers, traps, weapons
-          and monsters. The beta is already playable &mdash; see
+        <td>The 10 July 2026 announcement says: &ldquo;There will be a Steam-only public server browser
+          either on-launch, or shortly after launch.&rdquo; No later changelog mentions it going live
+          (the 23 July, 29 July, 20 August and 1 September notes, checked on 10 October 2026). We have
+          not tested it in game.</td></tr>
+    <tr><td>Endless Mode updates</td>
+        <td>The same announcement says: &ldquo;Throughout the rest of the year I plan to update endless
+          mode with exclusive customers, traps, ways of detecting doppelgangers, etc.&rdquo; The 20 August
+          and 1 September patches each added Endless Mode content (above). A free &ldquo;Q4 2026&rdquo;
+          full release, which this page previously listed, is <strong>not confirmed by any official
+          Steam announcement</strong> (all 31 checked on 10 October 2026). See
           <a href="/nights-and-levels/#endless-mode">Endless Mode</a>.</td></tr>
   </table>
-  <p class="src">Sources: <a href="https://bunmuen.com/" target="_blank" rel="noopener">bunmuen.com</a>
-    and the Steam announcement archive.</p>
+  <p class="src">Source: <a href="https://steamcommunity.com/ogg/3722330/announcements/detail/715657047106918977" target="_blank" rel="noopener">Steam announcement, 10 July 2026</a>,
+    and the later Steam announcements listed above.</p>
+
+  <h2>Not announced</h2>
+  <table>
+    <tr><th>What</th><th>Status</th></tr>
+    <tr><td>Crossplay between Steam and Xbox</td>
+        <td><strong>Not announced.</strong> No official Steam announcement promises it (all 31 checked
+          on 10 October 2026). The developer&rsquo;s 10 July 2026 post says Xbox and PC Game Pass players
+          will have crossplay and Steam players will only play with other Steam players &mdash; see
+          <a href="/crossplay/">crossplay</a>.</td></tr>
+  </table>
 
   <h2>How to tell which build you are on</h2>
   <p>There is no in-game version number. The quickest tells:</p>
   <ul>
-    <li><strong>Does a customer have a patience meter?</strong> If yes, you are on a pre-29-July build
-      and Steam has not updated.</li>
+    <li><strong>Can you buy a Chainsaw?</strong> Only on the 1 September 2026 patch or later.</li>
+    <li><strong>Are there individual volume sliders for each player?</strong> Only on 20 August or later.</li>
     <li><strong>Can you set a lobby above three players?</strong> If not, you are on the launch build.</li>
     <li><strong>Is there a second gun in the shop?</strong> Only on 29 July or later.</li>
   </ul>
@@ -106,20 +160,22 @@ PAGES = [
     <a href="/troubleshooting/">troubleshooting</a>.</p>
 
   <h2>What the patch pattern tells you</h2>
-  <p>Three data points is not a trend, but the shape so far is worth knowing if you are deciding when to
-    play. Both real patches landed within eight days of release, both were pushed on a weekday afternoon
-    UTC, and both mixed balance changes with content rather than being pure bug fixes. The developer is a
-    solo studio working with a publisher, and takes bug reports through Discord rather than a tracker,
-    which is why patch notes read as short prose instead of an itemised changelog.</p>
-  <p>The practical consequence: <strong>a guide written before 29 July is describing a different game</strong>
-    in at least three respects &mdash; no Rakes, a patience meter on customers, and one purchasable gun.
+  <p>Four patches is a small sample, but the shape so far is worth knowing if you are deciding when to
+    play. The first two landed within eight days of release, on 23 and 29 July; the next two followed on
+    20 August and 1 September. All four announcements were posted on a weekday afternoon UTC. The last
+    three end by asking players to report bugs through Discord &mdash; the 1 September notes say
+    &ldquo;I'm only 1 guy, I can't find everything myself!&rdquo; &mdash; and each changelog is a short
+    bulleted list with no version number.</p>
+  <p>The practical consequence: <strong>a guide written before 1 September 2026 is describing an older build</strong>.
+    It will not know about the Chainsaw, the security cameras, the 45 customers added across the last two
+    patches, or that patience is back in Endless Mode.
     If a page you are reading does not carry a date, that is the first thing to check.</p>
 
-  <h2>Nothing since 29 July</h2>
-  <p>As of <strong>5 August 2026</strong> the 29 July patch is still the newest public announcement.
-    SteamDB shows background depot activity after that date with no accompanying patch notes, which
-    normally means store-page or build housekeeping rather than a player-facing change. We check the
-    official feed rather than aggregators, and this page is dated whenever it changes.</p>
+  <h2>Nothing since 1 September</h2>
+  <p>As of <strong>10 October 2026</strong> the 1 September patch is the newest patch announcement on the
+    official Steam feed. The only official post after it is a 1 October 2026 Steam Autumn Sale notice,
+    which lists no game changes. We check the official feed rather than aggregators, and this page is
+    dated whenever it changes.</p>
 """},
 ]
 

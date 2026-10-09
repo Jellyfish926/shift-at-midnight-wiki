@@ -13,7 +13,7 @@ FAQ_LD = """<script type="application/ld+json">
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "Is Shift At Midnight crossplay?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Partially, per the developer. The 10 July 2026 announcement says Xbox and PC Game Pass players will have crossplay, and that Steam players will only be able to play with other Steam players. On the Steam side, the same post previews a Steam-only public server browser, and no later changelog mentions it shipping. No official announcement promises crossplay between Steam and Xbox (all 31 official Steam announcements checked on 10 October 2026). Which pool a bought Microsoft Store copy joins, and how Xbox Play Anywhere relates to matchmaking, is not confirmed by any official statement, and this site has not tested it." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "Partially. Xbox console and PC Game Pass players share one pool through Xbox Play Anywhere. The Steam version connects only to other Steam players. Full crossplay and a server browser are promised in a post-release update, with no date given." } },
     { "@type": "Question", "name": "Is Shift At Midnight on Game Pass?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes, day one on both Xbox console and PC Game Pass. It is also an Xbox Play Anywhere title." } },
     { "@type": "Question", "name": "How many players can play Shift At Midnight?",
@@ -31,7 +31,7 @@ FAQ_LD = """<script type="application/ld+json">
     { "@type": "Question", "name": "How many nights are in Shift At Midnight?",
       "acceptedAnswer": { "@type": "Answer", "text": "Story Mode is 13 shifts. Customers and events are procedurally generated, so runs differ. The fixed points are Shift 9, when the Marionette becomes possible, the choice offered after Shift 12, and Shift 13." } },
     { "@type": "Question", "name": "What did the latest Shift At Midnight patch change?",
-      "acceptedAnswer": { "@type": "Answer", "text": "The 1 September 2026 patch added 30 new customers to Story Mode and Endless Mode, added the Chainsaw as a purchasable melee weapon (now required for the Locked And Loaded achievement), and added security cameras in Endless Mode. As of 10 October 2026 it is the newest patch on the official Steam announcement feed; the 20 August 2026 patch before it added 15 customers and cloud saves for Steam." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "The 29 July 2026 patch added Rake enemies to endless and post-story modes, added a second purchasable firearm, and removed the customer patience mechanic, so verifying IDs is no longer timed. As of 13 August 2026 it is still the newest update." } },
     { "@type": "Question", "name": "Is Shift At Midnight on PS5?",
       "acceptedAnswer": { "@type": "Answer", "text": "No. There is no PlayStation 5 or PS4 version of Shift At Midnight and none has been announced. It is available on PC via Steam and the Microsoft Store, and on Xbox Series X|S." } },
     { "@type": "Question", "name": "Is Shift At Midnight available on mobile or the App Store?",
@@ -309,22 +309,35 @@ PAGES = [
  "h1": "Co-op &amp; proximity chat",
  "lede": "Up to <strong>three players</strong>, online, with <strong>proximity chat</strong>. That second detail is not a convenience feature &mdash; it is a mechanic, and treating it as one is the difference between a co-ordinated crew and three people panicking in separate aisles.",
  "body": """
-  <p>The common failure in co-op is everyone running to whatever made the last noise. Fixed roles stop that, and they suit the three-player size the game was designed around. These roles are our own suggestion, not an official system.</p>
-
-  <div class="tablewrap">
-  <table class="data">
-    <thead><tr><th>Role</th><th>Main job</th><th>Rule to hold</th></tr></thead>
-    <tbody>
-      <tr><td><strong>Counter</strong></td><td>Serves customers and runs the <a href="/guide/doppelgangers/">scanner and database</a></td><td>Does not leave for noises</td></tr>
-      <tr><td><strong>Floor</strong></td><td>Watches behaviour, restocks, spots what the scanner misses</td><td>Calls out anyone <a href="/monsters/norbert/">stepping around the counter</a></td></tr>
-      <tr><td><strong>Response</strong></td><td>Carries the weapon and handles hunts</td><td>Owns time-critical objects</td></tr>
-    </tbody>
-  </table>
+  <div class="term warn">
+    <div class="term-h">Check this before anyone buys</div>
+    <p>Steam players <strong>cannot</strong> play with Xbox or PC Game Pass players. Xbox console and PC Game Pass share one pool via Play Anywhere; Steam is isolated. See <a href="/crossplay/">crossplay</a> &mdash; this catches groups out constantly.</p>
   </div>
 
-  <p>Proximity chat makes these roles work, because a voice that is suddenly loud is a teammate who is suddenly close. Running Discord over the top flattens that distance and removes the cue.</p>
+  <h2>Proximity chat is positional data</h2>
+  <p>Voices get quieter with distance. That means every sound your teammates make is telling you where they are, and the game expects you to shout across the store. A scream that is suddenly loud is a teammate who is suddenly close, and that is information you get for free.</p>
+  <p>This is why running Discord over the top hurts you. It flattens distance to zero, removes the cue the design depends on, and makes it much harder to tell where someone is when things go wrong. Use the in-game chat.</p>
 
-  <p>On a <a href="/monsters/marionette/">Marionette</a> night, the wind-up music box has to be rewound before its melody plays three times; our <a href="/monsters/jack-in-the-box/">Jack-in-the-Box page</a> carries the source for that. As that page suggests, give one player the box for the whole encounter and have them call the melody count aloud over proximity chat while the others keep serving. With two players, merge Floor and Response and keep the counter staffed.</p>
+  <h2>Three roles</h2>
+  <ul>
+    <li><strong>Counter.</strong> Works customers and the ID scanner. Does not leave for noises.</li>
+    <li><strong>Floor.</strong> Watches behaviour, restocks, spots anomalies the scanner cannot see. The one who notices <a href="/monsters/norbert/">someone stepping around the counter</a>.</li>
+    <li><strong>Response.</strong> Weapon equipped, handles hunts, owns time-critical objects.</li>
+  </ul>
+  <p>The failure mode is all three converging on whatever made the last noise. A <a href="/monsters/shrieking-doll/">Shrieking Doll</a> screams specifically to pull attention &mdash; three people answering that call is three people not doing their jobs.</p>
+
+  <div class="term tip">
+    <div class="term-h">The music box is a co-op problem</div>
+    <p>On a <a href="/monsters/marionette/">Marionette</a> night, one player owns the <a href="/monsters/jack-in-the-box/">music box</a> for the whole encounter and calls the melody count aloud. Three people half-watching a box that has to be wound is how groups end up facing the Marionette with no counterplay &mdash; which is why only 41.6% have ever killed one.</p>
+  </div>
+
+  <h2>Solo is a real option</h2>
+  <p>There is a full single-player mode, and several achievements &mdash; including the ending-related ones &mdash; do not require a group. Solo trades co-ordination for control: nobody else kills a customer you were still assessing.</p>
+
+  <div class="grid two">
+    <a class="card" href="/crossplay/"><b>Crossplay</b><span>Who can actually play with whom.</span></a>
+    <a class="card" href="/multiplayer/"><b>Multiplayer setup</b><span>Player count and getting a session going.</span></a>
+  </div>
 """},
 {
  "path": "guide/weapons", "active": "/guides/",
@@ -504,54 +517,41 @@ PAGES = [
   </div>
 """},
 {
- "path": "multiplayer", "active": "/guides/", "published": "2026-08-05",
+ "path": "multiplayer", "active": "/guides/",
  "title": "Shift At Midnight Multiplayer — Player Count &amp; Crossplay",
  "og_short": "Shift At Midnight Multiplayer",
  "desc": "Shift At Midnight supports up to 3 players in online co-op with proximity chat. Platform compatibility is the thing that stops most groups playing together.",
  "trail": [(None, "Multiplayer")],
  "h1": "Multiplayer",
  "lede": "<strong>Up to three players</strong>, online co-op, with <strong>proximity chat</strong>. There is also a full single-player mode. The thing that most often stops a group playing together is not the player cap &mdash; it is which store they bought it from.",
- "updated": "Last verified 10 October 2026 &middot; game version: 1 September 2026 patch",
  "body": """
   <table class="facts">
-    <tr><th>Players</th><td>1 to 3 by design; lobbies up to 6 since 23 July 2026</td></tr>
-    <tr><th>Co-op type</th><td>Online co-op (Steam store category)</td></tr>
-    <tr><th>Local or split-screen</th><td>Not listed on the Steam store page</td></tr>
-    <tr><th>Remote Play Together</th><td>Not listed on the Steam store page</td></tr>
-    <tr><th>Voice</th><td>Proximity chat, built in</td></tr>
-    <tr><th>Single-player</th><td>Yes</td></tr>
+    <tr><th>Max players</th><td>3 by design &mdash; 6 selectable since the 23 July 2026 patch</td></tr>
+    <tr><th>Mode</th><td>Online co-op</td></tr>
+    <tr><th>Voice</th><td>Proximity chat</td></tr>
+    <tr><th>Single-player</th><td>Yes, full mode</td></tr>
+    <tr><th>Crossplay</th><td>Xbox + PC Game Pass only &mdash; <a href="/crossplay/">Steam isolated</a></td></tr>
   </table>
 
-  <h2>How many players can join one lobby?</h2>
-  <p>Three is the designed size. The Steam store page describes the game as &ldquo;An online co-op detective horror for up to 3 players&rdquo;, and the launch post says &ldquo;Play solo or with up to 2 extra friends&rdquo;. One day after launch, the 23 July 2026 patch let the host pick a higher cap. The changelog reads: &ldquo;When creating a lobby, you can now select a max player count of 6 players.&rdquo;</p>
-
-  <div class="tablewrap">
-  <table class="data">
-    <thead><tr><th>Lobby size</th><th>Supported?</th><th>What the developer says</th></tr></thead>
-    <tbody>
-      <tr><td><strong>1 (solo)</strong></td><td>Yes</td><td>Listed as Single-player on Steam</td></tr>
-      <tr><td><strong>2&ndash;3</strong></td><td>Yes</td><td>The size the game is designed around</td></tr>
-      <tr><td><strong>4&ndash;6</strong></td><td>Yes, host option</td><td>Outside the intended design; not for a first playthrough</td></tr>
-      <tr><td><strong>7 or more</strong></td><td>Not stated</td><td>The patch note names 6 as the selectable maximum and says nothing above it; see <a href="/mods/">mods</a></td></tr>
-    </tbody>
-  </table>
+  <div class="term warn">
+    <div class="term-h">Six is possible. Three is what the game was built for.</div>
+    <p>The <a href="https://steamdb.info/patchnotes/24354120/" target="_blank" rel="noopener">23 July 2026 patch</a> made the lobby cap selectable up to six, so a group of four is not shut out. The developer was unusually direct about what that option is, though: the game &ldquo;is designed and has always been marketed around a maximum of 3 players&rdquo;, larger lobbies &ldquo;may become chaotic&rdquo;, and six is not recommended for a first playthrough. Treat six as a party mode and three as the game.</p>
   </div>
 
-  <p>Bun Muen was blunt about the six-player option in that same patch note. The game &ldquo;is designed and has always been marketed around a maximum of 3 players&rdquo;, and a bigger lobby &ldquo;will likely become too chaotic, and is not recommended for your first playthrough&rdquo;. Treat four to six as a party setting. The changelog was posted on Steam, and we could not confirm the option on the Xbox versions (checked 10 October 2026).</p>
+  <h2>Getting everyone into a session</h2>
+  <p>Everyone must be on the same side of the platform line. Steam players connect only to Steam players; Xbox console and PC Game Pass players share one pool via Play Anywhere. Mixed groups cannot play together, and this is the single most common reason a planned session does not happen. Sort it <em>before</em> anyone buys.</p>
+  <p>If everyone is on the same store and you still cannot see each other, the next two suspects are a mismatched Steam beta branch and a stalled update &mdash; both are covered on <a href="/troubleshooting/">troubleshooting</a>.</p>
 
-  <h2>How do you host a game with friends?</h2>
-  <p>The host creates a lobby from the game and chooses the maximum player count at that point. That much is stated in the 23 July 2026 patch note. No official post documents the invite steps or menu names, so we do not list them here. Our <a href="/troubleshooting/">troubleshooting page</a> covers what to check when a friend cannot see or join your lobby.</p>
-  <p>Two official statements matter before anyone tries to join. On stores, the developer&rsquo;s 10 July 2026 announcement says Steam players will only be able to play with other Steam players, and that Xbox and PC Game Pass players will have crossplay. We have not tested either, and the <a href="/crossplay/">crossplay page</a> sets out what is on the record. On branches, the launch-day &ldquo;network-issues-patch&rdquo; beta fix came with this instruction: &ldquo;Everyone you play with must also follow these instructions&rdquo;.</p>
-  <p>A Steam-only public server browser was announced on 10 July 2026 for launch or shortly after. No later changelog mentions it shipping, so its status is not confirmed as of 10 October 2026. Plan to play with people you can reach directly.</p>
+  <h2>Proximity chat is a mechanic</h2>
+  <p>Voices fade with distance, so every noise your teammates make carries positional information. Running Discord over the top removes that and makes co-ordination worse, not better. Use the in-game chat &mdash; see the <a href="/multiplayer/#co-op">co-op guide</a> for role splitting.</p>
 
-  <h2>How does voice chat work?</h2>
-  <p>The game has built-in proximity chat, so voices fade as teammates walk away. The store page puts it plainly: &ldquo;proximity chat enhances the experience&rdquo;. The 20 August 2026 patch added individual volume sliders for each player. The 23 July 2026 patch also removed the profanity filter.</p>
+  <h2>Is solo worth it?</h2>
+  <p>Yes, and it is not a lesser mode. Solo gives you complete control of every judgement call at the counter, which matters if you are chasing the <a href="/endings/">hidden ending achievements</a>. Co-op is more chaotic and funnier; solo is tenser and more deliberate.</p>
 
-  <h2>Can you try co-op before buying?</h2>
-  <p>Yes. A free &ldquo;Shift At Midnight Multiplayer Demo&rdquo; has been on Steam since 29 September 2025, and Steam lists it as Online Co-op. It is a separate app from the full game, and Steam lists it as free. Our <a href="/demo/">demo page</a> lists what it includes.</p>
-
-  <h2>Is solo worth playing?</h2>
-  <p>Yes, and it is not a lesser mode. Solo gives you control of every judgement call at the counter, which matters if you are chasing the <a href="/endings/">ending achievements</a>. Co-op is louder and funnier; solo is tenser and more deliberate. For live numbers on how many people are playing, see <a href="/player-count/">player count</a>.</p>
+  <div class="grid two">
+    <a class="card" href="/crossplay/"><b>Crossplay</b><span>Exactly who can play with whom.</span></a>
+    <a class="card" href="/multiplayer/#co-op"><b>Co-op roles</b><span>How three players should split the work.</span></a>
+  </div>
 """},
 {
  "path": "game-pass", "active": "/guides/",
@@ -561,20 +561,33 @@ PAGES = [
  "trail": [(None, "Game Pass")],
  "h1": "Shift At Midnight on Game Pass",
  "lede": "<strong>Yes &mdash; day one, on both Xbox console and PC.</strong> It is also an Xbox Play Anywhere title, which means one Microsoft Store purchase covers the Xbox and Windows versions. That detail is also why the crossplay situation is what it is.",
- "updated": "Last verified 10 October 2026 &middot; game version: 1 September 2026 patch",
  "body": """
-  <p><strong>Yes at launch.</strong> The launch announcement on 22 July 2026 reads &ldquo;OUT NOW on Steam, Xbox &amp; Game Pass&rdquo;, and the earlier release-date post names &ldquo;Xbox PC Gamepass&rdquo; as well. The Xbox store listing showed the game as included with PC Game Pass and Xbox Game Pass Ultimate when it was last verified on 12 August 2026 against that listing. That listing was not re-checked on 10 October 2026, so check the Xbox app before you subscribe for this game alone.</p>
-
   <table class="facts">
-    <tr><th>On Game Pass at launch</th><td>Yes &mdash; 22 July 2026</td></tr>
-    <tr><th>Versions named by the developer</th><td>Xbox and Xbox PC Game Pass</td></tr>
-    <tr><th>In the catalogue</th><td>Included with PC Game Pass and Xbox Game Pass Ultimate, last verified 12 August 2026 against the Xbox store listing; not re-checked on 10 October 2026</td></tr>
-    <tr><th>Xbox price</th><td>$9.99, last verified 12 August 2026 against the Xbox store listing; not re-checked on 10 October 2026</td></tr>
-    <tr><th>Steam price for comparison</th><td>$9.99 USD (10 October 2026)</td></tr>
-    <tr><th>Crossplay, per the developer</th><td>&ldquo;Xbox and PC Gamepass players will have crossplay&rdquo; (10 July 2026); not tested by us</td></tr>
+    <tr><th>On Game Pass</th><td>Yes &mdash; day one (22 July 2026)</td></tr>
+    <tr><th>Tiers</th><td>Xbox console and PC Game Pass</td></tr>
+    <tr><th>Play Anywhere</th><td>Yes</td></tr>
+    <tr><th>Buy price</th><td>$9.99 USD if you do not subscribe</td></tr>
+    <tr><th>Crossplay pool</th><td>Shares with Xbox console + Microsoft Store</td></tr>
   </table>
 
-  <p>The last row is the one that costs people money. The same announcement says &ldquo;Steam players will only be able to play with other Steam players.&rdquo; The <a href="/crossplay/">crossplay page</a> has the full matrix, and <a href="/multiplayer/">multiplayer</a> explains how lobbies work once you are on the same side.</p>
+  <h2>What Play Anywhere gets you</h2>
+  <p>Buy once on the Microsoft Store and you own both the Xbox console and Windows versions, with shared saves. Start a run on PC, continue on the console. For a $9.99 game this is a real convenience, and it is also the technical reason Xbox and PC Game Pass players are in the same multiplayer pool &mdash; both builds talk to the same Microsoft networking layer.</p>
+
+  <div class="term warn">
+    <div class="term-h">The trade-off against Steam</div>
+    <p>Game Pass and Microsoft Store players <strong>cannot play with Steam players</strong>. If your friends are on Steam, the free Game Pass copy is not usable for playing with them. Full breakdown on <a href="/crossplay/">the crossplay page</a>.</p>
+  </div>
+
+  <h2>Achievements differ</h2>
+  <p>The Microsoft versions track Xbox achievements; the Steam version tracks Steam achievements. The requirements are the same ten, but our <a href="/achievements/">achievements page</a> quotes Steam global unlock rates because those are the numbers that are publicly readable.</p>
+
+  <h2>If it leaves Game Pass</h2>
+  <p>Game Pass catalogues rotate. Nothing has been announced about this title leaving, and we are not going to speculate about a date &mdash; but if you are deep into a run and the possibility bothers you, the Play Anywhere purchase at $9.99 makes your access permanent.</p>
+
+  <div class="grid two">
+    <a class="card" href="/crossplay/"><b>Crossplay</b><span>Who you can actually play with.</span></a>
+    <a class="card" href="/review/#price"><b>Price</b><span>What buying it costs instead.</span></a>
+  </div>
 """},
 {
  "path": "price", "active": "/guides/",
@@ -690,13 +703,25 @@ PAGES = [
  "h1": "Community &amp; Discord",
  "lede": "A three-player co-op game where <strong>three of ten achievements are still hidden</strong> generates a lot of community activity &mdash; people looking for a third player, and people trying to work out what <em>True Ending</em> actually needs.",
  "body": """
-  <p>The official Discord server is the developer&rsquo;s own suggestion. Bun Muen&rsquo;s recent patch notes on Steam end by asking players to join it, and each of those notes carries the invite link. We do not copy invite links here, because they expire and get impersonated. Open the newest announcement on the <a href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Steam store page</a> instead.</p>
+  <div class="term warn">
+    <div class="term-h">On links</div>
+    <p>We do not publish Discord invite links. Invites expire, get replaced, and are a standard vector for impersonation &mdash; a fan wiki linking to a server that has changed hands is a real risk. Check the official Steam store page and Kwalee's own channels for current official links. If a server claims to be official, verify it from the publisher's side, not from a fan site.</p>
+  </div>
 
-  <p>When you post looking for a group, state your store version and your preferred lobby size first. The developer has said Steam players will only be able to play with other Steam players, so settle the store question before the evening starts. New players should start with the <a href="/guide/beginners/">beginner&rsquo;s guide</a> so the first shared shift is not a tutorial.</p>
+  <h2>Why the community matters more than usual here</h2>
+  <p>Steam still hides the descriptions for <em>Grave Decision</em> (33.1%), <em>True Ending</em> (16.0%) and <em>Empty Home</em> (10.1%), and there is no official requirement text for any of them &mdash; the conditions now on <a href="/endings/">the endings page</a> were worked out by players and written up by outlets, not published by the developer. That is what a community is for, and it is why logged runs beat confident guesses.</p>
+
+  <div class="term tip">
+    <div class="term-h">How to contribute something useful</div>
+    <p>Log your runs. Who you served, who you killed, what the scanner said, which achievement fired at the end. One run proves nothing; ten logged runs across a few players is how hidden achievements get cracked. Posting "I think it's about karma" without notes attached is how bad guidance spreads &mdash; and a lot of the confident writing about this game's endings traces back to exactly that.</p>
+  </div>
+
+  <h2>Finding a third player</h2>
+  <p>The cap is three, and the platform split is the constraint. Say which version you are on when you post &mdash; <strong>Steam players cannot play with Xbox or PC Game Pass players</strong>. Half the failed link-ups in any co-op community for this game are people who did not mention their store. See <a href="/crossplay/">crossplay</a>.</p>
 
   <div class="grid two">
-    <a class="card" href="/crossplay/"><b>Crossplay</b><span>Exactly who can play with whom.</span></a>
-    <a class="card" href="/troubleshooting/"><b>Troubleshooting</b><span>When a friend cannot join your lobby.</span></a>
+    <a class="card" href="/endings/"><b>Endings</b><span>What is confirmed and what is still open.</span></a>
+    <a class="card" href="/multiplayer/"><b>Multiplayer</b><span>Player count and platform compatibility.</span></a>
   </div>
 """},
 {
@@ -787,8 +812,6 @@ PAGES = [
 """},
 {
  "path": "faq", "active": "/faq/",
- "updated": "Last updated 2026-10-10 &middot; last verified 5 August 2026 &middot; game version: 29 July 2026 patch",
- "published": "2026-08-05",
  "title": "Shift At Midnight FAQ — Crossplay, Players, Endings &amp; Mods",
  "og_short": "Shift At Midnight FAQ",
  "desc": "Straight answers to the most searched Shift At Midnight questions: crossplay, player count, the three endings, Endless Mode, mods, and what the latest patch changed.",
@@ -801,7 +824,7 @@ PAGES = [
   <div class="faq">
     <details open>
       <summary>Is Shift At Midnight crossplay?</summary>
-      <div class="a"><p><strong>Partially, per the developer.</strong> The 10 July 2026 announcement says Xbox and PC Game Pass players will have crossplay, and that Steam players will only be able to play with other Steam players. On the Steam side, the same post previews a Steam-only public server browser, and no later changelog mentions it shipping. No official announcement promises crossplay between Steam and Xbox (all 31 official Steam announcements checked on 10 October 2026). Which pool a bought Microsoft Store copy joins, and how Xbox Play Anywhere relates to matchmaking, is not confirmed by any official statement, and this site has not tested it. <a href="/crossplay/">Full breakdown</a>.</p></div>
+      <div class="a"><p><strong>Partially.</strong> Xbox console and PC Game Pass players share one pool through Xbox Play Anywhere. The Steam version connects only to other Steam players. Full crossplay and a server browser are promised in a post-release update, with no date given; the browser is still not live as of 5 August 2026. <a href="/crossplay/">Full breakdown</a>.</p></div>
     </details>
     <details>
       <summary>My friends are on Game Pass and I bought it on Steam. What are my options?</summary>
@@ -897,7 +920,7 @@ PAGES = [
     </details>
     <details>
       <summary>What did the latest patch change?</summary>
-      <div class="a"><p>The 1 September 2026 patch added 30 new customers to Story Mode and Endless Mode, added the Chainsaw as a purchasable melee weapon (now required for the Locked And Loaded achievement), and added security cameras in Endless Mode. As of 10 October 2026 it is the newest patch on the official Steam announcement feed; the 20 August 2026 patch before it added 15 customers and cloud saves for Steam. <a href="/updates/">All patch notes</a>.</p></div>
+      <div class="a"><p>The 29 July 2026 patch added Rake enemies to endless and post-story modes, added a second purchasable firearm, and removed the patience mechanic. As of 13 August 2026 that is still the newest update. <a href="/updates/">All patch notes</a>.</p></div>
     </details>
     <details>
       <summary>What is coming next?</summary>

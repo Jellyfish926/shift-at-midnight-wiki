@@ -1,0 +1,129 @@
+# 备份 2026-10-10：/multiplayer/ 的源片段（HEAD 982158a）。合并规则见 _src/_merge.py MERGES（into="multiplayer"），其 meta 段附在末尾。
+
+# ==== _src/_content_guides.py :: path="multiplayer" ====
+{
+ "path": "multiplayer", "active": "/guides/",
+ "title": "Shift At Midnight Multiplayer — Player Count &amp; Crossplay",
+ "og_short": "Shift At Midnight Multiplayer",
+ "desc": "Shift At Midnight supports up to 3 players in online co-op with proximity chat. Platform compatibility is the thing that stops most groups playing together.",
+ "trail": [(None, "Multiplayer")],
+ "h1": "Multiplayer",
+ "lede": "<strong>Up to three players</strong>, online co-op, with <strong>proximity chat</strong>. There is also a full single-player mode. The thing that most often stops a group playing together is not the player cap &mdash; it is which store they bought it from.",
+ "body": """
+  <table class="facts">
+    <tr><th>Max players</th><td>3 by design &mdash; 6 selectable since the 23 July 2026 patch</td></tr>
+    <tr><th>Mode</th><td>Online co-op</td></tr>
+    <tr><th>Voice</th><td>Proximity chat</td></tr>
+    <tr><th>Single-player</th><td>Yes, full mode</td></tr>
+    <tr><th>Crossplay</th><td>Xbox + PC Game Pass only &mdash; <a href="/crossplay/">Steam isolated</a></td></tr>
+  </table>
+
+  <div class="term warn">
+    <div class="term-h">Six is possible. Three is what the game was built for.</div>
+    <p>The <a href="https://steamdb.info/patchnotes/24354120/" target="_blank" rel="noopener">23 July 2026 patch</a> made the lobby cap selectable up to six, so a group of four is not shut out. The developer was unusually direct about what that option is, though: the game &ldquo;is designed and has always been marketed around a maximum of 3 players&rdquo;, larger lobbies &ldquo;may become chaotic&rdquo;, and six is not recommended for a first playthrough. Treat six as a party mode and three as the game.</p>
+  </div>
+
+  <h2>Getting everyone into a session</h2>
+  <p>Everyone must be on the same side of the platform line. Steam players connect only to Steam players; Xbox console and PC Game Pass players share one pool via Play Anywhere. Mixed groups cannot play together, and this is the single most common reason a planned session does not happen. Sort it <em>before</em> anyone buys.</p>
+  <p>If everyone is on the same store and you still cannot see each other, the next two suspects are a mismatched Steam beta branch and a stalled update &mdash; both are covered on <a href="/troubleshooting/">troubleshooting</a>.</p>
+
+  <h2>Proximity chat is a mechanic</h2>
+  <p>Voices fade with distance, so every noise your teammates make carries positional information. Running Discord over the top removes that and makes co-ordination worse, not better. Use the in-game chat &mdash; see the <a href="/multiplayer/#co-op">co-op guide</a> for role splitting.</p>
+
+  <h2>Is solo worth it?</h2>
+  <p>Yes, and it is not a lesser mode. Solo gives you complete control of every judgement call at the counter, which matters if you are chasing the <a href="/endings/">hidden ending achievements</a>. Co-op is more chaotic and funnier; solo is tenser and more deliberate.</p>
+
+  <div class="grid two">
+    <a class="card" href="/crossplay/"><b>Crossplay</b><span>Exactly who can play with whom.</span></a>
+    <a class="card" href="/multiplayer/#co-op"><b>Co-op roles</b><span>How three players should split the work.</span></a>
+  </div>
+"""},
+
+# ==== _src/_content_guides.py :: path="guide/co-op" ====
+{
+ "path": "guide/co-op", "active": "/guides/",
+ "title": "Shift At Midnight Co-op Guide — 3 Players &amp; Proximity Chat",
+ "og_short": "Shift At Midnight Co-op Guide",
+ "desc": "How three players should split roles in Shift At Midnight, why proximity chat is a mechanic rather than a feature, and why running Discord over the top hurts you.",
+ "trail": G + [(None, "Co-op")],
+ "h1": "Co-op &amp; proximity chat",
+ "lede": "Up to <strong>three players</strong>, online, with <strong>proximity chat</strong>. That second detail is not a convenience feature &mdash; it is a mechanic, and treating it as one is the difference between a co-ordinated crew and three people panicking in separate aisles.",
+ "body": """
+  <div class="term warn">
+    <div class="term-h">Check this before anyone buys</div>
+    <p>Steam players <strong>cannot</strong> play with Xbox or PC Game Pass players. Xbox console and PC Game Pass share one pool via Play Anywhere; Steam is isolated. See <a href="/crossplay/">crossplay</a> &mdash; this catches groups out constantly.</p>
+  </div>
+
+  <h2>Proximity chat is positional data</h2>
+  <p>Voices get quieter with distance. That means every sound your teammates make is telling you where they are, and the game expects you to shout across the store. A scream that is suddenly loud is a teammate who is suddenly close, and that is information you get for free.</p>
+  <p>This is why running Discord over the top hurts you. It flattens distance to zero, removes the cue the design depends on, and makes it much harder to tell where someone is when things go wrong. Use the in-game chat.</p>
+
+  <h2>Three roles</h2>
+  <ul>
+    <li><strong>Counter.</strong> Works customers and the ID scanner. Does not leave for noises.</li>
+    <li><strong>Floor.</strong> Watches behaviour, restocks, spots anomalies the scanner cannot see. The one who notices <a href="/monsters/norbert/">someone stepping around the counter</a>.</li>
+    <li><strong>Response.</strong> Weapon equipped, handles hunts, owns time-critical objects.</li>
+  </ul>
+  <p>The failure mode is all three converging on whatever made the last noise. A <a href="/monsters/shrieking-doll/">Shrieking Doll</a> screams specifically to pull attention &mdash; three people answering that call is three people not doing their jobs.</p>
+
+  <div class="term tip">
+    <div class="term-h">The music box is a co-op problem</div>
+    <p>On a <a href="/monsters/marionette/">Marionette</a> night, one player owns the <a href="/monsters/jack-in-the-box/">music box</a> for the whole encounter and calls the melody count aloud. Three people half-watching a box that has to be wound is how groups end up facing the Marionette with no counterplay &mdash; which is why only 41.6% have ever killed one.</p>
+  </div>
+
+  <h2>Solo is a real option</h2>
+  <p>There is a full single-player mode, and several achievements &mdash; including the ending-related ones &mdash; do not require a group. Solo trades co-ordination for control: nobody else kills a customer you were still assessing.</p>
+
+  <div class="grid two">
+    <a class="card" href="/crossplay/"><b>Crossplay</b><span>Who can actually play with whom.</span></a>
+    <a class="card" href="/multiplayer/"><b>Multiplayer setup</b><span>Player count and getting a session going.</span></a>
+  </div>
+"""},
+
+# ==== _src/_content_guides.py :: path="discord" ====
+{
+ "path": "discord", "active": "/guides/",
+ "title": "Shift At Midnight Discord &amp; Community — Where Players Gather",
+ "og_short": "Shift At Midnight Community",
+ "desc": "Where the Shift At Midnight community actually is, why the hidden achievements are still unsolved, and how to contribute useful findings rather than guesses.",
+ "trail": [(None, "Community")],
+ "h1": "Community &amp; Discord",
+ "lede": "A three-player co-op game where <strong>three of ten achievements are still hidden</strong> generates a lot of community activity &mdash; people looking for a third player, and people trying to work out what <em>True Ending</em> actually needs.",
+ "body": """
+  <div class="term warn">
+    <div class="term-h">On links</div>
+    <p>We do not publish Discord invite links. Invites expire, get replaced, and are a standard vector for impersonation &mdash; a fan wiki linking to a server that has changed hands is a real risk. Check the official Steam store page and Kwalee's own channels for current official links. If a server claims to be official, verify it from the publisher's side, not from a fan site.</p>
+  </div>
+
+  <h2>Why the community matters more than usual here</h2>
+  <p>Steam still hides the descriptions for <em>Grave Decision</em> (33.1%), <em>True Ending</em> (16.0%) and <em>Empty Home</em> (10.1%), and there is no official requirement text for any of them &mdash; the conditions now on <a href="/endings/">the endings page</a> were worked out by players and written up by outlets, not published by the developer. That is what a community is for, and it is why logged runs beat confident guesses.</p>
+
+  <div class="term tip">
+    <div class="term-h">How to contribute something useful</div>
+    <p>Log your runs. Who you served, who you killed, what the scanner said, which achievement fired at the end. One run proves nothing; ten logged runs across a few players is how hidden achievements get cracked. Posting "I think it's about karma" without notes attached is how bad guidance spreads &mdash; and a lot of the confident writing about this game's endings traces back to exactly that.</p>
+  </div>
+
+  <h2>Finding a third player</h2>
+  <p>The cap is three, and the platform split is the constraint. Say which version you are on when you post &mdash; <strong>Steam players cannot play with Xbox or PC Game Pass players</strong>. Half the failed link-ups in any co-op community for this game are people who did not mention their store. See <a href="/crossplay/">crossplay</a>.</p>
+
+  <div class="grid two">
+    <a class="card" href="/endings/"><b>Endings</b><span>What is confirmed and what is still open.</span></a>
+    <a class="card" href="/multiplayer/"><b>Multiplayer</b><span>Player count and platform compatibility.</span></a>
+  </div>
+"""},
+
+# ==== _src/_merge.py :: MERGES into="multiplayer" ====
+    {
+        "into": "multiplayer",
+        "sources": [
+            ("guide/co-op", "co-op", "Co-op guide: playing with two or three people"),
+            ("discord", "find-players", "Where to find other players"),
+        ],
+        "meta": {
+            "title": "Shift At Midnight Multiplayer &amp; Co-op — Players, Proximity Chat, Groups",
+            "og_short": "Multiplayer &amp; Co-op",
+            "desc": "How many players Shift At Midnight supports, how the 6-player lobby option works, how proximity chat changes the game, and where to find a group.",
+            "h1": "Shift At Midnight multiplayer and co-op",
+            "lede": "The short answer: <strong>three players by design, up to six since the 23 July patch</strong>. This page covers the player count, how co-op actually plays, and where to find people to play it with.",
+        },
+    },

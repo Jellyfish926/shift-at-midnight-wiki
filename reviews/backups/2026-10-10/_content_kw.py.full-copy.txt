@@ -14,11 +14,9 @@ PAGES = [
 # + when will it be released 490 + launch date + release delayed 460@14  → 全表性价比最高的一块
 {
  "path": "release-date", "active": "/guides/",
- "updated": "Last updated 2026-10-10 &middot; last verified 5 August 2026 &middot; game version: 29 July 2026 patch",
- "published": "2026-08-05",
  "title": "Shift At Midnight Release Date — Out Now (22 July 2026)",
  "og_short": "Shift At Midnight Release Date",
- "desc": "Shift At Midnight released 22 July 2026 after two delays from the original 28 May date. Platforms, price, Game Pass, and what the four post-launch patches changed.",
+ "desc": "Shift At Midnight released 22 July 2026 after two delays from the original 28 May date. Platforms, price, Game Pass, and what the two post-launch patches changed.",
  "trail": [(None, "Release date")],
  "h1": "Shift At Midnight release date",
  "lede": "<strong>Shift At Midnight is out now &mdash; it released on 22 July 2026.</strong> If you are finding older pages that say May, those are out of date: the game was delayed twice before it shipped.",
@@ -63,17 +61,15 @@ PAGES = [
 
   <h2>What has changed since release</h2>
 
-  <p>Four patches so far: 23 July, 29 July, 20 August and 1 September 2026.</p>
+  <p>Two patches so far, and the second changed the game rather than the plumbing.</p>
 
   <ul>
     <li><strong>23 July &mdash; lobbies and balance.</strong> Lobby size became selectable up to six, though the developer was clear that the game &ldquo;is designed and has always been marketed around a maximum of 3 players&rdquo; and does not recommend six for a first run. The Marionette lost HP and the music box got louder.</li>
     <li><strong>29 July &mdash; new content.</strong> A second purchasable firearm, a new <strong>Rake</strong> enemy that appears in endless and post-story modes only, and the removal of the customer patience meter &mdash; which is why careful ID checking is far less punishing now than it was at launch.</li>
-    <li><strong>20 August &mdash; 15 new customers.</strong> Added to Story Mode and Endless Mode, along with individual volume sliders for each player and cloud saves for Steam.</li>
-    <li><strong>1 September &mdash; 30 new customers.</strong> Also the Chainsaw as a purchasable melee weapon and security cameras in Endless Mode. This is the newest patch as of 10 October 2026.</li>
     <li><strong>The 10% launch discount ended on 29 July.</strong> The price is back to $9.99 with no active discount as of 5 August 2026.</li>
   </ul>
 
-  <p>No patch has been announced since 1 September 2026 (official Steam announcement feed, checked 10 October 2026). Full notes with sources are on the <a href="/updates/">patch notes page</a>.</p>
+  <p>Nothing has been announced since 29 July. Full notes with sources are on the <a href="/updates/">patch notes page</a>.</p>
 
   <h2>Where to get it</h2>
 
@@ -85,15 +81,15 @@ PAGES = [
 
   <div class="term warn">
     <div class="term-h">Check this before you buy</div>
-    <p>The developer&rsquo;s 10 July 2026 announcement says Xbox and PC Game Pass players will have crossplay, and that Steam players will <strong>only</strong> be able to play with other Steam players. Which pool a bought Microsoft Store copy joins, and how Xbox Play Anywhere relates to matchmaking, is not confirmed by any official statement, and this site has not tested it. If you are buying so you can play with friends, check which side they are on first &mdash; see <a href="/crossplay/">crossplay</a>.</p>
+    <p>Steam players <strong>cannot</strong> play with Xbox or PC Game Pass players. The two ecosystems have separate multiplayer pools. If you are buying so you can play with friends, everyone needs to be on the same side &mdash; see <a href="/crossplay/">crossplay</a>.</p>
   </div>
 
   <h2>What is still coming</h2>
 
   <ul>
     <li><strong>Endless Mode</strong> &mdash; the beta shipped on day one and unlocks once you finish story mode. The finished version, with more customers, traps, weapons and monsters, is a free update planned for <strong>Q4 2026</strong>. See <a href="/nights-and-levels/#endless-mode">Endless Mode</a>.</li>
-    <li><strong>Full crossplay including Steam</strong> &mdash; not announced. No official Steam announcement promises it (all 31 checked on 10 October 2026); see <a href="/crossplay/">crossplay</a>.</li>
-    <li><strong>A public server browser</strong> &mdash; the 10 July 2026 announcement said a Steam-only one would arrive &ldquo;either on-launch, or shortly after launch&rdquo;; no later changelog mentions it going live.</li>
+    <li><strong>Full crossplay including Steam</strong> &mdash; confirmed as a post-release update, with no date attached to it.</li>
+    <li><strong>A public server browser</strong> &mdash; announced before launch, still not live as of 5 August 2026.</li>
   </ul>
 
   <h2>What is not coming</h2>
@@ -108,92 +104,74 @@ PAGES = [
 
 # is it available on app store 820 + on mobile 660 + ps5 610 + can you play on ps5 + install on phone
 {
- "path": "platforms", "active": "/guides/", "published": "2026-08-05",
+ "path": "platforms", "active": "/guides/",
  "title": "Shift At Midnight Platforms — PS5, Mobile &amp; Switch Answered",
  "og_short": "Shift At Midnight Platforms",
  "desc": "Is Shift At Midnight on PS5, mobile or the App Store? No. It is PC (Steam, Microsoft Store) and Xbox Series X|S only. Here is the full platform breakdown.",
  "trail": [(None, "Platforms")],
  "h1": "What platforms is Shift At Midnight on?",
  "lede": "Short version: <strong>PC and Xbox only</strong>. There is no PlayStation version, no mobile version, and nothing on the App Store or Google Play. If someone told you otherwise, they were wrong or describing a different game.",
- "updated": "Last verified 10 October 2026 &middot; game version: 1 September 2026 patch",
  "body": """
-  <h2>Which devices can run Shift At Midnight?</h2>
-
-  <p>The developer&rsquo;s release announcement names three ways to play: Steam, Xbox and Xbox PC Game Pass. The Steam version is Windows only, and Valve&rsquo;s store data marks macOS and Linux as unsupported. The remaining rows are platforms people search for that no official announcement mentions.</p>
-
   <div class="tablewrap">
   <table class="data">
-    <thead><tr><th>Platform</th><th>Available?</th><th>Source and date checked</th></tr></thead>
+    <thead><tr><th>Platform</th><th>Available?</th><th>Notes</th></tr></thead>
     <tbody>
-      <tr><td><strong>Windows PC &mdash; Steam</strong></td><td>Yes</td><td>Windows 10/11 64-bit, $9.99 (Steam, 10 October 2026)</td></tr>
-      <tr><td><strong>Xbox console</strong></td><td>Yes, per the developer</td><td>Launch post, 22 July 2026: &ldquo;OUT NOW on Steam, Xbox &amp; Game Pass&rdquo;</td></tr>
-      <tr><td><strong>PC Game Pass</strong></td><td>Yes at launch</td><td>Listing showed it included on 12 August 2026; not re-checked on 10 October 2026</td></tr>
-      <tr><td><strong>Steam Deck</strong></td><td>Category 2 in Valve&rsquo;s report</td><td>Shown as Playable on SteamDB, 12 August 2026</td></tr>
-      <tr><td><strong>SteamOS / Steam Machine</strong></td><td>Category 2 in Valve&rsquo;s report</td><td>Same value as the Deck result (10 October 2026)</td></tr>
-      <tr><td><strong>macOS</strong></td><td>No</td><td>Marked unsupported on Steam</td></tr>
-      <tr><td><strong>Linux (native)</strong></td><td>No</td><td>Marked unsupported on Steam</td></tr>
-      <tr><td><strong>PlayStation 5 / PS4</strong></td><td>Not announced</td><td>In none of the 31 official Steam announcements</td></tr>
-      <tr><td><strong>Nintendo Switch</strong></td><td>Not announced</td><td>In none of the 31 official Steam announcements</td></tr>
-      <tr><td><strong>iOS / Android</strong></td><td>Not announced</td><td>In none of the 31 official Steam announcements</td></tr>
+      <tr><td><strong>PC &mdash; Steam</strong></td><td class="num">✅ Yes</td><td>Windows 10/11 64-bit. $9.99</td></tr>
+      <tr><td><strong>PC &mdash; Microsoft Store</strong></td><td class="num">✅ Yes</td><td>Xbox Play Anywhere</td></tr>
+      <tr><td><strong>PC Game Pass</strong></td><td class="num">✅ Yes</td><td>Day one, included</td></tr>
+      <tr><td><strong>Xbox Series X|S</strong></td><td class="num">✅ Yes</td><td>Day one on Game Pass</td></tr>
+      <tr><td><strong>PlayStation 5</strong></td><td class="num">❌ No</td><td>Not announced</td></tr>
+      <tr><td><strong>PlayStation 4</strong></td><td class="num">❌ No</td><td>Not announced</td></tr>
+      <tr><td><strong>Nintendo Switch</strong></td><td class="num">❌ No</td><td>Not announced</td></tr>
+      <tr><td><strong>iOS / App Store</strong></td><td class="num">❌ No</td><td>Not announced</td></tr>
+      <tr><td><strong>Android / Play Store</strong></td><td class="num">❌ No</td><td>Not announced</td></tr>
+      <tr><td><strong>VR</strong></td><td class="num">❌ No</td><td>Not announced</td></tr>
     </tbody>
   </table>
   </div>
 
-  <p>The Xbox store listing was last verified on 12 August 2026 against the listing itself, and not re-checked on 10 October 2026. Our <a href="/system-requirements/">system requirements page</a> recorded these labels from it that day: Optimized for Xbox Series X|S, Xbox Play Anywhere, Xbox cloud saves, cloud playable with Game Pass Ultimate, and a $9.99 price included with PC Game Pass and Xbox Game Pass Ultimate. Read the listing before you rely on any of them.</p>
+  <h2>Can you play Shift At Midnight on PS5?</h2>
 
-  <h2>What PC do you need to run it?</h2>
+  <p><strong>No.</strong> There is no PlayStation 5 version, and neither Bun Muen nor Kwalee has indicated that a PS5 port is coming. The same applies to PS4.</p>
 
-  <p>The requirements are modest for a 2026 release. The figures below are copied from the Steam store page, which lists a 64-bit processor and operating system as mandatory. Both tiers also list a broadband internet connection.</p>
+  <p>This is worth stating plainly because the question gets asked a lot and the answer keeps getting hedged. There is no announced port, no release window, and no statement of intent. If a PS5 version is ever announced, it will come from the developer or publisher &mdash; not from a wiki guessing.</p>
 
-  <div class="tablewrap">
-  <table class="data">
-    <thead><tr><th>Component</th><th>Minimum</th><th>Recommended</th></tr></thead>
-    <tbody>
-      <tr><td><strong>OS</strong></td><td>Windows 10/11 (64-bit)</td><td>Windows 11 (64-bit)</td></tr>
-      <tr><td><strong>Processor</strong></td><td>Intel Core i5-10400F or Equivalent</td><td>Intel Core i5-10400 / AMD Ryzen 7 5800X or Equivalent</td></tr>
-      <tr><td><strong>Memory</strong></td><td>8 GB RAM</td><td>16 GB RAM</td></tr>
-      <tr><td><strong>Graphics</strong></td><td>NVIDIA GeForce GTX 1050 Ti or Equivalent</td><td>NVIDIA GeForce GTX 1660 Ti (6GB) or Equivalent</td></tr>
-      <tr><td><strong>DirectX</strong></td><td>Version 11</td><td>Version 12</td></tr>
-      <tr><td><strong>Storage</strong></td><td>3 GB available space</td><td>3 GB available space</td></tr>
-    </tbody>
-  </table>
+  <h2>Is Shift At Midnight on mobile or the App Store?</h2>
+
+  <p><strong>No.</strong> There is no iOS or Android version, and nothing on the App Store or Google Play. The game is a PC and Xbox title.</p>
+
+  <p>If you have found something in a mobile app store using this name, it is not this game. Popular PC horror titles attract copycat mobile listings, and installing one is a bad idea. The only legitimate places to get Shift At Midnight are Steam, the Microsoft Store and Xbox Game Pass.</p>
+
+  <div class="term warn">
+    <div class="term-h">"How do I install it on my phone using Steam?"</div>
+    <p>You cannot install it on a phone. Steam Link and similar remote-play tools <em>stream</em> a game running on your PC to another screen &mdash; the game still runs on the PC, and you still need the PC. That is not the same as a mobile version, and it will not work if you do not own a machine that can run it.</p>
   </div>
 
-  <p>The gap between the two tiers is mostly memory and graphics. If your machine sits between them, the <a href="/system-requirements/">system requirements page</a> explains what each tier means in practice. Crashes and launch failures on supported hardware belong on <a href="/troubleshooting/">troubleshooting</a> instead.</p>
+  <h2>Is it on Nintendo Switch?</h2>
 
-  <h2>Does it work on Steam Deck and with a controller?</h2>
+  <p>No, and nothing has been announced. The game is a 2026 release built for PC and current-generation Xbox hardware.</p>
 
-  <p>Valve&rsquo;s compatibility report for the game, read on 10 October 2026, returns three results: <strong>Steam Deck, SteamOS and Steam Machine</strong>. Each carries the same category value, 2, and a fourth field, labelled frame, is empty. SteamDB showed the Deck result as Playable when we read it on 12 August 2026. The report returns test names, not badge wording, so the table lists which names appear under each device.</p>
+  <h2>Why only PC and Xbox?</h2>
 
-  <div class="tablewrap">
-  <table class="data">
-    <thead><tr><th>Test result name in Valve&rsquo;s report</th><th>Steam Deck</th><th>SteamOS</th><th>Steam Machine</th></tr></thead>
-    <tbody>
-      <tr><td>Default configuration is performant</td><td>Listed</td><td>&mdash;</td><td>Listed</td></tr>
-      <tr><td>Interface text is legible</td><td>Listed</td><td>&mdash;</td><td>&mdash;</td></tr>
-      <tr><td>Game startup functional</td><td>&mdash;</td><td>Listed</td><td>&mdash;</td></tr>
-      <tr><td>Default controller config not fully functional</td><td>Listed</td><td>Listed</td><td>Listed</td></tr>
-      <tr><td>Controller glyphs do not match the device</td><td>Listed</td><td>&mdash;</td><td>Listed</td></tr>
-      <tr><td>Text input does not automatically invoke the keyboard</td><td>Listed</td><td>Listed</td><td>Listed</td></tr>
-    </tbody>
-  </table>
-  </div>
+  <p>Shift At Midnight is an <strong>Xbox Play Anywhere</strong> title with day-one Game Pass placement. That is a deliberate platform strategy: Microsoft's programme covers Xbox console and Windows as a single release with shared purchases and shared multiplayer, which is a lot of reach for a solo developer to get from one certification process.</p>
 
-  <p>The three controller and keyboard names line up with the Steam store page, which lists no controller support for the game on 10 October 2026. The <a href="/controls/">controls page</a> covers the default bindings.</p>
+  <p>Adding PlayStation or Switch would mean separate certification, separate builds and separate ongoing support &mdash; a substantial commitment for one person. It is a reasonable place to stop for a first commercial release.</p>
 
-  <h2>Is Shift At Midnight on PS5, PS4 or Nintendo Switch?</h2>
+  <h2>Xbox specifics worth knowing</h2>
 
-  <p><strong>None has been announced.</strong> We re-read all 31 official Steam announcements for the game on 10 October 2026, and none of them mentions PlayStation or Nintendo hardware. The release announcement names only Steam, Xbox and Xbox PC Game Pass. We did not check the PlayStation or Nintendo stores. If a port is ever confirmed, it will come from Bun Muen or Kwalee, and this page will quote it.</p>
+  <ul>
+    <li><strong>Optimized for Xbox Series X|S</strong> &mdash; the Microsoft listing carries the badge.</li>
+    <li><strong>Xbox cloud saves</strong> &mdash; progress follows you between the console and the Windows build, which is the practical half of Play Anywhere.</li>
+    <li><strong>Xbox Cloud Gaming</strong> &mdash; supported, but streaming requires <strong>Game Pass Ultimate</strong>; console-only or PC Game Pass will not stream it. It streams the Xbox build from Microsoft&rsquo;s servers, so it is still not a native version for any other device.</li>
+  </ul>
 
-  <h2>Can you play it on a phone, Mac or Linux?</h2>
+  <h2>Which platforms can play together</h2>
 
-  <p>No mobile version has been announced. None of the 31 official Steam announcements up to 10 October 2026 mentions iOS, Android or mobile. We did not check the App Store or Google Play, so we make no claim about what is listed there.</p>
-
-  <p>Mac and Linux are also out. Steam marks both as unsupported, and the store page publishes no requirements for either. Valve&rsquo;s compatibility report is a separate record from that platform list, and it returns results for Steam Deck, SteamOS and Steam Machine, covered above.</p>
+  <p>Xbox consoles and PC Game Pass have shared one multiplayer pool since day one. <strong>Steam is a separate pool</strong> &mdash; a Steam copy cannot join a Game Pass friend, and no setting changes that. Bun Muen has confirmed full crossplay as a post-release update but has attached <strong>no date</strong> to it, so treat it as unscheduled rather than imminent. Details on <a href="/crossplay/">crossplay</a>.</p>
 
   <div class="grid two">
-    <a class="card" href="/crossplay/"><b>Crossplay</b><span>Which of these versions can join each other.</span></a>
-    <a class="card" href="/release-date/"><b>Release date</b><span>Out since 22 July 2026.</span></a>
+    <a class="card" href="/crossplay/"><b>Crossplay</b><span>Steam and Xbox players cannot play together.</span></a>
+    <a class="card" href="/release-date/"><b>Release date</b><span>Out now &mdash; 22 July 2026.</span></a>
   </div>
 """},
 

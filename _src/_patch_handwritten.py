@@ -27,6 +27,8 @@ PAGES = {
 # 标题/描述/日期全部从该页已有的 <title>/<meta description>/<p class="updated">
 # 里读,不新增字段、不另编日期。404 不算内容页,跳过。
 ARTICLE_MARK = "<!-- article-ld -->"
+# 可选「首次发布日期」(按 canonical);不在表里的手写页 datePublished 仍等于核实日期。
+FIRST_PUBLISHED = {B.BASE + "/crossplay/": "2026-07-28"}
 
 
 def article_block(s: str, canonical: str) -> str:
@@ -37,7 +39,8 @@ def article_block(s: str, canonical: str) -> str:
             + B.article_ld(title.group(1) if title else "",
                            desc.group(1) if desc else "",
                            canonical,
-                           B.iso_date(upd.group(1) if upd else "")))
+                           B.iso_date(upd.group(1) if upd else ""),
+                           FIRST_PUBLISHED.get(canonical)))
 
 
 def new_header(active: str) -> str:

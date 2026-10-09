@@ -32,15 +32,15 @@ MERGES = [
     {
         "into": "multiplayer",
         "sources": [
-            ("guide/co-op", "co-op", "Co-op guide: playing with two or three people"),
-            ("discord", "find-players", "Where to find other players"),
+            ("guide/co-op", "co-op", "How should two or three players split the work?"),
+            ("discord", "find-players", "Where can you find other players?"),
         ],
         "meta": {
             "title": "Shift At Midnight Multiplayer &amp; Co-op — Players, Proximity Chat, Groups",
             "og_short": "Multiplayer &amp; Co-op",
             "desc": "How many players Shift At Midnight supports, how the 6-player lobby option works, how proximity chat changes the game, and where to find a group.",
             "h1": "Shift At Midnight multiplayer and co-op",
-            "lede": "The short answer: <strong>three players by design, up to six since the 23 July patch</strong>. This page covers the player count, how co-op actually plays, and where to find people to play it with.",
+            "lede": "Yes. Shift At Midnight has <strong>online co-op for up to three players by design</strong>, and the host can raise a lobby to six since the 23 July 2026 patch. There is also a full single-player mode. Steam lists Online Co-op and no local co-op category, and the developer says Steam players can only play with other Steam players.",
         },
     },
     {
@@ -60,14 +60,14 @@ MERGES = [
     {
         "into": "platforms",
         "sources": [
-            ("game-pass", "game-pass", "Xbox Game Pass and PC Game Pass"),
+            ("game-pass", "game-pass", "Is Shift At Midnight on Game Pass?"),
         ],
         "meta": {
             "title": "Shift At Midnight Platforms — PC, Xbox, Game Pass, PS5 &amp; Switch",
             "og_short": "Platforms &amp; Game Pass",
-            "desc": "Where you can play Shift At Midnight: Steam, Xbox Series X|S, and Game Pass on day one. Whether PS5, Switch and mobile versions exist, and what Play Anywhere means here.",
+            "desc": "Shift At Midnight launched on Steam (Windows only), Xbox and Game Pass on 22 July 2026. No PS5, Switch or mobile version has been announced. Deck: Playable.",
             "h1": "Shift At Midnight platforms",
-            "lede": "Two places, officially: <strong>Steam and Xbox</strong> &mdash; and it is on Game Pass from day one. Everything else people ask about (PS5, Switch, mobile) is answered below.",
+            "lede": "Shift At Midnight is on <strong>Windows PC through Steam, and the developer&rsquo;s launch post also names Xbox and Game Pass</strong>. Steam lists no Mac or Linux version, and no official announcement mentions PlayStation, Switch or mobile. Valve&rsquo;s compatibility report covers Steam Deck, SteamOS and Steam Machine. Requirements and compatibility details are below.",
         },
     },
     {
