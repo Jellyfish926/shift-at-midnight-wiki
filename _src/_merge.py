@@ -65,7 +65,7 @@ MERGES = [
         "meta": {
             "title": "Shift At Midnight Platforms — PC, Xbox, Game Pass, PS5 &amp; Switch",
             "og_short": "Platforms &amp; Game Pass",
-            "desc": "Shift At Midnight launched on Steam (Windows only), Xbox and Game Pass on 22 July 2026. No PS5, Switch or mobile version has been announced. Deck: Playable.",
+            "desc": "Shift At Midnight launched on Steam (Windows only), Xbox and Game Pass on 22 July 2026. No PS5, Switch or mobile version has been announced.",
             "h1": "Shift At Midnight platforms",
             "lede": "Shift At Midnight is on <strong>Windows PC through Steam, and the developer&rsquo;s launch post also names Xbox and Game Pass</strong>. Steam lists no Mac or Linux version, and no official announcement mentions PlayStation, Switch or mobile. Valve&rsquo;s compatibility report covers Steam Deck, SteamOS and Steam Machine. Requirements and compatibility details are below.",
         },

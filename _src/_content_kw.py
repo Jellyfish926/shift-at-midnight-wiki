@@ -14,7 +14,7 @@ PAGES = [
 # + when will it be released 490 + launch date + release delayed 460@14  → 全表性价比最高的一块
 {
  "path": "release-date", "active": "/guides/",
- "updated": "Last updated 2026-10-10 &middot; last verified 5 August 2026 &middot; game version: 29 July 2026 patch",
+ "updated": "Last updated 2026-10-10 &middot; last verified 5 August 2026 &middot; game version: 1 September 2026 patch",
  "published": "2026-08-05",
  "title": "Shift At Midnight Release Date — Out Now (22 July 2026)",
  "og_short": "Shift At Midnight Release Date",
@@ -40,7 +40,7 @@ PAGES = [
     <tr><th>Steam languages</th><td>English, French, German, Spanish (Spain), Japanese, Russian, Simplified Chinese, Traditional Chinese, Portuguese (Brazil) &mdash; nine, interface and subtitles</td></tr>
     <tr><th>Content notes</th><td>Steam lists &ldquo;plenty of gore and blood&rdquo;</td></tr>
     <tr><th>Achievements</th><td>10, three of them hidden &mdash; <a href="/achievements/">full list with unlock rates</a></td></tr>
-    <tr><th>Endless Mode</th><td>BETA playable since launch &mdash; full version free, Q4 2026</td></tr>
+    <tr><th>Endless Mode</th><td>BETA playable since launch &mdash; the Steam store page lists a free, major Endless Mode update planned for Q4 2026</td></tr>
   </table>
 
   <h2>Why so many pages still say May</h2>
@@ -53,7 +53,7 @@ PAGES = [
 
   <p>Not obviously. This is a solo developer's commercial release published by Kwalee, launching simultaneously on Steam, Xbox Series X|S and Game Pass. Day-one Game Pass placement involves certification on Microsoft's side, and Xbox Play Anywhere adds another layer. Hitting three storefronts at once with one developer is a genuine scheduling problem, and slipping twice to get it right is a reasonable outcome rather than a red flag.</p>
 
-  <p>The launch build shipped with ten achievements, a full Story Mode, three-player online co-op and a playable Endless Mode beta, with the finished version of Endless Mode promised as a free Q4 2026 update. That is a complete release, not a rushed one.</p>
+  <p>The launch build shipped with ten achievements, a full Story Mode, three-player online co-op and a playable Endless Mode beta, and the Steam store page says &ldquo;A free, major ENDLESS MODE update is planned for Q4 2026&rdquo; (read 10 October 2026). That is a complete release, not a rushed one.</p>
 
   <h2>How the launch actually went</h2>
 
@@ -67,7 +67,7 @@ PAGES = [
 
   <ul>
     <li><strong>23 July &mdash; lobbies and balance.</strong> Lobby size became selectable up to six, though the developer was clear that the game &ldquo;is designed and has always been marketed around a maximum of 3 players&rdquo; and does not recommend six for a first run. The Marionette lost HP and the music box got louder.</li>
-    <li><strong>29 July &mdash; new content.</strong> A second purchasable firearm, a new <strong>Rake</strong> enemy that appears in endless and post-story modes only, and the removal of the customer patience meter &mdash; which is why careful ID checking is far less punishing now than it was at launch.</li>
+    <li><strong>29 July &mdash; new content.</strong> A second purchasable firearm, a new <strong>Rake</strong> enemy that appears in endless and post-story modes only, and one balance line: &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo;. That line does not mention Story Mode, and the 1 September patch reversed it for Endless Mode: &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;.</li>
     <li><strong>20 August &mdash; 15 new customers.</strong> Added to Story Mode and Endless Mode, along with individual volume sliders for each player and cloud saves for Steam.</li>
     <li><strong>1 September &mdash; 30 new customers.</strong> Also the Chainsaw as a purchasable melee weapon and security cameras in Endless Mode. This is the newest patch as of 10 October 2026.</li>
     <li><strong>The 10% launch discount ended on 29 July.</strong> The price is back to $9.99 with no active discount as of 5 August 2026.</li>
@@ -91,7 +91,7 @@ PAGES = [
   <h2>What is still coming</h2>
 
   <ul>
-    <li><strong>Endless Mode</strong> &mdash; the beta shipped on day one and unlocks once you finish story mode. The finished version, with more customers, traps, weapons and monsters, is a free update planned for <strong>Q4 2026</strong>. See <a href="/nights-and-levels/#endless-mode">Endless Mode</a>.</li>
+    <li><strong>Endless Mode</strong> &mdash; the beta shipped on day one and unlocks once you finish story mode. The Steam store page states: &ldquo;A free, major ENDLESS MODE update is planned for Q4 2026, with exclusive customers, weapons, traps, monsters and more.&rdquo; (read 10 October 2026). None of the 31 official Steam announcements names Q4 2026 or gives a date for it. See <a href="/nights-and-levels/#endless-mode">Endless Mode</a>.</li>
     <li><strong>Full crossplay including Steam</strong> &mdash; not announced. No official Steam announcement promises it (all 31 checked on 10 October 2026); see <a href="/crossplay/">crossplay</a>.</li>
     <li><strong>A public server browser</strong> &mdash; the 10 July 2026 announcement said a Steam-only one would arrive &ldquo;either on-launch, or shortly after launch&rdquo;; no later changelog mentions it going live.</li>
   </ul>
@@ -128,7 +128,7 @@ PAGES = [
       <tr><td><strong>Windows PC &mdash; Steam</strong></td><td>Yes</td><td>Windows 10/11 64-bit, $9.99 (Steam, 10 October 2026)</td></tr>
       <tr><td><strong>Xbox console</strong></td><td>Yes, per the developer</td><td>Launch post, 22 July 2026: &ldquo;OUT NOW on Steam, Xbox &amp; Game Pass&rdquo;</td></tr>
       <tr><td><strong>PC Game Pass</strong></td><td>Yes at launch</td><td>Listing showed it included on 12 August 2026; not re-checked on 10 October 2026</td></tr>
-      <tr><td><strong>Steam Deck</strong></td><td>Category 2 in Valve&rsquo;s report</td><td>Shown as Playable on SteamDB, 12 August 2026</td></tr>
+      <tr><td><strong>Steam Deck</strong></td><td>Category 2 in Valve&rsquo;s report</td><td>Valve compatibility report, read 10 October 2026</td></tr>
       <tr><td><strong>SteamOS / Steam Machine</strong></td><td>Category 2 in Valve&rsquo;s report</td><td>Same value as the Deck result (10 October 2026)</td></tr>
       <tr><td><strong>macOS</strong></td><td>No</td><td>Marked unsupported on Steam</td></tr>
       <tr><td><strong>Linux (native)</strong></td><td>No</td><td>Marked unsupported on Steam</td></tr>
@@ -159,11 +159,11 @@ PAGES = [
   </table>
   </div>
 
-  <p>The gap between the two tiers is mostly memory and graphics. If your machine sits between them, the <a href="/system-requirements/">system requirements page</a> explains what each tier means in practice. Crashes and launch failures on supported hardware belong on <a href="/troubleshooting/">troubleshooting</a> instead.</p>
+  <p>The gap between the two tiers is mostly memory and graphics. Two details in those lists are easy to miss: both tiers ask for the same 3 GB of storage, and the minimum tier accepts Windows 10 or 11 while the recommended tier names Windows 11 only. If your machine sits between them, the <a href="/system-requirements/">system requirements page</a> explains what each tier means in practice. Crashes and launch failures on supported hardware belong on <a href="/troubleshooting/">troubleshooting</a> instead.</p>
 
   <h2>Does it work on Steam Deck and with a controller?</h2>
 
-  <p>Valve&rsquo;s compatibility report for the game, read on 10 October 2026, returns three results: <strong>Steam Deck, SteamOS and Steam Machine</strong>. Each carries the same category value, 2, and a fourth field, labelled frame, is empty. SteamDB showed the Deck result as Playable when we read it on 12 August 2026. The report returns test names, not badge wording, so the table lists which names appear under each device.</p>
+  <p>Valve&rsquo;s compatibility report for the game, read on 10 October 2026, returns three results: <strong>Steam Deck, SteamOS and Steam Machine</strong>. Each carries the same category value, 2, and a fourth field, labelled frame, is empty. The report returns a number and a list of test names, not badge wording. We print the number as returned and attach no rating name to it, and the table lists which test names appear under each device.</p>
 
   <div class="tablewrap">
   <table class="data">
@@ -179,7 +179,9 @@ PAGES = [
   </table>
   </div>
 
-  <p>The three controller and keyboard names line up with the Steam store page, which lists no controller support for the game on 10 October 2026. The <a href="/controls/">controls page</a> covers the default bindings.</p>
+  <p>Counted by device, the report lists five test names for Steam Deck, three for SteamOS and four for Steam Machine. Two of them appear under all three devices: the default controller configuration entry and the on-screen keyboard entry.</p>
+
+  <p>Steam&rsquo;s store data for the game lists ten categories on 10 October 2026: Single-player, Multi-player, Co-op, Online Co-op, Steam Achievements, Adjustable Text Size, Custom Volume Controls, Stereo Sound, Steam Cloud and Family Sharing. None of them is a controller support category, and the separate controller support field is absent. The <a href="/controls/">controls page</a> covers the default bindings.</p>
 
   <h2>Is Shift At Midnight on PS5, PS4 or Nintendo Switch?</h2>
 

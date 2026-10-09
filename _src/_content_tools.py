@@ -43,12 +43,12 @@ THREATS = [
     ("Entities", "killable", "Yes",
      "The baseline threat, and the one you summon yourself &mdash; letting a doppelganger check out "
      "brings it back that night in its real form. Barricades, traps and weapons all work.",
-     "Still Breathing (93.8%)", "/guide/survival/",
+     "Still Breathing (93.4%)", "/guide/survival/",
      "entity, entities, spider, hunt, hunter, creature, basic, common"),
     ("Marionette", "boss", "Yes",
      "Killable, and tougher than an Entity. The music box decides it: hold E to rewind before the "
      "melody plays three times, or it summons the Marionette. The 23 July patch cut its health.",
-     "Last Performance (41.6%)", "/monsters/marionette/",
+     "Last Performance (44.1%)", "/monsters/marionette/",
      "music box, melody, puppet, strings, boss, song, tune, dancing, shift 9"),
     ("The Dentist", "unkillable", "Yes",
      "Run. Nothing else works &mdash; it is immune to weapons and traps alike. Head for Sheriff Clyde "
@@ -58,12 +58,12 @@ THREATS = [
     ("Shrieking Doll", "killable", "Yes",
      "Fragile &mdash; a few shots do it. The real cost is the noise, which is what pulls everything "
      "else onto you. Turns up during hunts, usually alongside Entities.",
-     "Silenced (89.8%)", "/monsters/shrieking-doll/",
+     "Silenced (89.4%)", "/monsters/shrieking-doll/",
      "doll, scream, shriek, screaming, porcelain, loud, noise, crawler, small"),
     ("Demented", "trap", "Yes",
      "It freezes while you look at it &mdash; and it cannot be damaged while you look at it either. "
      "The confirmed solution is to break line of sight in a direction that walks it into a trap.",
-     "Freed (79.8%)", "/monsters/demented/",
+     "Freed (79.6%)", "/monsters/demented/",
      "demented, stare, look, freeze, weeping angel, trap, deformed, twisted"),
     ("Rakes", "killable", "Yes",
      "Endless and post-story modes only, added on 29 July 2026. They come out of the forest and go "
@@ -83,7 +83,7 @@ THREATS = [
     ("Doppelgangers", "identify", "Yes",
      "Identification, not combat. They copy a real customer's appearance, voice and story &mdash; "
      "the scanner tells you a document is fake, not that the person is hostile.",
-     "First Blood (96.9%)", "/guide/doppelgangers/",
+     "First Blood (96.6%)", "/guide/doppelgangers/",
      "doppelganger, copy, imposter, twin, duplicate, same customer, id, scanner, lookalike"),
 ]
 
@@ -149,7 +149,7 @@ PAGES = [
 # ── /tools/ 索引 ────────────────────────────────────────────────
 {
  "path": "tools", "active": "/tools/",
- "updated": "Last updated 2026-10-10 &middot; last verified 5 August 2026 &middot; game version: 29 July 2026 patch",
+ "updated": "Last updated 2026-10-10 &middot; last verified 5 August 2026 &middot; game version: 1 September 2026 patch",
  "published": "2026-08-05",
  "title": "Shift At Midnight Tools — Crossplay, Achievements, Threats",
  "og_short": "Shift At Midnight Tools",
@@ -336,8 +336,8 @@ PAGES = [
     achievement, read from Steam on <strong>%(captured)s</strong> and refreshed weekly by this site's build.
     They are a difficulty proxy, not a guide: <strong>First Blood sits at %(first)s%%</strong>
     because it unlocks for killing your first customer, which nearly everyone does by accident.</p>
-  <p>The three hidden achievements &mdash; Grave Decision (33.1%%), True Ending (16.0%%) and
-    Empty Home (10.1%%) &mdash; <strong>do not show their requirements in-game, and we have not verified
+  <p>The three hidden achievements &mdash; Grave Decision (35.1%%), True Ending (16.0%%) and
+    Empty Home (10.9%%) &mdash; <strong>do not show their requirements in-game, and we have not verified
     them.</strong> We list what the rates imply on the <a href="/endings/">endings page</a> rather than
     publishing a guess as fact.</p>
 """ % {"rows": ach_rows(), "captured": ACH_CAPTURED, "first": ACH[0][2]},
@@ -376,7 +376,7 @@ PAGES = [
     if (!left.length) {
       next.className = "tool-out ok";
       next.innerHTML = "<b>All 10 \\u2014 done</b><p>Including the three hidden ones. " +
-        "That puts you past the 10.1% of players who have Empty Home.</p>";
+        "That puts you past the 10.9% of players who have Empty Home.</p>";
       return;
     }
     left.sort(function (a, b) {

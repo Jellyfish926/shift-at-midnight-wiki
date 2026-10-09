@@ -23,11 +23,11 @@ FAQ_LD = """<script type="application/ld+json">
     { "@type": "Question", "name": "Does Shift At Midnight have mods?",
       "acceptedAnswer": { "@type": "Answer", "text": "There is no Steam Workshop and there are no official modding tools, and the developer has not commented on modding either way. A community scene built on BepInEx does exist: 12 mods were listed on Thunderstore as of 5 August 2026, plus a separate section on Nexus Mods. The best known of them, ShiftMorePlayers, raises the lobby cap well past six and only needs to be installed by the host." } },
     { "@type": "Question", "name": "How many achievements does Shift At Midnight have?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ten. Three of them are hidden: Grave Decision at 33.1 percent, True Ending at 16.0 percent and Empty Home at 10.1 percent." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "Ten. Three of them are hidden: Grave Decision at 35.1 percent, True Ending at 16.0 percent and Empty Home at 10.9 percent, as of 10 October 2026." } },
     { "@type": "Question", "name": "How do you get the true ending in Shift At Midnight?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Two conditions. Do not call Sheriff Clyde when the choice appears after Shift 12, and finish Shift 13 with at least 250 dollars in personal savings. Calling Clyde gives the Grave Decision ending instead, and declining with less than 250 dollars gives Empty Home. 16.0 percent of players have the True Ending achievement." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "Two conditions. Do not call Sheriff Clyde when the choice appears after Shift 12, and finish Shift 13 with at least 250 dollars in personal savings. Calling Clyde gives the Grave Decision ending instead, and declining with less than 250 dollars gives Empty Home. 16.0 percent of players have the True Ending achievement as of 10 October 2026." } },
     { "@type": "Question", "name": "How do you unlock Endless Mode in Shift At Midnight?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Finish Story Mode. Endless Mode shipped as a beta on launch day, 22 July 2026, but unlocks only once the 13-shift story is complete. It is the only mode where Rake enemies appear. A full version is planned for a free update in Q4 2026." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "Finish Story Mode. Endless Mode shipped as a beta on launch day, 22 July 2026, but unlocks only once the 13-shift story is complete. It is the only mode where Rake enemies appear. The Steam store page says a free, major Endless Mode update is planned for Q4 2026 (read 10 October 2026); no official Steam announcement names Q4 2026 or gives a date for it." } },
     { "@type": "Question", "name": "How many nights are in Shift At Midnight?",
       "acceptedAnswer": { "@type": "Answer", "text": "Story Mode is 13 shifts. Customers and events are procedurally generated, so runs differ. The fixed points are Shift 9, when the Marionette becomes possible, the choice offered after Shift 12, and Shift 13." } },
     { "@type": "Question", "name": "What did the latest Shift At Midnight patch change?",
@@ -324,7 +324,7 @@ PAGES = [
 
   <p>Proximity chat makes these roles work, because a voice that is suddenly loud is a teammate who is suddenly close. Running Discord over the top flattens that distance and removes the cue.</p>
 
-  <p>On a <a href="/monsters/marionette/">Marionette</a> night, the wind-up music box has to be rewound before its melody plays three times; our <a href="/monsters/jack-in-the-box/">Jack-in-the-Box page</a> carries the source for that. As that page suggests, give one player the box for the whole encounter and have them call the melody count aloud over proximity chat while the others keep serving. With two players, merge Floor and Response and keep the counter staffed.</p>
+  <p>On a <a href="/monsters/marionette/">Marionette</a> night, according to our <a href="/monsters/jack-in-the-box/">Jack-in-the-Box page</a>, which cites Game Rant&rsquo;s music box guide, three complete melodies from the wind-up music box summon the Marionette, and holding E to rewind the box before that third pass stops the encounter. As that page suggests, give one player the box for the whole encounter and have them call the melody count aloud over proximity chat while the others keep serving. With two players, merge Floor and Response and keep the counter staffed.</p>
 """},
 {
  "path": "guide/weapons", "active": "/guides/",
@@ -551,7 +551,7 @@ PAGES = [
   <p>Yes. A free &ldquo;Shift At Midnight Multiplayer Demo&rdquo; has been on Steam since 29 September 2025, and Steam lists it as Online Co-op. It is a separate app from the full game, and Steam lists it as free. Our <a href="/demo/">demo page</a> lists what it includes.</p>
 
   <h2>Is solo worth playing?</h2>
-  <p>Yes, and it is not a lesser mode. Solo gives you control of every judgement call at the counter, which matters if you are chasing the <a href="/endings/">ending achievements</a>. Co-op is louder and funnier; solo is tenser and more deliberate. For live numbers on how many people are playing, see <a href="/player-count/">player count</a>.</p>
+  <p>Solo is an officially supported way to play. Steam lists the game under Single-player as well as Online Co-op, and the launch post says &ldquo;Play solo or with up to 2 extra friends&rdquo;. The store page does lean toward groups, saying &ldquo;Multiplayer is where the game thrives&rdquo;. No official statement compares how solo and co-op play, so we do not rank them. If you are playing alone for the story, the <a href="/endings/">endings page</a> sets out the three outcomes. For live numbers on how many people are playing, see <a href="/player-count/">player count</a>.</p>
 """},
 {
  "path": "game-pass", "active": "/guides/",
@@ -787,7 +787,7 @@ PAGES = [
 """},
 {
  "path": "faq", "active": "/faq/",
- "updated": "Last updated 2026-10-10 &middot; last verified 5 August 2026 &middot; game version: 29 July 2026 patch",
+ "updated": "Last updated 2026-10-10 &middot; last verified 5 August 2026 &middot; game version: 1 September 2026 patch",
  "published": "2026-08-05",
  "title": "Shift At Midnight FAQ — Crossplay, Players, Endings &amp; Mods",
  "og_short": "Shift At Midnight FAQ",
@@ -845,7 +845,7 @@ PAGES = [
     </details>
     <details>
       <summary>How do I beat the Marionette?</summary>
-      <div class="a"><p>Find the <a href="/monsters/jack-in-the-box/">music box</a> and <strong>hold E to rewind it before the melody plays three times</strong>. It spawns in the break room, a storage room, the bathroom or a shelf aisle, and the 23 July patch made it much louder to find by ear. It can also be killed outright &mdash; the same patch cut its HP &mdash; though only 41.6% of players have. <a href="/monsters/marionette/">Full guide</a>.</p></div>
+      <div class="a"><p>Find the <a href="/monsters/jack-in-the-box/">music box</a> and <strong>hold E to rewind it before the melody plays three times</strong>. It spawns in the break room, a storage room, the bathroom or a shelf aisle, and the 23 July patch made it much louder to find by ear. It can also be killed outright &mdash; the same patch cut its HP &mdash; though only 44.0% of players have (Steam global achievement stats, 10 October 2026). <a href="/monsters/marionette/">Full guide</a>.</p></div>
     </details>
     <details>
       <summary>How do I kill the Dentist?</summary>
@@ -857,7 +857,7 @@ PAGES = [
     </details>
     <details>
       <summary>Do customers still run out of patience while I check their ID?</summary>
-      <div class="a"><p><strong>No.</strong> The patience mechanic was removed on 29 July 2026, so verification is no longer timed. Habits formed in the first week can be unlearned. <a href="/guide/doppelgangers/">Identification guide</a>.</p></div>
+      <div class="a"><p><strong>It depends on the mode, going by the patch notes.</strong> The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo;, and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, and no official announcement says patience was removed there. <a href="/guide/doppelgangers/">Identification guide</a>.</p></div>
     </details>
     <details>
       <summary>Should I kill Norbert?</summary>
@@ -873,7 +873,7 @@ PAGES = [
   <div class="faq">
     <details>
       <summary>How many achievements are there?</summary>
-      <div class="a"><p>Ten. Three are hidden: <em>Grave Decision</em> (33.1%), <em>True Ending</em> (16.0%) and <em>Empty Home</em> (10.1%). <a href="/achievements/">Full list with rarity</a>.</p></div>
+      <div class="a"><p>Ten. Three are hidden: <em>Grave Decision</em> (35.1%), <em>True Ending</em> (16.0%) and <em>Empty Home</em> (10.9%), as of 10 October 2026. <a href="/achievements/">Full list with rarity</a>.</p></div>
     </details>
     <details>
       <summary>How do I get the true ending?</summary>
@@ -881,7 +881,7 @@ PAGES = [
     </details>
     <details>
       <summary>What is the hardest achievement?</summary>
-      <div class="a"><p><em>Empty Home</em> at 10.1%, then <em>True Ending</em> at 16.0%. Of the non-hidden ones, <em>Locked And Loaded</em> &mdash; buy every melee weapon &mdash; is rarest at 23.5%.</p></div>
+      <div class="a"><p><em>Empty Home</em> at 10.9%, then <em>True Ending</em> at 16.0%. Of the non-hidden ones, <em>Locked And Loaded</em> &mdash; buy every melee weapon &mdash; is rarest at 21.5%. All three figures are Steam global unlock rates read on 10 October 2026.</p></div>
     </details>
   </div>
 
@@ -901,7 +901,7 @@ PAGES = [
     </details>
     <details>
       <summary>What is coming next?</summary>
-      <div class="a"><p>A free update planned for <strong>Q4 2026</strong>: the full release of Endless Mode plus more customers, traps, weapons and monsters.</p></div>
+      <div class="a"><p>The Steam store page states: &ldquo;A free, major ENDLESS MODE update is planned for Q4 2026, with exclusive customers, weapons, traps, monsters and more.&rdquo; (read 10 October 2026). None of the 31 official Steam announcements names Q4 2026 or gives a date for it. <a href="/updates/">Patch notes</a>.</p></div>
     </details>
     <details>
       <summary>Who made it?</summary>

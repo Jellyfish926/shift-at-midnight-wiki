@@ -110,7 +110,10 @@ PAGES = [
 
   <h2>22 July 2026 &mdash; the lobby connection beta branch</h2>
   <p>Launch day did not go smoothly. Enough players could not create or join lobbies that the developer
-    shipped a temporary opt-in branch the same evening, before the proper fix landed the next day.</p>
+    shipped a temporary opt-in branch the same evening. That post ends: &ldquo;We are working towards creating a
+    proper fix in the main version of the game, but for the time being, this should work!&rdquo; The 23 July
+    changelog lists a &ldquo;Fix for players unable to create joinable lobbies in Russia.&rdquo; and does not
+    say the wider joining problem was fixed.</p>
   <p>No announcement has ever been published retiring that branch, so we cannot date it as fixed. If you
     or a friend opted in at launch and never switched back, that is worth checking. In your Steam library, right-click
     the game &rarr; Properties &rarr; <em>Game Versions &amp; Betas</em>, and make sure you are on
@@ -129,13 +132,18 @@ PAGES = [
     <tr><td>Endless Mode updates</td>
         <td>The same announcement says: &ldquo;Throughout the rest of the year I plan to update endless
           mode with exclusive customers, traps, ways of detecting doppelgangers, etc.&rdquo; The 20 August
-          and 1 September patches each added Endless Mode content (above). A free &ldquo;Q4 2026&rdquo;
-          full release, which this page previously listed, is <strong>not confirmed by any official
-          Steam announcement</strong> (all 31 checked on 10 October 2026). See
+          and 1 September patches each added Endless Mode content (above). See
           <a href="/nights-and-levels/#endless-mode">Endless Mode</a>.</td></tr>
+    <tr><td>Free Endless Mode update, Q4 2026</td>
+        <td>The Steam store page states: &ldquo;A free, major ENDLESS MODE update is planned for Q4 2026,
+          with exclusive customers, weapons, traps, monsters and more.&rdquo; (read 10 October 2026). None
+          of the 31 official Steam announcements names Q4 2026 or gives a date for it (all checked on
+          10 October 2026), so nothing beyond that sentence is on the record.</td></tr>
   </table>
   <p class="src">Source: <a href="https://steamcommunity.com/ogg/3722330/announcements/detail/715657047106918977" target="_blank" rel="noopener">Steam announcement, 10 July 2026</a>,
-    and the later Steam announcements listed above.</p>
+    the later Steam announcements listed above, and the
+    <a href="https://store.steampowered.com/app/3722330/" target="_blank" rel="noopener">Steam store page</a>
+    (read 10 October 2026).</p>
 
   <h2>Not announced</h2>
   <table>
