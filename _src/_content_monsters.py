@@ -571,6 +571,8 @@ PAGES = [
 {
  "path": "endings",
  "active": "/endings/",
+ "updated": "Last updated 2026-10-10 &middot; title, description and achievement unlock rates updated 10 October 2026 (unlock rates are that day&rsquo;s Steam API reading) &middot; ending conditions last verified 5 August 2026 &middot; game version: 1 September 2026 patch",
+ "published": "2026-08-05",
  "title": "Shift At Midnight Endings: All 3 and How to Unlock Each",
  "og_short": "Shift At Midnight Endings",
  "desc": "Grave Decision: call Sheriff Clyde after Shift 12. If you do not call him, True Ending needs $250 or more at the end of Shift 13; under $250 is Empty Home.",
@@ -605,7 +607,7 @@ PAGES = [
   </div>
   <p class="src">Conditions and outcomes: <a href="https://www.keengamer.com/articles/guides/shift-at-midnight-how-to-get-all-endings/" target="_blank" rel="noopener">KeenGamer endings guide</a>. Unlock rates: <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a>, read 10 October 2026. All three achievements are hidden on Steam.</p>
 
-  <p class="updated">Corrected 5 August 2026 (previously 26.0% / 13.4% / 7.0%); rates re-read 10 October 2026</p>
+  <p class="updated">Corrected 5 August 2026 (previously 26.0% / 13.4% / 7.0%). Later readings, in the order Grave Decision / True Ending / Empty Home: 13 August 2026 &mdash; 33.1% / 16.0% / 10.1%; 10 October 2026 &mdash; 35.1% / 16.0% / 10.9%</p>
 
   <h2>The shape of the choice</h2>
 
@@ -615,7 +617,7 @@ PAGES = [
 
   <h2>What the unlock rates actually say</h2>
 
-  <p>Add the three together and you get 62.0%, but that is not a completion rate: a player who replays can hold more than one, so the real share of players who have finished the story at all is lower. Set against <em>Still Breathing</em> (survive your first hunt) at <strong>93.5%</strong> in the same 10 October 2026 reading, the most common ending achievement, <em>Grave Decision</em>, is at 35.1%.</p>
+  <p>Add the three together and you get 62.0%, but that is not a completion rate: a player who replays can hold more than one, so the real share of players who have finished the story at all is lower. For comparison, <em>Still Breathing</em> (survive your first hunt) stood at <strong>93.5%</strong> in the same 10 October 2026 reading, while the most common ending achievement, <em>Grave Decision</em>, stood at 35.1%.</p>
 
   <p><em>Grave Decision</em> being twice as common as <em>True Ending</em> is the more interesting number. It suggests the safe branch is the default choice for players reaching the end for the first time, which is what you would expect when one option guarantees a survivable outcome and the other depends on how well the last thirteen shifts went financially.</p>
 
@@ -639,7 +641,7 @@ PAGES = [
 
   <p>Here we have to stop short. Beyond the $250 threshold itself, we have not found verifiable figures for nightly quotas, item prices or weapon costs, so we are not going to publish a money route with invented numbers in it. What we can say is structural: money you do not spend is money you keep, and the two spending categories that most often eat the buffer are ammunition and weapons.</p>
 
-  <p>One patch genuinely helps here. The <a href="/updates/">29 July update</a> removed the patience mechanic, so customers no longer run down a timer while you verify them. Rushed verification is what lets a doppelganger through, and letting one through is what starts a hunt &mdash; the expensive, ammunition-burning kind of night. Careful checking is now free, which makes the <a href="/guide/doppelgangers/">identification guide</a> the most directly financial page on this site.</p>
+  <p>One patch note is easy to misread here. The <a href="/updates/">29 July 2026 announcement</a> says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo;, and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, which is where all three endings are decided, so do not plan a $250 run around customers waiting indefinitely. Rushed verification is what lets a doppelganger through, and letting one through is what starts a hunt &mdash; the expensive, ammunition-burning kind of night. The <a href="/guide/doppelgangers/">identification guide</a> covers how to check a customer properly.</p>
 
   <div class="grid two">
     <a class="card" href="/achievements/"><b>All 10 achievements</b><span>The full list with rarity and the completion curve.</span></a>
