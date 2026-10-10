@@ -186,7 +186,7 @@ GROUPS = [
     ("tells", "The seven categories of tell",
      "Catch a doppelganger by each kind of contradiction. Also not tracked by the game.", TELLS),
     ("named", "Named doppelgangers documented here",
-     "<strong>5 of a reported 47.</strong> DualShockers documented 47 named doppelgangers before the 20 August and 1 September 2026 patches added 15 and 30 customers (the current total is not confirmed); this wiki "
+     "<strong>5 of a reported 47.</strong> DualShockers documented 47 named doppelgangers (its count when we read it for the 5 August 2026 version of this wiki&rsquo;s doppelganger guide) before the 20 August and 1 September 2026 patches added 15 and 30 customers (the current total is not confirmed); this wiki "
      "names five, so this category is deliberately partial and always will be until we can verify more.",
      NAMED),
 ]
@@ -286,7 +286,7 @@ BODY = """
   <h2>Where this list is knowingly incomplete</h2>
   <p>A tracker that pretends to be exhaustive is worse than one that admits its edges.</p>
   <ul>
-    <li><strong>Named doppelgangers: 5 of a reported 47.</strong> DualShockers documented 47 before the 20 August and 1 September 2026 patches added customers, and the current total is not confirmed; this wiki names
+    <li><strong>Named doppelgangers: 5 of a reported 47.</strong> DualShockers documented 47 (read for the 5 August 2026 version of this wiki&rsquo;s doppelganger guide) before the 20 August and 1 September 2026 patches added customers, and the current total is not confirmed; this wiki names
       five, because listing all of them in advance replaces the game with a lookup table &mdash; and because we
       have not verified the rest. See <a href="/guide/doppelgangers/">the identification guide</a>.</li>
     <li><strong>Weapons: no per-weapon list exists here.</strong> Locked And Loaded asks you to buy every melee

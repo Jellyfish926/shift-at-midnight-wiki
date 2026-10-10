@@ -185,7 +185,7 @@ PAGES = [
  "desc": "The seven categories of tell, what the N.E.T. database does that the ID scanner cannot, the document checks worth running, and what the patch notes say about patience.",
  "trail": G + [(None, "Doppelgangers")],
  "h1": "Identifying doppelgangers",
- "lede": "This is the job. Something walks in wearing a real person &mdash; face, voice, mannerisms, biography &mdash; and you have a scanner, a database and your own attention. The patch notes changed patience in Endless Mode only (removed on 29 July 2026, re-enabled on 1 September 2026) and say nothing about Story Mode, so do not assume customers will wait forever.",
+ "lede": "This is the job. Something walks in wearing a real person &mdash; face, voice, mannerisms, biography &mdash; and you have a scanner, a database and your own attention. The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo; and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;; neither line mentions Story Mode, so do not assume customers will wait forever.",
  "body": """
   <div class="term warn">
     <div class="term-h">Why this outranks every other skill</div>
@@ -718,7 +718,7 @@ PAGES = [
   <p>Completion rates are one of the few honest public signals about whether people stick with a game.</p>
   <ul>
     <li><strong>[[ACH:Still Breathing]]%</strong> survive their first hunt &mdash; almost nobody bounces off immediately.</li>
-    <li><strong>[[ACH:Freed]]%</strong> kill a <a href="/monsters/demented/">Demented</a> &mdash; three quarters get past the opening.</li>
+    <li><strong>[[ACH:Freed]]%</strong> kill a <a href="/monsters/demented/">Demented</a> &mdash; most players get past the opening.</li>
     <li><strong>[[ACH:Relentless]]%</strong> reach <em>Relentless</em> &mdash; not a first-session achievement. Four in ten players are still engaged well past the tutorial phase.</li>
     <li><strong>16.0% / [[ACH:Empty Home]]%</strong> reach the rare hidden endings &mdash; a real minority is digging.</li>
   </ul>

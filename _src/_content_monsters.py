@@ -38,7 +38,7 @@ PAGES = [
   <p class="src">Sources:
     <a href="https://gamerant.com/shift-at-midnight-all-monsters/" target="_blank" rel="noopener">Game Rant monster list</a>,
     <a href="https://gamerant.com/shift-at-midnight-jack-in-the-box-music-box-marionette-location/" target="_blank" rel="noopener">Game Rant music box guide</a>,
-    <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a> (read 13 August 2026).</p>
+    <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a> (weekly snapshot captured [[ACH_DATE]]).</p>
 
   <h2>How to tell it is coming</h2>
 
@@ -87,7 +87,7 @@ PAGES = [
 
   <p><em>Last Performance</em> &mdash; Kill a Marionette &mdash; sits at <strong>[[ACH:Last Performance]]%</strong>. Put that next to the other two straightforward monster kills: <em>Silenced</em> (Shrieking Doll) at <strong>[[ACH:Silenced]]%</strong> and <em>Freed</em> (Demented) at <strong>[[ACH:Freed]]%</strong>.</p>
 
-  <p>The gap is not about how often it appears &mdash; it announces itself by email and by sound. Two things separate it. The correct defensive play, rewinding the box, is also the play that denies you the kill, so cautious players never earn it. And it starts at Shift 9 of 13, so reaching it means getting most of the way through Story Mode, while the <a href="/achievements/">achievement curve</a> shows a heavy drop-off well before that. That second reading is ours, drawn from the published rates rather than any developer statement.</p>
+  <p>The gap is not about how often it appears &mdash; in Story Mode it announces itself by email and by sound (the 1 September 2026 patch note says &ldquo;Disabled emails in ENDLESS MODE&rdquo;). Two things separate it. The correct defensive play, rewinding the box, is also the play that denies you the kill, so cautious players never earn it. And it starts at Shift 9 of 13, so reaching it means getting most of the way through Story Mode, while the <a href="/achievements/">achievement curve</a> shows a heavy drop-off well before that. That second reading is ours, drawn from the published rates rather than any developer statement.</p>
 
   <p>If you want the achievement deliberately, let the melody play its three passes on purpose &mdash; on a shift that is otherwise under control, with ammunition already bought, rather than on a night that is already going badly.</p>
 
@@ -174,7 +174,7 @@ PAGES = [
   <p>The two variables are decided elsewhere. After Shift 12 you choose whether to call Sheriff Clyde, and at the end of Shift 13 the game checks whether your personal savings are <strong>$250 or more</strong>. Not calling Clyde and finishing with at least $250 produces the True Ending, in which the Dentist appears and Clyde helps destroy him, and both Clyde and your pet survive. Calling him instead gives <em>Grave Decision</em> (<strong>[[ACH:Grave Decision]]%</strong>), where Clyde dies. Not calling him with under $250 gives <em>Empty Home</em> (<strong>[[ACH:Empty Home]]%</strong>).</p>
 
   <p>So the practical takeaway for this page is blunt: <strong>how you handle the chase does not change your ending &mdash; the choice after Shift 12 and your bank balance do.</strong> Full breakdown on the <a href="/endings/">endings page</a>.</p>
-  <p class="src">Ending conditions: <a href="https://www.keengamer.com/articles/guides/shift-at-midnight-how-to-get-all-endings/" target="_blank" rel="noopener">KeenGamer</a>. Unlock rates: <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global stats</a>, read 13 August 2026.</p>
+  <p class="src">Ending conditions: <a href="https://www.keengamer.com/articles/guides/shift-at-midnight-how-to-get-all-endings/" target="_blank" rel="noopener">KeenGamer</a>. Unlock rates: <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global stats</a>, weekly snapshot captured [[ACH_DATE]].</p>
 
   <h2>What changed in the patches</h2>
 
@@ -341,6 +341,8 @@ PAGES = [
 """},
 {
  "path": "monsters/shrieking-doll",
+ "updated": "Last updated 2026-10-10 &middot; achievement unlock rates on this page were switched on 10 October 2026 to this site&rsquo;s weekly Steam snapshot, captured [[ACH_DATE]] &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
+ "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2bfix1 2026-10-10)
  "title": "Shift At Midnight Shrieking Doll — How to Kill It (Silenced)",
  "og_short": "Shift At Midnight Shrieking Doll",
  "desc": "The Shrieking Doll shows up during hunts alongside the Entities. It is fragile — a few shots end it — but every shot you fire tells everything else in the store where you are.",
@@ -469,7 +471,7 @@ PAGES = [
   <h2>It is not rare</h2>
 
   <p>You will find this one described as an uncommon encounter. The achievement data does not support that. <em>Freed</em> &mdash; Kill a Demented &mdash; is held by <strong>[[ACH:Freed]]%</strong> of players, which is more than the share who have killed a <a href="/monsters/marionette/">Marionette</a> ([[ACH:Last Performance]]%) and roughly four players in five overall. Something four in five players have done is not rare, and planning your shift on the assumption you probably will not meet one is a bad plan.</p>
-  <p class="src">Unlock rates from <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a>, read 13 August 2026.</p>
+  <p class="src">Unlock rates from <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a>, weekly snapshot captured [[ACH_DATE]].</p>
 
   <h2>Common mistakes</h2>
 
@@ -491,6 +493,8 @@ PAGES = [
 """},
 {
  "path": "monsters/entity",
+ "updated": "Last updated 2026-10-10 &middot; achievement unlock rates on this page were switched on 10 October 2026 to this site&rsquo;s weekly Steam snapshot, captured [[ACH_DATE]] &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
+ "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2bfix1 2026-10-10)
  "title": "Shift At Midnight Entity — Hunts, Blood Moons &amp; Survival",
  "og_short": "Shift At Midnight Entity Guide",
  "desc": "The Entity is the monster you summon yourself: wave a doppelganger through and it returns that shift to hunt you. It is blind, it follows sound — including your voice chat — and blood rain means it comes no matter what.",
@@ -517,7 +521,7 @@ PAGES = [
   <p class="src">Sources:
     <a href="https://gamerant.com/shift-at-midnight-all-monsters/" target="_blank" rel="noopener">Game Rant monster overview</a>,
     <a href="https://www.thexboxhub.com/shift-at-midnight-review/" target="_blank" rel="noopener">TheXboxHub review</a> (blood rain),
-    <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a> (read 13 August 2026).</p>
+    <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a> (weekly snapshot captured [[ACH_DATE]]).</p>
 
   <h2>The loop this page sits inside</h2>
 

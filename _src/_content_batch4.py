@@ -156,7 +156,7 @@ PAGES = [
 
   <div class="term tip">
     <div class="term-h">The one patch that helps the money</div>
-    <p>The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo; and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, and no official announcement says whether Story Mode customers still run down a patience timer. (see <a href="/updates/">updates</a>). Rushed verification is what lets a doppelganger through, and a doppelganger that
+    <p>The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo; and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, and no official announcement says whether Story Mode customers still run down a patience timer. See <a href="/updates/">updates</a>. Rushed verification is what lets a doppelganger through, and a doppelganger that
       gets through becomes a Hunt, and a Hunt is the expensive kind of night &mdash; ammunition, replacements, a
       shift spent not selling. That makes
       <a href="/guide/doppelgangers/">the identification guide</a> the most financial page on this wiki.</p>
@@ -396,7 +396,7 @@ PAGES = [
 
   <div class="term tip">
     <div class="term-h">The patch that changed the economics</div>
-    <p>The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo; and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, and no official announcement says whether Story Mode customers still run down a patience timer. (see <a href="/updates/">updates</a>). The expensive nights are the ones that start with a bad
+    <p>The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo; and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, and no official announcement says whether Story Mode customers still run down a patience timer. See <a href="/updates/">updates</a>. The expensive nights are the ones that start with a bad
       verification, so careful checking is what keeps the $250 within reach.</p>
   </div>
 
@@ -506,7 +506,7 @@ PAGES = [
   <h2>Last Performance &mdash; a clock, not a fight</h2>
 
   <p>The <a href="/monsters/marionette/">Marionette</a> arrives from <strong>Shift 9</strong> onward, flagged in advance
-    by an N.E.T. email, and announced live by a music box starting somewhere in the store. The counter-play is to reach
+    by an N.E.T. email in Story Mode (the 1 September 2026 patch note says &ldquo;Disabled emails in ENDLESS MODE&rdquo;), and announced live by a music box starting somewhere in the store. The counter-play is to reach
     the box and hold <strong>E</strong> to rewind it before the melody finishes three times &mdash; which prevents the
     Marionette from arriving at all.</p>
 
@@ -529,7 +529,7 @@ PAGES = [
     <li><strong>First Blood</strong> will happen on its own. Do not spend a run on it.</li>
     <li><strong>Silenced</strong> next, since dolls turn up inside ordinary Hunts and the kill is cheap.</li>
     <li><strong>Freed</strong> once you are laying traps before you need them rather than during a chase.</li>
-    <li><strong>Last Performance</strong> last, on a Shift 9 or later night where the email gave you warning and you went
+    <li><strong>Last Performance</strong> last, on a Story Mode night from Shift 9 onward, where the email gave you warning and you went
       in stocked.</li>
   </ol>
   <p>Every one of these is tickable in the <a href="/tools/completion-tracker/">completion tracker</a>, alongside the
@@ -537,7 +537,7 @@ PAGES = [
 
   <h2>Sources on this site</h2>
   <ul>
-    <li><a href="/achievements/">All 10 achievements</a> &mdash; the full list, the curve, and an August rate reading (dated 12 August on that page, 13 August on the monster pages that repeat the same numbers).</li>
+    <li><a href="/achievements/">All 10 achievements</a> &mdash; the full list, the curve, and that page's own read date.</li>
     <li><a href="/monsters/shrieking-doll/">Shrieking Doll</a>, <a href="/monsters/demented/">Demented</a> and <a href="/monsters/marionette/">Marionette</a> &mdash; the mechanics each kill depends on.</li>
     <li><a href="/monsters/entity/">The Entity</a> and <a href="/guide/survival/">the survival guide</a> &mdash; what else is in the room while you are collecting these.</li>
     <li><a href="/guide/doppelgangers/">Identifying doppelgangers</a> &mdash; the counter work that decides how often you are in a Hunt at all.</li>
@@ -661,7 +661,7 @@ PAGES = [
 
   <h2>Sources on this site</h2>
   <ul>
-    <li><a href="/achievements/">All 10 achievements</a> &mdash; the full list, the curve, and an August rate reading (dated 12 August on that page, 13 August on the monster pages that repeat the same numbers).</li>
+    <li><a href="/achievements/">All 10 achievements</a> &mdash; the full list, the curve, and that page's own read date.</li>
     <li><a href="/monsters/entity/">The Entity</a> &mdash; how a Hunt starts, Blood Moon shifts, and why sound is the mechanic.</li>
     <li><a href="/guide/survival/">Traps, barricades and hiding</a> &mdash; sound discipline and the weapons arsenal.</li>
     <li><a href="/updates/">Patch notes</a> &mdash; the second firearm (29 July 2026) and the patience changes.</li>

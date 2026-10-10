@@ -142,6 +142,7 @@ PAGES = [
 },
 {
  "path": "monsters/compare",
+ "published": "2026-09-11",   # 保留改日期行之前的 datePublished(D2bfix1 2026-10-10)
  "active": "/guides/",
  "title": "Shift At Midnight Monsters Compared: Which Ones Can You Kill?",
  "og_short": "All monsters compared",
@@ -149,7 +150,7 @@ PAGES = [
  "trail": M + [(None, "Compare all threats")],
  "h1": "Every Shift At Midnight threat, compared",
  "lede": "Seven named threats appear across this wiki's bestiary, each with its own page and its own counter. Read individually, it is easy to lose track of which ones you can actually shoot, which one you can only outsmart, and which one is off-limits until you finish Story Mode. This page puts all seven side by side, with figures pulled straight from <a href=\"/achievements/\">the achievements page</a> and each monster's own page &mdash; nothing recalculated, nothing new claimed.",
- "updated": "Last verified 11 September 2026 &middot; game version: 29 July 2026 patch",
+ "updated": "Last updated 2026-10-10 &middot; achievement unlock rates on this page were switched on 10 October 2026 to this site&rsquo;s weekly Steam snapshot, captured [[ACH_DATE]] &middot; rest of the page last verified 11 September 2026 (written against the 29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "body": """
   <div class="tags">
     <span class="tag">7 threats compared</span>
@@ -158,7 +159,7 @@ PAGES = [
   </div>
 
   <h2>The comparison table</h2>
-  <p>"Achievement" unlock rates are the global percentage from <a href="/achievements/">the achievements page</a> as of this check, not each monster page's own copy &mdash; a couple of monster pages carry a slightly older snapshot of the same figure, so this table uses the single freshest source rather than mixing two.</p>
+  <p>"Achievement" unlock rates are this site's weekly Steam snapshot, captured [[ACH_DATE]] &mdash; the same figures the monster pages use. The <a href="/achievements/">achievements page</a> carries its own read date.</p>
 
   <table class="facts">
     <tr><th>Marionette</th><td>From Shift 9, Story Mode. <strong>Killable</strong> &mdash; hold E on the music box to rewind it before the melody finishes three times. Achievement: Last Performance, [[ACH:Last Performance]]%. Details: <a href="/monsters/marionette/">Marionette page</a>.</td></tr>

@@ -201,6 +201,8 @@ PAGES = [
 # employee package 990 + employee packag 490 + giveaway
 {
  "path": "employee-package", "active": "/guides/",
+ "updated": "Last updated 2026-10-10 &middot; achievement unlock rates on this page were switched on 10 October 2026 to this site&rsquo;s weekly Steam snapshot, captured [[ACH_DATE]] &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
+ "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2bfix1 2026-10-10)
  "title": "Shift At Midnight Employee Package — What Is It?",
  "og_short": "Shift At Midnight Employee Package",
  "desc": "The Shift At Midnight Employee Package is a physical merch bundle Kwalee gave away — poster, duffel bag, rat plushie, Joe's Diner cap, badge and retro peripherals.",
@@ -256,6 +258,8 @@ PAGES = [
 # like games 840 + are there any games similiar
 {
  "path": "similar-games", "active": "/guides/",
+ "updated": "Last updated 2026-10-10 &middot; achievement unlock rates on this page were switched on 10 October 2026 to this site&rsquo;s weekly Steam snapshot, captured [[ACH_DATE]] &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
+ "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2bfix1 2026-10-10)
  "title": "Games Like Shift At Midnight — 8 Co-op Horror Picks",
  "og_short": "Games Like Shift At Midnight",
  "desc": "Eight co-op horror games to play after Shift At Midnight, what half of it each one shares, and which three come in an official Steam bundle at 10% off.",
@@ -326,7 +330,7 @@ PAGES = [
 
   <h2>What none of the eight replaces</h2>
 
-  <p>Very few games make the <em>moral</em> decision the mechanical one. Here the frightening action is administrative: you decide whether to serve someone or kill them, on incomplete information, while a queue builds behind them. <strong>[[ACH:First Blood]]% of players have killed a customer</strong> (<a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam achievement stats</a>, checked 13 August 2026) &mdash; that is the design working as intended, not a community of monsters. Nothing on this list reproduces it, which is why every honest recommendation here shares one half of the game rather than replacing it.</p>
+  <p>Very few games make the <em>moral</em> decision the mechanical one. Here the frightening action is administrative: you decide whether to serve someone or kill them, on incomplete information, while a queue builds behind them. <strong>[[ACH:First Blood]]% of players have killed a customer</strong> (<a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam achievement stats</a>, this site&rsquo;s weekly snapshot captured [[ACH_DATE]]) &mdash; that is the design working as intended, not a community of monsters. Nothing on this list reproduces it, which is why every honest recommendation here shares one half of the game rather than replacing it.</p>
 
   <div class="grid two">
     <a class="card" href="/review/"><b>Is it worth it?</b><span>Price, the free demo, and what the review data says.</span></a>
@@ -337,6 +341,8 @@ PAGES = [
 # are there levels 10 + is night three the last level 10@难度10 + 13 shifts
 {
  "path": "nights-and-levels", "active": "/guides/",
+ "updated": "Last updated 2026-10-10 &middot; achievement unlock rates on this page were switched on 10 October 2026 to this site&rsquo;s weekly Steam snapshot, captured [[ACH_DATE]] &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
+ "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2bfix1 2026-10-10)
  "title": "Shift At Midnight Nights &amp; Levels — How Many Are There?",
  "og_short": "Shift At Midnight Nights &amp; Levels",
  "desc": "Does Shift At Midnight have levels? It has shifts, and they are procedurally generated. What that means for night three and for guides promising a fixed route.",
@@ -701,7 +707,7 @@ PAGES = [
   <ul>
     <li><strong>Endless Mode is locked.</strong> It is not missing. Endless shipped as a beta on launch day but unlocks only once you have finished the 13-shift story &mdash; see <a href="/nights-and-levels/#endless-mode">Endless Mode</a>.</li>
     <li><strong>Norbert scans as a fake ID.</strong> Working as designed. He is flagged and he is harmless; the scanner reports on documents, not on intent. See <a href="/monsters/norbert/">Norbert</a>.</li>
-    <li><strong>Patience changed in Endless Mode.</strong> The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo; and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, and no official announcement says whether Story Mode customers still run down a patience timer.</li>
+    <li><strong>What the patch notes say about patience.</strong> The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo; and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, and no official announcement says whether Story Mode customers still run down a patience timer.</li>
     <li><strong>The music box got louder.</strong> Also deliberate &mdash; the 23 July patch raised Jack-in-the-Box volume, and locating it by ear is the entire counterplay to the <a href="/monsters/marionette/">Marionette</a>.</li>
     <li><strong>Swearing is no longer filtered.</strong> The profanity filter was removed on 23 July 2026.</li>
   </ul>
@@ -727,6 +733,8 @@ PAGES = [
 # 都有该词条页;三源数字互不一致,所以页面写成「截至 X 日 + 逐源标注」而不是给一个数
 {
  "path": "player-count", "active": "/guides/",
+ "updated": "Last updated 2026-10-10 &middot; achievement unlock rates on this page were switched on 10 October 2026 to this site&rsquo;s weekly Steam snapshot, captured [[ACH_DATE]] &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
+ "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2bfix1 2026-10-10)
  "title": "Shift At Midnight Player Count — Is Anyone Still Playing?",
  "og_short": "Player Count",
  "desc": "Shift At Midnight peaked at 37,590 concurrent Steam players in July 2026 by SteamDB's count, and the trackers do not agree with each other. Every figure here carries its source and date.",
