@@ -16,7 +16,6 @@ M = [("/monsters/", "Monsters")]
 PAGES = [
 {
  "path": "glossary",
- "published": "2026-09-11",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
  "active": "/guides/",
  "title": "Shift At Midnight Glossary: Every Term, A to Z",
  "og_short": "Glossary of terms",
@@ -24,7 +23,7 @@ PAGES = [
  "trail": [(None, "Glossary")],
  "h1": "Shift At Midnight glossary",
  "lede": "This wiki uses a lot of terms the game itself never stops to define &mdash; the <strong>N.E.T. database</strong>, a <strong>Hunt</strong>, the difference between <strong>Story</strong> and <strong>Post-Story Endless</strong>. This page collects every one of them in a single A-Z list, each with a short definition and a link to the page that covers it in full. Nothing here is a new claim &mdash; every entry is compiled from a page this wiki has already published.",
- "updated": "Last updated 2026-10-10 &middot; the Crossplay, Controller support and Xbox Play Anywhere entries re-checked 10 October 2026 against the official Steam announcements and Steam store data &middot; rest of the page last verified 11 September 2026 (written against the 29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
+ "updated": "Last verified 11 September 2026 &middot; game version: 29 July 2026 patch",
  "body": """
   <div class="tags">
     <span class="tag">39 terms</span>
@@ -48,8 +47,8 @@ PAGES = [
 
   <h3>C</h3>
   <p><strong>Cheats / trainers.</strong> No official console commands; third-party trainers exist from providers like WeMod and PLITCH, unverified here. See <a href="/cheats/">cheats</a>.</p>
-  <p><strong>Controller support.</strong> Steam's store data lists no controller-support category (read 10 October 2026); the Xbox build's controls are not checked here. See <a href="/controls/">controls</a>.</p>
-  <p><strong>Crossplay.</strong> Per the developer (10 July 2026): Xbox and PC Game Pass players will have crossplay; Steam players only play with Steam players. Not tested by us. See <a href="/crossplay/">crossplay</a>.</p>
+  <p><strong>Controller support.</strong> None on PC &mdash; every field in Steam's declaration reads false; Xbox is controller-only by contrast. See <a href="/controls/">controls</a>.</p>
+  <p><strong>Crossplay.</strong> Partial: Xbox console and PC Game Pass share one pool, Steam is separate. See <a href="/crossplay/">crossplay</a>.</p>
 
   <h3>D</h3>
   <p><strong>Demented.</strong> Freezes only while you look directly at it, not killable by gunfire &mdash; break your gaze and lead it into a trap. See the <a href="/monsters/demented/">Demented page</a>.</p>
@@ -114,7 +113,7 @@ PAGES = [
   <p><strong>Weapons arsenal.</strong> The purchasable loadout tied to the Locked And Loaded achievement (23.5% unlock). See <a href="/guide/survival/">the survival guide</a>.</p>
 
   <h3>X</h3>
-  <p><strong>Xbox Play Anywhere.</strong> A Microsoft program label; the Xbox listing read on 12 August 2026 carried it (not re-checked on 10 October 2026). No official Steam announcement mentions it. See <a href="/platforms/">platforms</a>.</p>
+  <p><strong>Xbox Play Anywhere.</strong> Links one purchase across Xbox and Windows &mdash; shares saves, not input method. See <a href="/platforms/">platforms</a>.</p>
 
   <h2>Quick answers</h2>
   <div class="faq">
@@ -216,7 +215,6 @@ PAGES = [
 },
 {
  "path": "start-here",
- "published": "2026-09-11",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
  "active": "/guides/",
  "title": "Where to Start: A Shift At Midnight Reading Order",
  "og_short": "Where to start on this wiki",
@@ -224,7 +222,7 @@ PAGES = [
  "trail": [(None, "Start here")],
  "h1": "Where to start on this wiki",
  "lede": "This wiki has grown to more than 35 pages, and none of them tell you in what order to read them. If you just bought the game, or you are stuck on your first Hunt, this page is a suggested path through the site &mdash; beginner first, advanced last &mdash; with one line on why each step matters before you click through.",
- "updated": "Last updated 2026-10-10 &middot; the crossplay sentences re-checked 10 October 2026 against the developer&rsquo;s 10 July 2026 Steam announcement &middot; rest of the page last verified 11 September 2026 (written against the 29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
+ "updated": "Last verified 11 September 2026 &middot; game version: 29 July 2026 patch",
  "body": """
   <div class="tags">
     <span class="tag">8-step reading order</span>
@@ -251,7 +249,7 @@ PAGES = [
   </ol>
 
   <h2>Playing with other people</h2>
-  <p>If you are playing solo, skip to the next section. If not: <a href="/multiplayer/">multiplayer &amp; co-op</a> covers lobby size (three by design, six since the 23 July patch) and why proximity chat is a mechanic, not just convenience, given the Entity tracks sound. If your group spans storefronts, read <a href="/crossplay/">crossplay</a> before anyone buys anything &mdash; per the developer, Xbox and PC Game Pass players will have crossplay and Steam players will only play with Steam players (10 July 2026).</p>
+  <p>If you are playing solo, skip to the next section. If not: <a href="/multiplayer/">multiplayer &amp; co-op</a> covers lobby size (three by design, six since the 23 July patch) and why proximity chat is a mechanic, not just convenience, given the Entity tracks sound. If your group spans storefronts, read <a href="/crossplay/">crossplay</a> before anyone buys anything &mdash; Xbox and PC Game Pass share a pool, Steam does not, and that is not something a refund fixes after the fact.</p>
 
   <h2>Going deeper</h2>
   <ol start="8">
@@ -275,7 +273,7 @@ PAGES = [
     </details>
     <details>
       <summary>I'm playing with friends on different platforms. Where do I start?</summary>
-      <div class="a"><p>Read <a href="/crossplay/">crossplay</a> before anyone buys the game. Per the developer (10 July 2026), Steam players will only be able to play with other Steam players, and that decides which storefront your group should buy on.</p></div>
+      <div class="a"><p>Read <a href="/crossplay/">crossplay</a> before anyone buys the game. Steam and Xbox/PC Game Pass players are in separate pools, and that decides which storefront your group should buy on.</p></div>
     </details>
     <details>
       <summary>What changed most recently that this order should account for?</summary>

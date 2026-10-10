@@ -15,11 +15,11 @@ FAQ_LD = """<script type="application/ld+json">
     { "@type": "Question", "name": "Is Shift At Midnight crossplay?",
       "acceptedAnswer": { "@type": "Answer", "text": "Partially, per the developer. The 10 July 2026 announcement says Xbox and PC Game Pass players will have crossplay, and that Steam players will only be able to play with other Steam players. On the Steam side, the same post previews a Steam-only public server browser, and no later changelog mentions it shipping. No official announcement promises crossplay between Steam and Xbox (all 31 official Steam announcements checked on 10 October 2026). Which pool a bought Microsoft Store copy joins, and how Xbox Play Anywhere relates to matchmaking, is not confirmed by any official statement, and this site has not tested it." } },
     { "@type": "Question", "name": "Is Shift At Midnight on Game Pass?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes, per the developer: the 22 July 2026 launch post says the game is out on Steam, Xbox and Game Pass, and the 10 July 2026 post names Xbox PC Game Pass. Whether it is still in the Game Pass catalogue was not re-checked on 10 October 2026." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, day one on both Xbox console and PC Game Pass. It is also an Xbox Play Anywhere title." } },
     { "@type": "Question", "name": "How many players can play Shift At Midnight?",
       "acceptedAnswer": { "@type": "Answer", "text": "Three by design. The 23 July 2026 patch made the lobby cap selectable up to six, but the developer says the game is designed and has always been marketed around a maximum of three players, and does not recommend six for a first playthrough. Single-player is fully supported, and co-op uses proximity chat." } },
     { "@type": "Question", "name": "How much does Shift At Midnight cost?",
-      "acceptedAnswer": { "@type": "Answer", "text": "9.99 USD on Steam, with no discount running on 10 October 2026. The Xbox listing showed 9.99 USD on 12 August 2026 and was not re-checked." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "9.99 USD. The 10% launch discount ended on 29 July 2026. It is also included with Xbox Game Pass." } },
     { "@type": "Question", "name": "Does Shift At Midnight have mods?",
       "acceptedAnswer": { "@type": "Answer", "text": "There is no Steam Workshop and there are no official modding tools, and the developer has not commented on modding either way. A community scene built on BepInEx does exist: 12 mods were listed on Thunderstore as of 5 August 2026, plus a separate section on Nexus Mods. The best known of them, ShiftMorePlayers, raises the lobby cap well past six and only needs to be installed by the host." } },
     { "@type": "Question", "name": "How many achievements does Shift At Midnight have?",
@@ -33,13 +33,13 @@ FAQ_LD = """<script type="application/ld+json">
     { "@type": "Question", "name": "What did the latest Shift At Midnight patch change?",
       "acceptedAnswer": { "@type": "Answer", "text": "The 1 September 2026 patch added 30 new customers to Story Mode and Endless Mode, added the Chainsaw as a purchasable melee weapon (now required for the Locked And Loaded achievement), and added security cameras in Endless Mode. As of 10 October 2026 it is the newest patch on the official Steam announcement feed; the 20 August 2026 patch before it added 15 customers and cloud saves for Steam." } },
     { "@type": "Question", "name": "Is Shift At Midnight on PS5?",
-      "acceptedAnswer": { "@type": "Answer", "text": "No. There is no PlayStation 5 or PS4 version of Shift At Midnight and none has been announced. The developer's 22 July 2026 launch post names Steam, Xbox and Game Pass." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "No. There is no PlayStation 5 or PS4 version of Shift At Midnight and none has been announced. It is available on PC via Steam and the Microsoft Store, and on Xbox Series X|S." } },
     { "@type": "Question", "name": "Is Shift At Midnight available on mobile or the App Store?",
       "acceptedAnswer": { "@type": "Answer", "text": "No. There is no iOS or Android version of Shift At Midnight. It is a PC and Xbox title only." } },
     { "@type": "Question", "name": "When did Shift At Midnight come out?",
       "acceptedAnswer": { "@type": "Answer", "text": "Shift At Midnight released on 22 July 2026, after being delayed twice from its original 28 May 2026 date." } },
     { "@type": "Question", "name": "Is Shift At Midnight free?",
-      "acceptedAnswer": { "@type": "Answer", "text": "The game costs 9.99 USD on Steam. It was announced for Xbox PC Game Pass at launch (10 July 2026 post); Game Pass catalogue membership was last seen on the Xbox listing on 12 August 2026 and was not re-checked on 10 October 2026. There is also a free multiplayer demo on Steam." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "The game costs 9.99 USD to buy, but it is included at no extra cost with Xbox Game Pass on both console and PC. There is also a free multiplayer demo on Steam." } },
     { "@type": "Question", "name": "Who developed Shift At Midnight?",
       "acceptedAnswer": { "@type": "Answer", "text": "It was built by solo developer Bun Muen and published by Kwalee. It released on 22 July 2026." } }
   ]
@@ -49,8 +49,6 @@ FAQ_LD = """<script type="application/ld+json">
 PAGES = [
 {
  "path": "guides", "active": "/guides/",
- "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
- "updated": "Last updated 2026-10-10 &middot; the crossplay card re-checked 10 October 2026 against the developer&rsquo;s 10 July 2026 Steam announcement &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "title": "All Shift At Midnight Guides — Complete Wiki Index",
  "og_short": "All Shift At Midnight Guides",
  "desc": "Every Shift At Midnight guide in one index, ordered by where you are in a run: your first shift, spotting doppelgangers, surviving hunts, the three endings, and Endless Mode.",
@@ -64,7 +62,7 @@ PAGES = [
     <a class="card" href="/guide/beginners/"><b>Beginner&rsquo;s guide</b><span>What the job is, what the quota wants from you, and the mistakes that end first runs. Start here.</span></a>
     <a class="card" href="/nights-and-levels/"><b>Nights, shifts &amp; Endless</b><span>Story mode is 13 procedurally generated shifts. Only three of them change the rules &mdash; read this when you want to know what is fixed and what is rolled.</span></a>
     <a class="card" href="/multiplayer/"><b>Multiplayer &amp; co-op</b><span>Three players by design, six selectable since the 23 July patch, and how to divide the work between them.</span></a>
-    <a class="card danger" href="/crossplay/"><b>Crossplay &mdash; read before buying</b><span>Per the developer (10 July 2026), Steam players will only be able to play with other Steam players. Check before anyone pays.</span></a>
+    <a class="card danger" href="/crossplay/"><b>Crossplay &mdash; read before buying</b><span>Steam players and Game Pass players cannot play together. Finding this out after everyone has paid is the most expensive mistake on this wiki.</span></a>
   </div>
 
   <h2>2. Telling people apart</h2>
@@ -124,8 +122,6 @@ PAGES = [
 """},
 {
  "path": "guide/beginners", "active": "/guides/",
- "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
- "updated": "Last updated 2026-10-10 &middot; the crossplay sentence re-checked 10 October 2026 against the developer&rsquo;s 10 July 2026 Steam announcement &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "title": "Shift At Midnight Beginner's Guide — Surviving Your First Shifts",
  "og_short": "Shift At Midnight Beginner's Guide",
  "desc": "A beginner's guide to Shift At Midnight that starts with the mistake 96.9% of players make: treating the ID scanner as a threat detector.",
@@ -173,7 +169,7 @@ PAGES = [
   <p>You will want to spend everything on restocking, because the quota is immediate and the arsenal is not. Resist a little. <em>Locked And Loaded</em> &mdash; purchasing every melee weapon &mdash; sits at 23.5%, and the reason it is that low is that people spend their earnings shift-to-shift and never bank. See the <a href="/guide/survival/#weapons">weapons guide</a>.</p>
 
   <h2>If you are playing with friends</h2>
-  <p>Check <a href="/crossplay/">the crossplay page before anyone buys</a>. Per the developer (10 July 2026), Steam players will only be able to play with other Steam players.</p>
+  <p>Check <a href="/crossplay/">the crossplay page before anyone buys</a>. Steam players cannot play with Game Pass players. This catches groups out constantly.</p>
 
   <div class="grid two">
     <a class="card" href="/guide/doppelgangers/"><b>Doppelganger identification</b><span>The actual tells, once you know the scanner is not one.</span></a>
@@ -585,19 +581,19 @@ PAGES = [
  "desc": "Shift At Midnight is $9.99 USD with a 10% launch discount, and free on Game Pass. Which platform you buy on matters more than the price does.",
  "trail": [(None, "Price")],
  "h1": "Price &amp; editions",
- "lede": "<strong>$9.99 USD</strong> on Steam, with no discount on 10 October 2026. It was announced for Xbox PC Game Pass at launch; current catalogue status was not re-checked. There is one edition. The decision that actually costs people money is not the price &mdash; it is the store.",
+ "lede": "<strong>$9.99 USD</strong> &mdash; the 10% launch discount ended on 29 July 2026 &mdash; and <strong>free with Xbox Game Pass</strong>. There is one edition. The decision that actually costs people money is not the price &mdash; it is the store.",
  "body": """
   <table class="facts">
     <tr><th>Price</th><td>$9.99 USD (regional pricing varies)</td></tr>
-    <tr><th>Launch discount</th><td>Announced by the developer on 8 June 2026; the end date is not stated in any official announcement. No discount on Steam on 10 October 2026</td></tr>
+    <tr><th>Launch discount</th><td>10% introductory offer &mdash; ended 29 July 2026</td></tr>
     <tr><th>Editions</th><td>One &mdash; no deluxe or season pass</td></tr>
-    <tr><th>Game Pass</th><td>On Game Pass at launch, per the developer (22 July 2026); current catalogue status not re-checked on 10 October 2026</td></tr>
+    <tr><th>Game Pass</th><td>Included, day one</td></tr>
     <tr><th>Future content</th><td>Endless Mode, Q4 2026 &mdash; free</td></tr>
   </table>
 
   <div class="term warn">
     <div class="term-h">The expensive mistake is not the price</div>
-    <p>It is buying on the wrong store. <strong>Per the developer, Steam players will only play with other Steam players.</strong> Which pool a Microsoft Store copy joins is not confirmed by any official statement. Decide as a group first &mdash; <a href="/crossplay/">crossplay</a>.</p>
+    <p>It is buying on the wrong store. <strong>Steam players cannot play with Game Pass or Xbox players.</strong> Spending $9.99 on Steam when your friends are on Game Pass means buying it again on the Microsoft Store. Decide as a group first &mdash; <a href="/crossplay/">crossplay</a>.</p>
   </div>
 
   <h2>No paid DLC announced</h2>
@@ -605,17 +601,15 @@ PAGES = [
 
   <h2>Is it worth $9.99?</h2>
   <p>The honest framing: this is a three-player co-op horror game with ten achievements and a procedural shift structure. The achievement curve suggests most players get several hours in &mdash; 45.4% reach <em>Relentless</em>, which is not a first-session achievement &mdash; and a meaningful minority push into the rare hidden endings at 10&ndash;16%. See <a href="/review/">is it worth it</a>.</p>
-  <p>If you already play it through Game Pass the question does not arise. If you do not, and you have two friends who will play it with you, $9.99 for a co-op night is not a hard sell. If you are buying it to play alone, it is a smaller game than the store page implies.</p>
+  <p>If you have Game Pass the question does not arise. If you do not, and you have two friends who will play it with you, $9.99 for a co-op night is not a hard sell. If you are buying it to play alone, it is a smaller game than the store page implies.</p>
 
   <div class="grid two">
-    <a class="card" href="/platforms/#game-pass"><b>Game Pass</b><span>What the developer and the Xbox listing say.</span></a>
+    <a class="card" href="/platforms/#game-pass"><b>Game Pass</b><span>Free if you subscribe.</span></a>
     <a class="card" href="/review/"><b>Is it worth it?</b><span>What the data suggests.</span></a>
   </div>
 """},
 {
  "path": "mods", "active": "/guides/",
- "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
- "updated": "Last updated 2026-10-10 &middot; the crossplay sentence re-checked 10 October 2026 against the developer&rsquo;s 10 July 2026 Steam announcement &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "title": "Shift At Midnight Mods — Workshop, BepInEx &amp; ShiftMorePlayers",
  "og_short": "Shift At Midnight Mods",
  "desc": "No Steam Workshop and no official tools — but there is a working BepInEx scene: 12 mods on Thunderstore, a Nexus section, and ShiftMorePlayers, which pushes lobbies past six.",
@@ -673,7 +667,7 @@ PAGES = [
     <li><strong>Achievements: unknown, and we will not pretend otherwise.</strong> No source states whether BepInEx plugins affect Steam achievement unlocks in this game &mdash; the developer has not commented and the mod pages do not address it. If you are going for <a href="/endings/">True Ending</a> (16.0%) or <em>Empty Home</em> (10.1%), do that run on a clean install and keep modded lobbies as a separate hobby. See <a href="/achievements/">all 10 achievements</a>.</li>
     <li><strong>Client compatibility is per-mod.</strong> ShiftMorePlayers explicitly supports vanilla clients; do not assume the next mod does. The host&rsquo;s mod list defines the session, so read each page.</li>
     <li><strong>Nothing is vetted.</strong> No Workshop means no platform-level review of what you are running. Use the game&rsquo;s own Thunderstore and Nexus pages rather than reuploads.</li>
-    <li><strong>PC only.</strong> There is no equivalent for the Xbox or Microsoft Store builds, so a modded lobby cannot include a console <a href="/platforms/#game-pass">Game Pass</a> player &mdash; which is already true unmodded, because <a href="/crossplay/">the developer says Steam players will only play with other Steam players</a>.</li>
+    <li><strong>PC only.</strong> There is no equivalent for the Xbox or Microsoft Store builds, so a modded lobby cannot include a console <a href="/platforms/#game-pass">Game Pass</a> player &mdash; which is already true unmodded, because <a href="/crossplay/">Steam and Game Pass do not share a player pool</a>.</li>
   </ul>
 
   <h2>What this page will not do</h2>
@@ -705,14 +699,12 @@ PAGES = [
 """},
 {
  "path": "review", "active": "/guides/",
- "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
- "updated": "Last updated 2026-10-10 &middot; price, launch-discount, Game Pass and crossplay statements re-checked 10 October 2026 against the official Steam announcements and Steam store data &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "title": "Is Shift At Midnight Worth It? What the Data Says",
  "og_short": "Is Shift At Midnight Worth It?",
  "desc": "A $9.99 co-op horror game from a solo developer. What the achievement completion curve and the design actually tell you about whether it is worth your time.",
  "trail": [(None, "Is it worth it?")],
  "h1": "Is Shift At Midnight worth it?",
- "lede": "A <strong>$9.99</strong> three-player co-op horror game from a solo developer. Rather than tell you it is &ldquo;a must-play&rdquo;, here is what the publicly readable data actually supports.",
+ "lede": "A <strong>$9.99</strong> three-player co-op horror game from a solo developer, free on Game Pass. Rather than tell you it is &ldquo;a must-play&rdquo;, here is what the publicly readable data actually supports.",
  "body": """
   <h2>What the achievement curve says about engagement</h2>
   <p>Completion rates are one of the few honest public signals about whether people stick with a game.</p>
@@ -738,13 +730,13 @@ PAGES = [
   <ul>
     <li><strong>It is small.</strong> Ten achievements, one mode plus a free one coming in Q4. This is a $9.99 game and it is scoped like one.</li>
     <li><strong>It is better with people.</strong> Solo works and is tenser, but the design's best moments are three people shouting across a gas station.</li>
-    <li><strong>The platform split is a genuine annoyance.</strong> <a href="/crossplay/">Per the developer, Steam players will only play with other Steam players</a>, and for a co-op game that is a real cost.</li>
+    <li><strong>The platform split is a genuine annoyance.</strong> <a href="/crossplay/">Steam cannot play with Game Pass</a>, and for a co-op game that is a real cost.</li>
     <li><strong>Gore.</strong> Steam flags "plenty of gore and blood". It is a game about deciding whether to kill the person in front of you.</li>
   </ul>
 
   <div class="term tip">
     <div class="term-h">Straight answer</div>
-    <p>If you already have it through Game Pass and two friends are on the same side, install it tonight &mdash; it is a good three-hour night (Game Pass catalogue status was last read on 12 August 2026 and not re-checked on 10 October 2026). If you are buying at $9.99 to play with a group, that is easy value provided <a href="/crossplay/">everyone buys on the same side of the platform line</a>. If you are buying it to play alone, it is a smaller and quieter game than the trailers suggest &mdash; still interesting, but manage expectations.</p>
+    <p>If you have Game Pass and two friends, install it tonight &mdash; it costs you nothing and it is a good three-hour night. If you are buying at $9.99 to play with a group, that is easy value provided <a href="/crossplay/">everyone buys on the same side of the platform line</a>. If you are buying it to play alone, it is a smaller and quieter game than the trailers suggest &mdash; still interesting, but manage expectations.</p>
   </div>
 
   <div class="grid two">
@@ -793,7 +785,7 @@ PAGES = [
 """},
 {
  "path": "faq", "active": "/faq/",
- "updated": "Last updated 2026-10-10 &middot; crossplay, Game Pass, price, patch, patience, Q4 2026 update and achievement unlock-rate statements re-checked 10 October 2026 against the official Steam announcements, store data and achievement stats &middot; Xbox store details are as read on 12 August 2026 and were not re-checked &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) &middot; latest patch: 1 September 2026",
+ "updated": "Last updated 2026-10-10 &middot; crossplay, patch, patience, Q4 2026 update and achievement unlock-rate statements re-checked 10 October 2026 against the official Steam announcements, store page and achievement stats &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) &middot; latest patch: 1 September 2026",
  "published": "2026-08-05",
  "title": "Shift At Midnight FAQ — Crossplay, Players, Endings &amp; Mods",
  "og_short": "Shift At Midnight FAQ",
@@ -811,11 +803,11 @@ PAGES = [
     </details>
     <details>
       <summary>My friends are on Game Pass and I bought it on Steam. What are my options?</summary>
-      <div class="a"><p>If your group is split between Steam and Xbox or PC Game Pass, the developer&rsquo;s 10 July 2026 announcement says Steam players will only be able to play with other Steam players, and no later official post changes that (all 31 official Steam announcements checked on 10 October 2026). Which pool a copy bought on the Microsoft Store joins is not confirmed by any official statement, and we have not tested any combination. We do not name a cheapest fix; see the <a href="/crossplay/">crossplay page</a> for what is on the record, or <a href="/tools/#crossplay-checker">check your group here</a>.</p></div>
+      <div class="a"><p>One of you has to own it on the other side; there is no workaround. It is included with Game Pass on both console and PC, so the cheapest fix is usually the Steam player picking it up there. <a href="/tools/#crossplay-checker">Check your group here</a>.</p></div>
     </details>
     <details>
       <summary>Is Shift At Midnight on Game Pass?</summary>
-      <div class="a"><p>Yes, per the developer. The 22 July 2026 launch post says the game is &ldquo;OUT NOW on Steam, Xbox &amp; Game Pass&rdquo;, and the 10 July 2026 post says it would be available on &ldquo;Steam, Xbox and Xbox PC Gamepass&rdquo;. Whether it is still in the Game Pass catalogue was not re-checked on 10 October 2026. The Xbox store listing read on 12 August 2026 carried an Xbox Play Anywhere label; we did not re-check it. <a href="/platforms/#game-pass">Details</a>.</p></div>
+      <div class="a"><p>Yes &mdash; day one, on both Xbox console and PC. It is also an Xbox Play Anywhere title with cloud saves. <a href="/platforms/#game-pass">Details</a>.</p></div>
     </details>
     <details>
       <summary>How many players can play together?</summary>
@@ -823,7 +815,7 @@ PAGES = [
     </details>
     <details>
       <summary>How much does it cost?</summary>
-      <div class="a"><p>$9.99 USD on Steam, with no discount running on 10 October 2026. The Xbox listing showed $9.99 on 12 August 2026 and was not re-checked. No paid DLC has been announced. <a href="/review/#price">More</a>.</p></div>
+      <div class="a"><p>$9.99 USD on Steam and the Xbox store. The 10% launch discount ended on 29 July 2026 and there is no paid DLC. <a href="/review/#price">More</a>.</p></div>
     </details>
     <details>
       <summary>Is Shift At Midnight on PS5?</summary>
@@ -835,7 +827,7 @@ PAGES = [
     </details>
     <details>
       <summary>Is Shift At Midnight free?</summary>
-      <div class="a"><p>Not to buy &mdash; it is $9.99 on Steam. It was announced for Xbox PC Game Pass at launch (10 July 2026 post). Game Pass catalogue membership was last seen on the Xbox listing on 12 August 2026 and was not re-checked on 10 October 2026. There is a free multiplayer demo on Steam. <a href="/demo/">About the demo</a>.</p></div>
+      <div class="a"><p>Not to buy &mdash; it is $9.99. It is included with Game Pass at no extra cost, and there is a free multiplayer demo on Steam. <a href="/demo/">About the demo</a>.</p></div>
     </details>
     <details>
       <summary>When did Shift At Midnight come out?</summary>

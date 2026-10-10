@@ -11,7 +11,7 @@
 单个破绽类别页(31-126 词)、单个里程碑页(Shift 9 / Night 2 素材几乎全是怪物页原文,
 会变成怪物页的翻版)。
 
-成就解锁率两个读数并列:achievements.json(日期取其 captured 字段,周更)与老页 2026-08-13 读数
+成就解锁率两个读数并列:achievements.json(2026-09-07 抓取)与老页 2026-08-13 读数
 不一致,不挑边,两个日期都写出来。
 """
 import json as _json
@@ -23,27 +23,12 @@ _ACH = {a["name"]: a["pct"] for a in _json.loads(_ACH_FILE.read_text())["achieve
 E = [("/endings/", "Endings")]
 A = [("/achievements/", "Achievements")]
 
-_ACH_CAPTURED = _json.loads(_ACH_FILE.read_text()).get("captured", "")
+UPD = "Last verified 11 September 2026 &middot; game version: 29 July 2026 patch"
 
-
-def _long_date(iso: str) -> str:
-    """'2026-10-05' → '5 October 2026';日期取自 achievements.json 的 captured,不手写。"""
-    months = ["January", "February", "March", "April", "May", "June", "July",
-              "August", "September", "October", "November", "December"]
-    y, m, d = iso.split("-")
-    return f"{int(d)} {months[int(m) - 1]} {y}"
-
-
-ACH_DATE = _long_date(_ACH_CAPTURED) if _ACH_CAPTURED else "date not recorded"
-
-UPD = ("Last updated 2026-10-10 &middot; unlock rates outside brackets are this site&rsquo;s weekly Steam snapshot, "
-       f"captured {ACH_DATE} &middot; rest of the page last verified 11 September 2026 (written against the "
-       "29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)")
-
-RATE_NOTE = (f"""  <div class="term warn">
+RATE_NOTE = ("""  <div class="term warn">
     <div class="term-h">Two readings of the same number</div>
-    <p>Global unlock rates move as more people buy the game, and this wiki now holds two readings taken on
-      different dates. Where they differ, both are given &mdash; the weekly snapshot captured <strong>{ACH_DATE}</strong> first,
+    <p>Global unlock rates move as more people buy the game, and this wiki now holds two readings taken a
+      month apart. Where they differ, both are given &mdash; the <strong>7 September 2026</strong> figure first,
       the <strong>13 August 2026</strong> figure in brackets. Neither is wrong; a percentage of a growing
       player base is a moving number, and nothing on this page depends on which of the two you use.</p>
   </div>""")
@@ -64,7 +49,6 @@ PAGES = [
           "you to satisfy two unrelated requirements in the same run. One is a refusal, the other is a bank "
           "balance, and missing either drops you into a different ending without warning."),
  "updated": UPD,
- "published": "2026-09-11",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
  "body": f"""
   <div class="tags">
     <span class="tag green">Best outcome</span>
@@ -194,7 +178,6 @@ PAGES = [
           "achievements. One phone call settles it &mdash; and it settles it the moment you make it, which is "
           "both the appeal and the trap."),
  "updated": UPD,
- "published": "2026-09-11",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
  "body": f"""
   <div class="tags">
     <span class="tag amber">Locked by one choice</span>
@@ -307,7 +290,6 @@ PAGES = [
           "was going well. It is not a separate route to anything &mdash; it is the losing half of the same gamble "
           "that produces the <a href=\"/endings/true-ending/\">True Ending</a>."),
  "updated": UPD,
- "published": "2026-09-11",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
  "body": f"""
   <div class="tags">
     <span class="tag red">Worst outcome</span>
@@ -415,7 +397,6 @@ PAGES = [
           "alike in practice: one you will get by accident, one is a few shots, one cannot be shot at all, and "
           "one is a race against a music box."),
  "updated": UPD,
- "published": "2026-09-11",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
  "body": f"""
   <div class="tags">
     <span class="tag">4 of 10 achievements</span>
@@ -533,7 +514,6 @@ PAGES = [
           "half a minute, and owning every melee weapon when it starts. The first is near-universal, the other "
           "two are where the completion curve falls off a cliff."),
  "updated": UPD,
- "published": "2026-09-11",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
  "body": f"""
   <div class="tags">
     <span class="tag">3 of 10 achievements</span>

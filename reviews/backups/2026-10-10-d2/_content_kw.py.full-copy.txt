@@ -14,7 +14,7 @@ PAGES = [
 # + when will it be released 490 + launch date + release delayed 460@14  → 全表性价比最高的一块
 {
  "path": "release-date", "active": "/guides/",
- "updated": "Last updated 2026-10-10 &middot; platform, Game Pass, price, language, crossplay, patch list, patience and Q4 2026 update statements re-checked 10 October 2026 against the official Steam announcements and store data &middot; Xbox store details are as read on 12 August 2026 and were not re-checked &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) &middot; latest patch: 1 September 2026",
+ "updated": "Last updated 2026-10-10 &middot; crossplay, patch list, patience and Q4 2026 update statements re-checked 10 October 2026 against the official Steam announcements and store page &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) &middot; latest patch: 1 September 2026",
  "published": "2026-08-05",
  "title": "Shift At Midnight Release Date — Out Now (22 July 2026)",
  "og_short": "Shift At Midnight Release Date",
@@ -25,18 +25,19 @@ PAGES = [
  "body": """
   <div class="term tip">
     <div class="term-h">The short answer</div>
-    <p><strong>Released:</strong> 22 July 2026. The developer&rsquo;s launch post says it is &ldquo;OUT NOW on Steam, Xbox &amp; Game Pass&rdquo;. <strong>Price:</strong> $9.99 USD on Steam (10 October 2026). It is available right now; there is nothing left to wait for.</p>
+    <p><strong>Released:</strong> 22 July 2026, on Steam, Xbox Series X|S and the Microsoft Store &mdash; day one on Xbox Game Pass. <strong>Price:</strong> $9.99 USD. It is available right now; there is nothing left to wait for.</p>
   </div>
 
   <table class="facts">
     <tr><th>Release date</th><td>22 July 2026</td></tr>
     <tr><th>Original date</th><td>28 May 2026 &mdash; delayed</td></tr>
-    <tr><th>Platforms</th><td>Steam (Windows), Xbox and Xbox PC Game Pass, as named by the developer (10 July 2026)</td></tr>
-    <tr><th>Xbox Game Pass</th><td>Day one, per the developer (&ldquo;Steam, Xbox &amp; Game Pass&rdquo;, 22 July 2026); PC Game Pass is named explicitly on 10 July 2026</td></tr>
-    <tr><th>Price</th><td>$9.99 USD on Steam, no discount on 10 October 2026 (a launch discount was announced on 8 June 2026; no official post gives its end date)</td></tr>
+    <tr><th>Platforms</th><td>Steam (Windows), Xbox Series X|S, Microsoft Store</td></tr>
+    <tr><th>Xbox Game Pass</th><td>Day one &mdash; console and PC</td></tr>
+    <tr><th>Price</th><td>$9.99 USD (10% launch discount, ended 29 July 2026)</td></tr>
     <tr><th>Developer</th><td>Bun Muen (solo)</td></tr>
     <tr><th>Publisher</th><td>Kwalee</td></tr>
-    <tr><th>Steam languages</th><td>English, French, German, Spanish (Spain), Japanese, Russian, Simplified Chinese, Traditional Chinese, Portuguese (Brazil) &mdash; nine, each marked as having full audio support in Steam&rsquo;s store data (10 October 2026)</td></tr>
+    <tr><th>Engine</th><td>Unity</td></tr>
+    <tr><th>Steam languages</th><td>English, French, German, Spanish (Spain), Japanese, Russian, Simplified Chinese, Traditional Chinese, Portuguese (Brazil) &mdash; nine, interface and subtitles</td></tr>
     <tr><th>Content notes</th><td>Steam lists &ldquo;plenty of gore and blood&rdquo;</td></tr>
     <tr><th>Achievements</th><td>10, three of them hidden &mdash; <a href="/achievements/">full list with unlock rates</a></td></tr>
     <tr><th>Endless Mode</th><td>BETA playable since launch &mdash; the Steam store page lists a free, major Endless Mode update planned for Q4 2026</td></tr>
@@ -50,7 +51,7 @@ PAGES = [
 
   <h2>Was the delay a bad sign?</h2>
 
-  <p>Not obviously. This is a solo developer's commercial release published by Kwalee, launching simultaneously on Steam, Xbox and Game Pass. The developer&rsquo;s own posts named Steam, Xbox and Xbox PC Game Pass for launch day. Our reading, not an official statement: slipping twice to get that right is a reasonable outcome rather than a red flag.</p>
+  <p>Not obviously. This is a solo developer's commercial release published by Kwalee, launching simultaneously on Steam, Xbox Series X|S and Game Pass. Day-one Game Pass placement involves certification on Microsoft's side, and Xbox Play Anywhere adds another layer. Hitting three storefronts at once with one developer is a genuine scheduling problem, and slipping twice to get it right is a reasonable outcome rather than a red flag.</p>
 
   <p>The launch build shipped with ten achievements, a full Story Mode, three-player online co-op and a playable Endless Mode beta, and the Steam store page says &ldquo;A free, major ENDLESS MODE update is planned for Q4 2026&rdquo; (read 10 October 2026). That is a complete release, not a rushed one.</p>
 
@@ -69,7 +70,7 @@ PAGES = [
     <li><strong>29 July &mdash; new content.</strong> A second purchasable firearm, a new <strong>Rake</strong> enemy that appears in endless and post-story modes only, and one balance line: &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo;. That line does not mention Story Mode, and the 1 September patch reversed it for Endless Mode: &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;.</li>
     <li><strong>20 August &mdash; 15 new customers.</strong> Added to Story Mode and Endless Mode, along with individual volume sliders for each player and cloud saves for Steam.</li>
     <li><strong>1 September &mdash; 30 new customers.</strong> Also the Chainsaw as a purchasable melee weapon and security cameras in Endless Mode. This is the newest patch as of 10 October 2026.</li>
-    <li><strong>Price.</strong> $9.99 on Steam with no active discount on 10 October 2026. A launch discount was announced on 8 June 2026; no official announcement gives its end date.</li>
+    <li><strong>The 10% launch discount ended on 29 July.</strong> The price is back to $9.99 with no active discount as of 5 August 2026.</li>
   </ul>
 
   <p>No patch has been announced since 1 September 2026 (official Steam announcement feed, checked 10 October 2026). Full notes with sources are on the <a href="/updates/">patch notes page</a>.</p>
@@ -77,9 +78,9 @@ PAGES = [
   <h2>Where to get it</h2>
 
   <ul>
-    <li><strong>Xbox PC Game Pass</strong> &mdash; announced for launch on 10 July 2026 and confirmed in the 22 July 2026 launch post (&ldquo;Steam, Xbox &amp; Game Pass&rdquo;). Current catalogue status was not re-checked on 10 October 2026.</li>
-    <li><strong>Microsoft Store</strong> &mdash; the Xbox listing read on 12 August 2026 showed $9.99 and an Xbox Play Anywhere label; we did not re-check it on 10 October 2026, and no official Steam announcement mentions a Microsoft Store edition.</li>
-    <li><strong>Steam</strong> &mdash; $9.99, with Steam Achievements, Steam Cloud and Family Sharing (Steam store data, 10 October 2026).</li>
+    <li><strong>Xbox Game Pass</strong> &mdash; included at no extra cost, console and PC. If you subscribe, this is the answer.</li>
+    <li><strong>Microsoft Store</strong> &mdash; $9.99, and it is an Xbox Play Anywhere title, so one purchase covers Xbox and Windows.</li>
+    <li><strong>Steam</strong> &mdash; $9.99, with Steam Achievements and Family Sharing.</li>
   </ul>
 
   <div class="term warn">
@@ -419,18 +420,16 @@ PAGES = [
 # theclick.gg 都已建页,本站此前完全空白
 {
  "path": "system-requirements", "active": "/guides/",
- "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
- "updated": "Steam data re-read 10 October 2026 (store data and Valve&rsquo;s compatibility report) &middot; Xbox rows last read 12 August 2026, not re-checked &middot; latest patch: 1 September 2026",
  "title": "Shift At Midnight System Requirements — PC, Steam Deck &amp; Xbox",
  "og_short": "System Requirements",
  "desc": "Shift At Midnight needs a GTX 1050 Ti, an i5-10400F and 8 GB of RAM at minimum, with a 3 GB install. Full Steam specs, the Steam Deck rating and what the Xbox listing adds.",
  "trail": [(None, "System requirements")],
  "h1": "Shift At Midnight system requirements",
- "lede": "<strong>Minimum is a GTX 1050 Ti, an Intel Core i5-10400F and 8 GB of RAM, and the install is 3 GB.</strong> Both tiers below are copied field for field from the Steam store listing, alongside what the Xbox listing showed on 12 August 2026 and what Valve&rsquo;s Steam Deck compatibility report returns.",
+ "lede": "<strong>Minimum is a GTX 1050 Ti, an Intel Core i5-10400F and 8 GB of RAM, and the install is 3 GB.</strong> Both tiers below are copied field for field from the Steam store listing, alongside what the Xbox listing adds and where the Steam Deck rating actually comes from.",
  "body": """
   <div class="term tip">
     <div class="term-h">The short answer</div>
-    <p>This is a small game and the requirements say so. <strong>Minimum: Windows 10/11 64-bit, an i5-10400F, 8 GB RAM, a GTX 1050 Ti, DirectX 11 and 3 GB of free space.</strong> A broadband connection is listed on both tiers, because the co-op is online only. The Steam figures on this page were re-read from Steam&rsquo;s store data on <strong>10 October 2026</strong> and match the 12 August 2026 reading. The Xbox rows are from the Xbox listing as read on 12 August 2026 and were not re-checked.</p>
+    <p>This is a small game and the requirements say so. <strong>Minimum: Windows 10/11 64-bit, an i5-10400F, 8 GB RAM, a GTX 1050 Ti, DirectX 11 and 3 GB of free space.</strong> A broadband connection is listed on both tiers, because the co-op is online only. Every figure on this page was read from the official store listings on <strong>12 August 2026</strong>.</p>
   </div>
 
   <h2>Minimum specification, as Steam lists it</h2>
@@ -457,7 +456,7 @@ PAGES = [
     <tr><th>Storage</th><td>3 GB available space</td></tr>
   </table>
 
-  <p class="src">Source: the <a href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Steam store listing</a>; Steam store data read 10 October 2026 (unchanged from 12 August 2026). Both tiers list the same 3 GB install size.</p>
+  <p class="src">Source: the <a href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Steam store listing</a>, read 12 August 2026. Both tiers list the same 3 GB install size.</p>
 
   <h2>The processor row that looks like a mistake</h2>
 
@@ -465,18 +464,18 @@ PAGES = [
 
   <p>The usable reading is that a tenth-generation i5 clears both tiers, and the real distance between minimum and recommended sits elsewhere: the graphics card, the RAM, and DirectX 11 against 12.</p>
 
-  <h2>Steam Deck: what Valve&rsquo;s compatibility report returns</h2>
+  <h2>Steam Deck: rated Playable, and by whom</h2>
 
-  <p>Valve&rsquo;s compatibility report for the game, read on 10 October 2026, returns <strong>category 2</strong> for Steam Deck, SteamOS and Steam Machine alike. Its test list for Steam Deck includes &ldquo;Default controller config not fully functional&rdquo;, &ldquo;Controller glyphs do not match the device&rdquo; and &ldquo;Text input does not automatically invoke the keyboard&rdquo;. We print the number as returned and do not attach a badge name to it. The full test-by-test table is on <a href="/platforms/">platforms</a>.</p>
+  <p>SteamDB records Shift At Midnight as <strong>Playable</strong> on Steam Deck, in both its app info panel and its main app page, with Valve&rsquo;s standard wording for that tier: &ldquo;Some functionality is not accessible when using the default controller configuration, requiring use of the touchscreen or virtual keyboard, or a community configuration.&rdquo;</p>
 
   <div class="term warn">
-    <div class="term-h">What we could not read</div>
-    <p>ProtonDB, the other place people check, needs JavaScript to render its reports and we could not read it; it was not re-checked on 10 October 2026.</p>
+    <div class="term-h">Single source &mdash; not independently verified</div>
+    <p>Both places that rating appears are SteamDB. When we read the Steam store page itself on 12 August 2026 we <strong>did not see a Deck compatibility panel at all</strong> &mdash; that may be a limitation of how we fetched the page, or the rating may simply not be shown there. If you are buying specifically to play on a Deck, <strong>look for the badge on the store page yourself first</strong>. ProtonDB, the other place people check, needs JavaScript to render its reports and we could not read it.</p>
   </div>
 
-  <p>Valve&rsquo;s report lists a controller-configuration warning for this game; read the full list above before buying for a Deck. There is also an open Steam discussion thread titled &ldquo;Steam deck - i press play and nothing happens&rdquo;. We have no verified fix for that &mdash; what we can and cannot say about it is on <a href="/troubleshooting/">troubleshooting</a>.</p>
+  <p>Playable is not Verified, and the gap matters for this game in particular: it is built around comparing documents at a terminal, which is exactly the kind of interaction Valve&rsquo;s Playable wording warns may need the touchscreen or a community layout. There is also an open Steam discussion thread titled &ldquo;Steam deck - i press play and nothing happens&rdquo;. We have no verified fix for that &mdash; what we can and cannot say about it is on <a href="/troubleshooting/">troubleshooting</a>.</p>
 
-  <h2>What the Xbox listing showed on 12 August 2026 (not re-checked on 10 October 2026)</h2>
+  <h2>What the Xbox listing promises that the Steam one does not</h2>
 
   <table class="facts">
     <tr><th>Price</th><td>$9.99 &mdash; included with PC Game Pass and Xbox Game Pass Ultimate</td></tr>
@@ -488,24 +487,24 @@ PAGES = [
     <tr><th>Streaming</th><td>Cloud playable, with Game Pass Ultimate</td></tr>
   </table>
 
-  <p>Two of those rows change the answer to &ldquo;can I run it&rdquo;. <strong>Cloud playable</strong> means a Game Pass Ultimate subscriber can start it on hardware that meets none of the specs above, because the game is not running on their machine. The Steam version has listed <strong>Steam Cloud</strong> since the 20 August 2026 patch (&ldquo;Added cloud saves for Steam&rdquo;) &mdash; see the next section.</p>
+  <p>Two of those rows change the answer to &ldquo;can I run it&rdquo;. <strong>Cloud playable</strong> means a Game Pass Ultimate subscriber can start it on hardware that meets none of the specs above, because the game is not running on their machine. <strong>Xbox cloud saves</strong> is a capability the Steam version does not list at all &mdash; see the next section.</p>
 
-  <p>One row is worth flagging rather than smoothing over: the Xbox listing recorded online co-op as <strong>2&ndash;3 players</strong> when we read it on 12 August 2026, while the 23 July 2026 patch made the lobby cap selectable up to six on Steam. We have found no official statement about whether that six-player option exists on Xbox, so we are not going to assume it does. See <a href="/multiplayer/">multiplayer</a> for what the developer actually said about lobby size.</p>
+  <p>One row is worth flagging rather than smoothing over: the Xbox listing still records online co-op as <strong>2&ndash;3 players</strong>, while the 23 July 2026 patch made the lobby cap selectable up to six on Steam. We have found no official statement about whether that six-player option exists on Xbox, so we are not going to assume it does. See <a href="/multiplayer/">multiplayer</a> for what the developer actually said about lobby size.</p>
 
-  <h2>Saves: Steam Cloud is listed</h2>
+  <h2>Saves: Steam does not list Steam Cloud</h2>
 
-  <p>Steam&rsquo;s store data lists ten categories on 10 October 2026: Single-player, Multi-player, Co-op, Online Co-op, Steam Achievements, Adjustable Text Size, Custom Volume Controls, Stereo Sound, Steam Cloud and Family Sharing. <strong>Steam Cloud was added with the 20 August 2026 patch.</strong> It was not on the list when we read it on 12 August 2026.</p>
+  <p>The Steam feature list for this game reads: Single-player, Multi-player, Co-op, Online Co-op, Steam Achievements, Adjustable Text Size, Custom Volume Controls, Stereo Sound, Family Sharing. <strong>Steam Cloud is not on it.</strong> We checked the store page a second time specifically for that entry and it is absent, while the Xbox listing does carry Xbox cloud saves.</p>
 
-  <p>Steam saves can use Steam Cloud since 20 August 2026; we have not verified how it behaves. We are not going to tell you which folder to back up, because we could not verify a save path &mdash; that is in the last section, with the reason.</p>
+  <p>The practical consequence for Steam players: treat your progress as living on one machine. We are not going to tell you which folder to back up, because we could not verify a save path &mdash; that is in the last section, with the reason.</p>
 
   <h2>Controller, accessibility and two different age ratings</h2>
 
   <ul>
-    <li><strong>Controller:</strong> Steam&rsquo;s store data for the game (10 October 2026) lists no controller-support category and the separate controller support field is absent. We have found no official note on which inputs are or are not mapped.</li>
+    <li><strong>Controller:</strong> SteamDB&rsquo;s app info panel records <em>Gamepad supported</em>. That is a listing flag rather than a statement about how well the game plays on a pad, and we have found no official note on which inputs are or are not mapped.</li>
     <li><strong>Accessibility:</strong> Steam records <em>Adjustable Text Size</em> and <em>Custom Volume Controls</em> as features, and lists audio as <em>Stereo Sound</em>. There is no surround or spatial-audio flag on the listing, which is worth knowing in a game where sound direction is a survival tool &mdash; see <a href="/guide/survival/">survival</a>.</li>
     <li><strong>Languages:</strong> nine on Steam, listed in full on <a href="/release-date/">release date</a>.</li>
     <li><strong>Family Sharing:</strong> listed as supported on Steam.</li>
-    <li><strong>Age rating:</strong> the two storefronts present this very differently. Steam&rsquo;s listing carries a required age of 0; its content descriptor note reads &ldquo;Plenty of gore and blood present.&rdquo; (read 10 October 2026). The Xbox store listed it as <strong>MATURE 17+</strong> for Violence, Blood and Gore, and Language when read on 12 August 2026 (not re-checked). Same game, two labels that look nothing alike.</li>
+    <li><strong>Age rating:</strong> the two storefronts present this very differently. Steam&rsquo;s listing carries a required age of 0 with content descriptors for <em>Violence</em> and <em>Gore/Blood</em>; the Xbox store lists it as <strong>MATURE 17+</strong> for Violence, Blood and Gore, and Language. Same game, two labels that look nothing alike.</li>
   </ul>
 
   <h2>What this page cannot tell you, and why</h2>
@@ -516,14 +515,14 @@ PAGES = [
     <li><strong>Frame rates on specific hardware.</strong> No benchmark we could check has been published. A spec sheet is not a benchmark and we are not going to convert one into the other.</li>
     <li><strong>Save file locations, config file paths, and the in-game graphics options list.</strong> The usual reference for this is PC Gaming Wiki. Both URL variants we tried returned HTTP 403 on 12 August 2026, so there is nothing here we could verify and nothing to copy.</li>
     <li><strong>Xbox install size.</strong> The Xbox listing did not show one when we read it. The 3 GB above is the Steam number and we are not assuming it transfers.</li>
-    <li><strong>Linux and Proton behaviour.</strong> ProtonDB requires JavaScript to render and we could not read it. Valve&rsquo;s own compatibility report (10 October 2026) is the only compatibility signal we have.</li>
+    <li><strong>Linux and Proton behaviour.</strong> ProtonDB requires JavaScript to render and we could not read it. The SteamDB Deck rating above is the only compatibility signal we have, and it carries the caveat in that section.</li>
   </ul>
 
   <p>If any of those become verifiable, they get added here with a date and a source, the way everything else on this page is.</p>
 
   <div class="grid two">
     <a class="card" href="/troubleshooting/"><b>It installed and will not run</b><span>Lobby errors, crashes, black screens &mdash; and which of them have official fixes.</span></a>
-    <a class="card" href="/platforms/"><b>Platforms &amp; Game Pass</b><span>Where the game exists at all, and what the Xbox listing showed.</span></a>
+    <a class="card" href="/platforms/"><b>Platforms &amp; Game Pass</b><span>Where the game exists at all, and what Play Anywhere covers.</span></a>
   </div>
 """},
 
@@ -624,8 +623,6 @@ PAGES = [
 # lagofast、shiftatmidnightguide.wiki 都靠这组词排名,官方讨论区也高频
 {
  "path": "troubleshooting", "active": "/guides/",
- "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
- "updated": "Last updated 2026-10-10 &middot; the storefront (crossplay) and Steam Deck statements re-checked 10 October 2026 against the developer&rsquo;s 10 July 2026 Steam announcement and Valve&rsquo;s compatibility report &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "title": "Shift At Midnight Not Working — Lobby, Crash &amp; Audio Problems",
  "og_short": "Troubleshooting",
  "desc": "Cannot join a lobby in Shift At Midnight, or hitting crashes, a black screen or no sound? The developer's official steps, what each patch fixed, and which problems have no verified fix.",
@@ -635,7 +632,7 @@ PAGES = [
  "body": """
   <div class="term tip">
     <div class="term-h">Read this first</div>
-    <p>Almost every report falls into one of three shapes: a <strong>lobby you cannot create or join</strong>, a <strong>party split across two storefronts</strong>, or a <strong>party split across two Steam branches</strong>. The first has official steps, the second has no official fix, and the third is a two-minute check. Everything further down is honest about being unresolved.</p>
+    <p>Almost every report falls into one of three shapes: a <strong>lobby you cannot create or join</strong>, a <strong>party split across two storefronts</strong>, or a <strong>party split across two Steam branches</strong>. The first has official steps, the second cannot be fixed at all, and the third is a two-minute check. Everything further down is honest about being unresolved.</p>
   </div>
 
   <h2>Cannot create or join a lobby</h2>
@@ -662,7 +659,7 @@ PAGES = [
   <p>This is the most common &ldquo;the multiplayer is broken&rdquo; report, and most of the time nothing is broken. Work down this list in order:</p>
 
   <ul>
-    <li><strong>Are you on the same storefront?</strong> Per the developer (10 July 2026), Steam players will only play with other Steam players, and Xbox and PC Game Pass players will have crossplay. No official post describes a setting that changes it &mdash; see <a href="/crossplay/">crossplay</a>, or run your group through the <a href="/tools/#crossplay-checker">crossplay checker</a>.</li>
+    <li><strong>Are you on the same storefront?</strong> Steam players connect only to Steam players. Xbox console and PC Game Pass players share one pool through Play Anywhere. A Steam player and a Game Pass player <strong>cannot</strong> play together and no setting changes that &mdash; see <a href="/crossplay/">crossplay</a>, or run your group through the <a href="/tools/#crossplay-checker">crossplay checker</a>.</li>
     <li><strong>Are you on the same branch?</strong> See the section above. Mismatched Steam branches produce exactly this symptom.</li>
     <li><strong>Are you on the same build?</strong> If one of you still sees a patience meter on customers, or cannot set a lobby above three, that install has not updated. <a href="/updates/">Patch notes</a> lists the tells.</li>
     <li><strong>Is lobby size the problem?</strong> The cap has been selectable up to six since 23 July 2026, but the developer has been explicit that the game is designed around three. See <a href="/multiplayer/">multiplayer</a>.</li>
@@ -694,7 +691,7 @@ PAGES = [
 
   <h2>Steam Deck: pressing Play does nothing</h2>
 
-  <p>There is a Steam discussion thread titled &ldquo;Steam deck - i press play and nothing happens&rdquo;. We have no verified fix and no official comment on it. What we can give you is the context: Valve&rsquo;s compatibility report returns category 2 for Steam Deck (read 10 October 2026); the detail is on <a href="/system-requirements/">system requirements</a>.</p>
+  <p>There is a Steam discussion thread titled &ldquo;Steam deck - i press play and nothing happens&rdquo;. We have no verified fix and no official comment on it. What we can give you is the context: the only Deck compatibility rating we could find is SteamDB&rsquo;s <strong>Playable</strong>, it comes from a single source, and the Steam store page itself did not show a compatibility panel when we read it on 12 August 2026. The detail, and why that matters before you buy, is on <a href="/system-requirements/">system requirements</a>.</p>
 
   <h2>Things that look like bugs and are not</h2>
 
@@ -903,11 +900,11 @@ PAGES = [
  "path": "privacy", "active": "",
  "title": "Privacy Policy — Shift At Midnight Wiki",
  "og_short": "Privacy Policy",
- "desc": "Plain-language privacy policy for Shift At Midnight Wiki: what data is collected, how advertising and analytics cookies are used, how to opt out, and who to contact.",
+ "desc": "Plain-language privacy policy for Shift At Midnight Wiki: what data is collected, how Google AdSense advertising cookies are used, how to opt out, and who to contact.",
  "trail": [(None, "Privacy Policy")],
  "h1": "Privacy policy",
- "lede": "This page explains, in plain language, what data is collected when you visit shiftatmidnightwiki.site, which third-party services we use for analytics and advertising, what your choices are, and how to contact us.",
- "updated": "Effective 28 July 2026 &middot; advertising and cookie sections updated 10 October 2026 &middot; Site operator contact: zsn2740784715@gmail.com",
+ "lede": "This page explains, in plain language, what data is collected when you visit shiftatmidnightwiki.site, which third-party services we use for analytics and advertising &mdash; Google AdSense included &mdash; what your choices are, and how to contact us.",
+ "updated": "Effective 28 July 2026 &middot; Site operator contact: zsn2740784715@gmail.com",
  "body": """
   <h2>1. Who we are</h2>
   <p>shiftatmidnightwiki.site ("this site", "we") is an independent, fan-operated guide website about the video game Shift At Midnight. It is curated by an independent games-content creator &mdash; see <a href="/about/">About</a>. We do not require accounts, do not offer purchases, and do not knowingly collect personal information beyond what is described below.</p>
@@ -922,18 +919,19 @@ PAGES = [
   <h2>3. Analytics</h2>
   <p>This site uses <strong>Google Analytics</strong> and <strong>Microsoft Clarity</strong> to understand which guides help players, in aggregate. These services set cookies or use similar technologies and record page URL, referring site, approximate region, device type and browser. We use it to decide what to write next &mdash; not to build a profile of you, and not to identify you personally. You can opt out of Google Analytics entirely with the <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener" target="_blank">Google Analytics opt-out browser add-on</a>.</p>
 
-  <h2>4. Advertising</h2>
-  <p>Advertising on this site is served by one third-party network, <strong>Adsterra</strong>, which serves the banner near the foot of each guide page. This site does not currently load Google AdSense. Adsterra and its demand partners may set cookies or use similar identifiers to select, deliver and measure ads. Adsterra&rsquo;s handling of that data is covered by <a href="https://adsterra.com/privacy-policy/" rel="nofollow noopener" target="_blank">its own privacy policy</a>. Ad slots may sit empty while ad fill is pending; everything below applies from the moment an ad is served. If we add any further advertising network, it will be named here before it goes live.</p>
+  <h2>4. Advertising &mdash; Google AdSense</h2>
+  <p>Advertising on this site is served by two third-party networks. <strong>Google AdSense</strong> (Google is a third-party vendor) and <strong>Adsterra</strong>, which serves the display banner near the foot of each guide page. Both they and their demand partners may set cookies or use similar identifiers to select, deliver and measure ads. Adsterra&rsquo;s handling of that data is covered by <a href="https://adsterra.com/privacy-policy/" rel="nofollow noopener" target="_blank">its own privacy policy</a>. Ad slots may sit empty while approval or ad fill is pending; everything below applies from the moment an ad is served. If we add any further advertising network, it will be named here before it goes live.</p>
   <ul>
-    <li><strong>Adsterra and its demand partners may use advertising cookies or device identifiers</strong> to serve and measure ads. What they collect is described in Adsterra&rsquo;s privacy policy, linked above.</li>
-    <li><strong>What Google does with analytics data</strong> it collects when you use this site (section 3) is set out in <a href="https://policies.google.com/technologies/partner-sites" rel="noopener" target="_blank">How Google uses information from sites or apps that use our services</a>.</li>
-    <li><strong>Third-party advertising vendors may set their own cookies or device identifiers.</strong> Many of them can be opted out of in one place at <a href="https://www.aboutads.info/choices" rel="noopener" target="_blank">aboutads.info/choices</a>.</li>
+    <li><strong>Google and its partners use advertising cookies.</strong> They are used to serve and measure ads based on your prior visits to this site and to other sites on the internet. Where personalised advertising requires your consent, these cookies are used for personalisation only after you have given that consent.</li>
+    <li><strong>You can switch personalised advertising off</strong> in <a href="https://adssettings.google.com" rel="noopener" target="_blank">Google Ads Settings</a>. That stops the personalisation, not the ads.</li>
+    <li><strong>What Google does with the data</strong> it collects when you use this site is set out in <a href="https://policies.google.com/technologies/partner-sites" rel="noopener" target="_blank">How Google uses information from sites or apps that use our services</a>.</li>
+    <li><strong>Third-party advertising vendors other than Google may also serve ads here</strong> and set their own cookies or device identifiers. Many of them can be opted out of in one place at <a href="https://www.aboutads.info/choices" rel="noopener" target="_blank">aboutads.info/choices</a>.</li>
   </ul>
-  <p>What those vendors collect is governed by <strong>their own privacy policies</strong>, not by this one. If we ever add an advertising network besides Adsterra, it will be named on this page before it starts serving.</p>
+  <p>What those vendors collect is governed by <strong>their own privacy policies</strong>, not by this one. If we ever add an advertising network besides AdSense, it will be named on this page before it starts serving.</p>
   <p>Advertising never affects what we write, which pages we build, or what verdict we reach. Nothing on this site is gated behind allowing ads.</p>
 
   <h2>5. Cookies</h2>
-  <p>We set no cookies of our own &mdash; there is no login, no saved preference and no first-party tracker. Every cookie you receive on this site is set by the third parties described in sections 3 and 4, which in practice means the analytics cookies from Google Analytics and Microsoft Clarity plus any advertising cookie set by Adsterra or its partners. You can block or delete them in your browser at any time; no content here is withheld if you do.</p>
+  <p>We set no cookies of our own &mdash; there is no login, no saved preference and no first-party tracker. Every cookie you receive on this site is set by the third parties described in sections 3 and 4, which in practice means the <strong>Google advertising cookies</strong> covered above plus any analytics cookie. You can block or delete them in your browser at any time; no content here is withheld if you do.</p>
 
   <h2>6. External links</h2>
   <p>We link to Steam, the Microsoft Store and other sites. Once you follow a link you are on that site and subject to its privacy policy. We do not control what those sites collect.</p>
@@ -960,7 +958,7 @@ PAGES = [
  "og_short": "Disclaimer",
  "desc": "shiftatmidnightwiki.site is an unofficial fan wiki. Trademark ownership, accuracy limits, advertising, and what we do not claim to know.",
  "trail": [(None, "Disclaimer")],
- "updated": "Last reviewed 11 September 2026 &middot; advertising network statement corrected 10 October 2026",
+ "updated": "Last reviewed 11 September 2026",
  "h1": "Disclaimer",
  "lede": "What this site is, what it is not, and where its limits sit &mdash; stated once, plainly.",
  "body": """
@@ -979,7 +977,7 @@ PAGES = [
 
   <h2>No affiliate relationships</h2>
   <p>We have <strong>no affiliate or referral relationships with anyone</strong>, and nothing on this site earns a commission. The links we publish to Steam, the Microsoft Store and the developer&rsquo;s own site are plain links; if you buy the game through one, we receive nothing. We also do not accept payment for coverage, scores or placement.</p>
-  <p>The site is funded by third-party display advertising, served by Adsterra. That network chooses the creatives without our involvement, no advertiser sees a page before it is published, and ad revenue buys exactly zero influence over what any page says. Cookie details are in the <a href="/privacy/">privacy policy</a>. If that ever changes &mdash; an affiliate link, a sponsored page &mdash; this paragraph changes first.</p>
+  <p>The site is funded by third-party display advertising &mdash; Google AdSense and Adsterra. Those networks choose the creatives without our involvement, no advertiser sees a page before it is published, and ad revenue buys exactly zero influence over what any page says. Cookie details are in the <a href="/privacy/">privacy policy</a>. If that ever changes &mdash; an affiliate link, a sponsored page &mdash; this paragraph changes first.</p>
 
   <h2>Not advice, not support</h2>
   <p>Pricing and platform availability describe the storefront listing as of the date shown next to them; check the live store before you buy. We cannot provide technical support, refunds, account recovery or keys for the game &mdash; those go to your storefront or to the publisher, as set out on the <a href="/contact/">contact page</a>.</p>
