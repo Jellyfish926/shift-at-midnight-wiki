@@ -506,7 +506,7 @@ PAGES = [
   <h2>Last Performance &mdash; a clock, not a fight</h2>
 
   <p>The <a href="/monsters/marionette/">Marionette</a> arrives from <strong>Shift 9</strong> onward, flagged in advance
-    by an N.E.T. email in Story Mode (the 1 September 2026 patch note says &ldquo;Disabled emails in ENDLESS MODE&rdquo;), and announced live by a music box starting somewhere in the store. The counter-play is to reach
+    by an N.E.T. email according to this wiki&rsquo;s own Marionette guide (last verified 5 August 2026; no official announcement confirms it, the 1 September 2026 announcement says &ldquo;Disabled emails in ENDLESS MODE&rdquo;, and what emails do in other modes is not confirmed), and announced live by a music box starting somewhere in the store. The counter-play is to reach
     the box and hold <strong>E</strong> to rewind it before the melody finishes three times &mdash; which prevents the
     Marionette from arriving at all.</p>
 
@@ -529,7 +529,7 @@ PAGES = [
     <li><strong>First Blood</strong> will happen on its own. Do not spend a run on it.</li>
     <li><strong>Silenced</strong> next, since dolls turn up inside ordinary Hunts and the kill is cheap.</li>
     <li><strong>Freed</strong> once you are laying traps before you need them rather than during a chase.</li>
-    <li><strong>Last Performance</strong> last, on a Story Mode night from Shift 9 onward, where the email gave you warning and you went
+    <li><strong>Last Performance</strong> last, on a Shift 9 or later night where you had warning and you went
       in stocked.</li>
   </ol>
   <p>Every one of these is tickable in the <a href="/tools/completion-tracker/">completion tracker</a>, alongside the

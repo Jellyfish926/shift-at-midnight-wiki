@@ -29,7 +29,7 @@ PAGES = [
 
   <table class="facts">
     <tr><th>First appears</th><td>Shift 9 onwards, Story Mode</td></tr>
-    <tr><th>Advance warning</th><td>Story Mode: an N.E.T. email flags it before the shift. The 1 September 2026 patch note says &ldquo;Disabled emails in ENDLESS MODE&rdquo;</td></tr>
+    <tr><th>Advance warning</th><td>An N.E.T. email before the shift, as recorded by this wiki&rsquo;s own guide (last verified 5 August 2026); no official announcement confirms it. The 1 September 2026 announcement says &ldquo;Disabled emails in ENDLESS MODE&rdquo;; what emails do in other modes is not confirmed</td></tr>
     <tr><th>Live warning</th><td>A music box starts playing somewhere in the store</td></tr>
     <tr><th>Counterplay</th><td>Reach the box and hold <strong>E</strong> to rewind it before the melody finishes three times</td></tr>
     <tr><th>Can it be killed?</th><td>Yes &mdash; tougher than a standard entity, and its health was reduced on 23 July 2026</td></tr>
@@ -42,7 +42,7 @@ PAGES = [
 
   <h2>How to tell it is coming</h2>
 
-  <p><strong>The long warning is an N.E.T. email.</strong> From Shift 9 the terminal flags the Marionette before the night starts, so you are never ambushed on a first appearance. Treat that email as your cue to buy ammunition and to walk the store once so you know where your traps already are. The 1 September 2026 patch note says &ldquo;Disabled emails in ENDLESS MODE&rdquo;, so that warning does not apply there.</p>
+  <p><strong>The long warning is an N.E.T. email.</strong> From Shift 9 the terminal flags the Marionette before the night starts, so you are never ambushed on a first appearance. Treat that email as your cue to buy ammunition and to walk the store once so you know where your traps already are. That email warning is this wiki&rsquo;s own record (last verified 5 August 2026) and no official announcement confirms it. The 1 September 2026 announcement says &ldquo;Disabled emails in ENDLESS MODE&rdquo;; what emails do in other modes is not confirmed by any official statement.</p>
 
   <p><strong>The short warning is the music box itself.</strong> Somewhere in the building a wind-up box audibly starts playing, and that sound is the encounter beginning. The <a href="https://steamdb.info/patchnotes/24354120/" target="_blank" rel="noopener">23 July 2026 patch</a> increased the box&rsquo;s volume, so it is far easier to place by ear than it was at launch. Any launch-day guide calling the box hard to hear is out of date.</p>
 
@@ -87,7 +87,7 @@ PAGES = [
 
   <p><em>Last Performance</em> &mdash; Kill a Marionette &mdash; sits at <strong>[[ACH:Last Performance]]%</strong>. Put that next to the other two straightforward monster kills: <em>Silenced</em> (Shrieking Doll) at <strong>[[ACH:Silenced]]%</strong> and <em>Freed</em> (Demented) at <strong>[[ACH:Freed]]%</strong>.</p>
 
-  <p>The gap is not about how often it appears &mdash; in Story Mode it announces itself by email and by sound (the 1 September 2026 patch note says &ldquo;Disabled emails in ENDLESS MODE&rdquo;). Two things separate it. The correct defensive play, rewinding the box, is also the play that denies you the kill, so cautious players never earn it. And it starts at Shift 9 of 13, so reaching it means getting most of the way through Story Mode, while the <a href="/achievements/">achievement curve</a> shows a heavy drop-off well before that. That second reading is ours, drawn from the published rates rather than any developer statement.</p>
+  <p>The gap is not about how often it appears &mdash; this wiki&rsquo;s own guide (last verified 5 August 2026) recorded that it announces itself by email and by sound. No official announcement confirms the email; the 1 September 2026 announcement says &ldquo;Disabled emails in ENDLESS MODE&rdquo;, and what emails do in other modes is not confirmed. Two things separate it. The correct defensive play, rewinding the box, is also the play that denies you the kill, so cautious players never earn it. And it starts at Shift 9 of 13, so reaching it means getting most of the way through Story Mode, while the <a href="/achievements/">achievement curve</a> shows a heavy drop-off well before that. That second reading is ours, drawn from the published rates rather than any developer statement.</p>
 
   <p>If you want the achievement deliberately, let the melody play its three passes on purpose &mdash; on a shift that is otherwise under control, with ammunition already bought, rather than on a night that is already going badly.</p>
 
@@ -257,7 +257,7 @@ PAGES = [
     <li><strong>Treating it as an enemy.</strong> Players who think it will spring out and attack them keep their distance. Distance is exactly wrong &mdash; you need to be standing on it.</li>
     <li><strong>Serving the customer first.</strong> The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo; and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, and no official announcement says whether Story Mode customers still run down a patience timer. The box will not wait either way.</li>
     <li><strong>Searching visually.</strong> The box announces itself with audio and nothing else. Sweeping rooms with your eyes while the melody plays wastes the one signal you have.</li>
-    <li><strong>Assuming it is present every shift.</strong> It is tied to Shift 9 onwards, and in Story Mode the N.E.T. email is the advance warning (the 1 September 2026 patch note says &ldquo;Disabled emails in ENDLESS MODE&rdquo;). Before that point there is nothing to look for.</li>
+    <li><strong>Assuming it is present every shift.</strong> It is tied to Shift 9 onwards. This wiki&rsquo;s own guide (last verified 5 August 2026) recorded an N.E.T. email as the advance warning; no official announcement confirms it. The 1 September 2026 announcement says &ldquo;Disabled emails in ENDLESS MODE&rdquo;, and what emails do in other modes is not confirmed. Before that point there is nothing to look for.</li>
   </ul>
 
   <div class="grid two">
