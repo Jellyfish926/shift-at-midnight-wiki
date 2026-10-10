@@ -186,7 +186,7 @@ GROUPS = [
     ("tells", "The seven categories of tell",
      "Catch a doppelganger by each kind of contradiction. Also not tracked by the game.", TELLS),
     ("named", "Named doppelgangers documented here",
-     "<strong>5 of a reported 47.</strong> DualShockers has documented 47 named doppelgangers; this wiki "
+     "<strong>5 of a reported 47.</strong> DualShockers documented 47 named doppelgangers before the 20 August and 1 September 2026 patches added 15 and 30 customers (the current total is not confirmed); this wiki "
      "names five, so this category is deliberately partial and always will be until we can verify more.",
      NAMED),
 ]
@@ -286,7 +286,7 @@ BODY = """
   <h2>Where this list is knowingly incomplete</h2>
   <p>A tracker that pretends to be exhaustive is worse than one that admits its edges.</p>
   <ul>
-    <li><strong>Named doppelgangers: 5 of a reported 47.</strong> DualShockers documented 47; this wiki names
+    <li><strong>Named doppelgangers: 5 of a reported 47.</strong> DualShockers documented 47 before the 20 August and 1 September 2026 patches added customers, and the current total is not confirmed; this wiki names
       five, because listing all of them in advance replaces the game with a lookup table &mdash; and because we
       have not verified the rest. See <a href="/guide/doppelgangers/">the identification guide</a>.</li>
     <li><strong>Weapons: no per-weapon list exists here.</strong> Locked And Loaded asks you to buy every melee
@@ -450,7 +450,7 @@ PAGES = [
  "path": "tools/completion-tracker", "active": "/tools/",
  "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
  "updated": ("Last updated 2026-10-10 &middot; achievement data in this tool is this site&rsquo;s weekly Steam snapshot, captured "
-             + _ACH_CAPTURED + " &middot; rest of the checklist last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)"),
+             + _ACH_CAPTURED + " &middot; the doppelganger count note checked against the official Steam announcements on 10 October 2026 &middot; rest of the checklist last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)"),
  "title": "Shift At Midnight 100% Completion Tracker — 46 Checkboxes, Saved Locally",
  "og_short": "Completion Tracker",
  "desc": ("Tick off every Shift At Midnight achievement, ending, threat and run milestone this wiki has "

@@ -91,42 +91,42 @@ PAGES = [
  "active": "/guides/",
  "title": "Shift At Midnight Languages: All 9 Supported",
  "og_short": "Language support",
- "desc": "Shift At Midnight supports 9 languages on Steam and Xbox. Whether audio is fully localized or interface and subtitles only remains unresolved.",
+ "desc": "Shift At Midnight lists 9 supported languages on Steam, each marked as having full audio support in Steam's store data (read 10 October 2026).",
  "trail": [(None, "Languages")],
  "h1": "Shift At Midnight language support",
- "lede": "Shift At Midnight ships in <strong>9 languages</strong>, confirmed identically on both the Steam store page and the Xbox listing, which both list \"9 supported languages\" independently. Whether that support extends to full voice audio in every language, or is interface-and-subtitles only, is <strong>unconfirmed</strong> &mdash; see below.",
- "updated": "Last updated 2026-10-10 &middot; the crossplay sentence re-checked 10 October 2026 against the developer&rsquo;s 10 July 2026 Steam announcement &middot; rest of the page last verified 10 September 2026 (written against the 29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
+ "lede": "Shift At Midnight lists <strong>9 supported languages</strong> on Steam, and Steam's store data marks all nine as having <strong>full audio support</strong> (read 10 October 2026). The Xbox listing also showed 9 supported languages when this page was written on 10 September 2026; it was not re-checked.",
+ "updated": "Last updated 2026-10-10 &middot; the crossplay sentence, full-audio, UI-fix and patience statements re-checked 10 October 2026 against the official Steam announcements and Steam store data &middot; rest of the page last verified 10 September 2026 (written against the 29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "body": """
   <div class="tags">
     <span class="tag green">9 languages, confirmed on Steam and Xbox</span>
-    <span class="tag amber">Full audio vs. subtitles-only: disputed</span>
+    <span class="tag">Full audio: marked for all nine on Steam</span>
     <span class="tag amber">Mature 17+ rating (Xbox)</span>
   </div>
 
   <h2>The full list</h2>
-  <p>All nine languages below are confirmed as supported. What level of support each one gets &mdash; interface only, interface plus subtitles, or full voice audio &mdash; is the disputed part; see the note beneath the table before assuming every row has audio.</p>
+  <p>All nine languages below are confirmed as supported. Steam's store data marks each of them as having full audio support (read 10 October 2026); it does not break support down further into interface and subtitles.</p>
 
   <table class="facts">
-    <tr><th>English</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
-    <tr><th>French</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
-    <tr><th>German</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
-    <tr><th>Spanish (Spain)</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
-    <tr><th>Japanese</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
-    <tr><th>Russian</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
-    <tr><th>Simplified Chinese</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
-    <tr><th>Traditional Chinese</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
-    <tr><th>Portuguese (Brazil)</th><td>Interface, subtitles &mdash; audio: unconfirmed</td></tr>
+    <tr><th>English</th><td>Listed; marked as having full audio support (Steam store data, 10 October 2026)</td></tr>
+    <tr><th>French</th><td>Listed; marked as having full audio support (Steam store data, 10 October 2026)</td></tr>
+    <tr><th>German</th><td>Listed; marked as having full audio support (Steam store data, 10 October 2026)</td></tr>
+    <tr><th>Spanish (Spain)</th><td>Listed; marked as having full audio support (Steam store data, 10 October 2026)</td></tr>
+    <tr><th>Japanese</th><td>Listed; marked as having full audio support (Steam store data, 10 October 2026)</td></tr>
+    <tr><th>Russian</th><td>Listed; marked as having full audio support (Steam store data, 10 October 2026)</td></tr>
+    <tr><th>Simplified Chinese</th><td>Listed; marked as having full audio support (Steam store data, 10 October 2026)</td></tr>
+    <tr><th>Traditional Chinese</th><td>Listed; marked as having full audio support (Steam store data, 10 October 2026)</td></tr>
+    <tr><th>Portuguese (Brazil)</th><td>Listed; marked as having full audio support (Steam store data, 10 October 2026)</td></tr>
   </table>
 
   <p class="src">Source for the count and rows: the <a href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">official Steam store listing</a>. The count is independently corroborated by the <a href="https://www.xbox.com/en-US/games/store/shift-at-midnight/9n0wdpmxnhwn" target="_blank" rel="noopener">Xbox store listing</a>, which also states "9 Supported languages" without listing them individually on the visible page.</p>
 
   <div class="term warn">
-    <div class="term-h">An unresolved conflict on this wiki</div>
-    <p>This page cannot tell you with confidence whether every language has full voice audio. This wiki's own <a href="/release-date/">release date page</a> lists these same nine languages as &ldquo;interface and subtitles&rdquo; &mdash; no audio claim at all &mdash; while a separate reading of the Steam API used elsewhere on this site suggested full audio for all nine. The two have not been reconciled, and this page is not going to pick one over the other. <strong>Treat any specific claim about voice audio in a given language as unconfirmed</strong> until this is sorted out.</p>
+    <div class="term-h">What the audio marking does and does not say</div>
+    <p>Steam's store data, read on 10 October 2026, marks all nine languages with the footnote &ldquo;languages with full audio support&rdquo;. That is the store listing's own marking; we have not played the game in each language to check it. The 20 August 2026 patch note also says &ldquo;Fixed certain UI and world issues in other languages&rdquo;, without naming languages.</p>
   </div>
 
   <h2>What this means if you're playing in a language other than English</h2>
-  <p>Because the core loop is <a href="/guide/doppelgangers/">reading a customer's ID, cross-checking the N.E.T. database, and judging their behaviour</a>, audio and text localization would matter more here than in a lot of genres if the audio claim holds &mdash; a doppelganger's tell can be something said, not just something shown. Since patience-meter pressure was removed in the <a href="/updates/">29 July 2026 patch</a>, there is less time cost either way regardless of which localization level you actually have.</p>
+  <p>Because the core loop is <a href="/guide/doppelgangers/">reading a customer's ID, cross-checking the N.E.T. database, and judging their behaviour</a>, audio and text localization would matter more here than in a lot of genres if the audio claim holds &mdash; a doppelganger's tell can be something said, not just something shown.</p>
 
   <h2>Content rating, and why it comes up in the same searches</h2>
   <p>The Xbox store listing carries a <strong>Mature 17+</strong> rating with the descriptors "Violence, Blood and Gore" and "Language" &mdash; separate from the language-localization question above, but people frequently search for language support and content rating together when deciding whether a game is appropriate for a household. Steam's own content description is looser but consistent: the developers describe the game as containing "plenty of gore and blood," which lines up with the Xbox descriptor rather than contradicting it.</p>
@@ -151,11 +151,11 @@ PAGES = [
     </details>
     <details>
       <summary>Does it have voice acting in every language, or just subtitles?</summary>
-      <div class="a"><p><strong>Unconfirmed.</strong> Sources checked across this wiki disagree &mdash; one reading of the Steam listing suggests full audio for all nine, another page on this site lists interface and subtitles only. We have not resolved which is correct.</p></div>
+      <div class="a"><p>Steam's store data marks all nine languages as having full audio support (read 10 October 2026). We have not checked it in-game.</p></div>
     </details>
     <details>
       <summary>Is Simplified and Traditional Chinese both supported?</summary>
-      <div class="a"><p>Yes, both are listed separately on the Steam store page, each with interface and subtitle support. See the note above on the unresolved audio question.</p></div>
+      <div class="a"><p>Yes, both are listed separately on the Steam store page, each marked as having full audio support (10 October 2026).</p></div>
     </details>
   </div>
 
@@ -238,7 +238,7 @@ PAGES = [
  "trail": [(None, "Cheats &amp; console commands")],
  "h1": "Shift At Midnight cheats and console commands",
  "lede": "<strong>There are no official console commands or developer cheat menu in Shift At Midnight.</strong> Nothing in the game's Steam feature list, its store page, or its patch notes mentions one. What exists instead is a small ecosystem of third-party trainers that inject values into a running process from outside the game &mdash; a different thing, with different risks, and this page is about telling the two apart.",
- "updated": "Last updated 2026-10-10 &middot; the Steam feature list (Steam Cloud) re-checked 10 October 2026 against Steam store data &middot; rest of the page last verified 10 September 2026 (written against the 29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
+ "updated": "Last updated 2026-10-10 &middot; the Steam feature list (Steam Cloud) re-checked 10 October 2026 against Steam store data and the 20 August 2026 Steam announcement (&ldquo;Added cloud saves for Steam&rdquo;) &middot; rest of the page last verified 10 September 2026 (written against the 29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "body": """
   <div class="tags">
     <span class="tag red">No official commands</span>
@@ -301,13 +301,14 @@ PAGES = [
 },
 {
  "path": "monsters/rake",
+ "published": "2026-09-10",   # 保留改日期行之前的 datePublished(D2b 2026-10-10)
  "title": "Shift At Midnight Rake — The Endless Mode Forest Threat",
  "og_short": "Shift At Midnight Rake Guide",
  "desc": "The Rake is Shift At Midnight's Endless Mode-only monster — fast, red-glowing, and after your customers, not you. What's confirmed, and what isn't.",
  "trail": M + [(None, "Rake")],
  "h1": "The Rake",
  "lede": "The Rake is a fast, four-legged threat added on <strong>29 July 2026</strong>, and it only exists in <strong>Post-Story Endless Mode</strong> &mdash; if you have not finished Story Mode, or you have never touched Endless, you have not met one and will not. It comes from the forest around the station and goes after your customers rather than you directly.",
- "updated": "Last verified 10 September 2026 &middot; game version: 29 July 2026 patch",
+ "updated": "Last updated 2026-10-10 &middot; the developer-source quote and the Endless Mode equipment lines re-checked 10 October 2026 against the 29 July and 1 September 2026 Steam announcements &middot; rest of the page last verified 10 September 2026 (written against the 29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "body": """
   <div class="tags">
     <span class="tag amber">Endless / Post-Story only</span>
@@ -322,7 +323,7 @@ PAGES = [
   </div>
 
   <h2>What we know for certain, and from whom</h2>
-  <p>The primary source is the developer's own account, <a href="https://x.com/ShiftAtMidnight" target="_blank" rel="noopener">@ShiftAtMidnight on X</a>, which posted on 3 August 2026: <em>"We added a new monster to shift at midnights Endless/Post-Story Mode, monsters called 'Rakes' will slowly emerge from the forest. You must shoot them before they reach the playable area, or bad stuff will happen."</em> That single sentence is the only developer-confirmed description of the Rake that exists, and everything in it is treated as fact on this page: the name, the Endless/Post-Story restriction, the forest spawn point, and the instruction to shoot it before it reaches the shop. We found that post embedded in the secondary write-up cited below rather than by reading the timeline directly, which is disclosed here rather than smoothed over.</p>
+  <p>The primary source is the developer's official Steam announcement of 29 July 2026, &ldquo;BALANCING + BUG FIXES&rdquo;, whose changelog reads: <em>&ldquo;In ENDLESS MODE / POST-STORY MODE, monsters called "Rakes" will slowly emerge from the forest. You must shoot them before they reach the playable area, or bad stuff will happen :)&rdquo;</em> Everything in that sentence is treated as fact on this page: the name, the Endless/Post-Story restriction, the forest spawn point, and the instruction to shoot it before it reaches the playable area. The 1 September 2026 announcement adds Endless Mode equipment that bears on it: &ldquo;Added Security Cameras in ENDLESS MODE. These can be viewed on the computer and let you keep an eye on anything that might emerge from the forest.&rdquo;, &ldquo;Added 2 bear traps and 2 planks in the storage room for the first shift of ENDLESS MODE&rdquo; and &ldquo;Can now purchase 3 additional bear traps instead of 2&rdquo;. Neither announcement says what those items do to a Rake.</p>
   <p>Everything more specific than that &mdash; exact speed, whether it can be trapped instead of shot, its health, its damage &mdash; comes from secondary reporting rather than the developer, and we are labelling it that way rather than presenting it as confirmed. The most detailed secondary write-up we found is <a href="https://allthings.how/shift-at-midnight-how-to-deal-with-rakes-in-endless-mode/" target="_blank" rel="noopener">AllThings.How's Rake guide</a>, and the behavioural claims below trace back to that single piece unless stated otherwise.</p>
 
   <table class="facts">
@@ -334,7 +335,7 @@ PAGES = [
   </table>
 
   <h2>What it looks and sounds like</h2>
-  <p>Secondary reporting &mdash; not the developer post itself &mdash; describes the Rake as running on all fours, glowing red, and closing distance quickly once it appears. The same reporting says a customer's scream is the audio cue that one has spawned nearby, which would make it play like a mid-shift alarm rather than something you have to actively watch for. <strong>Treat this paragraph as secondary and unconfirmed by Kwalee directly</strong> &mdash; it is consistent across the reporting we found, but it traces to one detailed write-up rather than an official source.</p>
+  <p>Secondary reporting &mdash; not the developer announcement itself &mdash; describes the Rake as running on all fours, glowing red, and closing distance quickly once it appears. The same reporting says a customer's scream is the audio cue that one has spawned nearby, which would make it play like a mid-shift alarm rather than something you have to actively watch for. <strong>Treat this paragraph as secondary and unconfirmed by Kwalee directly</strong> &mdash; it is consistent across the reporting we found, but it traces to one detailed write-up rather than an official source.</p>
 
   <h2>How it changes an Endless shift</h2>
   <p>The rest of the bestiary mostly shows up during a <em>hunt</em> &mdash; the sequence that starts after you let a <a href="/guide/doppelgangers/">doppelganger</a> slip past you. The Rake is reported to work differently: it can appear on an otherwise calm shift, with no doppelganger mistake required to trigger it. If that reporting holds up, it removes the safety of a quiet Endless shift entirely, since the threat is not gated behind a decision you made at the counter.</p>

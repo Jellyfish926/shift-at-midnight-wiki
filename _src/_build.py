@@ -202,7 +202,43 @@ def breadcrumb_ld(trail: list, title: str, url: str) -> str:
             '  "itemListElement": [\n' + ",\n".join(lines) + "\n  ]\n}\n</script>")
 
 
+# ── 成就解锁率占位符(D2b 2026-10-10)──────────────────────────────────
+# 内容源里写 [[ACH:First Blood]] / [[ACH_DATE]],构建时从仓根 achievements.json 取值,
+# 每周快照刷新后页面数值与日期标签一起更新,不再手写百分比。
+_ACH_JSON = ROOT.parent / "achievements.json"
+_ACH_DATA = json.loads(_ACH_JSON.read_text()) if _ACH_JSON.exists() else {"achievements": [], "captured": ""}
+ACH_PCT = {a["name"]: a["pct"] for a in _ACH_DATA["achievements"]}
+
+
+def _long_date(iso: str) -> str:
+    if not iso:
+        return "date not recorded"
+    y, m, d = iso.split("-")
+    return f"{int(d)} {list(_MONTHS)[int(m) - 1]} {y}"
+
+
+ACH_DATE = _long_date(_ACH_DATA.get("captured", ""))
+ACH_NOTE = (" &middot; achievement unlock rates on this page are this site&rsquo;s weekly Steam snapshot, "
+            "captured [[ACH_DATE]], unless a sentence gives its own date")
+
+
+def ach_sub(text: str) -> str:
+    text = re.sub(r"\[\[ACH:([^\]]+)\]\]", lambda m: str(ACH_PCT[m.group(1)]), text)
+    return text.replace("[[ACH_DATE]]", ACH_DATE)
+
+
 def render(page: dict) -> str:
+    """占位符页:日期行自动补一段快照日期说明(首个日期不变,dateModified 不受影响)。"""
+    page = dict(page)
+    upd = page.get("updated", VERIFIED)
+    if (any("[[ACH:" in str(page.get(k, "")) for k in ("title", "desc", "lede", "body", "extra_ld"))
+            and "[[ACH_DATE]]" not in upd):
+        upd += ACH_NOTE
+    page["updated"] = upd
+    return ach_sub(_render(page))
+
+
+def _render(page: dict) -> str:
     path = page["path"]                       # 如 "monsters/marionette"
     url = f"{BASE}/{path}/"
     active = page.get("active", "/" + path.split("/")[0] + "/")

@@ -24,7 +24,7 @@ PAGES = [
  "trail": [(None, "Glossary")],
  "h1": "Shift At Midnight glossary",
  "lede": "This wiki uses a lot of terms the game itself never stops to define &mdash; the <strong>N.E.T. database</strong>, a <strong>Hunt</strong>, the difference between <strong>Story</strong> and <strong>Post-Story Endless</strong>. This page collects every one of them in a single A-Z list, each with a short definition and a link to the page that covers it in full. Nothing here is a new claim &mdash; every entry is compiled from a page this wiki has already published.",
- "updated": "Last updated 2026-10-10 &middot; the Crossplay, Controller support and Xbox Play Anywhere entries re-checked 10 October 2026 against the official Steam announcements and Steam store data &middot; rest of the page last verified 11 September 2026 (written against the 29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
+ "updated": "Last updated 2026-10-10 &middot; the Crossplay, Controller support and Xbox Play Anywhere entries, Patience meter and Languages entries re-checked 10 October 2026 against the official Steam announcements and Steam store data &middot; rest of the page last verified 11 September 2026 (written against the 29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "body": """
   <div class="tags">
     <span class="tag">39 terms</span>
@@ -38,7 +38,7 @@ PAGES = [
   <h2>A&ndash;Z</h2>
 
   <h3>A</h3>
-  <p><strong>Achievements.</strong> Ten Steam achievements, three hidden until unlocked, running 96.9% down to 10.1%. See <a href="/achievements/">the achievements page</a>, plus the <a href="/achievements/monster-kills/">four kill achievements</a> and the <a href="/achievements/hunt-and-arsenal/">three the Hunt decides</a>.</p>
+  <p><strong>Achievements.</strong> Ten Steam achievements, three hidden until unlocked, running [[ACH:First Blood]]% down to [[ACH:Empty Home]]%. See <a href="/achievements/">the achievements page</a>, plus the <a href="/achievements/monster-kills/">four kill achievements</a> and the <a href="/achievements/hunt-and-arsenal/">three the Hunt decides</a>.</p>
 
   <h3>B</h3>
   <p><strong>Barricade.</strong> Wooden boards over doors and windows that slow the <a href="/monsters/entity/">Entity</a> during a Hunt. See the <a href="/guide/survival/">survival guide</a>.</p>
@@ -65,7 +65,7 @@ PAGES = [
   <p><strong>EULA.</strong> Kwalee's licence agreement; its anti-modification clause is why trainers are against the terms. See <a href="/cheats/">cheats</a>.</p>
 
   <h3>G</h3>
-  <p><strong>Grave Decision.</strong> The most common of the three endings, at 33.1% global unlock. See <a href="/endings/grave-decision/">the Grave Decision page</a>.</p>
+  <p><strong>Grave Decision.</strong> The most common of the three endings, at [[ACH:Grave Decision]]% global unlock. See <a href="/endings/grave-decision/">the Grave Decision page</a>.</p>
 
   <h3>H</h3>
   <p><strong>Hunt.</strong> Triggered by a missed doppelganger or a Blood Moon shift &mdash; survival is mostly sound and doors, weapons last. See <a href="/guide/survival/">the survival guide</a>.</p>
@@ -80,7 +80,7 @@ PAGES = [
   <p><strong>Kwalee.</strong> The publisher; distribution and storefront presence, not development &mdash; Bun Muen built the game alone. See <a href="/credits/">credits</a>.</p>
 
   <h3>L</h3>
-  <p><strong>Languages.</strong> Nine, confirmed on both Steam and Xbox. Whether every one has full voice audio or interface/subtitles only is unresolved &mdash; sources on this wiki disagree. See <a href="/languages/">languages</a>.</p>
+  <p><strong>Languages.</strong> Nine on Steam, each marked as having full audio support in Steam's store data (read 10 October 2026). See <a href="/languages/">languages</a>.</p>
 
   <h3>M</h3>
   <p><strong>Marionette.</strong> From Shift 9 &mdash; hold E on the music box to rewind it before the melody finishes three times. See <a href="/monsters/marionette/">the Marionette</a>.</p>
@@ -91,7 +91,7 @@ PAGES = [
   <p><strong>Norbert.</strong> Not actually lethal &mdash; sparing him ends it cleanly, killing him triggers repeated non-lethal pranks. See <a href="/monsters/norbert/">Norbert</a>.</p>
 
   <h3>P</h3>
-  <p><strong>Patience meter.</strong> The ID-check time-pressure mechanic the 29 July 2026 patch removed entirely. See <a href="/guide/doppelgangers/">the doppelganger guide</a>.</p>
+  <p><strong>Patience meter.</strong> The customer timer that the 29 July 2026 patch removed in Endless and Post-Story mode and the 1 September 2026 patch re-enabled for Endless mode. No official post covers Story Mode. See <a href="/guide/doppelgangers/">the doppelganger guide</a>.</p>
   <p><strong>Post-Story.</strong> The state after finishing all 13 Story shifts &mdash; unlocks Endless Mode and the <a href="/monsters/rake/">Rake</a>. See <a href="/nights-and-levels/">nights &amp; Endless Mode</a>.</p>
   <p><strong>Proximity chat.</strong> Distance-based voice &mdash; a mechanic, not just convenience, since the Entity tracks it. See <a href="/multiplayer/">multiplayer</a>.</p>
 
@@ -103,7 +103,7 @@ PAGES = [
 
   <h3>S</h3>
   <p><strong>Sheriff Clyde.</strong> The only way to end an encounter with the Dentist, and one of the two variables deciding your ending. See <a href="/monsters/the-dentist/">the Dentist</a> and <a href="/endings/">endings</a>.</p>
-  <p><strong>Shrieking Doll.</strong> The most fragile threat and easiest monster achievement (89.8% Silenced). See <a href="/monsters/shrieking-doll/">Shrieking Doll</a>.</p>
+  <p><strong>Shrieking Doll.</strong> The most fragile threat and easiest monster achievement ([[ACH:Silenced]]% Silenced). See <a href="/monsters/shrieking-doll/">Shrieking Doll</a>.</p>
   <p><strong>Steam Deck.</strong> Rated <strong>Playable</strong>, not Verified. See <a href="/system-requirements/">system requirements</a>.</p>
   <p><strong>Steam Input.</strong> Valve's controller-translation layer; the game's own support flag is declared false. See <a href="/controls/">controls</a>.</p>
 
@@ -111,7 +111,7 @@ PAGES = [
   <p><strong>Trap.</strong> A placeable countermeasure that, with weapons and barricades, helps end a Hunt. See <a href="/guide/survival/">the survival guide</a>.</p>
 
   <h3>W</h3>
-  <p><strong>Weapons arsenal.</strong> The purchasable loadout tied to the Locked And Loaded achievement (23.5% unlock). See <a href="/guide/survival/">the survival guide</a>.</p>
+  <p><strong>Weapons arsenal.</strong> The purchasable loadout tied to the Locked And Loaded achievement ([[ACH:Locked And Loaded]]% unlock). See <a href="/guide/survival/">the survival guide</a>.</p>
 
   <h3>X</h3>
   <p><strong>Xbox Play Anywhere.</strong> A Microsoft program label; the Xbox listing read on 12 August 2026 carried it (not re-checked on 10 October 2026). No official Steam announcement mentions it. See <a href="/platforms/">platforms</a>.</p>
@@ -161,10 +161,10 @@ PAGES = [
   <p>"Achievement" unlock rates are the global percentage from <a href="/achievements/">the achievements page</a> as of this check, not each monster page's own copy &mdash; a couple of monster pages carry a slightly older snapshot of the same figure, so this table uses the single freshest source rather than mixing two.</p>
 
   <table class="facts">
-    <tr><th>Marionette</th><td>From Shift 9, Story Mode. <strong>Killable</strong> &mdash; hold E on the music box to rewind it before the melody finishes three times. Achievement: Last Performance, 41.6%. Details: <a href="/monsters/marionette/">Marionette page</a>.</td></tr>
-    <tr><th>Entity</th><td>End of any shift where a doppelganger's purchase completed, or any Blood Moon shift. <strong>Killable</strong> &mdash; weapons, traps and barricades all contribute; it is blind and tracks sound. Achievement: Still Breathing (survive), 93.8%. Details: <a href="/monsters/entity/">Entity page</a>.</td></tr>
-    <tr><th>Demented</th><td>Appears during regular shifts. <strong>Not killable by gunfire</strong> &mdash; freezes only while you look directly at it; the confirmed counter is breaking your gaze and leading it into a trap. Achievement: Freed, 79.8%. Details: <a href="/monsters/demented/">Demented page</a>.</td></tr>
-    <tr><th>Shrieking Doll</th><td>Appears during regular shifts. <strong>Killable</strong> &mdash; the most fragile threat in the game, a few shots. Achievement: Silenced, 89.8%, the easiest monster achievement. Details: <a href="/monsters/shrieking-doll/">Shrieking Doll page</a>.</td></tr>
+    <tr><th>Marionette</th><td>From Shift 9, Story Mode. <strong>Killable</strong> &mdash; hold E on the music box to rewind it before the melody finishes three times. Achievement: Last Performance, [[ACH:Last Performance]]%. Details: <a href="/monsters/marionette/">Marionette page</a>.</td></tr>
+    <tr><th>Entity</th><td>End of any shift where a doppelganger's purchase completed, or any Blood Moon shift. <strong>Killable</strong> &mdash; weapons, traps and barricades all contribute; it is blind and tracks sound. Achievement: Still Breathing (survive), [[ACH:Still Breathing]]%. Details: <a href="/monsters/entity/">Entity page</a>.</td></tr>
+    <tr><th>Demented</th><td>Appears during regular shifts. <strong>Not killable by gunfire</strong> &mdash; freezes only while you look directly at it; the confirmed counter is breaking your gaze and leading it into a trap. Achievement: Freed, [[ACH:Freed]]%. Details: <a href="/monsters/demented/">Demented page</a>.</td></tr>
+    <tr><th>Shrieking Doll</th><td>Appears during regular shifts. <strong>Killable</strong> &mdash; the most fragile threat in the game, a few shots. Achievement: Silenced, [[ACH:Silenced]]%, the easiest monster achievement. Details: <a href="/monsters/shrieking-doll/">Shrieking Doll page</a>.</td></tr>
     <tr><th>The Dentist</th><td>Shift 13 only, the final story shift. <strong>Cannot be killed</strong> &mdash; firearms and melee are confirmed ineffective; only Sheriff Clyde ends the encounter, in a cutscene. No achievement of its own. Details: <a href="/monsters/the-dentist/">Dentist page</a>.</td></tr>
     <tr><th>Norbert</th><td>A doppelganger-category customer, not a hostile monster. <strong>Not lethal</strong> either way &mdash; sparing him ends it cleanly; killing him triggers repeated non-lethal pranks for the rest of the shift. No dedicated achievement. Details: <a href="/monsters/norbert/">Norbert page</a>.</td></tr>
     <tr><th>Rake</th><td>Post-Story Endless Mode only, added 29 July 2026. <strong>Killable</strong> &mdash; the developer's own instruction is to shoot it before it reaches the playable area. No dedicated achievement (predates its addition). Details: <a href="/monsters/rake/">Rake page</a>.</td></tr>
@@ -198,7 +198,7 @@ PAGES = [
     </details>
     <details>
       <summary>Which monster has the lowest achievement unlock rate?</summary>
-      <div class="a"><p>Of the ones with a dedicated achievement, Last Performance (kill a Marionette) is lowest at 41.6%, per <a href="/achievements/">the achievements page</a>. The Dentist and Rake have no dedicated achievement to compare.</p></div>
+      <div class="a"><p>Of the ones with a dedicated achievement, Last Performance (kill a Marionette) is lowest at [[ACH:Last Performance]]%, per <a href="/achievements/">the achievements page</a>. The Dentist and Rake have no dedicated achievement to compare.</p></div>
     </details>
     <details>
       <summary>Is the Rake harder than the other monsters?</summary>
@@ -224,7 +224,7 @@ PAGES = [
  "trail": [(None, "Start here")],
  "h1": "Where to start on this wiki",
  "lede": "This wiki has grown to more than 35 pages, and none of them tell you in what order to read them. If you just bought the game, or you are stuck on your first Hunt, this page is a suggested path through the site &mdash; beginner first, advanced last &mdash; with one line on why each step matters before you click through.",
- "updated": "Last updated 2026-10-10 &middot; the crossplay sentences re-checked 10 October 2026 against the developer&rsquo;s 10 July 2026 Steam announcement &middot; rest of the page last verified 11 September 2026 (written against the 29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
+ "updated": "Last updated 2026-10-10 &middot; the crossplay sentences, patience and patch-list statements re-checked 10 October 2026 against the official Steam announcements &middot; rest of the page last verified 11 September 2026 (written against the 29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "body": """
   <div class="tags">
     <span class="tag">8-step reading order</span>
@@ -241,7 +241,7 @@ PAGES = [
   <h2>Your first shift</h2>
   <ol start="4">
     <li><strong><a href="/guide/beginners/">Beginner's guide</a>.</strong> The single most important reframe on this wiki: this is a job simulator with a horror game hiding inside it, and most failed first runs come from playing it the other way round. Read this before your first shift, not after a bad one.</li>
-    <li><strong><a href="/guide/doppelgangers/">Doppelganger guide</a>.</strong> The actual job &mdash; reading an ID, cross-checking the N.E.T. database, and deciding whether the person in front of you is real. This is where the patience-meter removal (29 July patch) matters most, and where the <a href="/glossary/">glossary</a> earns its keep if a term here is unfamiliar.</li>
+    <li><strong><a href="/guide/doppelgangers/">Doppelganger guide</a>.</strong> The actual job &mdash; reading an ID, cross-checking the N.E.T. database, and deciding whether the person in front of you is real. This is where the patch-note changes to patience matter (removed in Endless and Post-Story mode on 29 July 2026, re-enabled for Endless mode on 1 September 2026; Story Mode is not mentioned), and where the <a href="/glossary/">glossary</a> earns its keep if a term here is unfamiliar.</li>
   </ol>
 
   <h2>When something goes wrong</h2>
@@ -255,7 +255,7 @@ PAGES = [
 
   <h2>Going deeper</h2>
   <ol start="8">
-    <li><strong><a href="/achievements/">Achievements</a> and <a href="/endings/">endings</a>.</strong> Once the core loop is comfortable, these two pages cover the completion curve (96.9% down to 10.1%) and the two variables &mdash; the Sheriff Clyde call and your Shift 13 savings &mdash; that decide which of the three endings you get. Each ending now has its own page (<a href="/endings/true-ending/">True Ending</a>, <a href="/endings/grave-decision/">Grave Decision</a>, <a href="/endings/empty-home/">Empty Home</a>), and the achievements split into the <a href="/achievements/monster-kills/">four kill achievements</a> and the <a href="/achievements/hunt-and-arsenal/">three decided by a Hunt</a>.</li>
+    <li><strong><a href="/achievements/">Achievements</a> and <a href="/endings/">endings</a>.</strong> Once the core loop is comfortable, these two pages cover the completion curve ([[ACH:First Blood]]% down to [[ACH:Empty Home]]%) and the two variables &mdash; the Sheriff Clyde call and your Shift 13 savings &mdash; that decide which of the three endings you get. Each ending now has its own page (<a href="/endings/true-ending/">True Ending</a>, <a href="/endings/grave-decision/">Grave Decision</a>, <a href="/endings/empty-home/">Empty Home</a>), and the achievements split into the <a href="/achievements/monster-kills/">four kill achievements</a> and the <a href="/achievements/hunt-and-arsenal/">three decided by a Hunt</a>.</li>
   </ol>
   <p>If you would rather work from a checklist than a reading order, the <a href="/tools/completion-tracker/">100% completion tracker</a> puts every achievement, ending, named threat and fixed story beat on this wiki into 46 tick boxes that save in your browser.</p>
   <p>After that, <a href="/nights-and-levels/">nights &amp; Endless Mode</a> explains what changes once Story Mode's 13 shifts are behind you, including the Post-Story-only <a href="/monsters/rake/">Rake</a>. If you are chasing every corner of the game rather than just finishing it, <a href="/mods/">mods</a> and <a href="/updates/">updates</a> round things out; if something breaks along the way, <a href="/troubleshooting/">troubleshooting</a> separates the fixes that are confirmed from the reports this wiki could not verify.</p>
@@ -279,7 +279,7 @@ PAGES = [
     </details>
     <details>
       <summary>What changed most recently that this order should account for?</summary>
-      <div class="a"><p>The <a href="/updates/">updates page</a> tracks this: as of its last check, the 29 July 2026 patch was still the newest documented change, and it is the one referenced throughout this order, since it removed the patience meter and added the Rake. We have not been able to confirm the contents of anything newer.</p></div>
+      <div class="a"><p>Four patches have shipped since launch (23 July, 29 July, 20 August and 1 September 2026; official Steam announcements checked 10 October 2026). The <a href="/updates/">updates page</a> lists what each one changed.</p></div>
     </details>
     <details>
       <summary>Where do I look up a term I don't recognize?</summary>

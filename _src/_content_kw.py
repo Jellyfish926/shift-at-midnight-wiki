@@ -326,7 +326,7 @@ PAGES = [
 
   <h2>What none of the eight replaces</h2>
 
-  <p>Very few games make the <em>moral</em> decision the mechanical one. Here the frightening action is administrative: you decide whether to serve someone or kill them, on incomplete information, while a queue builds behind them. <strong>96.9% of players have killed a customer</strong> (<a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam achievement stats</a>, checked 13 August 2026) &mdash; that is the design working as intended, not a community of monsters. Nothing on this list reproduces it, which is why every honest recommendation here shares one half of the game rather than replacing it.</p>
+  <p>Very few games make the <em>moral</em> decision the mechanical one. Here the frightening action is administrative: you decide whether to serve someone or kill them, on incomplete information, while a queue builds behind them. <strong>[[ACH:First Blood]]% of players have killed a customer</strong> (<a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam achievement stats</a>, checked 13 August 2026) &mdash; that is the design working as intended, not a community of monsters. Nothing on this list reproduces it, which is why every honest recommendation here shares one half of the game rather than replacing it.</p>
 
   <div class="grid two">
     <a class="card" href="/review/"><b>Is it worth it?</b><span>Price, the free demo, and what the review data says.</span></a>
@@ -374,7 +374,7 @@ PAGES = [
 
   <h2>How long is a run?</h2>
 
-  <p>Story Mode runs a sequence of shifts to a conclusion, with multiple possible outcomes &mdash; the three hidden achievements (<em>Grave Decision</em> 33.1%, <em>True Ending</em> 16.0%, <em>Empty Home</em> 10.1%) sit at the end of it. See <a href="/endings/">endings</a> for what those do and do not tell us.</p>
+  <p>Story Mode runs a sequence of shifts to a conclusion, with multiple possible outcomes &mdash; the three hidden achievements (<em>Grave Decision</em> [[ACH:Grave Decision]]%, <em>True Ending</em> 16.0%, <em>Empty Home</em> [[ACH:Empty Home]]%) sit at the end of it. See <a href="/endings/">endings</a> for what those do and do not tell us.</p>
 
   <p>Endless Mode is the mode for people who want shifts without an ending, and it is worth being precise about its status because it is easy to read wrong: <strong>the Endless beta has been in the game since launch day</strong>, unlocked once the 13-shift story is finished. The free <strong>Q4 2026</strong> update is the <em>finished</em> version of that mode, not its arrival. See <a href="/nights-and-levels/#endless-mode">Endless Mode</a> below.</p>
 
@@ -625,7 +625,7 @@ PAGES = [
 {
  "path": "troubleshooting", "active": "/guides/",
  "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
- "updated": "Last updated 2026-10-10 &middot; the storefront (crossplay) and Steam Deck statements re-checked 10 October 2026 against the developer&rsquo;s 10 July 2026 Steam announcement and Valve&rsquo;s compatibility report &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
+ "updated": "Last updated 2026-10-10 &middot; the storefront (crossplay) and Steam Deck statements, patience re-checked 10 October 2026 against the official Steam announcements and Valve&rsquo;s compatibility report &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "title": "Shift At Midnight Not Working — Lobby, Crash &amp; Audio Problems",
  "og_short": "Troubleshooting",
  "desc": "Cannot join a lobby in Shift At Midnight, or hitting crashes, a black screen or no sound? The developer's official steps, what each patch fixed, and which problems have no verified fix.",
@@ -664,7 +664,7 @@ PAGES = [
   <ul>
     <li><strong>Are you on the same storefront?</strong> Per the developer (10 July 2026), Steam players will only play with other Steam players, and Xbox and PC Game Pass players will have crossplay. No official post describes a setting that changes it &mdash; see <a href="/crossplay/">crossplay</a>, or run your group through the <a href="/tools/#crossplay-checker">crossplay checker</a>.</li>
     <li><strong>Are you on the same branch?</strong> See the section above. Mismatched Steam branches produce exactly this symptom.</li>
-    <li><strong>Are you on the same build?</strong> If one of you still sees a patience meter on customers, or cannot set a lobby above three, that install has not updated. <a href="/updates/">Patch notes</a> lists the tells.</li>
+    <li><strong>Are you on the same build?</strong> If one of you cannot set a lobby above three, that install has not updated. <a href="/updates/">Patch notes</a> lists the tells.</li>
     <li><strong>Is lobby size the problem?</strong> The cap has been selectable up to six since 23 July 2026, but the developer has been explicit that the game is designed around three. See <a href="/multiplayer/">multiplayer</a>.</li>
   </ul>
 
@@ -701,7 +701,7 @@ PAGES = [
   <ul>
     <li><strong>Endless Mode is locked.</strong> It is not missing. Endless shipped as a beta on launch day but unlocks only once you have finished the 13-shift story &mdash; see <a href="/nights-and-levels/#endless-mode">Endless Mode</a>.</li>
     <li><strong>Norbert scans as a fake ID.</strong> Working as designed. He is flagged and he is harmless; the scanner reports on documents, not on intent. See <a href="/monsters/norbert/">Norbert</a>.</li>
-    <li><strong>Customers no longer run out of patience.</strong> The patience mechanic was removed on 29 July 2026. If a guide told you to hurry, the guide is older than the patch.</li>
+    <li><strong>Patience changed in Endless Mode.</strong> The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo; and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, and no official announcement says whether Story Mode customers still run down a patience timer.</li>
     <li><strong>The music box got louder.</strong> Also deliberate &mdash; the 23 July patch raised Jack-in-the-Box volume, and locating it by ear is the entire counterplay to the <a href="/monsters/marionette/">Marionette</a>.</li>
     <li><strong>Swearing is no longer filtered.</strong> The profanity filter was removed on 23 July 2026.</li>
   </ul>
@@ -798,7 +798,7 @@ PAGES = [
 
   <ul>
     <li><strong>Xbox and Game Pass players.</strong> Microsoft does not publish per-title figures, and neither the developer nor the publisher has released any. Every &ldquo;total players&rdquo; number you see for this game is a Steam number wearing a bigger hat.</li>
-    <li><strong>Unique players, or how many finished it.</strong> The closest public proxy is achievement rarity &mdash; 93.8% survive a first hunt, 16.0% reach the True Ending &mdash; and those are percentages of Steam owners, not counts. See <a href="/achievements/">achievements</a>.</li>
+    <li><strong>Unique players, or how many finished it.</strong> The closest public proxy is achievement rarity &mdash; [[ACH:Still Breathing]]% survive a first hunt, 16.0% reach the True Ending &mdash; and those are percentages of Steam owners, not counts. See <a href="/achievements/">achievements</a>.</li>
     <li><strong>Whether the game is growing or shrinking this month.</strong> We have one all-time peak with a date and two live readings a day apart. That is not a trend, and the one source that offered a month-over-month figure contradicted itself, as above.</li>
     <li><strong>How many are in the demo.</strong> The <a href="/demo/">free demo</a> is a separate app with its own, unpublished numbers.</li>
   </ul>

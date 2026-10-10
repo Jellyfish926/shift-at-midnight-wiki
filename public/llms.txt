@@ -25,7 +25,7 @@ each page.
 - Roadmap: Endless Mode, free, Q4 2026. No mod support announced.
 
 ## Pages
-- /crossplay/ : definitive crossplay compatibility table
+- /crossplay/ : what the developer has said about crossplay, by storefront (not tested by this site)
 - /achievements/ : all 10 achievements with global unlock rates
 - /endings/ : what the hidden ending achievements do and do not support
 - /monsters/ : full bestiary with per-threat counterplay

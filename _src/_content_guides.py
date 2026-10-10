@@ -50,7 +50,7 @@ PAGES = [
 {
  "path": "guides", "active": "/guides/",
  "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
- "updated": "Last updated 2026-10-10 &middot; the crossplay card re-checked 10 October 2026 against the developer&rsquo;s 10 July 2026 Steam announcement &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
+ "updated": "Last updated 2026-10-10 &middot; the crossplay card, the patience card re-checked 10 October 2026 against the official Steam announcements &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "title": "All Shift At Midnight Guides — Complete Wiki Index",
  "og_short": "All Shift At Midnight Guides",
  "desc": "Every Shift At Midnight guide in one index, ordered by where you are in a run: your first shift, spotting doppelgangers, surviving hunts, the three endings, and Endless Mode.",
@@ -70,7 +70,7 @@ PAGES = [
   <h2>2. Telling people apart</h2>
   <p>This is the actual game; everything else is consequence. A doppelganger you wave through completes its purchase, walks out, and comes back the same night as something that hunts you &mdash; which is why identification and survival are one subject rather than two.</p>
   <div class="grid two">
-    <a class="card" href="/guide/doppelgangers/"><b>Identifying doppelgangers</b><span>The seven categories of tell, what the N.E.T. database does that the ID scanner cannot, why Norbert is a trap, and what changed when the patience timer was removed.</span></a>
+    <a class="card" href="/guide/doppelgangers/"><b>Identifying doppelgangers</b><span>The seven categories of tell, what the N.E.T. database does that the ID scanner cannot, why Norbert is a trap, and what the patch notes say about the patience timer.</span></a>
     <a class="card" href="/tools/#threat-lookup"><b>Threat lookup</b><span>Search by what you actually saw &mdash; music box, screaming, fake ID &mdash; instead of by a name you do not have yet.</span></a>
   </div>
 
@@ -125,23 +125,19 @@ PAGES = [
 {
  "path": "guide/beginners", "active": "/guides/",
  "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
- "updated": "Last updated 2026-10-10 &middot; the crossplay sentence re-checked 10 October 2026 against the developer&rsquo;s 10 July 2026 Steam announcement &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
+ "updated": "Last updated 2026-10-10 &middot; the crossplay sentence, the patience section re-checked 10 October 2026 against the official Steam announcements &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "title": "Shift At Midnight Beginner's Guide — Surviving Your First Shifts",
  "og_short": "Shift At Midnight Beginner's Guide",
- "desc": "A beginner's guide to Shift At Midnight that starts with the mistake 96.9% of players make: treating the ID scanner as a threat detector.",
+ "desc": "A beginner's guide to Shift At Midnight that starts with the mistake [[ACH:First Blood]]% of players make: treating the ID scanner as a threat detector.",
  "trail": G + [(None, "Beginner's guide")],
  "h1": "Beginner's guide",
- "lede": "The fastest way to understand this game is to understand one number: <strong>96.9% of all players have killed a customer</strong>. That is the most common achievement in the game. It is not a badge of skill &mdash; it is the game documenting a mistake almost everyone makes.",
+ "lede": "The fastest way to understand this game is to understand one number: <strong>[[ACH:First Blood]]% of all players have killed a customer</strong>. That is the most common achievement in the game. It is not a badge of skill &mdash; it is the game documenting a mistake almost everyone makes.",
  "body": """
-  <h2>The game got easier on 29 July, and it matters most for you</h2>
-  <p>The <a href="/updates/">29 July 2026 patch removed the patience mechanic</a>. Before it, a customer
-    standing at your counter was running down a meter while you checked their documents, which meant every
-    verification was a race. That pressure is gone. If you learned this game from a video recorded in the
-    first week &mdash; and most of the ones with the biggest view counts were &mdash; you are being taught to
-    rush a check that you are now allowed to take your time over.</p>
-  <p>For a new player this changes the correct opening strategy outright: <strong>scan everything, read the
-    description box, and search the N.E.T. database on anyone who feels off.</strong> The cost of being slow
-    is now close to zero, and the cost of being wrong is a hunt. See the
+  <h2>What the patch notes say about patience</h2>
+  <p>The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo; and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, and no official announcement says whether Story Mode customers still run down a patience timer. See <a href="/updates/">updates</a>.</p>
+  <p>The opening strategy for a new player: <strong>scan everything, read the
+    description box, and search the N.E.T. database on anyone who feels off.</strong> The cost of being wrong
+    is a hunt. See the
     <a href="/guide/doppelgangers/">identification guide</a> for what to actually look at.</p>
 
   <h2>The three things nobody tells you</h2>
@@ -167,10 +163,10 @@ PAGES = [
 
   <h2>What the achievement curve tells you to expect</h2>
   <p>The first four achievements are held by 75&ndash;97% of players, and they arrive on their own if you keep playing: killing a customer, surviving a hunt, killing a <a href="/monsters/shrieking-doll/">Shrieking Doll</a>, killing a <a href="/monsters/demented/">Demented</a>. Do not chase them.</p>
-  <p>The cliff is at <em>Relentless</em> (45.4%) and <a href="/monsters/marionette/">Last Performance</a> (41.6%). Those need you to know something in advance. Everything below them needs deliberate effort. See <a href="/achievements/">the full list</a>.</p>
+  <p>The cliff is at <em>Relentless</em> ([[ACH:Relentless]]%) and <a href="/monsters/marionette/">Last Performance</a> ([[ACH:Last Performance]]%). Those need you to know something in advance. Everything below them needs deliberate effort. See <a href="/achievements/">the full list</a>.</p>
 
   <h2>Money</h2>
-  <p>You will want to spend everything on restocking, because the quota is immediate and the arsenal is not. Resist a little. <em>Locked And Loaded</em> &mdash; purchasing every melee weapon &mdash; sits at 23.5%, and the reason it is that low is that people spend their earnings shift-to-shift and never bank. See the <a href="/guide/survival/#weapons">weapons guide</a>.</p>
+  <p>You will want to spend everything on restocking, because the quota is immediate and the arsenal is not. Resist a little. <em>Locked And Loaded</em> &mdash; purchasing every melee weapon &mdash; sits at [[ACH:Locked And Loaded]]%, and the reason it is that low is that people spend their earnings shift-to-shift and never bank. See the <a href="/guide/survival/#weapons">weapons guide</a>.</p>
 
   <h2>If you are playing with friends</h2>
   <p>Check <a href="/crossplay/">the crossplay page before anyone buys</a>. Per the developer (10 July 2026), Steam players will only be able to play with other Steam players.</p>
@@ -182,19 +178,21 @@ PAGES = [
 """},
 {
  "path": "guide/doppelgangers", "active": "/guides/",
+ "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2b 2026-10-10)
+ "updated": "Last updated 2026-10-10 &middot; patience statements and the doppelganger count note re-checked 10 October 2026 against the official Steam announcements &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "title": "Shift At Midnight Doppelgangers — How to Identify Them",
  "og_short": "Shift At Midnight Doppelgangers",
- "desc": "The seven categories of tell, what the N.E.T. database does that the ID scanner cannot, the document checks worth running, and why the 29 July patch changed how you should verify.",
+ "desc": "The seven categories of tell, what the N.E.T. database does that the ID scanner cannot, the document checks worth running, and what the patch notes say about patience.",
  "trail": G + [(None, "Doppelgangers")],
  "h1": "Identifying doppelgangers",
- "lede": "This is the job. Something walks in wearing a real person &mdash; face, voice, mannerisms, biography &mdash; and you have a scanner, a database and your own attention. The <a href=\"https://store.steampowered.com/news/app/3722330/view/695394018676179340\" target=\"_blank\" rel=\"noopener\">29 July patch removed the patience mechanic</a>, so you now have one more thing: time.",
+ "lede": "This is the job. Something walks in wearing a real person &mdash; face, voice, mannerisms, biography &mdash; and you have a scanner, a database and your own attention. The patch notes changed patience in Endless Mode only (removed on 29 July 2026, re-enabled on 1 September 2026) and say nothing about Story Mode, so do not assume customers will wait forever.",
  "body": """
   <div class="term warn">
     <div class="term-h">Why this outranks every other skill</div>
     <p>Let a doppelganger finish its purchase and walk out and <strong>it comes back that same night in monster form to hunt you</strong> (<a href="https://gamerant.com/shift-at-midnight-all-monsters/" target="_blank" rel="noopener">Game Rant</a>). Most hunts on the <a href="/guide/survival/">survival page</a> were created here, at the counter, minutes earlier.</p>
   </div>
 
-  <p>The opposite error is cheaper but not free: killing a real customer unlocks <em>First Blood</em>, held by <strong>96.9% of players</strong>. It is the most common achievement in the game, which tells you how hard this call is and how little the game expects perfection.</p>
+  <p>The opposite error is cheaper but not free: killing a real customer unlocks <em>First Blood</em>, held by <strong>[[ACH:First Blood]]% of players</strong>. It is the most common achievement in the game, which tells you how hard this call is and how little the game expects perfection.</p>
 
   <h2>What you have to work with</h2>
   <ul>
@@ -227,7 +225,7 @@ PAGES = [
   <p>The principle underneath all of it: a doppelganger has copied a person, not that person&rsquo;s paperwork. Anywhere the two are supposed to agree is a seam.</p>
 
   <h2>What the tells look like in practice</h2>
-  <p><a href="https://www.dualshockers.com/shift-at-midnight-all-doppelgangers/" target="_blank" rel="noopener">DualShockers has documented 47 named doppelgangers</a>, each with its own tell. Five, to show the range:</p>
+  <p><a href="https://www.dualshockers.com/shift-at-midnight-all-doppelgangers/" target="_blank" rel="noopener">DualShockers has documented 47 named doppelgangers</a>, each with its own tell (its count when we read it for the 5 August 2026 version of this page). That count predates two official patches: the 20 August 2026 announcement says &ldquo;15 new customers added to STORY MODE and ENDLESS MODE&rdquo; and the 1 September 2026 announcement says &ldquo;30 NEW CUSTOMERS added to STORY MODE and ENDLESS MODE&rdquo;. Neither says how many of them are doppelgangers, so the current total is not confirmed. Five, to show the range:</p>
   <ul>
     <li><strong>Nathan Calloway</strong> &mdash; the database says the real Nathan is dead.</li>
     <li><strong>Natasha Lin</strong> &mdash; describes working a morning shift at a place that only opens at night.</li>
@@ -248,14 +246,14 @@ PAGES = [
   </ul>
   <p><em>Single source, not independently confirmed:</em> the behaviour after killing him is reported only by <a href="https://allthings.how/shift-at-midnight-what-sparing-norbert-does-to-your-shift/" target="_blank" rel="noopener">AllThings.How</a>. The lesson holds either way &mdash; <strong>the flag tells you a document is wrong, not what the holder is going to do.</strong> More on <a href="/monsters/norbert/">Norbert</a>.</p>
 
-  <h2>What the 29 July patch changed here</h2>
-  <p>Before it, customers ran down a patience meter while you verified them, so rushing a scan was a defensible choice. <strong>That mechanic is gone.</strong> Nothing now argues against typing the name into the database, asking a second question, or stepping away from the counter to read a file. Instincts formed in the game&rsquo;s first week are more hurried than they need to be. See <a href="/updates/">patch notes</a>.</p>
+  <h2>What the patch notes say about patience</h2>
+  <p>The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo; and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, and no official announcement says whether Story Mode customers still run down a patience timer. See <a href="/updates/">patch notes</a>.</p>
 
   <h2>With two or three players</h2>
   <p>Split roles instead of crowding the till: one on the scanner and database, one watching the aisles for the things that never come to the counter, one keeping the store running so the shift does not fail on numbers. Proximity chat lets the floor watcher speak quietly without the counter breaking eye contact. See <a href="/multiplayer/#co-op">co-op roles</a>.</p>
 
   <h2>What this page leaves out</h2>
-  <p>All 47 names, because reading them in advance replaces the game with a lookup table. And any schedule of who turns up on which night: customers and events are <a href="/nights-and-levels/">procedurally generated</a>, so such a list describes one playthrough, not the game.</p>
+  <p>The full DualShockers list of names, because reading them in advance replaces the game with a lookup table. And any schedule of who turns up on which night: customers and events are <a href="/nights-and-levels/">procedurally generated</a>, so such a list describes one playthrough, not the game.</p>
 
   <div class="grid two">
     <a class="card" href="/guide/survival/"><b>Survival &amp; weapons</b><span>For when this page has already failed and something is loose in the building.</span></a>
@@ -264,6 +262,8 @@ PAGES = [
 """},
 {
  "path": "guide/survival", "active": "/guides/",
+ "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2b 2026-10-10)
+ "updated": "Last updated 2026-10-10 &middot; the Chainsaw / Locked And Loaded statement re-checked 10 October 2026 against the 1 September 2026 Steam announcement &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "title": "Shift At Midnight Survival Guide — Traps, Barricades &amp; Hiding",
  "og_short": "Shift At Midnight Survival Guide",
  "desc": "When identification has failed and something is loose in the store: sound discipline, barricading, trap placement, and how each of the six threats has to be handled differently.",
@@ -277,7 +277,7 @@ PAGES = [
   </div>
 
   <h2>Hunts are something you caused</h2>
-  <p>They are not weather. Let a doppelganger complete its purchase and walk out and <strong>it returns that same night as a monster</strong> (<a href="https://gamerant.com/shift-at-midnight-all-monsters/" target="_blank" rel="noopener">Game Rant</a>), so everything below is the bill for a decision made at the counter &mdash; see <a href="/guide/doppelgangers/">identifying doppelgangers</a>. <em>Still Breathing</em>, for surviving your first hunt, sits at <strong>93.8%</strong>; <em>Relentless</em>, for finishing one inside 30 seconds, sits at <strong>45.4%</strong>. That gap is this page&rsquo;s subject: surviving is normal, ending it fast is a plan.</p>
+  <p>They are not weather. Let a doppelganger complete its purchase and walk out and <strong>it returns that same night as a monster</strong> (<a href="https://gamerant.com/shift-at-midnight-all-monsters/" target="_blank" rel="noopener">Game Rant</a>), so everything below is the bill for a decision made at the counter &mdash; see <a href="/guide/doppelgangers/">identifying doppelgangers</a>. <em>Still Breathing</em>, for surviving your first hunt, sits at <strong>[[ACH:Still Breathing]]%</strong>; <em>Relentless</em>, for finishing one inside 30 seconds, sits at <strong>[[ACH:Relentless]]%</strong>. That gap is this page&rsquo;s subject: surviving is normal, ending it fast is a plan.</p>
 
   <h2>Sound is the first thing to control</h2>
   <p>Noise gives away your position, so silence is a defensive tool before any barricade is &mdash; and a gun is the loudest thing you own, which is why a <a href="/monsters/shrieking-doll/">Shrieking Doll</a> shot at the wrong moment can cost more than it saves. <em>Both points are single-sourced and not independently confirmed.</em> Sound works for you too: since the <a href="https://steamdb.info/patchnotes/24354120/" target="_blank" rel="noopener">23 July patch</a> the <a href="/monsters/jack-in-the-box/">Jack-in-the-Box</a> is much louder, turning the search for it into a listening problem, and in Endless Mode a screaming customer means a Rake has spawned.</p>
@@ -291,7 +291,7 @@ PAGES = [
   <ul>
     <li><strong>Entities</strong> &mdash; the default hunters, and what you get for letting a doppelganger leave. Barricades, traps and weapons all work; they get harder as the run goes on.</li>
     <li><strong><a href="/monsters/shrieking-doll/">Shrieking Doll</a></strong> &mdash; small, crawls low, finds you by line of sight, dies to a few shots. An interruption rather than a threat, but a noisy one to remove. <em>Single source.</em></li>
-    <li><strong><a href="/monsters/demented/">Demented</a></strong> &mdash; cannot move while you look straight at it. Hold the stare, back it toward a trap, then break eye contact. Not rare, whatever you have read: <strong>79.8%</strong> of players have killed one.</li>
+    <li><strong><a href="/monsters/demented/">Demented</a></strong> &mdash; cannot move while you look straight at it. Hold the stare, back it toward a trap, then break eye contact. Not rare, whatever you have read: <strong>[[ACH:Freed]]%</strong> of players have killed one.</li>
     <li><strong><a href="/monsters/marionette/">Marionette</a></strong> &mdash; from <strong>Shift 9</strong> onward, flagged in advance by a N.E.T. email. When the music box starts, find it and <strong>hold E to rewind before the melody plays three times</strong>; it appears in the break room, a storage room, the bathroom or a shelf aisle. It can be killed, and the 23 July HP cut makes that a real option with a stocked arsenal and a second player.</li>
     <li><strong>Rakes</strong> &mdash; Endless and post-story only. They come out of the forest and go for your customers rather than you: follow the screaming, look for red light at the treeline, kill it before it reaches the building. <em>Beyond &ldquo;they exist and emerge from the forests&rdquo;, single-sourced.</em> See <a href="/nights-and-levels/#endless-mode">Endless Mode</a>.</li>
     <li><strong><a href="/monsters/the-dentist/">The Dentist</a></strong> &mdash; see the top of this page.</li>
@@ -332,31 +332,31 @@ PAGES = [
  "path": "guide/weapons", "active": "/guides/",
  "title": "Shift At Midnight Weapons — Arsenal &amp; Locked And Loaded",
  "og_short": "Shift At Midnight Weapons Guide",
- "desc": "Buying every melee weapon unlocks Locked And Loaded, held by only 23.5% of players. Why it is low, how to bank for it, and what weapons cannot solve.",
+ "desc": "Buying every melee weapon unlocks Locked And Loaded, held by only [[ACH:Locked And Loaded]]% of players. Why it is low, how to bank for it, and what weapons cannot solve.",
  "trail": G + [(None, "Weapons")],
  "h1": "Weapons arsenal",
- "lede": "Purchasing every melee weapon and filling out the arsenal unlocks <strong>Locked And Loaded</strong> &mdash; held by only <strong>23.5%</strong> of players. It is not a difficulty problem. It is a budgeting problem.",
+ "lede": "Purchasing every melee weapon and filling out the arsenal unlocks <strong>Locked And Loaded</strong> &mdash; held by only <strong>[[ACH:Locked And Loaded]]%</strong> of players. It is not a difficulty problem. It is a budgeting problem.",
  "body": """
   <div class="tags">
     <span class="tag amber">Achievement: Locked And Loaded</span>
-    <span class="tag">23.5% of players</span>
+    <span class="tag">[[ACH:Locked And Loaded]]% of players</span>
   </div>
 
   <h2>Melee is the achievement; the guns are insurance</h2>
-  <p><em>Locked And Loaded</em> is specific: <strong>purchase all melee weapons and fill out the weapons arsenal</strong>. At <strong>23.5%</strong> it is a budgeting problem, not a difficulty one: restocking pays tonight, the arsenal pays on a night that may never come, and under pressure people buy the immediate thing. Decide early that a fixed slice of each shift&rsquo;s takings is untouchable.</p>
+  <p><em>Locked And Loaded</em> is specific: <strong>purchase all melee weapons and fill out the weapons arsenal</strong>. At <strong>[[ACH:Locked And Loaded]]%</strong> it is a budgeting problem, not a difficulty one: restocking pays tonight, the arsenal pays on a night that may never come, and under pressure people buy the immediate thing. Decide early that a fixed slice of each shift&rsquo;s takings is untouchable.</p>
   <p>Firearms sit outside that achievement, and there are now two of them: the <a href="https://store.steampowered.com/news/app/3722330/view/695394018676179340" target="_blank" rel="noopener">29 July patch</a> added a second purchasable gun alongside the one the game shipped with. They are also the loudest tools you own, which is the argument for melee on a night you would rather not be found &mdash; see sound discipline above. Full change list: <a href="/updates/">patch notes</a>.</p>
 
   <h2>Have it equipped before the hunt</h2>
-  <p>Buy and equip before a hunt starts, not during one: <em>Relentless</em> &mdash; finish a hunt within 30 seconds, <strong>45.4%</strong> &mdash; is close to impossible if the first ten seconds go on shopping. The target to attempt it on is a <a href="/monsters/shrieking-doll/">Shrieking Doll</a>, which comes to you rather than hiding. Never on a <a href="/monsters/the-dentist/">Dentist</a> night, which cannot be won at all.</p>
+  <p>Buy and equip before a hunt starts, not during one: <em>Relentless</em> &mdash; finish a hunt within 30 seconds, <strong>[[ACH:Relentless]]%</strong> &mdash; is close to impossible if the first ten seconds go on shopping. The target to attempt it on is a <a href="/monsters/shrieking-doll/">Shrieking Doll</a>, which comes to you rather than hiding. Never on a <a href="/monsters/the-dentist/">Dentist</a> night, which cannot be won at all.</p>
 
   <h2>What a weapon does not solve</h2>
   <ul>
     <li><strong>The Dentist.</strong> No weapon works. Running is the entire answer.</li>
-    <li><strong>Doppelgangers.</strong> The problem is identification, not damage &mdash; a weapon applied to the wrong customer is the 96.9% achievement. See <a href="/guide/doppelgangers/">identifying doppelgangers</a>.</li>
+    <li><strong>Doppelgangers.</strong> The problem is identification, not damage &mdash; a weapon applied to the wrong customer is the [[ACH:First Blood]]% achievement. See <a href="/guide/doppelgangers/">identifying doppelgangers</a>.</li>
     <li><strong>An unwound music box.</strong> Whether you fight a <a href="/monsters/marionette/">Marionette</a> at all is settled by the <a href="/monsters/jack-in-the-box/">box</a>, not your loadout. A weapon helps once the fight starts &mdash; the 23 July patch cut its HP &mdash; but arriving armed does not substitute for winding.</li>
   </ul>
 
-  <p>We do not publish a weapon tier list, damage values or per-monster recommendations. There is no published list of the melee weapons or their prices, and the confident numbers circulating for this game are unsourced.</p>
+  <p>We do not publish a weapon tier list, damage values or per-monster recommendations. The developer has named one melee weapon, the Chainsaw (&ldquo;now required for the LOCKED AND LOADED achievement&rdquo;, 1 September 2026 announcement); the rest of the list and the prices are not published, and the confident numbers circulating for this game are unsourced.</p>
 
   <div class="grid two">
     <a class="card" href="/achievements/"><b>All achievements</b><span>Where Locked And Loaded sits in the completion curve.</span></a>
@@ -385,10 +385,10 @@ PAGES = [
   </div>
 
   <h2>Queue pressure is the design</h2>
-  <p>A queue creates time pressure on the one decision the game cares about: is this person human? Rushing produces the 96.9% outcome &mdash; killing a customer &mdash; or the opposite error of waving through something you should have caught. The queue is not an obstacle to the horror; it is the mechanism that generates it.</p>
+  <p>A queue creates time pressure on the one decision the game cares about: is this person human? Rushing produces the [[ACH:First Blood]]% outcome &mdash; killing a customer &mdash; or the opposite error of waving through something you should have caught. The queue is not an obstacle to the horror; it is the mechanism that generates it.</p>
 
   <h2>Budgeting</h2>
-  <p>Money splits between restocking (immediate, keeps quota healthy) and the <a href="/guide/survival/#weapons">weapons arsenal</a> (deferred, and its own 23.5% achievement). Bank a fixed slice every shift rather than deciding to chase the arsenal later.</p>
+  <p>Money splits between restocking (immediate, keeps quota healthy) and the <a href="/guide/survival/#weapons">weapons arsenal</a> (deferred, and its own [[ACH:Locked And Loaded]]% achievement). Bank a fixed slice every shift rather than deciding to chase the arsenal later.</p>
 
   <div class="grid two">
     <a class="card" href="/guide/survival/#weapons"><b>Weapons arsenal</b><span>The other half of the budget.</span></a>
@@ -414,7 +414,7 @@ PAGES = [
   </div>
 
   <h2>Where the endings sit</h2>
-  <p>Three achievements are hidden and rare: <em>Grave Decision</em> (33.1%), <em>True Ending</em> (16.0%) and <em>Empty Home</em> (10.1%). They are three separate endings, not milestones on one path. Full discussion on <a href="/endings/">the endings page</a>, with fact and inference clearly separated.</p>
+  <p>Three achievements are hidden and rare: <em>Grave Decision</em> ([[ACH:Grave Decision]]%), <em>True Ending</em> (16.0%) and <em>Empty Home</em> ([[ACH:Empty Home]]%). They are three separate endings, not milestones on one path. Full discussion on <a href="/endings/">the endings page</a>, with fact and inference clearly separated.</p>
   <p>Because shifts are procedural but endings are rare, the likely lever is <em>how you played</em> rather than <em>which nights you got</em> &mdash; the run-level decisions, not the seed.</p>
 
   <h2>Solo or co-op</h2>
@@ -604,7 +604,7 @@ PAGES = [
   <p>The only content on the roadmap is Endless Mode in Q4 2026, and it is <strong>free</strong>. No season pass, no deluxe edition, no paid cosmetics have been announced. For a $9.99 game from a solo developer, what you buy is what there is.</p>
 
   <h2>Is it worth $9.99?</h2>
-  <p>The honest framing: this is a three-player co-op horror game with ten achievements and a procedural shift structure. The achievement curve suggests most players get several hours in &mdash; 45.4% reach <em>Relentless</em>, which is not a first-session achievement &mdash; and a meaningful minority push into the rare hidden endings at 10&ndash;16%. See <a href="/review/">is it worth it</a>.</p>
+  <p>The honest framing: this is a three-player co-op horror game with ten achievements and a procedural shift structure. The achievement curve suggests most players get several hours in &mdash; [[ACH:Relentless]]% reach <em>Relentless</em>, which is not a first-session achievement &mdash; and a meaningful minority push into the rare hidden endings at 10&ndash;16%. See <a href="/review/">is it worth it</a>.</p>
   <p>If you already play it through Game Pass the question does not arise. If you do not, and you have two friends who will play it with you, $9.99 for a co-op night is not a hard sell. If you are buying it to play alone, it is a smaller game than the store page implies.</p>
 
   <div class="grid two">
@@ -670,7 +670,7 @@ PAGES = [
 
   <ul>
     <li><strong>Patches break plugins.</strong> Two shipped in fourteen days and the second added an enemy and rebalanced the game. A scene this size will not always have a fix out the same day.</li>
-    <li><strong>Achievements: unknown, and we will not pretend otherwise.</strong> No source states whether BepInEx plugins affect Steam achievement unlocks in this game &mdash; the developer has not commented and the mod pages do not address it. If you are going for <a href="/endings/">True Ending</a> (16.0%) or <em>Empty Home</em> (10.1%), do that run on a clean install and keep modded lobbies as a separate hobby. See <a href="/achievements/">all 10 achievements</a>.</li>
+    <li><strong>Achievements: unknown, and we will not pretend otherwise.</strong> No source states whether BepInEx plugins affect Steam achievement unlocks in this game &mdash; the developer has not commented and the mod pages do not address it. If you are going for <a href="/endings/">True Ending</a> (16.0%) or <em>Empty Home</em> ([[ACH:Empty Home]]%), do that run on a clean install and keep modded lobbies as a separate hobby. See <a href="/achievements/">all 10 achievements</a>.</li>
     <li><strong>Client compatibility is per-mod.</strong> ShiftMorePlayers explicitly supports vanilla clients; do not assume the next mod does. The host&rsquo;s mod list defines the session, so read each page.</li>
     <li><strong>Nothing is vetted.</strong> No Workshop means no platform-level review of what you are running. Use the game&rsquo;s own Thunderstore and Nexus pages rather than reuploads.</li>
     <li><strong>PC only.</strong> There is no equivalent for the Xbox or Microsoft Store builds, so a modded lobby cannot include a console <a href="/platforms/#game-pass">Game Pass</a> player &mdash; which is already true unmodded, because <a href="/crossplay/">the developer says Steam players will only play with other Steam players</a>.</li>
@@ -717,10 +717,10 @@ PAGES = [
   <h2>What the achievement curve says about engagement</h2>
   <p>Completion rates are one of the few honest public signals about whether people stick with a game.</p>
   <ul>
-    <li><strong>93.8%</strong> survive their first hunt &mdash; almost nobody bounces off immediately.</li>
-    <li><strong>79.8%</strong> kill a <a href="/monsters/demented/">Demented</a> &mdash; three quarters get past the opening.</li>
-    <li><strong>45.4%</strong> reach <em>Relentless</em> &mdash; not a first-session achievement. Four in ten players are still engaged well past the tutorial phase.</li>
-    <li><strong>16.0% / 10.1%</strong> reach the rare hidden endings &mdash; a real minority is digging.</li>
+    <li><strong>[[ACH:Still Breathing]]%</strong> survive their first hunt &mdash; almost nobody bounces off immediately.</li>
+    <li><strong>[[ACH:Freed]]%</strong> kill a <a href="/monsters/demented/">Demented</a> &mdash; three quarters get past the opening.</li>
+    <li><strong>[[ACH:Relentless]]%</strong> reach <em>Relentless</em> &mdash; not a first-session achievement. Four in ten players are still engaged well past the tutorial phase.</li>
+    <li><strong>16.0% / [[ACH:Empty Home]]%</strong> reach the rare hidden endings &mdash; a real minority is digging.</li>
   </ul>
   <p>For a $9.99 indie release, a 40% figure on a mid-tier skill achievement is a healthy retention signal. It is not a game most people refund after an hour.</p>
 
@@ -773,7 +773,7 @@ PAGES = [
   <h2>What we can say</h2>
   <ul>
     <li>The game is built around <strong>reading things carefully</strong> &mdash; IDs, behaviour, readings that disagree with each other. In-world text rewards attention by design.</li>
-    <li>Three achievements are hidden: <em>Grave Decision</em> (33.1%), <em>True Ending</em> (16.0%), <em>Empty Home</em> (10.1%). None has an official requirement text, though the conditions are now documented. See <a href="/endings/">endings</a>.</li>
+    <li>Three achievements are hidden: <em>Grave Decision</em> ([[ACH:Grave Decision]]%), <em>True Ending</em> (16.0%), <em>Empty Home</em> ([[ACH:Empty Home]]%). None has an official requirement text, though the conditions are now documented. See <a href="/endings/">endings</a>.</li>
     <li>Nothing publicly documented connects the newsletter to those achievements. That is an <strong>absence of evidence</strong>, not evidence of absence.</li>
   </ul>
 

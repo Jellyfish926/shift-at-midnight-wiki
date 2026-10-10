@@ -69,6 +69,8 @@ UPD = ("Last updated 2026-10-10 &middot; unlock rates outside brackets are this 
        f"captured {ACH_DATE} &middot; rest of the page last verified 11 September 2026 (written against the "
        "29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)")
 
+UPD_PATCH = UPD + " &middot; patch-note quotes on this page checked against the official Steam announcements on 10 October 2026"
+
 RATE_NOTE = (f"""  <div class="term warn">
     <div class="term-h">Two readings of the same number</div>
     <p>Global unlock rates move as more people buy the game, and this wiki now holds two readings taken on
@@ -92,7 +94,7 @@ PAGES = [
  "lede": ("The only outcome where <strong>nobody you care about dies</strong> &mdash; and the only one that asks "
           "you to satisfy two unrelated requirements in the same run. One is a refusal, the other is a bank "
           "balance, and missing either drops you into a different ending without warning."),
- "updated": UPD,
+ "updated": UPD_PATCH,
  "published": "2026-09-11",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
  "body": f"""
   <div class="tags">
@@ -120,6 +122,9 @@ PAGES = [
     large sum across thirteen working nights. What makes the ending rare is that the two halves pull against each
     other in time: the refusal happens at a moment you can plan for, and the money is graded a full shift later,
     after a night in which the temptation to spend is at its highest.</p>
+
+  <p>The 20 August 2026 patch note says &ldquo;Equalized product prices so getting true ending is less RNG&rdquo;. We have no
+    figures for what changed, and the $250 threshold is not mentioned in either the 20 August or the 1 September changelog.</p>
 
   <p>That gap is where runs are lost. A player can make the correct call after Shift 12, walk into the final night
     holding a comfortable buffer, spend it on preparation, and finish under the line. Nothing flags the mistake
@@ -151,10 +156,9 @@ PAGES = [
 
   <div class="term tip">
     <div class="term-h">The one patch that helps the money</div>
-    <p>The <a href="/updates/">29 July 2026 patch</a> removed the patience mechanic, so customers no longer run down a
-      timer while you verify them. Rushed verification is what lets a doppelganger through, and a doppelganger that
+    <p>The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo; and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, and no official announcement says whether Story Mode customers still run down a patience timer. (see <a href="/updates/">updates</a>). Rushed verification is what lets a doppelganger through, and a doppelganger that
       gets through becomes a Hunt, and a Hunt is the expensive kind of night &mdash; ammunition, replacements, a
-      shift spent not selling. Careful checking now costs nothing, which quietly makes
+      shift spent not selling. That makes
       <a href="/guide/doppelgangers/">the identification guide</a> the most financial page on this wiki.</p>
   </div>
 
@@ -196,10 +200,10 @@ PAGES = [
 
   <h2>Sources on this site</h2>
   <ul>
-    <li><a href="/endings/">Endings overview</a> &mdash; the two variables, all three outcomes, and the unlock rates read on 13 August 2026.</li>
+    <li><a href="/endings/">Endings overview</a> &mdash; the two variables, all three outcomes, and the unlock rates as dated on that page.</li>
     <li><a href="/monsters/the-dentist/">The Dentist</a> &mdash; Shift 13, weapon and trap immunity, and the Clyde resolution.</li>
     <li><a href="/achievements/">All 10 achievements</a> &mdash; the completion curve and the hidden descriptions.</li>
-    <li><a href="/guide/doppelgangers/">Identifying doppelgangers</a> and <a href="/updates/">patch notes</a> &mdash; the removed patience meter.</li>
+    <li><a href="/guide/doppelgangers/">Identifying doppelgangers</a> and <a href="/updates/">patch notes</a> &mdash; what changed for patience.</li>
   </ul>
 
   <div class="grid two">
@@ -309,7 +313,7 @@ PAGES = [
 
   <h2>Sources on this site</h2>
   <ul>
-    <li><a href="/endings/">Endings overview</a> &mdash; conditions, outcomes, Xbox gamerscore and the 13 August unlock rates.</li>
+    <li><a href="/endings/">Endings overview</a> &mdash; conditions, outcomes, Xbox gamerscore and the unlock rates as dated on that page.</li>
     <li><a href="/achievements/">All 10 achievements</a> &mdash; the hidden descriptions and the shape of the curve.</li>
     <li><a href="/monsters/the-dentist/">The Dentist</a> &mdash; what Shift 13 is, and why gear does not help.</li>
     <li><a href="/nights-and-levels/">Nights and Endless Mode</a> &mdash; where the 13-shift story ends and Endless begins.</li>
@@ -335,7 +339,7 @@ PAGES = [
  "lede": ("The rarest achievement in the game, and the only one people unlock by accident on a run they thought "
           "was going well. It is not a separate route to anything &mdash; it is the losing half of the same gamble "
           "that produces the <a href=\"/endings/true-ending/\">True Ending</a>."),
- "updated": UPD,
+ "updated": UPD_PATCH,
  "published": "2026-09-11",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
  "body": f"""
   <div class="tags">
@@ -392,10 +396,8 @@ PAGES = [
 
   <div class="term tip">
     <div class="term-h">The patch that changed the economics</div>
-    <p>The <a href="/updates/">29 July 2026 update</a> removed the patience meter, so nothing rushes you at the counter
-      any more. Since the expensive nights are the ones that start with a bad verification, slow checking is now the
-      cheapest money-saving habit available &mdash; and the one that keeps the $250 within reach without any grinding at
-      all.</p>
+    <p>The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo; and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, and no official announcement says whether Story Mode customers still run down a patience timer. (see <a href="/updates/">updates</a>). The expensive nights are the ones that start with a bad
+      verification, so careful checking is what keeps the $250 within reach.</p>
   </div>
 
   <h2>If you want it deliberately</h2>
@@ -417,7 +419,7 @@ PAGES = [
 
   <h2>Sources on this site</h2>
   <ul>
-    <li><a href="/endings/">Endings overview</a> &mdash; the two variables, the outcome text and the 13 August unlock rates.</li>
+    <li><a href="/endings/">Endings overview</a> &mdash; the two variables, the outcome text and the unlock rates as dated on that page.</li>
     <li><a href="/achievements/">All 10 achievements</a> &mdash; where this sits on the completion curve.</li>
     <li><a href="/monsters/the-dentist/">The Dentist</a> &mdash; why nothing bought for Shift 13 is worth its price.</li>
     <li><a href="/monsters/entity/">The Entity</a> and <a href="/guide/survival/">the survival guide</a> &mdash; how a Hunt drains a run's savings.</li>
@@ -561,7 +563,7 @@ PAGES = [
  "lede": ("Three achievements sit on the wrong side of a night you caused: surviving a Hunt, ending one inside "
           "half a minute, and owning every melee weapon when it starts. The first is near-universal, the other "
           "two are where the completion curve falls off a cliff."),
- "updated": UPD,
+ "updated": UPD_PATCH,
  "published": "2026-09-11",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
  "body": f"""
   <div class="tags">
@@ -623,7 +625,9 @@ PAGES = [
 
   <h2>Locked And Loaded &mdash; a budget, not a boss</h2>
 
-  <p>The requirement is specific: purchase every melee weapon and fill out the weapons arsenal. At
+  <p>The requirement is specific: purchase every melee weapon and fill out the weapons arsenal. The 1 September 2026
+    announcement adds one named item: &ldquo;Added Chainsaw as a purchasable melee weapon - now required for the LOCKED AND
+    LOADED achievement&rdquo;. At
     {_ACH['Locked And Loaded']}% it is the rarest achievement in the game that is not an ending, and it is rare for a
     reason that has nothing to do with skill. Restocking pays tonight and keeps the quota healthy; the arsenal pays on a
     night that may never come. Under pressure, people buy the immediate thing, every shift, forever.</p>
@@ -634,8 +638,8 @@ PAGES = [
     so neither of them counts toward it. The full breakdown is on
     <a href="/guide/survival/#weapons">the weapons arsenal section</a>.</p>
 
-  <p>What we will not give you is a weapon list, prices or a tier ranking. There is no published list of the melee weapons
-    or what they cost, and the confident numbers circulating for this game are unsourced, so there is nothing here to
+  <p>What we will not give you is a weapon list, prices or a tier ranking. The developer has named one melee weapon, the Chainsaw; the rest of the list is not published, nor
+    is what they cost, and the confident numbers circulating for this game are unsourced, so there is nothing here to
     budget against precisely. Bank a slice and buy what appears.</p>
 
   <h2>Do not stack this on an ending run</h2>
@@ -660,7 +664,7 @@ PAGES = [
     <li><a href="/achievements/">All 10 achievements</a> &mdash; the full list, the curve, and an August rate reading (dated 12 August on that page, 13 August on the monster pages that repeat the same numbers).</li>
     <li><a href="/monsters/entity/">The Entity</a> &mdash; how a Hunt starts, Blood Moon shifts, and why sound is the mechanic.</li>
     <li><a href="/guide/survival/">Traps, barricades and hiding</a> &mdash; sound discipline and the weapons arsenal.</li>
-    <li><a href="/updates/">Patch notes</a> &mdash; the second firearm and the removed patience meter, both from 29 July 2026.</li>
+    <li><a href="/updates/">Patch notes</a> &mdash; the second firearm (29 July 2026) and the patience changes.</li>
   </ul>
 
   <div class="grid two">

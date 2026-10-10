@@ -31,7 +31,8 @@ ARTICLE_MARK = "<!-- article-ld -->"
 FIRST_PUBLISHED = {B.BASE + "/crossplay/": "2026-07-28",
                    # D2 2026-10-10:日期行改写后保留原 datePublished
                    B.BASE + "/achievements/": "2026-08-05",
-                   B.BASE + "/": "2026-08-05"}
+                   B.BASE + "/": "2026-08-05",
+                   B.BASE + "/monsters/": "2026-08-13"}
 
 
 def article_block(s: str, canonical: str) -> str:

@@ -11,23 +11,25 @@ M = [("/monsters/", "Monsters")]
 PAGES = [
 {
  "path": "monsters/marionette",
+ "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2b 2026-10-10)
+ "updated": "Last updated 2026-10-10 &middot; patience and Endless Mode email statements re-checked 10 October 2026 against the official Steam announcements &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "title": "Shift At Midnight Marionette — Shift 9 Music Box &amp; How to Kill It",
  "og_short": "Shift At Midnight Marionette Guide",
- "desc": "The Marionette arrives from Shift 9. Find the music box, hold E to rewind it before the melody plays three times — or fight what it summons. Only 41.6% of players have killed one.",
+ "desc": "The Marionette arrives from Shift 9. Find the music box, hold E to rewind it before the melody plays three times — or fight what it summons. Only [[ACH:Last Performance]]% of players have killed one.",
  "trail": M + [(None, "Marionette")],
  "h1": "Marionette",
- "lede": "The <strong>Shift 9</strong> threat, and the one most players never beat &mdash; only <strong>41.6%</strong> of players have killed a Marionette. The encounter is governed by a wind-up <a href=\"/monsters/jack-in-the-box/\">music box</a> hidden somewhere in the store, and the clock on it is exactly three melodies long.",
+ "lede": "The <strong>Shift 9</strong> threat, and the one most players never beat &mdash; only <strong>[[ACH:Last Performance]]%</strong> of players have killed a Marionette. The encounter is governed by a wind-up <a href=\"/monsters/jack-in-the-box/\">music box</a> hidden somewhere in the store, and the clock on it is exactly three melodies long.",
  "body": """
   <div class="tags">
     <span class="tag red">Hostile</span>
     <span class="tag amber">From Shift 9</span>
     <span class="tag green">Can be killed</span>
-    <span class="tag">41.6% have Last Performance</span>
+    <span class="tag">[[ACH:Last Performance]]% have Last Performance</span>
   </div>
 
   <table class="facts">
     <tr><th>First appears</th><td>Shift 9 onwards, Story Mode</td></tr>
-    <tr><th>Advance warning</th><td>An N.E.T. email flags it before the shift</td></tr>
+    <tr><th>Advance warning</th><td>Story Mode: an N.E.T. email flags it before the shift. The 1 September 2026 patch note says &ldquo;Disabled emails in ENDLESS MODE&rdquo;</td></tr>
     <tr><th>Live warning</th><td>A music box starts playing somewhere in the store</td></tr>
     <tr><th>Counterplay</th><td>Reach the box and hold <strong>E</strong> to rewind it before the melody finishes three times</td></tr>
     <tr><th>Can it be killed?</th><td>Yes &mdash; tougher than a standard entity, and its health was reduced on 23 July 2026</td></tr>
@@ -40,7 +42,7 @@ PAGES = [
 
   <h2>How to tell it is coming</h2>
 
-  <p><strong>The long warning is an N.E.T. email.</strong> From Shift 9 the terminal flags the Marionette before the night starts, so you are never ambushed on a first appearance. Treat that email as your cue to buy ammunition and to walk the store once so you know where your traps already are.</p>
+  <p><strong>The long warning is an N.E.T. email.</strong> From Shift 9 the terminal flags the Marionette before the night starts, so you are never ambushed on a first appearance. Treat that email as your cue to buy ammunition and to walk the store once so you know where your traps already are. The 1 September 2026 patch note says &ldquo;Disabled emails in ENDLESS MODE&rdquo;, so that warning does not apply there.</p>
 
   <p><strong>The short warning is the music box itself.</strong> Somewhere in the building a wind-up box audibly starts playing, and that sound is the encounter beginning. The <a href="https://steamdb.info/patchnotes/24354120/" target="_blank" rel="noopener">23 July 2026 patch</a> increased the box&rsquo;s volume, so it is far easier to place by ear than it was at launch. Any launch-day guide calling the box hard to hear is out of date.</p>
 
@@ -76,14 +78,14 @@ PAGES = [
 
   <ul>
     <li><strong>Treating it as a combat problem.</strong> Reflexes and a better weapon do not decide this encounter. An object in another room does.</li>
-    <li><strong>Finishing the customer at the counter first.</strong> Since the <a href="https://store.steampowered.com/news/app/3722330/view/695394018676179340" target="_blank" rel="noopener">29 July patch</a> removed the patience mechanic, customers no longer run down a timer while you verify them &mdash; so the person at your counter can genuinely wait. The music box cannot.</li>
+    <li><strong>Finishing the customer at the counter first.</strong> The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo; and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, and no official announcement says whether Story Mode customers still run down a patience timer. The music box does not wait either way.</li>
     <li><strong>Searching by memory instead of by ear.</strong> The spawn is random every shift. Your route from last night tells you nothing.</li>
     <li><strong>Assuming this is the final boss.</strong> It is not. <a href="/monsters/the-dentist/">The Dentist</a> is Shift 13, and nothing you learn here transfers &mdash; that one cannot be fought at all.</li>
   </ul>
 
   <h2>Which achievement this is tied to</h2>
 
-  <p><em>Last Performance</em> &mdash; Kill a Marionette &mdash; sits at <strong>41.6%</strong>. Put that next to the other two straightforward monster kills: <em>Silenced</em> (Shrieking Doll) at <strong>89.8%</strong> and <em>Freed</em> (Demented) at <strong>79.8%</strong>.</p>
+  <p><em>Last Performance</em> &mdash; Kill a Marionette &mdash; sits at <strong>[[ACH:Last Performance]]%</strong>. Put that next to the other two straightforward monster kills: <em>Silenced</em> (Shrieking Doll) at <strong>[[ACH:Silenced]]%</strong> and <em>Freed</em> (Demented) at <strong>[[ACH:Freed]]%</strong>.</p>
 
   <p>The gap is not about how often it appears &mdash; it announces itself by email and by sound. Two things separate it. The correct defensive play, rewinding the box, is also the play that denies you the kill, so cautious players never earn it. And it starts at Shift 9 of 13, so reaching it means getting most of the way through Story Mode, while the <a href="/achievements/">achievement curve</a> shows a heavy drop-off well before that. That second reading is ours, drawn from the published rates rather than any developer statement.</p>
 
@@ -93,7 +95,7 @@ PAGES = [
 
   <ul>
     <li><strong>23 July 2026:</strong> Marionette health <strong>reduced</strong>, and Jack-in-the-Box volume <strong>increased</strong>. Both changes push the same way &mdash; the box is easier to find, and the fight is easier to win if you do not find it.</li>
-    <li><strong>29 July 2026:</strong> the patience mechanic was removed, so walking away from a half-verified customer to deal with the box no longer costs you at the counter.</li>
+    <li><strong>29 July 2026:</strong> patience was removed in Endless and Post-Story mode (&ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo;). <strong>1 September 2026:</strong> &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;.</li>
   </ul>
   <p class="src">Patch sources: <a href="https://steamdb.info/patchnotes/24354120/" target="_blank" rel="noopener">SteamDB build 24354120</a> and the <a href="https://store.steampowered.com/news/app/3722330/view/695394018676179340" target="_blank" rel="noopener">29 July Steam announcement</a>. Full timeline on <a href="/updates/">updates</a>.</p>
 
@@ -104,6 +106,8 @@ PAGES = [
 """},
 {
  "path": "monsters/the-dentist",
+ "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2b 2026-10-10)
+ "updated": "Last updated 2026-10-10 &middot; the patience statement re-checked 10 October 2026 against the official Steam announcements &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "title": "Shift At Midnight The Dentist — The Shift 13 Chase Explained",
  "og_short": "Shift At Midnight The Dentist",
  "desc": "The Dentist arrives on the final shift and cannot be killed — weapons do nothing, traps do not stop him. The only correct play is to run to Sheriff Clyde.",
@@ -167,14 +171,14 @@ PAGES = [
 
   <p>The Dentist has <strong>no achievement of his own</strong> &mdash; there is no "kill the Dentist", because you cannot. What he is tied to is the <em>True Ending</em>, held by <strong>16.0%</strong> of players.</p>
 
-  <p>The two variables are decided elsewhere. After Shift 12 you choose whether to call Sheriff Clyde, and at the end of Shift 13 the game checks whether your personal savings are <strong>$250 or more</strong>. Not calling Clyde and finishing with at least $250 produces the True Ending, in which the Dentist appears and Clyde helps destroy him, and both Clyde and your pet survive. Calling him instead gives <em>Grave Decision</em> (<strong>33.1%</strong>), where Clyde dies. Not calling him with under $250 gives <em>Empty Home</em> (<strong>10.1%</strong>).</p>
+  <p>The two variables are decided elsewhere. After Shift 12 you choose whether to call Sheriff Clyde, and at the end of Shift 13 the game checks whether your personal savings are <strong>$250 or more</strong>. Not calling Clyde and finishing with at least $250 produces the True Ending, in which the Dentist appears and Clyde helps destroy him, and both Clyde and your pet survive. Calling him instead gives <em>Grave Decision</em> (<strong>[[ACH:Grave Decision]]%</strong>), where Clyde dies. Not calling him with under $250 gives <em>Empty Home</em> (<strong>[[ACH:Empty Home]]%</strong>).</p>
 
   <p>So the practical takeaway for this page is blunt: <strong>how you handle the chase does not change your ending &mdash; the choice after Shift 12 and your bank balance do.</strong> Full breakdown on the <a href="/endings/">endings page</a>.</p>
   <p class="src">Ending conditions: <a href="https://www.keengamer.com/articles/guides/shift-at-midnight-how-to-get-all-endings/" target="_blank" rel="noopener">KeenGamer</a>. Unlock rates: <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global stats</a>, read 13 August 2026.</p>
 
   <h2>What changed in the patches</h2>
 
-  <p>No patch since launch has touched the Dentist directly. Two changes affect the run that leads to him. The <a href="/updates/">29 July patch</a> removed the patience mechanic, so verifying customers in the shifts beforehand is no longer timed &mdash; which matters because careful verification is how you avoid losing money and shifts on the way to the $250 threshold. The 23 July patch raised the lobby ceiling to six players, though the developer still designs around three.</p>
+  <p>No patch since launch has touched the Dentist directly. Two changes affect the run that leads to him. The <a href="/updates/">29 July patch</a> removed patience in Endless and Post-Story mode and the 1 September patch re-enabled it for Endless mode; neither note mentions Story Mode, where the Dentist appears. Careful verification is still how you avoid losing money and shifts on the way to the $250 threshold. The 23 July patch raised the lobby ceiling to six players, though the developer still designs around three.</p>
 
   <div class="grid two">
     <a class="card" href="/endings/"><b>All three endings</b><span>The Clyde call, the $250 check, and what each one costs.</span></a>
@@ -184,7 +188,7 @@ PAGES = [
 {
  "path": "monsters/jack-in-the-box",
  "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2 2026-10-10)
- "updated": "Last updated 2026-10-10 &middot; the Last Performance unlock rate re-checked 10 October 2026 against Steam&rsquo;s global achievement stats &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
+ "updated": "Last updated 2026-10-10 &middot; the Last Performance unlock rate, patience, Endless Mode email and rarity statements re-checked 10 October 2026 against Steam&rsquo;s global achievement stats and the official Steam announcements &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "title": "Shift At Midnight Jack-in-the-Box — Music Box Locations &amp; Rewind",
  "og_short": "Shift At Midnight Jack-in-the-Box",
  "desc": "The Jack-in-the-Box is not a monster — it is the wind-up music box that summons the Marionette after three melodies. Where it spawns, and how to rewind it.",
@@ -236,7 +240,7 @@ PAGES = [
 
   <ul>
     <li><strong>Rewind it</strong> if you want to finish the shift. This is the safe play, and it costs you nothing except the walk.</li>
-    <li><strong>Let it ring three times</strong> if you are chasing <em>Last Performance</em> (Kill a Marionette; <strong>44.0%</strong> of players in Steam&rsquo;s global stats, read 10 October 2026). You cannot get that achievement while doing the safe thing, which is a large part of why it is the rarest non-hidden achievement in the game.</li>
+    <li><strong>Let it ring three times</strong> if you are chasing <em>Last Performance</em> (Kill a Marionette; <strong>44.0%</strong> of players in Steam&rsquo;s global stats, read 10 October 2026). You cannot get that achievement while doing the safe thing, which is a large part of why fewer than half of players have it.</li>
   </ul>
 
   <p>If you do go for it, do it deliberately: on a shift that is otherwise calm, with ammunition already purchased, and ideally with teammates. Deciding halfway through the third melody is the worst of both options.</p>
@@ -251,9 +255,9 @@ PAGES = [
 
   <ul>
     <li><strong>Treating it as an enemy.</strong> Players who think it will spring out and attack them keep their distance. Distance is exactly wrong &mdash; you need to be standing on it.</li>
-    <li><strong>Serving the customer first.</strong> Since the 29 July patch there is no patience meter, so the person at your counter will wait indefinitely. The box will not.</li>
+    <li><strong>Serving the customer first.</strong> The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo; and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, and no official announcement says whether Story Mode customers still run down a patience timer. The box will not wait either way.</li>
     <li><strong>Searching visually.</strong> The box announces itself with audio and nothing else. Sweeping rooms with your eyes while the melody plays wastes the one signal you have.</li>
-    <li><strong>Assuming it is present every shift.</strong> It is tied to Shift 9 onwards, and the N.E.T. email is the advance warning. Before that point there is nothing to look for.</li>
+    <li><strong>Assuming it is present every shift.</strong> It is tied to Shift 9 onwards, and in Story Mode the N.E.T. email is the advance warning (the 1 September 2026 patch note says &ldquo;Disabled emails in ENDLESS MODE&rdquo;). Before that point there is nothing to look for.</li>
   </ul>
 
   <div class="grid two">
@@ -263,6 +267,8 @@ PAGES = [
 """},
 {
  "path": "monsters/norbert",
+ "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2b 2026-10-10)
+ "updated": "Last updated 2026-10-10 &middot; the patience statement and the doppelganger count note re-checked 10 October 2026 against the official Steam announcements &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "title": "Shift At Midnight Norbert — Spare Him or Kill Him?",
  "og_short": "Shift At Midnight Norbert",
  "desc": "Norbert is a gnome doppelganger whose ID scans as fake and who gets flagged by the system — and he is not lethal. Sparing him ends it. Killing him brings him back.",
@@ -286,7 +292,7 @@ PAGES = [
   <p>This is where a lot of coverage gets Norbert wrong, in both directions. Some pages call him a monster; others insist he is an ordinary customer and the flag is a bug. Neither is right.</p>
 
   <p>Norbert is catalogued among the game&rsquo;s doppelgangers &mdash; specifically described as <em>a magical, annoying gnome</em> &mdash; and when you scan him his documents come back fake and the system marks him as a doppelganger. Everything your training says should be true of a threat is true of him on paper. He simply is not violent.</p>
-  <p class="src">Classification: <a href="https://www.dualshockers.com/shift-at-midnight-all-doppelgangers/" target="_blank" rel="noopener">DualShockers doppelganger catalogue</a>, which documents 47 named doppelgangers and the tell for each.</p>
+  <p class="src">Classification: <a href="https://www.dualshockers.com/shift-at-midnight-all-doppelgangers/" target="_blank" rel="noopener">DualShockers doppelganger catalogue</a>, which documented 47 named doppelgangers and the tell for each when we read it for the 5 August 2026 version of this page; the 20 August and 1 September 2026 patches added 15 and 30 customers (official announcements), and the current doppelganger total is not confirmed.</p>
 
   <h2>Which shift does he appear on?</h2>
 
@@ -314,9 +320,9 @@ PAGES = [
   <h2>Common mistakes</h2>
 
   <ul>
-    <li><strong>Killing on suspicion.</strong> <em>First Blood</em> &mdash; kill your first customer &mdash; is the most common achievement in the game at <strong>96.9%</strong>. Almost everybody does this, and Norbert is where a lot of players spend it.</li>
+    <li><strong>Killing on suspicion.</strong> <em>First Blood</em> &mdash; kill your first customer &mdash; is the most common achievement in the game at <strong>[[ACH:First Blood]]%</strong>. Almost everybody does this, and Norbert is where a lot of players spend it.</li>
     <li><strong>Trusting the flag as a threat readout.</strong> The scanner reports on documents. It does not report on danger. <a href="/monsters/the-dentist/">The Dentist</a> is the same lesson inverted &mdash; genuinely lethal and not a counter problem at all.</li>
-    <li><strong>Rushing the check.</strong> Since the <a href="/updates/">29 July patch</a> removed the patience mechanic, customers no longer run down a timer while you verify them. The main reason players used to shoot first is gone.</li>
+    <li><strong>Rushing the check.</strong> The 29 July 2026 announcement says &ldquo;Removed patience in ENDLESS MODE / POST-STORY MODE&rdquo; and the 1 September 2026 announcement says &ldquo;Re-enabled patience for ENDLESS MODE&rdquo;. Neither line mentions Story Mode, and no official announcement says whether Story Mode customers still run down a patience timer. See <a href="/updates/">updates</a>.</li>
     <li><strong>Spending ammunition on him.</strong> Ammunition is for the <a href="/monsters/marionette/">Marionette</a> and the <a href="/monsters/shrieking-doll/">Shrieking Doll</a>. Norbert costs you rounds and gives you nothing.</li>
   </ul>
 
@@ -326,7 +332,7 @@ PAGES = [
 
   <h2>Does he affect your ending?</h2>
 
-  <p>No. This is worth stating plainly because the speculation is everywhere. The three endings are decided by two things: <strong>whether you call Sheriff Clyde after Shift 12</strong>, and whether your personal savings are <strong>$250 or more</strong> at the end of Shift 13. <em>True Ending</em> sits at <strong>16.0%</strong>, <em>Grave Decision</em> at <strong>33.1%</strong> and <em>Empty Home</em> at <strong>10.1%</strong>, and none of them is gated on who you shot at the counter. See the <a href="/endings/">endings page</a>.</p>
+  <p>No. This is worth stating plainly because the speculation is everywhere. The three endings are decided by two things: <strong>whether you call Sheriff Clyde after Shift 12</strong>, and whether your personal savings are <strong>$250 or more</strong> at the end of Shift 13. <em>True Ending</em> sits at <strong>16.0%</strong>, <em>Grave Decision</em> at <strong>[[ACH:Grave Decision]]%</strong> and <em>Empty Home</em> at <strong>[[ACH:Empty Home]]%</strong>, and none of them is gated on who you shot at the counter. See the <a href="/endings/">endings page</a>.</p>
 
   <div class="grid two">
     <a class="card" href="/guide/doppelgangers/"><b>Doppelganger identification</b><span>The seven tells, the database, and the Anomaly Lens.</span></a>
@@ -340,13 +346,13 @@ PAGES = [
  "desc": "The Shrieking Doll shows up during hunts alongside the Entities. It is fragile — a few shots end it — but every shot you fire tells everything else in the store where you are.",
  "trail": M + [(None, "Shrieking Doll")],
  "h1": "Shrieking Doll",
- "lede": "The most fragile threat in the game, and the easiest monster achievement in it &mdash; <strong>89.8%</strong> of players have <em>Silenced</em>. It is best understood as a <strong>distraction rather than a main threat</strong>. The danger is not the doll; it is what killing the doll costs you.",
+ "lede": "The most fragile threat in the game, and the easiest monster achievement in it &mdash; <strong>[[ACH:Silenced]]%</strong> of players have <em>Silenced</em>. It is best understood as a <strong>distraction rather than a main threat</strong>. The danger is not the doll; it is what killing the doll costs you.",
  "body": """
   <div class="tags">
     <span class="tag red">Hostile</span>
     <span class="tag green">Fragile &mdash; a few shots</span>
     <span class="tag amber">Achievement: Silenced</span>
-    <span class="tag">89.8% of players</span>
+    <span class="tag">[[ACH:Silenced]]% of players</span>
   </div>
 
   <h2>It does not arrive on its own</h2>
@@ -391,9 +397,9 @@ PAGES = [
 
   <h2>Which achievements this is tied to</h2>
 
-  <p><em>Silenced</em> (Kill a Shrieking Doll) sits at <strong>89.8%</strong>, third behind <em>First Blood</em> at 96.9% and <em>Still Breathing</em> at 93.8%. If you have played more than a couple of shifts you almost certainly have it.</p>
+  <p><em>Silenced</em> (Kill a Shrieking Doll) sits at <strong>[[ACH:Silenced]]%</strong>, third behind <em>First Blood</em> at [[ACH:First Blood]]% and <em>Still Breathing</em> at [[ACH:Still Breathing]]%. If you have played more than a couple of shifts you almost certainly have it.</p>
 
-  <p>The more interesting target is <em>Relentless</em> &mdash; finish a hunt within 30 seconds &mdash; at <strong>45.4%</strong>. The doll is the sensible monster to build that attempt around, because it is the one threat you can reliably delete in a couple of shots rather than one you have to find first. Compare with <em>Last Performance</em> at 41.6% for the <a href="/monsters/marionette/">Marionette</a>, where the fight itself is the obstacle. Full list on <a href="/achievements/">achievements</a>.</p>
+  <p>The more interesting target is <em>Relentless</em> &mdash; finish a hunt within 30 seconds &mdash; at <strong>[[ACH:Relentless]]%</strong>. The doll is the sensible monster to build that attempt around, because it is the one threat you can reliably delete in a couple of shots rather than one you have to find first. Compare with <em>Last Performance</em> at [[ACH:Last Performance]]% for the <a href="/monsters/marionette/">Marionette</a>, where the fight itself is the obstacle. Full list on <a href="/achievements/">achievements</a>.</p>
 
   <h2>What changed in the patches</h2>
 
@@ -408,18 +414,20 @@ PAGES = [
 """},
 {
  "path": "monsters/demented",
+ "published": "2026-08-05",   # 保留改日期行之前的 datePublished(D2b 2026-10-10)
+ "updated": "Last updated 2026-10-10 &middot; the 29 July patch summary re-checked 10 October 2026 against the official Steam announcements &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)",
  "title": "Shift At Midnight Demented — Freeze It, Then Trap It (Freed)",
  "og_short": "Shift At Midnight Demented",
  "desc": "The Demented stops moving while you look straight at it, and you cannot simply shoot it down. The confirmed answer is to break your gaze and lead it into a trap.",
  "trail": M + [(None, "Demented")],
  "h1": "Demented",
- "lede": "The one threat that plays by Weeping Angel rules: <strong>as long as you look straight at it, it does not move</strong>. It is also the one you cannot simply shoot down &mdash; the confirmed solution is to break your gaze and lead it into a trap. <strong>79.8%</strong> of players have <em>Freed</em>.",
+ "lede": "The one threat that plays by Weeping Angel rules: <strong>as long as you look straight at it, it does not move</strong>. It is also the one you cannot simply shoot down &mdash; the confirmed solution is to break your gaze and lead it into a trap. <strong>[[ACH:Freed]]%</strong> of players have <em>Freed</em>.",
  "body": """
   <div class="tags">
     <span class="tag red">Hostile</span>
     <span class="tag amber">Freezes while observed</span>
     <span class="tag red">Not killable by gunfire</span>
-    <span class="tag">79.8% have Freed</span>
+    <span class="tag">[[ACH:Freed]]% have Freed</span>
   </div>
 
   <div class="term warn">
@@ -460,7 +468,7 @@ PAGES = [
 
   <h2>It is not rare</h2>
 
-  <p>You will find this one described as an uncommon encounter. The achievement data does not support that. <em>Freed</em> &mdash; Kill a Demented &mdash; is held by <strong>79.8%</strong> of players, which is more than the share who have killed a <a href="/monsters/marionette/">Marionette</a> (41.6%) and roughly four players in five overall. Something four in five players have done is not rare, and planning your shift on the assumption you probably will not meet one is a bad plan.</p>
+  <p>You will find this one described as an uncommon encounter. The achievement data does not support that. <em>Freed</em> &mdash; Kill a Demented &mdash; is held by <strong>[[ACH:Freed]]%</strong> of players, which is more than the share who have killed a <a href="/monsters/marionette/">Marionette</a> ([[ACH:Last Performance]]%) and roughly four players in five overall. Something four in five players have done is not rare, and planning your shift on the assumption you probably will not meet one is a bad plan.</p>
   <p class="src">Unlock rates from <a href="https://steamcommunity.com/stats/3722330/achievements/" target="_blank" rel="noopener">Steam global achievement stats</a>, read 13 August 2026.</p>
 
   <h2>Common mistakes</h2>
@@ -474,7 +482,7 @@ PAGES = [
 
   <h2>What changed in the patches</h2>
 
-  <p>Neither the 23 July nor the 29 July patch touched the Demented. The 23 July patch reduced Marionette health and raised music box volume; the 29 July patch added a second firearm, added the Rake to endless and post-story modes only, and removed the patience mechanic. None of that changes how you handle a Demented &mdash; a second gun is still a gun. Timeline on <a href="/updates/">updates</a>.</p>
+  <p>Neither the 23 July nor the 29 July patch touched the Demented. The 23 July patch reduced Marionette health and raised music box volume; the 29 July patch added a second firearm, added the Rake to Endless and Post-Story mode, and removed patience in Endless and Post-Story mode. None of that changes how you handle a Demented &mdash; a second gun is still a gun. Timeline on <a href="/updates/">updates</a>.</p>
 
   <div class="grid two">
     <a class="card" href="/guide/survival/"><b>Survival guide</b><span>Trap placement, barricades and hunt discipline.</span></a>
@@ -494,7 +502,7 @@ PAGES = [
     <span class="tag red">Hostile &mdash; the Hunt</span>
     <span class="tag amber">Self-inflicted</span>
     <span class="tag green">Can be killed</span>
-    <span class="tag">93.8% survive their first hunt</span>
+    <span class="tag">[[ACH:Still Breathing]]% survive their first hunt</span>
   </div>
 
   <table class="facts">
@@ -504,7 +512,7 @@ PAGES = [
     <tr><th>Key weakness</th><td>It is <strong>blind</strong> &mdash; it tracks sound, including proximity voice chat</td></tr>
     <tr><th>What slows it</th><td>Wooden-board barricades on doors and windows</td></tr>
     <tr><th>Can it be killed?</th><td>Yes &mdash; weapons, traps and barricades all contribute</td></tr>
-    <tr><th>Achievements</th><td><em>Still Breathing</em> (survive a hunt, 93.8%) and <em>Relentless</em> (end one inside 30 seconds, 45.4%)</td></tr>
+    <tr><th>Achievements</th><td><em>Still Breathing</em> (survive a hunt, [[ACH:Still Breathing]]%) and <em>Relentless</em> (end one inside 30 seconds, [[ACH:Relentless]]%)</td></tr>
   </table>
   <p class="src">Sources:
     <a href="https://gamerant.com/shift-at-midnight-all-monsters/" target="_blank" rel="noopener">Game Rant monster overview</a>,
@@ -549,7 +557,7 @@ PAGES = [
 
   <h2>Killing it versus outlasting it</h2>
 
-  <p>Both are legitimate. The Entity dies to concentrated fire, and <em>Relentless</em> &mdash; finish a hunt within 30 seconds &mdash; sits at <strong>45.4%</strong>, so nearly half the player base has managed an efficient kill at least once. But the achievement for merely surviving sits at <strong>93.8%</strong>, and that gap is honest information: the monster is beatable, and it is also entirely optional to beat. A barricaded, silent crew that lets the clock run has lost nothing.</p>
+  <p>Both are legitimate. The Entity dies to concentrated fire, and <em>Relentless</em> &mdash; finish a hunt within 30 seconds &mdash; sits at <strong>[[ACH:Relentless]]%</strong>, so nearly half the player base has managed an efficient kill at least once. But the achievement for merely surviving sits at <strong>[[ACH:Still Breathing]]%</strong>, and that gap is honest information: the monster is beatable, and it is also entirely optional to beat. A barricaded, silent crew that lets the clock run has lost nothing.</p>
 
   <p>Pick based on the night, not on pride. Ammunition already bought, group together, doors held &mdash; shoot. Scattered, broke, or down a player &mdash; go quiet and give it nothing to hear.</p>
 
