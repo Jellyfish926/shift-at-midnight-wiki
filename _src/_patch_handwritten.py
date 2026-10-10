@@ -30,7 +30,8 @@ ARTICLE_MARK = "<!-- article-ld -->"
 # 可选「首次发布日期」(按 canonical);不在表里的手写页 datePublished 仍等于核实日期。
 FIRST_PUBLISHED = {B.BASE + "/crossplay/": "2026-07-28",
                    # D2 2026-10-10:日期行改写后保留原 datePublished
-                   B.BASE + "/achievements/": "2026-08-05"}
+                   B.BASE + "/achievements/": "2026-08-05",
+                   B.BASE + "/": "2026-08-05"}
 
 
 def article_block(s: str, canonical: str) -> str:

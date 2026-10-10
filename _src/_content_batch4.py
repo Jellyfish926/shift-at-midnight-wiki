@@ -36,6 +36,35 @@ def _long_date(iso: str) -> str:
 
 ACH_DATE = _long_date(_ACH_CAPTURED) if _ACH_CAPTURED else "date not recorded"
 
+# 13 August 2026 手抄读数(击杀类四项);与 achievements.json 的周快照逐项比较,句子由数据生成,不手写月份。
+_AUG13 = {"First Blood": 96.9, "Silenced": 89.8, "Freed": 79.8, "Last Performance": 41.6}
+
+
+def _aug_note(name: str) -> str:
+    """周快照与 13 August 读数不同才印括号里的旧读数。"""
+    return f" ({_AUG13[name]}%)" if _ACH[name] != _AUG13[name] else ""
+
+
+def _join(names: list) -> str:
+    names = [f"<em>{n}</em>" for n in names]
+    return names[0] if len(names) == 1 else ", ".join(names[:-1]) + " and " + names[-1]
+
+
+def _kill_drift() -> str:
+    up = [n for n in _AUG13 if _ACH[n] > _AUG13[n]]
+    down = [n for n in _AUG13 if _ACH[n] < _AUG13[n]]
+    same = [n for n in _AUG13 if _ACH[n] == _AUG13[n]]
+    parts = []
+    if up:
+        parts.append(f"{_join(up)} {'sits' if len(up) == 1 else 'sit'} higher")
+    if down:
+        parts.append(f"{_join(down)} {'is' if len(down) == 1 else 'are'} lower")
+    if same:
+        parts.append(f"{_join(same)} {'is' if len(same) == 1 else 'are'} unchanged")
+    return (f"Between the 13 August 2026 reading and the weekly snapshot captured {ACH_DATE}: "
+            + "; ".join(parts) + ".")
+
+
 UPD = ("Last updated 2026-10-10 &middot; unlock rates outside brackets are this site&rsquo;s weekly Steam snapshot, "
        f"captured {ACH_DATE} &middot; rest of the page last verified 11 September 2026 (written against the "
        "29 July 2026 patch) and not re-checked against the 20 August and 1 September 2026 patches (see the updates page)")
@@ -426,16 +455,16 @@ PAGES = [
   <table class="facts">
     <tr><th>First Blood</th><td>Kill your first customer &mdash; {_ACH['First Blood']}% (13 August reading: 96.9%)</td></tr>
     <tr><th>Silenced</th><td>Kill a <a href="/monsters/shrieking-doll/">Shrieking Doll</a> &mdash; {_ACH['Silenced']}% (89.8%)</td></tr>
-    <tr><th>Freed</th><td>Kill a <a href="/monsters/demented/">Demented</a> &mdash; {_ACH['Freed']}%</td></tr>
+    <tr><th>Freed</th><td>Kill a <a href="/monsters/demented/">Demented</a> &mdash; {_ACH['Freed']}%{_aug_note('Freed')}</td></tr>
     <tr><th>Last Performance</th><td>Kill a <a href="/monsters/marionette/">Marionette</a> &mdash; {_ACH['Last Performance']}% (41.6%)</td></tr>
   </table>
 
 {RATE_NOTE}
 
-  <p>One of those pairs moved the other way between readings: the Marionette kill sits higher in the September
-    snapshot than in the August one, while First Blood and Silenced both drifted down and Freed held exactly steady.
-    We have not established why, and we are not going to guess &mdash; both figures are printed above so you can see
-    the discrepancy rather than inherit a tidied version of it.</p>
+  <p>{_kill_drift()}
+    We have not established why the figures move in different directions, and we are not going to guess &mdash; where
+    the two readings differ, both figures are printed above so you can see the discrepancy rather than inherit a
+    tidied version of it.</p>
 
   <h2>First Blood &mdash; the one you do not aim for</h2>
 

@@ -488,15 +488,15 @@ PAGES = [
     <tr><th>Streaming</th><td>Cloud playable, with Game Pass Ultimate</td></tr>
   </table>
 
-  <p>Two of those rows change the answer to &ldquo;can I run it&rdquo;. <strong>Cloud playable</strong> means a Game Pass Ultimate subscriber can start it on hardware that meets none of the specs above, because the game is not running on their machine. The Steam version has listed <strong>Steam Cloud</strong> since the 20 August 2026 patch (&ldquo;Added cloud saves for Steam&rdquo;) &mdash; see the next section.</p>
+  <p>Two of those rows change the answer to &ldquo;can I run it&rdquo;. <strong>Cloud playable</strong> means a Game Pass Ultimate subscriber can start it on hardware that meets none of the specs above, because the game is not running on their machine. On the Steam side, the developer&rsquo;s 20 August 2026 announcement says &ldquo;Added cloud saves for Steam&rdquo;, and Steam&rsquo;s store data listed a <strong>Steam Cloud</strong> category when we read it on 10 October 2026 &mdash; see the next section.</p>
 
   <p>One row is worth flagging rather than smoothing over: the Xbox listing recorded online co-op as <strong>2&ndash;3 players</strong> when we read it on 12 August 2026, while the 23 July 2026 patch made the lobby cap selectable up to six on Steam. We have found no official statement about whether that six-player option exists on Xbox, so we are not going to assume it does. See <a href="/multiplayer/">multiplayer</a> for what the developer actually said about lobby size.</p>
 
   <h2>Saves: Steam Cloud is listed</h2>
 
-  <p>Steam&rsquo;s store data lists ten categories on 10 October 2026: Single-player, Multi-player, Co-op, Online Co-op, Steam Achievements, Adjustable Text Size, Custom Volume Controls, Stereo Sound, Steam Cloud and Family Sharing. <strong>Steam Cloud was added with the 20 August 2026 patch.</strong> It was not on the list when we read it on 12 August 2026.</p>
+  <p>Steam&rsquo;s store data lists ten categories on 10 October 2026: Single-player, Multi-player, Co-op, Online Co-op, Steam Achievements, Adjustable Text Size, Custom Volume Controls, Stereo Sound, Steam Cloud and Family Sharing. <strong>Steam Cloud is on that list.</strong> The developer&rsquo;s 20 August 2026 announcement, &ldquo;15 CUSTOMERS + BUG FIXES&rdquo;, says &ldquo;Added cloud saves for Steam&rdquo;. Steam Cloud was not on the list when we read it on 12 August 2026; the store data carries no history, so we cannot say on which day the category first appeared.</p>
 
-  <p>Steam saves can use Steam Cloud since 20 August 2026; we have not verified how it behaves. We are not going to tell you which folder to back up, because we could not verify a save path &mdash; that is in the last section, with the reason.</p>
+  <p>We have not verified how Steam Cloud behaves for this game. We are not going to tell you which folder to back up, because we could not verify a save path &mdash; that is in the last section, with the reason.</p>
 
   <h2>Controller, accessibility and two different age ratings</h2>
 

@@ -249,7 +249,7 @@ PAGES = [
 
   <div class="term warn">
     <div class="term-h">If you searched for a specific cheat code</div>
-    <p>Pages listing "item IDs" or "spawn codes" for this game are describing a feature Shift At Midnight does not have. There is no publicly documented developer console, and nothing in the official Steam feature list (Single-player, Multi-player, Co-op, Online Co-op, Steam Achievements, Family Sharing; Steam Cloud has been listed since the 20 August 2026 patch &mdash; see this wiki's own <a href="/system-requirements/">system requirements page</a>) points to one existing. Treat any specific code you find on a random blog as unverified until you can trace it to the developer.</p>
+    <p>Pages listing "item IDs" or "spawn codes" for this game are describing a feature Shift At Midnight does not have. There is no publicly documented developer console, and nothing in the official Steam feature list (Single-player, Multi-player, Co-op, Online Co-op, Steam Achievements, Family Sharing; Steam Cloud was also on that list when read on 10 October 2026, and the developer's 20 August 2026 announcement says &ldquo;Added cloud saves for Steam&rdquo; &mdash; see this wiki's own <a href="/system-requirements/">system requirements page</a>) points to one existing. Treat any specific code you find on a random blog as unverified until you can trace it to the developer.</p>
   </div>
 
   <h2>What "no official commands" actually means</h2>
